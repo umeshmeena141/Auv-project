@@ -1,14 +1,13 @@
 [![Build Status](https://travis-ci.org/AUV-IITK/auv-iitk.github.io.svg?branch=master)](https://travis-ci.org/AUV-IITK/auv-iitk.github.io)
 
-## StellarEnhanced jekyll template
+## Solarized template
 
-Jekyll blog based on [Jalpc](https://github.com/jarrekk/Jalpc). Served at [auv-iitk.github.io](auv-iitk.github.io) or [https://auviitk.com](https://auviitk.com)
+Solarized template available [here](https://templated.co/solarize). Served at [auv-iitk.github.io](auv-iitk.github.io) or [https://auviitk.com](https://auviitk.com)
 
 ## Usage
 
 Fork the repo
 Rename to `username.github.io`
-Modify the _config file
 Replace all the posts and images with your data
 
 ## Bugs and Issues
