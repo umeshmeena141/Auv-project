@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	Solarize by TEMPLATED
@@ -30,6 +31,26 @@
 				else 
 					y.style.background = "rgba(0, 0, 0, 0.5)";
 			}
+			<!--Facebook>
+				  window.fbAsyncInit = function() {
+						FB.init({
+						  appId            : 167782130461571,
+						  autoLogAppEvents : true,
+						  xfbml            : true,
+						  version          : 'v2.10'
+						});
+						FB.AppEvents.logPageView();
+  };
+			
+			
+			
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=167782130461571";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<style>
 			#socmed {
@@ -52,13 +73,13 @@
 			<div class="wrapper style1">
 			
 			<!-- Header -->
-				<div id="header" style="position:fixed; ">
-					<div class="container">
+				<div id="header" style="position:fixed;z-index:10; ">
+					<div class="container" style="z-index:10">
 							
 						<!-- Logo -->
 						
 						<!-- Nav -->
-							<nav id="nav">
+							<nav id="nav" style="z-index:10">
 								<ul >
 									<li class="active" id="index1"><a href="index.html">Home</a></li>
 									<li><a href="left-sidebar.html">Blog</a></li>
@@ -99,7 +120,7 @@
 			<!-- Banner -->
 				<div id="banner">
 					<section class="container">
-						<img src="images/logo.svg" alt="AUV IITK" style="width:304px;">
+						<img src="images/logo.jpg" alt="AUV IITK" style="width:304px;">
 						<span><b>AUTONOMOUS UNDERWATER VEHICLE</b></span>
 						<p>Some one liner about AUV...</p>
 					</section>
@@ -108,31 +129,36 @@
 			</div>
 		
 		<!-- Section One -->
-		
-		<div class="wrapper style2">
-				<section class="container">
-					<div class="row double">
-						<div class="6u news">
-						<div id="socmed">
-							<ul>
-								<a href="#" class="active1">Social Media</a>
-								<a href="#">Social Media</a>
-							</ul>
-						</div>
-						</div>
-						<div class="news">
-							
-						</div>
-						<div class="6u">
+
+				<div class="wrapper style2">
+						<section class="container">
+							<div class="row double">
+								<div class="6u" style="position:relative;">
+									<header class="major" >
+										<select>
+										<option href="#" style="text-align:left;">Social Pages</option>
+										<option href="#" style="text-align:left;">Latest News</option>
+										</select>
+										<span class="byline" style="padding:4px;">
+								
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=750&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="750" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+												
+										
+										
+										</span>
+									</header>
+								</div>
+						<div class="6u" style="position:relative; right:0em;">
 							<h3>ABOUT US</h3>
-							<div>
-								About Us...<br>About Us...<br>About Us...
-							</div><br>
+							<p>About Us</p><br>
+							<p>About Us</p><br>
+							<p>About Us</p><br>
+							<a href="#" class="button">Nulla aluctus eleifend</a>
+						</div>
 						</div>
 					</div>
 				</section>
 			</div>
-
 
 	<!-- Footer -->
 		<div id="footer">
