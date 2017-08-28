@@ -411,8 +411,8 @@
 		background: none;
 		border-radius: 4px;
 		border: 2px solid;
-		border-color: #82b440;
-		color: #82b440;
+		border-color: blue;
+		color: blue;
 		cursor: pointer;
 		display: inline-block;
 		padding: 0.90em 1.2em;
@@ -432,7 +432,7 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background: #82b440;
+			background: blue;
 			color: white;
 		}
 

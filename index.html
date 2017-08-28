@@ -53,18 +53,7 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<style>
-			#socmed {
-				padding:5px;
-				border-radius:2px;
-			}
-			#socmed:hover {
-				background:blue;
-				color:white;
-			}
-			#socmed .active1	 {
-				background:blue;
-				color:white;
-			}
+			
 		</style>
 	</head>
 	<body class="homepage">
@@ -86,29 +75,36 @@
 									<li>
 										<a href="">Vehicle</a>
 										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
 											<li>
-												<a href="">Phasellus consequat</a>
+												<a href="">Competition Vehicles</a>
 												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Veroeros feugiat</a></li>
+													<li><a href="#">Varun</a></li>
+													
 												</ul>
 											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
+											<li>
+												<a href="">Prototypes</a>
+												<ul>
+													<li><a href="#">Anahita 2.0</a></li>
+													<li><a href="#">Anahita 1.0</a></li>
+													
+												</ul>
+											</li>
 										</ul>
 									</li>
 									<li><a href="right-sidebar.html">Sponsors</a></li>
 									<li>
 										<a href="">Team</a>
 										<ul>
-											<li><a href="#">Present</a></li>
-											<li><a href="#">Alumni</a></li>
-										</ul>
+											<li><a href="#">2017-18</a></li>
+											<li>
+												<a href="">Alumni</a>
+												<ul>
+													<li><a href="#">2016-17</a></li>
+													<li><a href="#">2014-16</a></li>
+													
+												</ul>
+											</li>										</ul>
 									</li>
 									<li><a href="no-sidebar.html">Contact Us</a></li>
 								</ul>
@@ -122,7 +118,7 @@
 					<section class="container">
 						<img src="images/logo.jpg" alt="AUV IITK" style="width:304px;">
 						<span><b>AUTONOMOUS UNDERWATER VEHICLE</b></span>
-						<p>Some one liner about AUV...</p>
+						<p>Indian Institute of Technology, Kanpur</p>
 					</section>
 				</div>
 
@@ -135,25 +131,28 @@
 							<div class="row double">
 								<div class="6u" style="position:relative;">
 									<header class="major" >
-										<select>
-										<option href="#" style="text-align:left;">Social Pages</option>
-										<option href="#" style="text-align:left;">Latest News</option>
-										</select>
-										<span class="byline" style="padding:4px;">
-								
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=750&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="750" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-												
 										
+										<span  onclick="socmed1()" class="button" style="text-align:left;text-decoration:none;padding:5px;cursor:pointer;">Social Media</span>
+										<span onclick="news1()" class="button" style="text-align:left;text-decoration:none;padding:5px;cursor:pointer;">Latest News</span>
 										
+										<span class="byline" style="display:inline-block;padding:4px;">
+											<iframe id="socmed" class="SOC" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=750&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="750" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+											</iframe>
 										</span>
+										<div id = "news" class="SOC" >
+											<div >Latest News</div>
+											<div >Latest News</div>
+											<div >Latest News</div>
+										</div>
 									</header>
 								</div>
-						<div class="6u" style="position:relative; right:0em;">
-							<h3>ABOUT US</h3>
-							<p>About Us</p><br>
-							<p>About Us</p><br>
-							<p>About Us</p><br>
-							<a href="#" class="button">Nulla aluctus eleifend</a>
+						<div class="6u" style="position:relative; right:5em; padding-right:0px;margin:0;width:50%;" >
+							<h3>About Us</h3>
+							<p>
+								With the constant need to push technologies to a new level, AUV- IITK aims to venture along the path to bring in innovative solutions and ideas in marine robotics by designing its own autonomous systems to perform tasks underwater, and inculcate interest in underwater robotics through participation in competitions.
+							</p>
+							<p>Over the past years, the team has witnessed a close collaboration between students from various departments coming and sharing ideas; creating a small yet strong network of people who are eagerly looking for a low- cost solution to large- scale problems. With its numbers only increasing every year, there are currently eighteen people, in total, who are looking over the mechanical, electrical and programming aspects of the project.</p>
+							<a href="#" class="button" >Know More</a>
 						</div>
 						</div>
 					</div>
@@ -181,6 +180,24 @@
 					Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
 				</div>			
 		</div>
-
+	<script>
+			document.getElementById("news").style.display = "none";
+			var x = document.getElementsByClassName("SOC");
+			for(var i=0; i<x.length; i++)
+				x[i].style.display = "none";
+			x[0].style.display = "block";
+			function socmed1() {
+				for(var i=0; i<x.length; i++)
+					x[i].style.display = "none";
+				
+				x[0].style.display = "block";
+			}
+			function news1() {
+				for(var i=0; i<x.length; i++)
+					x[i].style.display = "none";
+				x[1].style.display = "block";
+			}
+	</script>
 	</body>
+	
 </html>
