@@ -23,7 +23,28 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
-
+	<div id="fb-root"></div>
+			<script>
+				  window.fbAsyncInit = function() {
+						FB.init({
+						  appId            : 167782130461571,
+						  autoLogAppEvents : true,
+						  xfbml            : true,
+						  version          : 'v2.10'
+						});
+						FB.AppEvents.logPageView();
+  };
+			
+			
+			
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=167782130461571";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>		
+								
 		<!-- Header Wrapper -->
 			<div class="wrapper style1">
 			
@@ -78,26 +99,34 @@
 			</div>
 		
 		<!-- Section One -->
-			<div class="wrapper style2">
-				<section class="container">
-					<div class="row double">
-						<div class="6u">
-							<header class="major">
-								<h2>Pellentesque viverra vulputate enim. Aliquam volutpat. Pellentesque tristique Risus</h2>
-								<span class="byline">In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Donec pulvinar ullamcorper metus.</span>
-							</header>
-						</div>
-						<div class="6u">
+
+				<div class="wrapper style2">
+						<section class="container">
+							<div class="row double">
+								<div class="6u" style="position:relative;">
+									<header class="major" >
+										<h2 style="text-align:left;">Social Pages</h2>
+										<span class="byline" style="padding:4px;">
+								
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=750&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="750" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+												
+										
+										
+										</span>
+									</header>
+								</div>
+						<div class="6u" style="position:relative; right:0em;">
 							<h3>Suspendisse dictum porta</h3>
 							<p>Donec leo. Vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum. Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Vestibulum imperdiet, magna nec eleifend semper augue mattis wisi maecenas ligula nunc lectus vestibulum euismod lacinia quam nisl.</p>
 							<a href="#" class="button">Nulla aluctus eleifend</a>
+						</div>
 						</div>
 					</div>
 				</section>
 			</div>
 
 		<!-- Section Two -->
-			<div class="wrapper style3">
+			<div class="wrapper style3" style="background: linear-gradient(to bottom, #009999 0%, #00ff99 100%); color:black" >
 				<section class="container">
 					<header class="major">
 						<h2>Cras vitae metus aliNuam</h2>
@@ -108,8 +137,8 @@
 			</div>
 
 		<!-- Section Three -->
-			<div class="wrapper style4">
-				<section class="container">
+			<div class="wrapper style4" >
+				<section class="container" >
 					<header class="major">
 						<h2>Cras vitae metus aliNuam</h2>
 						<span class="byline">pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.</span>
