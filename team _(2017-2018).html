@@ -80,21 +80,25 @@
 	
 					</div>
 					</div>
-					<div id="team-members">
-				
-						<li><img style="position:relative;left:20% top:40%; display:block;"></li>
-						<li><img style="position:relative; top:40%;left:40; display:block;"></li>
-						<li><img style="position:relative;left:60% top:40%; display:block;"></li>
-						<li><img style="position:relative;left:80% top:40%; display:block;"></li>
-					
+					<div style="background-color:#f2f2f2; width:1520px;height:800px;">
+					<div id="team-members" style="background-color:#f2f2f2;">
+						<img style="position:absolute;left:20%;padding-top:12%; display:inline-block;">  
+						<img style="position:absolute;left:40%;padding-top:12%; display:inline-block;">
+						<img style="position:absolute;left:60%;padding-top:12%; display:inline-block;">
+						<img style="position:absolute;left:60%;padding-top:12%; display:inline-block;">
+						<img style="position:absolute;left:60%;padding-top:12%; display:inline-block;">
+						<img style="position:absolute;left:60%;padding-top:12%; display:inline-block;">
+						<img style="position:absolute;left:80%;padding-top:12%; display:inline-block;">
 					</div>
-						<script src="team-members.js"></script>
-						<script>
+					</div>
+					
+					<script src="team-members.js"></script>
+					<script>
 							for(i=0;i<4;i++){
 								document.getElementById('team-members').getElementsByTagName("img")[i].src=person[i].img;
-								document.getElementById('team-members').getElementsByTagName("p")[i].innerHTML=person[i].Name;
+							
 							}
-						</script>
+					</script>
 
 				
 	</body>
