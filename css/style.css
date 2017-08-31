@@ -411,8 +411,8 @@
 		background: none;
 		border-radius: 4px;
 		border: 2px solid;
-		border-color: blue;
-		color: blue;
+		border-color: #f2f2f2;
+		color:#3b5998;
 		cursor: pointer;
 		display: inline-block;
 		padding: 0.90em 1.2em;
@@ -432,7 +432,7 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background: blue;
+			background: #3b5998;
 			color: white;
 		}
 
@@ -488,11 +488,11 @@
 
 				.wrapper.style2 .major h2 {
 					display: block;
-					margin-bottom: 0.70em;
+					margin-bottom: 1em;
 					letter-spacing: 1px;
 					line-height: 1.4em;
 					text-transform: uppercase;
-					font-size: 1.8em;
+					font-size: 1.6em;
 					font-weight: 400;
 				}
 
