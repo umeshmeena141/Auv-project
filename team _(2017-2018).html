@@ -20,11 +20,16 @@
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="team_(2017-2018)1.css" />
+			<script src="jquery.js"></script>
 			
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+			img{width:26%;}
+		</style>
 	</head>
-	<body class="team">
+	<body class="team" style="overflow-x:hidden;background-color:white;">
 
 		<!-- Header Wrapper -->
 			
@@ -33,9 +38,9 @@
 					<div class="container" style="z-index:10">
 							
 						<!-- Logo -->
-						<img src="images/logo.jpg" width="7%" style="position:fixed; left:1%; padding:1%;">
+						<img src="images/logo.jpg" width="100px" style="position:fixed; left:1%; padding:1%;">
 						<!-- Nav -->
-							<nav id="nav" style="z-index:10">
+							<nav id="nav" style="z-index:10; background-color:#666699;">
 								<ul >
 									
 									<li class="active" id="index1"><a href="index.html">Home</a></li>
@@ -80,24 +85,58 @@
 	
 					</div>
 					</div>
-					<div style="background-color:#f2f2f2; width:1520px;height:800px;">
-					<div id="team-members" style="background-color:#f2f2f2;">
-						<img style="position:absolute;left:15%;padding-top:12%; display:inline-block;">  
-						<img style="position:absolute;left:35%;padding-top:12%; display:inline-block;">
-						<img style="position:absolute;left:55%;padding-top:12%; display:inline-block;">
-						<img style="position:absolute;left:75%;padding-top:12%; display:inline-block;">
-						<img style="position:absolute;left:15%;padding-top:30%; display:inline-block;">
-						<img style="position:absolute;left:35%;padding-top:30%; display:inline-block;">
-						<img style="position:absolute;left:55%;padding-top:30%; display:inline-block;">
-						<img style="position:absolute;left:75%;padding-top:30%; display:inline-block;">
-				
-					</div>
+					<div style="background-color:white; width:1520px;height:800px;">
+						<h2 style="position:absolute; top:17%;left:50%;"> The Team</h2>
+						<div id="Student_Advisors" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:25%; left:20%;">
+							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; ">Student Advisors</h2>
+							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
+							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+							<div class="overlay" style="background-color:#008CBA; width:400px;">
+							<div class="text">Hello World</div>
+					   </div>
+						</div>
+						<div id="Software_Team" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:85%; left:20%;">
+							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; ">Software Team</h2>
+							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
+							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+						</div>
+						<div id="Mechanical_Team" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:145%; left:20%;">
+							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; ">Mechanical Team</h2>
+							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
+							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+						</div>
+						<div id="Electrical_Team" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:205%; left:20%;">
+							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; ">Electrical Team</h2>
+							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
+							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+						</div>
+						<div id="Bussiness_Team" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:265%; left:20%;">
+							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; ">Bussiness_Team</h2>
+							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
+							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
+							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+						</div>
+
 					</div>
 					
 					<script src="team-members.js"></script>
+					<script src="details1.js"></script>
 					<script>
-							for(i=0;i<8;i++){
-								document.getElementById('team-members').getElementsByTagName("img")[i].src=person[i].img;
+							for(i=0;i<4;i++){
+								document.getElementById('Student_Advisors').getElementsByTagName("img")[i].src=SA[i].img;
+								document.getElementById('Software_Team').getElementsByTagName("img")[i].src=Softteam[i].img;
+								document.getElementById('Mechanical_Team').getElementsByTagName("img")[i].src=Mechteam[i].img;
+								document.getElementById('Electrical_Team').getElementsByTagName("img")[i].src=Electteam[i].img;
+								document.getElementById('Bussiness_Team').getElementsByTagName("img")[i].src=Bussteam[i].img;
 							}
 					</script>
 

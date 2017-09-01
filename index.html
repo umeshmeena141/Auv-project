@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	Solarize by TEMPLATED
@@ -6,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Solarize by TEMPLATED</title>
+		<title>AUV IITK</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -21,10 +22,16 @@
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body class="homepage">
-	<div id="fb-root"></div>
-			<script>
+		<script>
+			window.onscroll = function() {mF()};
+				function mF() {
+				var y = document.getElementById("header");
+				if(window.pageYOffset >= 450)
+					y.style.background = "rgba(0, 0, 0, 1.0)";
+				else 
+					y.style.background = "rgba(0, 0, 0, 0.5)";
+			}
+			<!--Facebook>
 				  window.fbAsyncInit = function() {
 						FB.init({
 						  appId            : 167782130461571,
@@ -43,44 +50,63 @@
 			  js = d.createElement(s); js.id = id;
 			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=167782130461571";
 			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>		
-								
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<style>
+			
+		</style>
+	</head>
+	<body class="homepage">
+
 		<!-- Header Wrapper -->
 			<div class="wrapper style1">
 			
 			<!-- Header -->
-				<div id="header">
-					<div class="container">
+				<div id="header" style="position:fixed;z-index:10; ">
+					<div class="container" style="z-index:10">
 							
 						<!-- Logo -->
-							<h1><a href="#" id="logo">Solarize</a></h1>
 						
 						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="active"><a href="index.html">Home</a></li>
+							<nav id="nav" style="z-index:10">
+								<ul >
+									<li class="active" id="index1"><a href="index.html">Home</a></li>
+									<li><a href="left-sidebar.html">Blog</a></li>
 									<li>
-										<a href="">Dropdown</a>
+										<a href="">Vehicle</a>
 										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
 											<li>
-												<a href="">Phasellus consequat</a>
+												<a href="">Competition Vehicles</a>
 												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Veroeros feugiat</a></li>
+													<li><a href="#">Varun</a></li>
+													
 												</ul>
 											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
+											<li>
+												<a href="">Prototypes</a>
+												<ul>
+													<li><a href="#">Anahita 2.0</a></li>
+													<li><a href="#">Anahita 1.0</a></li>
+													
+												</ul>
+											</li>
 										</ul>
 									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li><a href="right-sidebar.html">Sponsors</a></li>
+									<li>
+										<a href="">Team</a>
+										<ul>
+											<li><a href="#">2017-18</a></li>
+											<li>
+												<a href="">Alumni</a>
+												<ul>
+													<li><a href="#">2016-17</a></li>
+													<li><a href="#">2014-16</a></li>
+													
+												</ul>
+											</li>										</ul>
+									</li>
+									<li><a href="no-sidebar.html">Contact Us</a></li>
 								</ul>
 							</nav>
 	
@@ -90,9 +116,9 @@
 			<!-- Banner -->
 				<div id="banner">
 					<section class="container">
-						<h2>Solarize</h2>
-						<span>Design by Templated</span>
-						<p>Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna.</p>
+						<img src="images/logo.jpg" alt="AUV IITK" style="width:304px;">
+						<span><b>AUTONOMOUS UNDERWATER VEHICLE</b></span>
+						<p>Indian Institute of Technology, Kanpur</p>
 					</section>
 				</div>
 
@@ -105,133 +131,29 @@
 							<div class="row double">
 								<div class="6u" style="position:relative;">
 									<header class="major" >
-										<h2 style="text-align:left;">Social Pages</h2>
-										<span class="byline" style="padding:4px;">
-								
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=750&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="750" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-												
 										
+										<span  onclick="socmed1()" class="button" style="text-align:left;text-decoration:none;padding:5px;cursor:pointer;">Social Media</span>
+										<span onclick="news1()" class="button" style="text-align:left;text-decoration:none;padding:5px;cursor:pointer;">Latest News</span>
 										
+										<span class="byline" style="display:inline-block;padding:4px;">
+											<iframe id="socmed" class="SOC" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=750&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="750" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+											</iframe>
 										</span>
+										<div id = "news" class="SOC" >
+											<div >Latest News</div>
+											<div >Latest News</div>
+											<div >Latest News</div>
+										</div>
 									</header>
 								</div>
-						<div class="6u" style="position:relative; right:0em;">
-							<h3>Suspendisse dictum porta</h3>
-							<p>Donec leo. Vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum. Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Vestibulum imperdiet, magna nec eleifend semper augue mattis wisi maecenas ligula nunc lectus vestibulum euismod lacinia quam nisl.</p>
-							<a href="#" class="button">Nulla aluctus eleifend</a>
+						<div class="6u" style="position:relative; right:5em; padding-right:0px;margin:0;width:50%;" >
+							<h3>About Us</h3>
+							<p>
+								With the constant need to push technologies to a new level, AUV- IITK aims to venture along the path to bring in innovative solutions and ideas in marine robotics by designing its own autonomous systems to perform tasks underwater, and inculcate interest in underwater robotics through participation in competitions.
+							</p>
+							<p>Over the past years, the team has witnessed a close collaboration between students from various departments coming and sharing ideas; creating a small yet strong network of people who are eagerly looking for a low- cost solution to large- scale problems. With its numbers only increasing every year, there are currently eighteen people, in total, who are looking over the mechanical, electrical and programming aspects of the project.</p>
+							<a href="#" class="button" >Know More</a>
 						</div>
-						</div>
-					</div>
-				</section>
-			</div>
-
-		<!-- Section Two -->
-			<div class="wrapper style3" style="background: linear-gradient(to bottom, #009999 0%, #00ff99 100%); color:black" >
-				<section class="container">
-					<header class="major">
-						<h2>Cras vitae metus aliNuam</h2>
-					</header>
-					<p>Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.</p>
-					<a href="#" class="button alt">Nulla aluctus eleifend</a>
-				</section>
-			</div>
-
-		<!-- Section Three -->
-			<div class="wrapper style4" >
-				<section class="container" >
-					<header class="major">
-						<h2>Cras vitae metus aliNuam</h2>
-						<span class="byline">pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.</span>
-					</header>
-					<div class="row flush">
-						<div class="4u">
-							<ul class="special-icons">
-								<li>
-									<span class="fa fa-cogs"></span>
-									<h3>Nulla luctus eleifend</h3>
-									<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
-								</li>
-								<li>
-									<span class="fa fa-wrench"></span>
-									<h3>Etiam posuere augue</h3>
-									<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.</p>
-								</li>
-								<li>
-									<span class="fa fa-leaf"></span>
-									<h3>Fusce ultrices fringilla</h3>
-									<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
-								</li>
-							</ul>
-						</div>
-						<div class="4u">
-							<ul class="special-icons">
-								<li>
-									<span class="fa fa-cogs"></span>
-									<h3>Nulla luctus eleifend</h3>
-									<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
-								</li>
-								<li>
-									<span class="fa fa-wrench"></span>
-									<h3>Etiam posuere augue</h3>
-									<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.</p>
-								</li>
-								<li>
-									<span class="fa fa-leaf"></span>
-									<h3>Fusce ultrices fringilla</h3>
-									<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
-								</li>
-							</ul>
-						</div>
-						<div class="4u">
-							<ul class="special-icons">
-								<li>
-									<span class="fa fa-cogs"></span>
-									<h3>Nulla luctus eleifend</h3>
-									<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
-								</li>
-								<li>
-									<span class="fa fa-wrench"></span>
-									<h3>Etiam posuere augue</h3>
-									<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.</p>
-								</li>
-								<li>
-									<span class="fa fa-leaf"></span>
-									<h3>Fusce ultrices fringilla</h3>
-									<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</div>
-		
-		<!-- Team -->
-			<div class="wrapper style5">
-				<section id="team" class="container">
-					<header class="major">
-						<h2>Cras vitae metus aliNuam</h2>
-						<span class="byline">pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu</span>
-					</header>
-					<div class="row">
-						<div class="3u">
-							<a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
-							<h3>Molly Millions</h3>
-							<p>In posuere eleifend odio quisque semper augue wisi ligula.</p>
-						</div>
-						<div class="3u">
-							<a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
-							<h3>Henry Dorsett Case</h3>
-							<p>In posuere eleifend odio quisque semper augue wisi ligula.</p>
-						</div>
-						<div class="3u">
-							<a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
-							<h3>Willis Corto</h3>
-							<p>In posuere eleifend odio quisque semper augue wisi ligula.</p>
-						</div>
-						<div class="3u">
-							<a href="#" class="image"><img src="images/placeholder.png" alt=""></a>
-							<h3>Linda Lee</h3>
-							<p>In posuere eleifend odio quisque semper augue wisi ligula.</p>
 						</div>
 					</div>
 				</section>
@@ -258,6 +180,24 @@
 					Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
 				</div>			
 		</div>
-
+	<script>
+			document.getElementById("news").style.display = "none";
+			var x = document.getElementsByClassName("SOC");
+			for(var i=0; i<x.length; i++)
+				x[i].style.display = "none";
+			x[0].style.display = "block";
+			function socmed1() {
+				for(var i=0; i<x.length; i++)
+					x[i].style.display = "none";
+				
+				x[0].style.display = "block";
+			}
+			function news1() {
+				for(var i=0; i<x.length; i++)
+					x[i].style.display = "none";
+				x[1].style.display = "block";
+			}
+	</script>
 	</body>
+	
 </html>
