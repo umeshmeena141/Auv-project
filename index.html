@@ -31,30 +31,36 @@
 				else 
 					y.style.background = "rgba(0, 0, 0, 0.5)";
 			}
-			<!--Facebook>
-			window.fbAsyncInit = function() {
-				FB.init({
-				  appId            : 167782130461571,
-				  autoLogAppEvents : true,
-				  xfbml            : true,
-				  version          : 'v2.10'
-				});
-				FB.AppEvents.logPageView();
-			};
-			(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=167782130461571";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
+			
+			
+			 <!--Twitter>      
+            !function(d,s,id) {
+				var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)) {
+					js=d.createElement(s);
+					js.id=id;
+					js.src=p+"://platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js,fjs);
+				}
+			} (document,"script","twitter-wjs");
+          
 		</script>
 		<style>
 			#underline {
 				width:100%;
 				height:1px;
-				background:#555555;
-				margin-bottom:15px;
+				background:#a6a6a6;
+				margin-bottom:5px;
+			}
+			.active1 {
+				color:white;
+				background:#3b5998;
+			}
+			.news {
+				height:80px;
+				width:100%;
+				clear: left;
+				margin:auto;line-height:80px;
 			}
 		</style>
 	</head>
@@ -121,81 +127,89 @@
 			</div>
 		</div>
 		
-		<!-- Section One -->
-
-				<div class="wrapper style2">
-						<section class="container">
-							<div class="row double">
-								<div class="6u" >
-									<header class="major" >
-										
-										<span  onclick="socmed1()" class="button" style="display:inline-block;cursor:pointer;"><b>Social Media</b></span>
-										
-										<span onclick="news1()" class="button" style="display:inline-block;cursor:pointer;"><b>Latest News</b></span>
-										<div id="underline" style="width:500px"></div>
-											<iframe id="socmed" class="SOC" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="500" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
-											</iframe>
-										
-										<div id = "news" class="SOC" >
-											<div >Latest News</div>
-											<div >Latest News</div>
-											<div >Latest News</div>
-										</div>
-									</header>
-								</div>
-						<div class="6u"  >
-							<h3 style="color:#3b5998" ><b>About Us</b></h3>
-							<div id="underline"></div>
-							<p style="text-align:justify">
-								&emsp;&emsp;&emsp; With the constant need to push technologies to a new level, AUV- IITK aims to venture along the path to bring in innovative solutions and ideas in marine robotics by designing its own autonomous systems to perform tasks underwater, and inculcate interest in underwater robotics through participation in competitions.<br>
-							
-							&emsp;&emsp;&emsp; Over the past years, the team has witnessed a close collaboration between students from various departments coming and sharing ideas; creating a small yet strong network of people who are eagerly looking for a low- cost solution to large- scale problems. With its numbers only increasing every year, there are currently eighteen people, in total, who are looking over the mechanical, electrical and programming aspects of the project.</p>
-							<a href="#" class="button" ><b>Know More</b></a>
+		<!-- Section Two -->
+			<div class="wrapper style2" style="background:f2f2f2;padding:50px;">
+				<section class="container" >
+					<div class="row double">
+						<div class="6u">
+							<header class="major">
+								<span class="button active1" style="display:block;" ><b>Latest News</b></span>
+								<span class="byline" style="color:#555555;">
+									<div class="news" style="border-bottom:1px solid #3b5998;">Latest News<span style="background:;float:right;font-size:0.8em;">DD/MM/YY</span></div>
+									<div class="news" style="border-bottom:1px solid #3b5998;">Latest News<span style="background:;float:right;font-size:0.8em;">DD/MM/YY</span></div>
+									<div class="news" style="border-bottom:1px solid #3b5998;">Latest News<span style="background:;float:right;font-size:0.8em;">DD/MM/YY</span></div>
+									
+								</span>
+								<span class="button" style="display:block;" ><b>View All</b></span>
+							</header>
 						</div>
+						<div class="6u">
+							<span  onclick="fb1()" class="button" id="b1" style="display:inline-block;cursor:pointer;margin-bottom:25px;width:250px;"><b>Facebook</b></span>
+							<span onclick="twit1()" class="button" id="b2" style="display:inline-block;cursor:pointer;margin-bottom:25px;width:250px;"><b>Twitter</b></span>
+							
+							<iframe id="fb" class="av_facebook_widget SOC"  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=500&height=320&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="500" height="320" scrolling="no" frameborder="0" allowTransparency="true" colorscheme="dark">
+							</iframe>		
+							<div id = "twit" class="SOC" >           
+							<a class="twitter-timeline" data-width="500" data-height="320" href="https://twitter.com/googlecloud">Tweets by googlecloud</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>        
+							</div>
 						</div>
 					</div>
 				</section>
 			</div>
 
 	<!-- Footer -->
-		<div id="footer">
-			<section class="container">
-				<header class="major">
-					<h2>Connect with us</h2>
-					<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
-				</header>
-				<ul class="icons">
+		<div id="footer" style="background:#222222; color:#f2f2f2; height:40px;width:100%;padding:0;margin:0;">
+			<ul class="icons" style="padding:20px 0px; ">
 					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
 					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
 					<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
 				</ul>
-				<hr />
-			</section>
-			
-			<!-- Copyright -->
-				<div id="copyright">
-					Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-				</div>			
 		</div>
 	<script>
-			document.getElementById("news").style.display = "none";
+			document.getElementById("twit").style.display = "none";
+			document.getElementById("b1").className = "button active1";
 			var x = document.getElementsByClassName("SOC");
 			for(var i=0; i<x.length; i++)
 				x[i].style.display = "none";
 			x[0].style.display = "block";
-			function socmed1() {
+			function fb1() {
 				for(var i=0; i<x.length; i++)
 					x[i].style.display = "none";
-				
 				x[0].style.display = "block";
+				document.getElementById("b2").className = "button";
+				document.getElementById("b1").className = "button active1";
 			}
-			function news1() {
+			function twit1() {
 				for(var i=0; i<x.length; i++)
 					x[i].style.display = "none";
 				x[1].style.display = "block";
+				document.getElementById("b1").className = "button";
+				document.getElementById("b2").className = "button active1";
 			}
-	</script>
+			var n, init = 0;
+			function news1() {
+				n = document.getElementsByClassName("news");
+				for(var i=0; i<n.length; i++) {
+					n.style.display = "none";
+				}
+				for(var i=0; i<5; i++) {
+					n.style.display = "block";
+				}
+				news2();
+			}
+			function news2() {
+				if(init>=n.length) {
+					init = 0;
+				}
+				n[init].style.display = "none";
+				var init2 = init+4;
+				if(init2 >= n.length)
+					init2 -= n.length;
+				n[init2].style.display="block";
+				setTimeout(news2(), 3000);
+			}
+		</script>
 	</body>
 	
 </html>
