@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<link rel="stylesheet" href="team_(2017-2018)1.css" >
+		
 		<title>AUV IITK</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -35,6 +35,7 @@
 				font-size:20px;
 				text-decoration:none;
 				border:none;
+				padding:10px 20px;
 				
 			}
 			a:hover{
@@ -43,9 +44,51 @@
 				border-radius:5%;
 				
 			}
+			
+			.container {
+			  position: absolute;
+			  width: 50%;
+			  top:30%;
+			}
+
+			.image {
+			  display: block;
+			  width: 30%;
+			  height: auto;
+			}
+
+			.overlay {
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  background-color: #008CBA;
+			  overflow: hidden;
+			  width: 0%;
+			  height: 100%;
+			  transition: .5s ease;
+			  
+			}
+
+			.container:hover .overlay {
+
+			  
+			}
+
+			.text {
+			  white-space: nowrap; 
+			  color: white;
+			  font-size: 20px;
+			  position: absolute;
+			  overflow: hidden;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+
 		</style>
 	</head>
-	<body class="team" style="overflow-x:hidden;background-color:white;">
+	<body class="team" style="overflow-x:hidden;background-color:white; padding-bottom:5%;">
 
 		<!-- Header Wrapper -->
 			
@@ -56,7 +99,7 @@
 						<!-- Logo 
 						<img src="images/logo.jpg" width="100px" style="position:fixed; left:1%; padding:1%;">-->
 						<!-- Nav -->
-							<nav id="nav" style="z-index:10; background-color:#666699;">
+							<nav id="nav" style="z-index:20; background-color:#666699;">
 								<ul >
 									
 									<li class="active" id="index1"><a href="index.html">Home</a></li>
@@ -85,7 +128,7 @@
 									<li>
 										<a href="">Team</a>
 										<ul>
-											<li><a href="#">2017-18</a></li>
+											<li><a href="team_(2017-2018).html">2017-18</a></li>
 											<li>
 												<a href="">Alumni</a>
 												<ul>
@@ -103,50 +146,147 @@
 					</div>
 					<div style="background-color:white; width:1520px;height:800px;">
 						<div style="position:absolute; top:25%;left:2%;">
-							<li><a href="#studentadvisors" >Student Advisors</a><br/><br/></li>
-							<li><a href="#softteam" >Software Team</a><br/><br/></li>
-							<li><a href="#mechteam" >Mechanical Team</a><br/><br/></li>
-							<li><a href="#electteam" >Electrical Team</a><br/><br/></li>
-							<li><a href="#bussiness" >Bussiness Team</a></li>
+							<li><a href="#Student_Advisors" >Faculty Advisors</a><br/><br/></li>
+							<li><a href="#Software_Team" >Software Team</a><br/><br/></li>
+							<li><a href="#Mechanical_Team" >Mechanical Team</a><br/><br/></li>
+							<li><a href="#Electrical_Team" >Electrical Team</a><br/><br/></li>
+							<li><a href="#Bussiness_Team" >Bussiness Team</a></li>
 						</div>
 						<h2 style="position:absolute; top:17%;left:50%;"> The Team</h2>
 						<div id="Student_Advisors" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:25%; left:20%;">
-							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; " id="studentadvisors">Student Advisors</h2>
-							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
-							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
-							<div class="overlay" style="background-color:#008CBA; width:295px; height:200px;display:none;">
+							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; " id="studentadvisors">Faculty Advisors</h2>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act1 team1" style="left:20%">
+							<div class="overlay" style="left:15%">
 							<div class="text">Hello World</div>
-					   </div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act2 team1" style="left:65%">
+							<div class="overlay" style="left:60%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act3 team1" style="left:110%">
+							<div class="overlay" style="left:105%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act4 team1" style="left:155%">
+							<div class="overlay" style="left:150%; ">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
 						</div>
 						<div id="Software_Team" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:85%; left:20%;">
 							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; " id="softteam">Software Team</h2>
-							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
-							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act1 team2" style="left:20%">
+							<div class="overlay" style="left:15%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act2 team2" style="left:65%">
+							<div class="overlay" style="left:60%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act3 team2" style="left:110%">
+							<div class="overlay" style="left:105%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act4 team2" style="left:155%">
+							<div class="overlay" style="left:150%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
 						</div>
 						<div id="Mechanical_Team" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:145%; left:20%;">
 							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; " id="mechteam">Mechanical Team</h2>
-							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
-							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act1 team3" style="left:20%">
+							<div class="overlay" style="left:15%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act2 team3" style="left:65%">
+							<div class="overlay" style="left:60%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act3 team3" style="left:110%">
+							<div class="overlay" style="left:105%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act4 team3" style="left:155%">
+							<div class="overlay" style="left:150%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
 						</div>
 						<div id="Electrical_Team" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:205%; left:20%;">
 							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; " id="electteam">Electrical Team</h2>
-							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
-							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act1 team4" style="left:20%">
+							<div class="overlay" style="left:15%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act2 team4" style="left:65%">
+							<div class="overlay" style="left:60%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act3 team4" style="left:110%">
+							<div class="overlay" style="left:105%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container"> 
+								<img src="img_avatar.png" alt="Avatar" class="image act4 team4" style="left:155%">
+							<div class="overlay" style="left:150%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
 						</div>
 						<div id="Bussiness_Team" style="background-color:#f2f2f2; width:70%; height:50%; position:absolute; top:265%; left:20%;">
-							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; " id="bussiness">Bussiness_Team</h2>
-							<img style="position:absolute; left:5%;padding: 100px 5%; display:inline-block;">  
-							<img style="position:absolute;left:25%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:45%;padding:100px 5%; display:inline-block;">
-							<img style="position:absolute;left:65%;padding:100px 5%; display:inline-block;">
+							<h2 style="position:absolute;color:#1f1f2e; padding:5px 20px; " id="bussteam">Bussiness team</h2>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act1 team5" style="left:20%">
+							<div class="overlay" style="left:15%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act2 team5" style="left:65%">
+							<div class="overlay" style="left:60%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act3 team5" style="left:110%">
+							<div class="overlay" style="left:105%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
+							<div class="container">
+								<img src="img_avatar.png" alt="Avatar" class="image act4 team5" style="left:155%">
+							<div class="overlay" style="left:150%">
+							<div class="text">Hello World</div>
+							</div>
+							</div>
 						</div>
 
 					</div>
