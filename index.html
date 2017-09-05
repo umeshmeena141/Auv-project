@@ -46,28 +46,121 @@
           
 		</script>
 		<style>
-			#underline {
-				width:100%;
-				height:1px;
-				background:#a6a6a6;
-				margin-bottom:5px;
-			}
-			.active1 {
-				color:white;
-				background:#3b5998;
-			}
-			.news {
-				height:80px;
-				width:100%;
-				clear: left;
-				margin:auto;line-height:80px;
-			}
-		</style>
+		
+		#NEWS {
+			background: #f2f2f2;
+			float:left;
+			width:50%;
+			height:500px;
+			display:inline-block;
+			position:relative; 
+		}
+		#NEWS1 {
+			color:#00a1e6;
+			padding:50px 25px 25px 0px;
+			margin-left:7%;
+			width:80%;
+			font-size:1.8em;
+		}
+		#NEWS2 {
+			height:240px;
+			width:80%;
+			border:1px solid rgba(28, 139, 176, 0.3);
+			margin:auto;
+		}
+		.NEWS21 {
+			background:rgba(17,222,175,.04);
+			width:100%;
+			height:80px;
+			color:#737373;
+			font-size:1.4em;
+			line-height:80px;
+			border-bottom:1px solid rgba(28, 139, 176, 0.3);
+			padding-left:20px;
+			padding-right:12px;
+		}
+		.NEWS21:hover {
+			background:rgba(17,222,175,.07);
+			cursor:pointer;
+		}
+		.NEWS21 span {
+			float:right;
+			font-size:0.8em;
+		}
+		#NEWS3 {
+			color:#4dc9ff;
+			background:rgba(5, 12, 26, .2);
+			width:150px;
+			padding:10px 0px;
+			text-align:center;
+			border: 1px solid rgba(28, 139, 176, 0.3);
+			font-size:1.0em;
+			margin-left:7%;
+			margin-top:25px;
+			margin-bottom:55px;
+		}
+		#NEWS3:hover {
+			background:#4dc9ff;
+			color:#050c1a;
+			cursor:pointer;
+		}
+		#MEDIA {
+			background: #f2f2f2;
+			float:left;
+			width:50%;
+			display:inline-block;
+			position:relative;
+			height:500px;
+		}
+		#MEDIA1 {
+			color:#00a1e6;
+			padding:50px 25px 25px 0px;
+			margin-left:7%;
+			width:80%;
+			font-size:1.8em;
+		}
+		#MEDIA2 {
+			width:50px;
+			margin-left:10%;
+			float:left;
+		}
+		.MEDIA21 {
+			color:#4dc9ff;
+			background:rgba(5, 12, 26, .2);
+			width:100%;
+			padding:10px 0px;
+			text-align:center;
+			border:1px solid rgba(28, 139, 176, 0.3); 
+			font-size:1.0em;
+		}
+		.MEDIA21:hover {
+			background:#4dc9ff;
+			color:#050c1a;
+			cursor:pointer;
+		}
+		.active2 {
+			background:#4dc9ff;
+			color:#050c1a;
+		}
+		#MEDIA3 {
+			margin-left:0%;
+			float:left;
+			height:300px;
+			line-height:300px;
+			padding:10px;
+			border:1px solid rgba(28, 139, 176, 0.3);
+		}
+		.SOC {
+			height:280px;
+			width:400px;
+			overflow:hidden;
+			border-radius:5px;
+		}
+	</style>
 	</head>
 	<body class="homepage">
-
 		<!-- Header Wrapper -->
-			<div class="wrapper style1">
+		<div class="wrapper style1">
 			<!-- Header -->
 				<div id="header" style="position:fixed;z-index:10; ">
 					<div class="container" style="z-index:10">
@@ -119,7 +212,7 @@
 				
 			<!-- Banner -->
 			<div id="banner">
-				<section class="container">
+				<section class="container" >
 					<img src="images/logo.jpg" alt="AUV IITK" style="width:304px;">
 					<span><b>AUTONOMOUS UNDERWATER VEHICLE</b></span>
 					<p>Indian Institute of Technology, Kanpur</p>
@@ -127,87 +220,69 @@
 			</div>
 		</div>
 		
-		<!-- Section Two -->
-			<div class="wrapper style2" style="background:f2f2f2;padding:50px;">
-				<section class="container" >
-					<div class="row double">
-						<div class="6u">
-							<header class="major">
-								<span class="button active1" style="display:block;" ><b>Latest News</b></span>
-								<span class="byline" style="color:#555555;">
-									<div class="news" style="border-bottom:1px solid #3b5998;">Latest News<span style="background:;float:right;font-size:0.8em;">DD/MM/YY</span></div>
-									<div class="news" style="border-bottom:1px solid #3b5998;">Latest News<span style="background:;float:right;font-size:0.8em;">DD/MM/YY</span></div>
-									<div class="news" style="border-bottom:1px solid #3b5998;">Latest News<span style="background:;float:right;font-size:0.8em;">DD/MM/YY</span></div>
-									
-								</span>
-								<span class="button" style="display:block;" ><b>View All</b></span>
-							</header>
-						</div>
-						<div class="6u">
-							<span  onclick="fb1()" class="button" id="b1" style="display:inline-block;cursor:pointer;margin-bottom:25px;width:250px;"><b>Facebook</b></span>
-							<span onclick="twit1()" class="button" id="b2" style="display:inline-block;cursor:pointer;margin-bottom:25px;width:250px;"><b>Twitter</b></span>
-							
-							<iframe id="fb" class="av_facebook_widget SOC"  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=500&height=320&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="500" height="320" scrolling="no" frameborder="0" allowTransparency="true" colorscheme="dark">
-							</iframe>		
-							<div id = "twit" class="SOC" >           
-							<a class="twitter-timeline" data-width="500" data-height="320" href="https://twitter.com/googlecloud">Tweets by googlecloud</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>        
-							</div>
-						</div>
-					</div>
-				</section>
+		<!--color gradients-->		
+		<!--first half-->
+		<div id="NEWS">
+				<div id="NEWS1"><b>LATEST NEWS</b></div> 
+				<div id="NEWS2">
+					<div class="NEWS21"><b>LATEST NEWS 1</b><span>DD/MM/YY</span></div>
+					<div class="NEWS21"><b>LATEST NEWS 2</b><span>DD/MM/YY</span></div>
+					<div class="NEWS21"><b>LATEST NEWS 3</b><span>DD/MM/YY</span></div>
+				</div>
+				<div id="NEWS3"><b>VIEW ALL</b></div>
 			</div>
-
+		<!--second half-->	
+		<div id="MEDIA">
+				<div id="MEDIA1"><b>FOLLOW US ON SOCIAL MEDIA</b></div>
+				<div id="MEDIA2">
+					<div class="MEDIA21 fa fa-facebook" onclick="fb1()"></div>
+					<div class="MEDIA21 fa fa-twitter" onclick="twit1()"></div>
+				</div>
+				<div id="MEDIA3">
+					<div class="SOC">
+						<iframe id="fb" class="av_facebook_widget"  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=400&height=280&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="400" height="280" scrolling="no" frameborder="0" allowTransparency="true" colorscheme="dark" style="float:left">
+						</iframe>
+					</div>
+					<div id = "twit" class="SOC">           
+						<a class="twitter-timeline" data-width="400" data-height="280" href="https://twitter.com/googlecloud">Tweets by googlecloud</a>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>    
+					</div>
+				</div>
+			</div>
 	<!-- Footer -->
-		<div id="footer" style="background:#222222; color:#f2f2f2; height:40px;width:100%;padding:0;margin:0;">
-			<ul class="icons" style="padding:20px 0px; ">
+		<div id="footer" style="text-align:center;">
+			<ul class="icons" style="background:#222222; padding:0px 0px;margin:0; ">
+					
 					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="fa fa-github"><span>Github</span></a></li>
 					<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+					<li><a href="#" class="fa fa-youtube"><span>Youtube</span></a></li>
+					<li><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>
+					<li><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
 				</ul>
 		</div>
-	<script>
-			document.getElementById("twit").style.display = "none";
-			document.getElementById("b1").className = "button active1";
+		<script>
+			
 			var x = document.getElementsByClassName("SOC");
+			var y = document.getElementsByClassName("MEDIA21");
 			for(var i=0; i<x.length; i++)
 				x[i].style.display = "none";
+			y[0].className += " active2";
 			x[0].style.display = "block";
 			function fb1() {
 				for(var i=0; i<x.length; i++)
 					x[i].style.display = "none";
 				x[0].style.display = "block";
-				document.getElementById("b2").className = "button";
-				document.getElementById("b1").className = "button active1";
+				y[0].className += " active2";
+				y[1].className = "MEDIA21 fa fa-twitter";
 			}
 			function twit1() {
 				for(var i=0; i<x.length; i++)
 					x[i].style.display = "none";
 				x[1].style.display = "block";
-				document.getElementById("b1").className = "button";
-				document.getElementById("b2").className = "button active1";
-			}
-			var n, init = 0;
-			function news1() {
-				n = document.getElementsByClassName("news");
-				for(var i=0; i<n.length; i++) {
-					n.style.display = "none";
-				}
-				for(var i=0; i<5; i++) {
-					n.style.display = "block";
-				}
-				news2();
-			}
-			function news2() {
-				if(init>=n.length) {
-					init = 0;
-				}
-				n[init].style.display = "none";
-				var init2 = init+4;
-				if(init2 >= n.length)
-					init2 -= n.length;
-				n[init2].style.display="block";
-				setTimeout(news2(), 3000);
+				y[1].className += " active2";
+				y[0].className = "MEDIA21 fa fa-facebook";
 			}
 		</script>
 	</body>
