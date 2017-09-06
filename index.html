@@ -51,36 +51,34 @@
 			background: #f2f2f2;
 			float:left;
 			width:50%;
-			height:500px;
+			min-height:500px;
 			display:inline-block;
 			position:relative; 
 		}
 		#NEWS1 {
-			color:#00a1e6;
+			color:#1744b5;
 			padding:50px 25px 25px 0px;
 			margin-left:7%;
 			width:80%;
 			font-size:1.8em;
 		}
 		#NEWS2 {
-			height:240px;
 			width:80%;
-			border:1px solid rgba(28, 139, 176, 0.3);
+			border:1px solid rgba(26, 26, 26, 0.3);
 			margin:auto;
 		}
 		.NEWS21 {
-			background:rgba(17,222,175,.04);
+			
 			width:100%;
-			height:80px;
-			color:#737373;
+			padding:20px 0px;
+			color:#444444;
 			font-size:1.4em;
-			line-height:80px;
-			border-bottom:1px solid rgba(28, 139, 176, 0.3);
+			border-bottom:1px solid rgba(26, 26, 26, 0.3);
 			padding-left:20px;
 			padding-right:12px;
 		}
 		.NEWS21:hover {
-			background:rgba(17,222,175,.07);
+			
 			cursor:pointer;
 		}
 		.NEWS21 span {
@@ -88,24 +86,24 @@
 			font-size:0.8em;
 		}
 		#NEWS3 {
-			color:#4dc9ff;
+			color:#1744b5;
 			background:rgba(5, 12, 26, .2);
 			width:150px;
 			padding:10px 0px;
 			text-align:center;
-			border: 1px solid rgba(28, 139, 176, 0.3);
+			border: 2px solid rgba(29, 56, 148, 0.7);
 			font-size:1.0em;
 			margin-left:7%;
 			margin-top:25px;
 			margin-bottom:55px;
 		}
 		#NEWS3:hover {
-			background:#4dc9ff;
-			color:#050c1a;
+			background:#1744b5;
+			color:#c1c8e4;
 			cursor:pointer;
 		}
 		#MEDIA {
-			background: #f2f2f2;
+			background:rgba(5, 12, 26, 1.0);
 			float:left;
 			width:50%;
 			display:inline-block;
@@ -113,7 +111,7 @@
 			height:500px;
 		}
 		#MEDIA1 {
-			color:#00a1e6;
+			color:#1744b5;
 			padding:50px 25px 25px 0px;
 			margin-left:7%;
 			width:80%;
@@ -125,7 +123,7 @@
 			float:left;
 		}
 		.MEDIA21 {
-			color:#4dc9ff;
+			color:#1744b5;
 			background:rgba(5, 12, 26, .2);
 			width:100%;
 			padding:10px 0px;
@@ -134,13 +132,13 @@
 			font-size:1.0em;
 		}
 		.MEDIA21:hover {
-			background:#4dc9ff;
+			background:#1744b5;
 			color:#050c1a;
 			cursor:pointer;
 		}
 		.active2 {
-			background:#4dc9ff;
-			color:#050c1a;
+			background:#1744b5;
+			color:#f2f2f2;
 		}
 		#MEDIA3 {
 			margin-left:0%;
@@ -158,58 +156,47 @@
 		}
 	</style>
 	</head>
-	<body class="homepage">
-		<!-- Header Wrapper -->
+	<body class="homepage"><!-- Header Wrapper -->
 		<div class="wrapper style1">
+		
 			<!-- Header -->
-				<div id="header" style="position:fixed;z-index:10; ">
-					<div class="container" style="z-index:10">
-						<!-- Nav -->
-							<nav id="nav" style="z-index:10">
-								<ul >
-									<li class="active" id="index1"><a href="index.html">Home</a></li>
-									<li><a href="left-sidebar.html">Blog</a></li>
-									<li>
-										<a href="">Vehicle</a>
-										<ul>
-											<li>
-												<a href="">Competition Vehicles</a>
-												<ul>
-													<li><a href="#">Varun</a></li>
-													
-												</ul>
-											</li>
-											<li>
-												<a href="">Prototypes</a>
-												<ul>
-													<li><a href="#">Anahita 2.0</a></li>
-													<li><a href="#">Anahita 1.0</a></li>
-													
-												</ul>
-											</li>
+			<div id="header" style="position:fixed;z-index:10; ">
+				<div class="container" style="z-index:10"><!-- Nav -->
+					<nav id="nav" style="z-index:10">
+						<ul >
+							<li class="active" id="index1"><a href="index.html">Home</a></li>
+							<li><a href="left-sidebar.html">Blog</a></li>
+							<li><a href="">Vehicle</a>
+								<ul>
+									<li><a href="">Competition Vehicles</a>
+										<ul><li><a href="#">Varun</a></li>
 										</ul>
 									</li>
-									<li><a href="right-sidebar.html">Sponsors</a></li>
-									<li>
-										<a href="">Team</a>
-										<ul>
-											<li><a href="#">2017-18</a></li>
-											<li>
-												<a href="">Alumni</a>
-												<ul>
-													<li><a href="#">2016-17</a></li>
-													<li><a href="#">2014-16</a></li>
-													
-												</ul>
-											</li>										</ul>
+									<li><a href="">Prototypes</a>
+										<ul><li><a href="#">Anahita 2.0</a></li>
+											<li><a href="#">Anahita 1.0</a></li>
+										</ul>
 									</li>
-									<li><a href="no-sidebar.html">Contact Us</a></li>
 								</ul>
-							</nav>
-	
-					</div>
+							</li>
+							<li><a href="right-sidebar.html">Sponsors</a></li>
+							<li><a href="">Team</a>
+								<ul>
+									<li><a href="#">2017-18</a></li>
+									<li>
+										<a href="">Alumni</a>
+										<ul><li><a href="#">2016-17</a></li>
+											<li><a href="#">2014-16</a></li>
+										</ul>
+									</li>										
+								</ul>
+							</li>
+							<li><a href="no-sidebar.html">Contact Us</a></li>
+						</ul>
+					</nav>
 				</div>
-				
+			</div>
+			
 			<!-- Banner -->
 			<div id="banner">
 				<section class="container" >
@@ -223,47 +210,46 @@
 		<!--color gradients-->		
 		<!--first half-->
 		<div id="NEWS">
-				<div id="NEWS1"><b>LATEST NEWS</b></div> 
-				<div id="NEWS2">
-					<div class="NEWS21"><b>LATEST NEWS 1</b><span>DD/MM/YY</span></div>
-					<div class="NEWS21"><b>LATEST NEWS 2</b><span>DD/MM/YY</span></div>
-					<div class="NEWS21"><b>LATEST NEWS 3</b><span>DD/MM/YY</span></div>
-				</div>
-				<div id="NEWS3"><b>VIEW ALL</b></div>
+			<div id="NEWS1"><b>LATEST NEWS</b></div> 
+			<div id="NEWS2">
+				<div class="NEWS21"><b>LATEST NEWS 1</b><span><b>DD/MM/YY</b></span></div>
+				<div class="NEWS21"><b>LATEST NEWS 2</b><span><b>DD/MM/YY</b></span></div>
+				<div class="NEWS21"><b>LATEST NEWS 3</b><span><b>DD/MM/YY</b></span></div>
 			</div>
+			<div id="NEWS3"><b>VIEW ALL</b></div>
+		</div>
 		<!--second half-->	
 		<div id="MEDIA">
-				<div id="MEDIA1"><b>FOLLOW US ON SOCIAL MEDIA</b></div>
-				<div id="MEDIA2">
-					<div class="MEDIA21 fa fa-facebook" onclick="fb1()"></div>
-					<div class="MEDIA21 fa fa-twitter" onclick="twit1()"></div>
+			<div id="MEDIA1"><b>FOLLOW US ON SOCIAL MEDIA</b></div>
+			<div id="MEDIA2">
+				<div class="MEDIA21 fa fa-facebook" onclick="fb1()"></div>
+				<div class="MEDIA21 fa fa-twitter" onclick="twit1()"></div>
+			</div>
+			<div id="MEDIA3">
+				<div class="SOC">
+					<iframe id="fb" class="av_facebook_widget"  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=400&height=280&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="400" height="280" scrolling="no" frameborder="0" allowTransparency="true" colorscheme="dark" style="float:left">
+					</iframe>
 				</div>
-				<div id="MEDIA3">
-					<div class="SOC">
-						<iframe id="fb" class="av_facebook_widget"  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=400&height=280&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="400" height="280" scrolling="no" frameborder="0" allowTransparency="true" colorscheme="dark" style="float:left">
-						</iframe>
-					</div>
-					<div id = "twit" class="SOC">           
-						<a class="twitter-timeline" data-width="400" data-height="280" href="https://twitter.com/googlecloud">Tweets by googlecloud</a>
-						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>    
-					</div>
+				<div id = "twit" class="SOC">           
+					<a class="twitter-timeline" data-width="400" data-height="280" href="https://twitter.com/googlecloud">Tweets by googlecloud</a>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>    
 				</div>
 			</div>
-	<!-- Footer -->
+		</div>
+		
+		<!-- Footer -->
 		<div id="footer" style="text-align:center;">
-			<ul class="icons" style="background:#222222; padding:0px 0px;margin:0; ">
-					
-					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-					<li><a href="#" class="fa fa-github"><span>Github</span></a></li>
-					<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
-					<li><a href="#" class="fa fa-youtube"><span>Youtube</span></a></li>
-					<li><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>
-					<li><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
-				</ul>
+			<ul class="icons" style="background:black;padding:0px 0px;margin:0; ">
+				<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+				<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+				<li><a href="#" class="fa fa-github"><span>Github</span></a></li>
+				<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+				<li><a href="#" class="fa fa-youtube"><span>Youtube</span></a></li>
+				<li><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>
+				<li><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
+			</ul>
 		</div>
 		<script>
-			
 			var x = document.getElementsByClassName("SOC");
 			var y = document.getElementsByClassName("MEDIA21");
 			for(var i=0; i<x.length; i++)
