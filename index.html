@@ -48,7 +48,7 @@
 		<style>
 		
 		#NEWS {
-			background: #f2f2f2;
+			background: white;
 			float:left;
 			width:50%;
 			min-height:500px;
@@ -56,54 +56,33 @@
 			position:relative; 
 		}
 		#NEWS1 {
-			color:#1744b5;
+			color:#00a1e6;
 			padding:50px 25px 25px 0px;
 			margin-left:7%;
 			width:80%;
 			font-size:1.8em;
 		}
-		#NEWS2 {
-			width:80%;
-			border:1px solid rgba(26, 26, 26, 0.3);
-			margin:auto;
-		}
-		.NEWS21 {
-			
-			width:100%;
-			padding:20px 0px;
-			color:#444444;
-			font-size:1.4em;
-			border-bottom:1px solid rgba(26, 26, 26, 0.3);
-			padding-left:20px;
-			padding-right:12px;
-		}
-		.NEWS21:hover {
-			
-			cursor:pointer;
-		}
-		.NEWS21 span {
-			float:right;
-			font-size:0.8em;
-		}
 		#NEWS3 {
-			color:#1744b5;
-			background:rgba(5, 12, 26, .2);
+			color:#00a1e6;
+			background:;
 			width:150px;
 			padding:10px 0px;
 			text-align:center;
-			border: 2px solid rgba(29, 56, 148, 0.7);
+			border:2px solid #00a1e6;
 			font-size:1.0em;
 			margin-left:7%;
 			margin-top:25px;
 			margin-bottom:55px;
+			float:left;
+			clear:left;
 		}
 		#NEWS3:hover {
-			background:#1744b5;
-			color:#c1c8e4;
+			background:#00a1e6;
+			color:#f2f2f2;
 			cursor:pointer;
 		}
 		#MEDIA {
-			background:rgba(5, 12, 26, 1.0);
+			background:#f2f2f2;
 			float:left;
 			width:50%;
 			display:inline-block;
@@ -111,7 +90,7 @@
 			height:500px;
 		}
 		#MEDIA1 {
-			color:#1744b5;
+			color:#00a1e6;
 			padding:50px 25px 25px 0px;
 			margin-left:7%;
 			width:80%;
@@ -119,40 +98,61 @@
 		}
 		#MEDIA2 {
 			width:50px;
-			margin-left:10%;
+			margin-left:-25px;
 			float:left;
 		}
 		.MEDIA21 {
-			color:#1744b5;
+			color:#00a1e6;
 			background:rgba(5, 12, 26, .2);
 			width:100%;
-			padding:10px 0px;
+			padding:12px 0px;
 			text-align:center;
 			border:1px solid rgba(28, 139, 176, 0.3); 
 			font-size:1.0em;
 		}
 		.MEDIA21:hover {
-			background:#1744b5;
+			background:#00a1e6;
 			color:#050c1a;
 			cursor:pointer;
 		}
 		.active2 {
-			background:#1744b5;
+			background:#00a1e6;
 			color:#f2f2f2;
 		}
 		#MEDIA3 {
-			margin-left:0%;
+			margin-left:7%;
 			float:left;
-			height:300px;
-			line-height:300px;
+			height:260px;
+			line-height:260px;
+			border:1px solid #00a1e6;
 			padding:10px;
-			border:1px solid rgba(28, 139, 176, 0.3);
 		}
 		.SOC {
-			height:280px;
-			width:400px;
-			overflow:hidden;
+			height:240px;
+			width:500px;
 			border-radius:5px;
+		}
+		#NEWS2 {
+			margin:auto;
+			border-radius:5px;
+			background:#f2f2f2;
+		}
+		.NEWS21 {
+			position:relative;
+			display:block;
+			height:63px;
+			line-height:63px;
+			top:0px;
+			font-size:1.2em;
+			background:#f2f2f2;
+			cursor:pointer;
+			color:#888888;
+			padding-left:12px;
+		}
+		.NEWS21 span {
+			float:right;
+			font-size:0.8em;
+			margin-right:12px;
 		}
 	</style>
 	</head>
@@ -210,31 +210,40 @@
 		<!--color gradients-->		
 		<!--first half-->
 		<div id="NEWS">
-			<div id="NEWS1"><b>LATEST NEWS</b></div> 
-			<div id="NEWS2">
-				<div class="NEWS21"><b>LATEST NEWS 1</b><span><b>DD/MM/YY</b></span></div>
-				<div class="NEWS21"><b>LATEST NEWS 2</b><span><b>DD/MM/YY</b></span></div>
-				<div class="NEWS21"><b>LATEST NEWS 3</b><span><b>DD/MM/YY</b></span></div>
+			<div id="NEWS1"><b>ABOUT US</b></div>
+			<div style="text-align:justify; font-size:1.0em; margin-left:7%; width:70%;">
+				&emsp;&emsp;With the constant need to push technologies to a new level, AUV- IITK aims to venture along the path to bring in innovative solutions and ideas in marine robotics by designing its own autonomous systems to perform tasks underwater, and inculcate interest in underwater robotics through participation in competitions.<br>
+				&emsp;&emsp;Over the past years, the team has witnessed a close collaboration between students from various departments coming and sharing ideas; creating a small yet strong network of people who are eagerly looking for a low- cost solution to large- scale problems.
 			</div>
-			<div id="NEWS3"><b>VIEW ALL</b></div>
 		</div>
 		<!--second half-->	
 		<div id="MEDIA">
-			<div id="MEDIA1"><b>FOLLOW US ON SOCIAL MEDIA</b></div>
+			<div id="MEDIA1"><b>LATEST NEWS</b></div>
 			<div id="MEDIA2">
+				<div class="MEDIA21 fa fa-edit" onclick="lanews()"></div>
 				<div class="MEDIA21 fa fa-facebook" onclick="fb1()"></div>
 				<div class="MEDIA21 fa fa-twitter" onclick="twit1()"></div>
 			</div>
+			<div 
 			<div id="MEDIA3">
 				<div class="SOC">
-					<iframe id="fb" class="av_facebook_widget"  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=400&height=280&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="400" height="280" scrolling="no" frameborder="0" allowTransparency="true" colorscheme="dark" style="float:left">
+					<div id="NEWS2" >
+						<div class="NEWS21" style="border-bottom:1px solid #00a1e6">LATEST NEWS 1<span>DD/MM/YY</span></div>
+						<div class="NEWS21" style="border-bottom:1px solid #00a1e6">LATEST NEWS 2<span>DD/MM/YY</span></div>
+						<div class="NEWS21" style="border-bottom:1px solid #00a1e6">LATEST NEWS 3<span>DD/MM/YY</span></span></div>
+						<div class="NEWS21">LATEST NEWS 4<span>DD/MM/YY</span></div>
+					</div>
+				</div>
+				<div class="SOC">
+					<iframe id="fb" class="av_facebook_widget"  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Froboclubiitkanpur%2F&tabs=timeline&width=500&height=240&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=167782130461571" width="500" height="240" scrolling="no" frameborder="0" allowTransparency="true" colorscheme="dark" style="float:left">
 					</iframe>
 				</div>
 				<div id = "twit" class="SOC">           
-					<a class="twitter-timeline" data-width="400" data-height="280" href="https://twitter.com/googlecloud">Tweets by googlecloud</a>
-					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>    
+					<a class="twitter-timeline" data-width="500" data-height="240" href="https://twitter.com/googlecloud">Tweets by googlecloud</a>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 			</div>
+			<div id="NEWS3"><b>VIEW ALL</b></div> 
 		</div>
 		
 		<!-- Footer -->
@@ -256,19 +265,39 @@
 				x[i].style.display = "none";
 			y[0].className += " active2";
 			x[0].style.display = "block";
+			document.getElementById("MEDIA3").style.padding = "0px";
+			function lanews() {
+				for(var i=0; i<x.length; i++)
+					x[i].style.display = "none";
+				document.getElementById("MEDIA3").style.padding = "0px";
+				x[0].style.display = "block";
+				y[0].className += " active2";
+				y[1].className = "MEDIA21 fa fa-facebook";
+				y[2].className = "MEDIA21 fa fa-twitter";
+				document.getElementById("MEDIA1").innerHTML = "<b>LATEST NEWS</b>";
+				document.getElementById("NEWS3").style.display="block";
+			}
 			function fb1() {
 				for(var i=0; i<x.length; i++)
 					x[i].style.display = "none";
-				x[0].style.display = "block";
-				y[0].className += " active2";
-				y[1].className = "MEDIA21 fa fa-twitter";
+				document.getElementById("MEDIA3").style.padding = "10px";
+				x[1].style.display = "block";
+				y[1].className += " active2";
+				y[0].className = "MEDIA21 fa fa-edit";
+				y[2].className = "MEDIA21 fa fa-twitter";
+				document.getElementById("MEDIA1").innerHTML = "<b>FOLLOW US ON SOCIAL MEDIA</b>";
+				document.getElementById("NEWS3").style.display="none";
 			}
 			function twit1() {
 				for(var i=0; i<x.length; i++)
 					x[i].style.display = "none";
-				x[1].style.display = "block";
-				y[1].className += " active2";
-				y[0].className = "MEDIA21 fa fa-facebook";
+				document.getElementById("MEDIA3").style.padding = "10px";
+				x[2].style.display = "block";
+				y[2].className += " active2";
+				y[0].className = "MEDIA21 fa fa-edit";
+				y[1].className = "MEDIA21 fa fa-facebook";
+				document.getElementById("MEDIA1").innerHTML = "<b>FOLLOW US ON SOCIAL MEDIA</b>";
+				document.getElementById("NEWS3").style.display="none";
 			}
 		</script>
 	</body>
