@@ -2,12 +2,12 @@
 var actno;
  $(document).ready(function(){
 	$(".overlay").hover(function(){
-			$(".text").eq(0).fadeTo("1",100);
-		/* //$(this).animate({width:"38%",left:"-=4%",paddingTop:"-=1%",zIndex:"9"},300);
-			if($(this).hasClass("act1")){
+		$(this.text).fadeIn();
+		//$(this).animate({width:"38%",left:"-=4%",paddingTop:"-=1%",zIndex:"9"},300);
+			/*if($(this).hasClass("act1")){
 				if($(this).hasClass("team1")){
-					$(".text").eq(0).fadeTo("1",100);
-					actno=0;
+					$(".text").eq(0).fadeIn();
+					//actno=0;
 				}
 				else if ($(this).hasClass("team2")){
 					//$('.overlay').eq(4).delay(400).animate({height:"100%",zIndex:"9"},10);
@@ -130,7 +130,7 @@ var actno;
 					$(".text").eq(19).fadeTo("1",100);
 					actno=19;
 				}
-			}	*/	 
+			}	*/ 
 	},
 		function(){
 			//$(this).animate({width:"30%",left:"+=4%",paddingTop:"+=1%",zIndex:"7"},100);
