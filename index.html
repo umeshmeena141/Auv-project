@@ -91,9 +91,9 @@
 		}
 		#MEDIA0 {
 			position:absolute;
-			margin-left:5%;
+			margin-left:10%;
 			margin-top:25px;
-			width:90%;
+			width:80%;
 			background:#ebebeb;
 			height:400px;
 			z-index:-1;
@@ -101,7 +101,7 @@
 		.MEDIA1 {
 			color:#1e64ae;
 			padding:50px 25px 25px 0px;
-			margin-left:9%;
+			margin-left:12%;
 			width:80%;
 			font-size:1.8em;
 		}
@@ -137,7 +137,6 @@
 		}
 		.SOC {
 			overflow:hidden;
-			width:500px;
 		}
 		#NEWS2 {
 			margin:auto;
@@ -173,7 +172,7 @@
 					<nav id="nav" style="z-index:10">
 						<ul >
 							<li class="active" id="index1"><a href="index.html">Home</a></li>
-							<li><a href="left-sidebar.html">Blog</a></li>
+							<li><a href="">Blog</a></li>
 							<li><a href="">Vehicle</a>
 								<ul>
 									<li><a href="">Competition Vehicles</a>
@@ -187,7 +186,7 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="right-sidebar.html">Sponsors</a></li>
+							<li><a href="">Sponsors</a></li>
 							<li><a href="">Team</a>
 								<ul>
 									<li><a href="#">2017-18</a></li>
@@ -199,7 +198,7 @@
 									</li>										
 								</ul>
 							</li>
-							<li><a href="no-sidebar.html">Contact Us</a></li>
+							<li><a href="">Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -220,7 +219,7 @@
 		<!--first half-->
 		<div id="NEWS">
 			<div id="NEWS1"><b>ABOUT US</b></div>
-			<div style="text-align:justify; font-size:1.0em; margin-left:7%; width:80%;">
+			<div style="text-align:justify; font-size:1.0em; margin-left:10%; width:80%;">
 				&emsp;&emsp;With the constant need to push technologies to a new level, AUV- IITK aims to venture along the path to bring in innovative solutions and ideas in marine robotics by designing its own autonomous systems to perform tasks underwater, and inculcate interest in underwater robotics through participation in competitions.<br>
 				&emsp;&emsp;Over the past years, the team has witnessed a close collaboration between students from various departments coming and sharing ideas; creating a small yet strong network of people who are eagerly looking for a low- cost solution to large- scale problems. With its numbers only increasing every year, there are currently eighteen people, in total, who are looking over the mechanical, electrical and programming aspects of the project.
 			</div>
@@ -271,8 +270,10 @@
 			q = window.innerWidth/4 - 75;
 			q += "px";
 			document.getElementById("MEDIA2").style.left = q;
-			var r = 0.7 * window.innerWidth;
+			var r = 0.73 * window.innerWidth/2;
+			r += "px";
 			document.getElementById("NEWS2").style.width = r;
+			
 			var x = document.getElementsByClassName("SOC");
 			var y = document.getElementsByClassName("MEDIA21");
 			var z = document.getElementsByClassName("MEDIA1");
