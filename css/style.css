@@ -10,7 +10,7 @@
 /* Basic */
 
 	body {
-		background: #3b3b3b;
+		background: #13405f;
 	}
 
 		body.loading * {
@@ -108,6 +108,7 @@
 	header.major {
 		padding-bottom: 3em;
 		text-align: center;
+		text-transform: uppercase;
 	}
 
 		header.major h2 {
@@ -280,7 +281,7 @@
 				text-decoration: none;
 				font-size: 2em;
 				color: inherit;
-				opacity: 0.5;
+				opacity: 0.2;
 				-moz-transition: all 0.35s ease-in-out;
 				-webkit-transition: all 0.35s ease-in-out;
 				-o-transition: all 0.35s ease-in-out;
@@ -473,7 +474,7 @@
 
 		.wrapper.style1 {
 			padding: 0em;
-			background: white url(../images/auvbot1.jpg) no-repeat;
+			background: black url(../images/auvbot2.jpg) no-repeat;
 			background-size: cover;
 		}
 
@@ -730,6 +731,8 @@
 	#footer {
 		text-align: center;
 		color: white;
+		top:4em;
+		position:relative;
 	}
 
 		#footer hr {
@@ -758,7 +761,7 @@
 		position: relative;
 		text-transform: uppercase;
 		text-align: center;
-		padding: 3em 0em 3em 0em;
+		padding: 1em 0em 1em 0em;
 		color: inherit;
 		opacity: .40;
 	}
