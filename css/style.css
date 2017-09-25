@@ -109,11 +109,10 @@
 		padding-top: 1em;
 		padding-bottom: 2em;
 		text-align: center;
-		text-transform: uppercase;
 	}
 
 		header.major h2 {
-			font-size: 2.6em;
+			font-size: 2.0em;
 			font-weight: 700;
 		}
 
@@ -426,8 +425,7 @@
 		letter-spacing: 1px;
 		text-align: left;
 		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 1.4em;
+		font-size: 1.1em;
 		-moz-transition: all 0.35s ease-in-out;
 		-webkit-transition: all 0.35s ease-in-out;
 		-o-transition: all 0.35s ease-in-out;
@@ -721,7 +719,7 @@
 		}
 
 			#main #sidebar .major h2 {
-				font-size: 1.8em;
+				font-size: 1.3em;
 			}
 
 /* Footer */
@@ -775,7 +773,7 @@
 		margin-bottom: 1em;
 		letter-spacing: 1px;
 		line-height: 1.4em;
-		text-transform: uppercase;
+		text-transform: ;
 		font-size: 1.8em;
 		font-weight: 400;
 	}
