@@ -1,8 +1,8 @@
  /* Hover And Overlay Function */
 var actno;
  $(document).ready(function(){
-	$(".overlay").hover(function(){
-		$(this.text).fadeIn();
+	$("a").hover(function(){
+		//$(this).css({"color":"black"});
 		//$(this).animate({width:"38%",left:"-=4%",paddingTop:"-=1%",zIndex:"9"},300);
 			/*if($(this).hasClass("act1")){
 				if($(this).hasClass("team1")){
@@ -137,6 +137,11 @@ var actno;
 			//$(".desc").eq(actno).animate({width:"30%",left:"+=4%",paddingTop:"+=1%",zIndex:"4"},100);
 			//$('.overlay').delay(100).animate({height:"0%",zIndex:"7"},10);
 			$(".text").eq(actno).fadeOut();
+			//if($(this)!=$(navhover)){
+				//$(this).css({"color":"white"});}
+			//else{
+				//$(this).css({"color":"white"});
+			//}
 		}
 	);
 }); 
