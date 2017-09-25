@@ -1,21 +1,21 @@
 var SA=[];		
 		SA[0]={
 			Name:"My Name",
-			Department: "ME",
+			Department: "Some branch",
 			Others: "example@iitk.ac.in",
 			img1:"images/avatar3.png",
 			img2:"images/avatar3.png"
 		}
 		SA[1]={
 			Name:"My Name",
-			Department: "CSE",
+            Department: "Some branch",
 			Others: "example@iitk.ac.in",
 			img1:"images/avatar3.png",
 			img2:"images/avatar3.png"
 		}
 		SA[2]={
 			Name:"My Name",
-			Department: "EE",
+            Department: "Some branch",
 			Others: "example@iitk.ac.in",
 			img1:"images/avatar3.png",
 			img2:"images/avatar3.png"

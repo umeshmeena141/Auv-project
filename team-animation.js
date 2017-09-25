@@ -5,7 +5,7 @@ function animate2(x,navhover){
 		}
 		else{
              $(navhover).css({ "color":"black"});
-             $(page[1]).css({ "color":"#ffff99"});
+             $(page[1]).css({ "color":"white"});
 			
 			 $('.desc1').fadeTo(100,'0');
 			 $(x).animate({top:'40%',height: '0.3%'},"200");
