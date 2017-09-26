@@ -10,7 +10,7 @@
 /* Basic */
 
 	body {
-		background:#164b83;
+		background:#1a1a1a;
 	}
 
 		body.loading * {
@@ -253,7 +253,8 @@
 		padding: 0;
 		list-style: none;
 		border-radius:5px;
-		background:#f2f2f2;
+		background:#d3d3f8;
+		border:1px solid #a596e9;
 	}
 
 		ul.default li {
@@ -415,16 +416,15 @@
 		-o-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: none;
 		width:100%;
-		color: #1e64ae;
-		background:#e6e6e6;
+		background: #2828bd;
+		color:#edeafb;
 		cursor: pointer;
 		display: inline-block;
 		text-transform:uppercase;
 		padding: 0.7em 0.2em;
 		letter-spacing: 1px;
-		text-align: left;
+		text-align: center;
 		text-decoration: none;
 		font-size: 1.1em;
 		-moz-transition: all 0.35s ease-in-out;
@@ -703,11 +703,11 @@
 		padding: 4em 0;
 	}
 
-		#main #content .major, #main #sidebar .major {
+		#main #content .major, #main #sidebar .major, #sidebar1 {
 			text-align: left;
 		}
 
-		#main #sidebar section {
+		#main #sidebar section{
 			margin-top: 0em;
 		}
 
@@ -715,7 +715,7 @@
 				margin-top: 0;
 			}
 
-		#main #sidebar .major {
+		#main #sidebar .major{
 			padding-bottom: 0.2em;
 		}
 

@@ -21,14 +21,37 @@
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
 		<style>
-		.active2 {
-			color: #1e64ae;
-		}
 		.dash {
 			width:100%;
-			height:2px;
-			background:#1e64ae;
+			height:3px;
+			background:#7c7cde;
 			margin-top:-3px;
+			border-radius:5px;
+		}
+		.auvMech {
+			display: inline-block;
+			margin-left: 30px;
+			margin-bottom: 30px;
+			float:left;
+			height: 220px;
+		}
+		.button1 {
+			padding:4px 8px;
+			float:left;
+			margin-left:2%;
+			margin-bottom:5px;
+			background:#00cc99;
+			border-radius:5px;
+			color:white;
+			font-weight:500;
+			cursor:pointer;
+			transition:0.35s ease;
+		}
+		.button1:hover {
+			background:#009973;
+		}
+		.button:hover {
+			background:#1a0c5a;
 		}
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
@@ -44,7 +67,7 @@
 						<ul >
 							<li id="index1"><a href="index.html">Home</a></li>
 							<li><a href="">Blog</a></li>
-							<li class="active"><a href="#">Vehicle</a>
+							<li class="active" style="color:white"><a href="#">Vehicle</a>
 								<ul>
 									<li><a href="">Competition Vehicles</a>
 										<ul><li id="varun1"><a href="varun.html">Varun</a></li>
@@ -88,14 +111,14 @@
 								</header>		
 								<div class="dash"></div>
 								<ul class="default" >
-									<li style="padding-top:1em;"><a href="#">Vehicle’s Frame</a></li>
-									<li><a href="#">Main Pressure Hull</a></li>
-									<li><a href="#">Customized Waterproof Casings</a></li>
-									<li><a href="#">Waterproof Connector</a></li>
-									<li><a href="#">Hull Internal</a></li>
-									<li><a href="#">Thrusters</a></li>
-									<li><a href="#">Pneumatics System</a></li>
-									<li style="padding-bottom:1em;"><a href="#">Design Optimization</a></li>
+									<li style="padding-top:1em;"><a href="#">- Vehicle’s Frame</a></li>
+									<li><a href="#">- Main Pressure Hull</a></li>
+									<li><a href="#">- Customized Waterproof Casings</a></li>
+									<li><a href="#">- Waterproof Connector</a></li>
+									<li><a href="#">- Hull Internal</a></li>
+									<li><a href="#">- Thrusters</a></li>
+									<li><a href="#">- Pneumatics System</a></li>
+									<li style="padding-bottom:1em;"><a href="#">- Design Optimization</a></li>
 								</ul>
 							</section>
 							<section>
@@ -104,38 +127,49 @@
 								</header>
 								<div class="dash"></div>
 								<ul class="default">
-									<li style="padding-top:1em;"><a href="#">Arduino</a></li>
-									<li><a href="#">Battery Management System</a></li>
-									<li><a href="#">Processor</a></li>
-									<li><a href="#">Inertial Measurement Units</a></li>
-									<li><a href="#">Pressure Sensor</a></li>
-									<li><a href="#">Motor Drivers</a></li>
-									<li style="padding-bottom:1em;"><a href="#">Vision</a></li>
+									<li style="padding-top:1em;"><a href="#">- Arduino</a></li>
+									<li><a href="#">- Battery Management System</a></li>
+									<li><a href="#">- Processor</a></li>
+									<li><a href="#">- Inertial Measurement Units</a></li>
+									<li><a href="#">- Pressure Sensor</a></li>
+									<li><a href="#">- Motor Drivers</a></li>
+									<li style="padding-bottom:1em;"><a href="#">- Vision</a></li>
 								</ul>
 							</section>
 							<section>
 								<header class="major">
 									<h2 onclick="soft()" class="button">Software</h2>
 								</header>
-								<div class="dash"></div>
+								<div class="dash" style="margin-top:-4px"></div>
 								<ul class="default">
-									<li style="padding-top:1em;"><a href="#">ROS (Robot Operating System)</a></li>
-									<li><a href="#">Sensor input nodes</a></li>
-									<li><a href="#">ROS-Accessories</a></li>
-									<li><a href="#">ROS BAG</a></li>
-									<li><a href="#">GUI</a></li>
-									<li style="padding-bottom:1em;"><a href="#">Control System</a></li>
+									<li style="padding-top:1em;"><a href="#">- ROS (Robot Operating System)</a></li>
+									<li><a href="#">- Sensor input nodes</a></li>
+									<li><a href="#">- ROS-Accessories</a></li>
+									<li><a href="#">- ROS BAG</a></li>
+									<li><a href="#">- GUI</a></li>
+									<li style="padding-bottom:1em;"><a href="#">- Control System</a></li>
 								</ul>
 							</section>
 						</div>
 
 						<!-- Content -->
-						<div id="content" class="8u skel-cell-important">
-							<section style="background:#f2f2f2; height:600px;" >
+						<div id="content" class="9u skel-cell-important">
+							<section style="background:#164b83; color:#3bdede; border-radius:5px;" >
 								<header class="major">
 									<h2 style="text-align:center;" id="head2">MECHANICAL</h2>								
 								</header>
-								
+								<img class="auvMech" src="images/auv_mech1.png" >
+								<img class="auvMech" src="images/auv_mech2.png">
+								<p style="clear:left; color:#e9fcfc; margin-left:3%; margin-right:3%; text-align:justify;">&emsp;Varun’s mechanical system comprises of an aluminum structural frame, pressure casings, and electromagnetic actuators. The mechanical parts were first designed in Solidworks and Autodesk Inventor and then improved using Ansys Workbench, before its final fabrication using in-house available facilities at the institute. The weight of Varun is currently 27.510 kg.</p>
+								<div class="button1">Vehicle’s Frame</div>
+								<div class="button1">Main Pressure Hull</div>
+								<div class="button1">Customized Waterproof Casings</div>
+								<div class="button1">Waterproof Connector</div>
+								<div class="button1">Hull Internal</div>
+								<div class="button1">Thrusters</div>
+								<div class="button1">Pneumatics System</div>
+								<div class="button1">Design Optimization</div>
+								<p style="clear:left;">&emsp;</p>
 							</section>
 						</div>
 						
@@ -173,7 +207,7 @@
 		<div id="footer">
 			<section class="container">
 				<header class="major">
-					<h2>Connect with us</h2>
+					<h2>CONNECT WITH US</h2>
 				</header>
 				<ul class="icons">
 					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
@@ -193,7 +227,6 @@
 			var x=document.getElementsByClassName("default");
 			var y=document.getElementsByClassName("button");
 			var z=document.getElementsByClassName("dash");
-			var a=document.getElementById("head2");
 			y[0].className += " active2";
 			for(var i=0; i<x.length; i++) {
 				x[i].style.display = "none";
@@ -211,7 +244,6 @@
 				y[0].className = "button active2";
 				z[0].style.width = "100%";
 				z[0].style.transition = "0.5s all ease";
-				a.innerHTML = "MECHANICAL";
 			}
 			function elec() {
 				for(var i=0; i<x.length; i++) {
@@ -222,7 +254,6 @@
 				y[1].className = "button active2";
 				z[1].style.width = "100%";
 				z[1].style.transition = "0.5s all ease";
-				a.innerHTML = "ELECTRICAL";
 			}
 			function soft() {
 				for(var i=0; i<x.length; i++) {
@@ -233,7 +264,6 @@
 				y[2].className = "button active2";
 				z[2].style.width = "100%";
 				z[2].style.transition = "0.5s all ease";
-				a.innerHTML = "SOFTWARE";
 			}
 		</script>
 	</body>
