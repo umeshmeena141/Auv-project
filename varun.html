@@ -31,7 +31,7 @@
 		.auvMech {
 			display: inline-block;
 			margin-left: 30px;
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 			float:left;
 			height: 220px;
 		}
@@ -52,6 +52,35 @@
 		}
 		.button:hover {
 			background:#1a0c5a;
+		}
+		.picCom {
+			clear:left;
+			margin:0 0 30px 0;
+			padding:0;
+			text-align:center;
+			color:#3bdede;
+			font-size:1.0em;
+			font-weight:500;
+		}
+		.mDesc {
+			clear:left;
+			color:#e9fcfc;
+			margin-left:3%;
+			margin-right:3%;
+			text-align:justify;
+		}
+		#overlay {
+			position: fixed;
+			display: none;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.7);
+			z-index: 20;
+			cursor: pointer;
 		}
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
@@ -98,111 +127,129 @@
 				</div>
 			</div>
 		</div>
-		<!-- Main -->
-			<div id="main" class="wrapper style4">
-				<div class="container" style="margin-top:30px;">
-					<div class="row">
-
-						<!-- Sidebar -->
-						<div id="sidebar" class="3u" style="margin-top:-15px;margin-left:-40px;">
-							<section>
-								<header class="major">
-									<h2 onclick="mech()" class="button">Mechanical</h2>
-								</header>		
-								<div class="dash"></div>
-								<ul class="default" >
-									<li style="padding-top:1em;"><a href="#">- Vehicle’s Frame</a></li>
-									<li><a href="#">- Main Pressure Hull</a></li>
-									<li><a href="#">- Customized Waterproof Casings</a></li>
-									<li><a href="#">- Waterproof Connector</a></li>
-									<li><a href="#">- Hull Internal</a></li>
-									<li><a href="#">- Thrusters</a></li>
-									<li><a href="#">- Pneumatics System</a></li>
-									<li style="padding-bottom:1em;"><a href="#">- Design Optimization</a></li>
-								</ul>
-							</section>
-							<section>
-								<header class="major">
-									<h2 onclick="elec()" class="button">Electrical</h2>
-								</header>
-								<div class="dash"></div>
-								<ul class="default">
-									<li style="padding-top:1em;"><a href="#">- Arduino</a></li>
-									<li><a href="#">- Battery Management System</a></li>
-									<li><a href="#">- Processor</a></li>
-									<li><a href="#">- Inertial Measurement Units</a></li>
-									<li><a href="#">- Pressure Sensor</a></li>
-									<li><a href="#">- Motor Drivers</a></li>
-									<li style="padding-bottom:1em;"><a href="#">- Vision</a></li>
-								</ul>
-							</section>
-							<section>
-								<header class="major">
-									<h2 onclick="soft()" class="button">Software</h2>
-								</header>
-								<div class="dash" style="margin-top:-4px"></div>
-								<ul class="default">
-									<li style="padding-top:1em;"><a href="#">- ROS (Robot Operating System)</a></li>
-									<li><a href="#">- Sensor input nodes</a></li>
-									<li><a href="#">- ROS-Accessories</a></li>
-									<li><a href="#">- ROS BAG</a></li>
-									<li><a href="#">- GUI</a></li>
-									<li style="padding-bottom:1em;"><a href="#">- Control System</a></li>
-								</ul>
-							</section>
-						</div>
-
-						<!-- Content -->
-						<div id="content" class="9u skel-cell-important">
-							<section style="background:#164b83; color:#3bdede; border-radius:5px;" >
-								<header class="major">
-									<h2 style="text-align:center;" id="head2">MECHANICAL</h2>								
-								</header>
-								<img class="auvMech" src="images/auv_mech1.png" >
-								<img class="auvMech" src="images/auv_mech2.png">
-								<p style="clear:left; color:#e9fcfc; margin-left:3%; margin-right:3%; text-align:justify;">&emsp;Varun’s mechanical system comprises of an aluminum structural frame, pressure casings, and electromagnetic actuators. The mechanical parts were first designed in Solidworks and Autodesk Inventor and then improved using Ansys Workbench, before its final fabrication using in-house available facilities at the institute. The weight of Varun is currently 27.510 kg.</p>
-								<div class="button1">Vehicle’s Frame</div>
-								<div class="button1">Main Pressure Hull</div>
-								<div class="button1">Customized Waterproof Casings</div>
-								<div class="button1">Waterproof Connector</div>
-								<div class="button1">Hull Internal</div>
-								<div class="button1">Thrusters</div>
-								<div class="button1">Pneumatics System</div>
-								<div class="button1">Design Optimization</div>
-								<p style="clear:left;">&emsp;</p>
-							</section>
-						</div>
-						
-						<!-- Sidebar 
-						<div id="sidebar" class="2u">
-							<section>
-								<header class="major">
-									<h2>Etiam malesuada</h2>
-								</header>									
-								<ul class="default">
-									<li><a href="#">Pellentesque lectus gravida blandit</a></li>
-									<li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
-									<li><a href="#">Phasellus nibh pellentesque congue</a></li>
-									<li><a href="#">Cras vitae metus aliquam pharetra</a></li>
-								</ul>
-							</section>
-							<section>
-								<header class="major">
-									<h2>Mauris vulputate</h2>
-								</header>
-								<ul class="default">
-									<li><a href="#">Pellentesque lectus gravida blandit</a></li>
-									<li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
-									<li><a href="#">Phasellus nibh pellentesque congue</a></li>
-									<li><a href="#">Cras vitae metus aliquam pharetra</a></li>
-								</ul>
-							</section>
-						</div>-->
-						
+	<!-- Main -->
+		<div id="main" class="wrapper style4">
+			<div class="container" style="margin-top:30px;">
+				<div class="row">
+					<!-- Sidebar -->
+					<div id="sidebar" class="3u" style="margin-top:-15px;margin-left:-40px;">
+						<section>
+							<header class="major">
+								<h2 onclick="mech()" class="button">Mechanical</h2>
+							</header>		
+							<div class="dash"></div>
+							<ul class="default" >
+								<li style="padding-top:1em;"><a href="#">- Vehicle’s Frame</a></li>
+								<li><a href="#">- Main Pressure Hull</a></li>
+								<li><a href="#">- Customized Waterproof Casings</a></li>
+								<li><a href="#">- Waterproof Connector</a></li>
+								<li><a href="#">- Hull Internal</a></li>
+								<li><a href="#">- Thrusters</a></li>
+								<li><a href="#">- Pneumatics System</a></li>
+								<li style="padding-bottom:1em;"><a href="#">- Design Optimization</a></li>
+							</ul>
+						</section>
+						<section>
+							<header class="major">
+								<h2 onclick="elec()" class="button">Electrical</h2>
+							</header>
+							<div class="dash"></div>
+							<ul class="default">
+								<li style="padding-top:1em;"><a href="#">- Arduino</a></li>
+								<li><a href="#">- Battery Management System</a></li>
+								<li><a href="#">- Processor</a></li>
+								<li><a href="#">- Inertial Measurement Units</a></li>
+								<li><a href="#">- Pressure Sensor</a></li>
+								<li><a href="#">- Motor Drivers</a></li>
+								<li style="padding-bottom:1em;"><a href="#">- Vision</a></li>
+							</ul>
+						</section>
+						<section>
+							<header class="major">
+								<h2 onclick="soft()" class="button">Software</h2>
+							</header>
+							<div class="dash" style="margin-top:-4px"></div>
+							<ul class="default">
+								<li style="padding-top:1em;"><a href="#">- ROS (Robot Operating System)</a></li>
+								<li><a href="#">- Sensor input nodes</a></li>
+								<li><a href="#">- ROS-Accessories</a></li>
+								<li><a href="#">- ROS BAG</a></li>
+								<li><a href="#">- GUI</a></li>
+								<li style="padding-bottom:1em;"><a href="#">- Control System</a></li>
+							</ul>
+						</section>
 					</div>
+
+					<!-- Content -->
+					<div id="content" class="9u skel-cell-important">
+						<section style="background:#164b83; color:#3bdede; border-radius:5px;" >
+							<header class="major">
+								<h2 style="text-align:center;" id="head2">MECHANICAL</h2>								
+							</header>
+							<img class="auvMech" src="images/auv_mech1.png" >
+							<img class="auvMech" src="images/auv_mech2.png">
+							<p class="picCom"><a href="#" class="fa fa-angle-up" style="text-decoration:none;color:#3bdede"></a> Side and Front View</p> 
+							<p class="mDesc">&emsp;Varun’s mechanical system comprises of an aluminum structural frame, pressure casings, and electromagnetic actuators. The mechanical parts were first designed in Solidworks and Autodesk Inventor and then improved using Ansys Workbench, before its final fabrication using in-house available facilities at the institute. The weight of Varun is currently 27.510 kg.</p>
+							<div class="button1" onclick="on()">Vehicle’s Frame</div>
+							<div class="button1">Main Pressure Hull</div>
+							<div class="button1">Customized Waterproof Casings</div>
+							<div class="button1">Waterproof Connector</div>
+							<div class="button1">Hull Internal</div>
+							<div class="button1">Thrusters</div>
+							<div class="button1">Pneumatics System</div>
+							<div class="button1">Design Optimization</div>
+							<p style="clear:left;">&emsp;</p>
+						</section>
+					</div>
+					<!-- Sidebar 
+					<div id="sidebar" class="2u">
+						<section>
+							<header class="major">
+								<h2>Etiam malesuada</h2>
+							</header>									
+							<ul class="default">
+								<li><a href="#">Pellentesque lectus gravida blandit</a></li>
+								<li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
+								<li><a href="#">Phasellus nibh pellentesque congue</a></li>
+								<li><a href="#">Cras vitae metus aliquam pharetra</a></li>
+							</ul>
+						</section>
+						<section>
+							<header class="major">
+								<h2>Mauris vulputate</h2>
+							</header>
+							<ul class="default">
+								<li><a href="#">Pellentesque lectus gravida blandit</a></li>
+								<li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
+								<li><a href="#">Phasellus nibh pellentesque congue</a></li>
+								<li><a href="#">Cras vitae metus aliquam pharetra</a></li>
+							</ul>
+						</section>
+					</div>-->
+					
 				</div>
 			</div>
-		
+		</div>
+		<div id="overlay" onclick="off()">
+			<div class="row" style="position:absolute; top:5%; width:100%; ">
+				<div class="2u">&emsp;</div>
+				<div class="9u skel-cell-important" style="background:white; color:gray; border-radius:5px;">
+					<section >
+						<header class="major">
+							<h2 style="text-align:center;" id="head2">Vehicle’s Frame</h2>
+							<div style="width:100%; height:2px; color:#999999;"></div>
+						</header>
+						<div style="width:70%; margin:auto; display:block;">
+						<img class="auvMech" src="images/mech_11.png">
+						<img class="auvMech" src="images/mech_12.png"></div>
+						<p class="picCom"><a href="#" class="fa fa-angle-up" style="text-decoration:none;color:#3bdede"></a> Frame and Side Plate Design</p>
+						<p style="clear:left; color:gray; margin-left:3%; margin-right:3%; text-align:justify;">
+						&emsp;Varun’s frame mainly consists of two aluminum sheet side plates, to which several structural supports and parts are joined. The side plates have been optimized to reduce the weight of the side plates without creating any critical stress points. The distance between the two side plates is approximately 52 cm, ensuring a sturdy shape to the vehicle.</p>
+					</section>
+				</div>
+				<div class="1u">&emsp;</div>
+			</div>
+		</div>
 	<!-- Footer -->
 		<div id="footer">
 			<section class="container">
@@ -264,6 +311,12 @@
 				y[2].className = "button active2";
 				z[2].style.width = "100%";
 				z[2].style.transition = "0.5s all ease";
+			}
+			function on() {
+				document.getElementById("overlay").style.display = "block";
+			}
+			function off() {
+				document.getElementById("overlay").style.display = "none";
 			}
 		</script>
 	</body>
