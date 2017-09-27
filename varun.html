@@ -52,6 +52,41 @@
 			background:#002699;
 			color:aqua;
 		}
+		.button2 {
+			padding:10px 15px;
+			display:inline-block;
+			margin-left:2%;
+			margin-bottom:5px;
+			color:aqua;
+			border-radius:5px;
+			background:#00134d;
+			cursor:pointer;
+			transition:0.35s ease;
+			font-size:1.1em;
+			text-decoration:none;
+			font-weight:500;
+		}
+		.button2:hover {
+			background:#00034d;
+		}
+		.button3 {
+			padding:10px 15px;
+			display:inline-block;
+			margin-left:2%;
+			margin-bottom:5px;
+			background:none;
+			border-radius:5px;
+			border:2px solid aqua;
+			color:white;
+			cursor:pointer;
+			transition:0.35s ease;
+			font-size:1.1em;
+			text-decoration:none;
+			font-weight:600;
+		}
+		.button3:hover {
+			background:aqua;
+		}
 		.button:hover {
 			background:#1a0c5a;
 		}
@@ -101,18 +136,7 @@
 						<ul >
 							<li id="index1"><a href="index.html">Home</a></li>
 							<li><a href="">Blog</a></li>
-							<li class="active" style="color:white"><a href="#">Vehicle</a>
-								<ul>
-									<li><a href="">Competition Vehicles</a>
-										<ul><li id="varun1"><a href="varun.html">Varun</a></li>
-										</ul>
-									</li>
-									<li><a href="">Prototypes</a>
-										<ul><li><a href="#">Anahita 2.0</a></li>
-											<li><a href="#">Anahita 1.0</a></li>
-										</ul>
-									</li>
-								</ul>
+							<li class="active" ID="varun1" style="color:white"><a href="varun.html">Vehicle</a>
 							</li>
 							<li><a href="">Sponsors</a></li>
 							<li><a href="">Team</a>
@@ -132,17 +156,19 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapper style3" style="padding-bottom:0px;margin-bottom:0px;">
+		<div class="wrapper style3" id="v0" style="padding-bottom:0px;margin-bottom:0px;">
 			<section class="container" >
 				<header class="major">
 					<h2 style="font-size:5em; padding-top:0px;padding-bottom:0px;margin-bottom:0px;">VARUN</h2>
 				</header>
 				<p style="font-size:1.6em;margin-bottom:10px;">The God of the Oceans</p>
-				<a href="#v1" class="button1">Mechanical Subsystem</a>
+				<a href="#v1" class="button1" >Mechanical Subsystem</a>
 				<a href="#v2" class="button1">Electrical Subsystem</a>
 				<a href="#v3" class="button1">Software Subsystem</a>
 			</section>
 		</div>
+		<!--back to top-->
+		<a href="#v0" class="button2 fa fa-angle-up" style="position:fixed;font-size:1.0em; right:5px; bottom:5px;z-index:25;"> BACK TO TOP</a>
 		<!--main-->
 		<div class="wrapper style2" id="v" style="background:#10b0e5; margin-top:0px; color:white;padding-bottom:10px;padding-top:30px;">
 			<section class="container">
@@ -155,6 +181,9 @@
 							<span class="byline" >- Key Features of Varun</span>
 							<span class="byline" >- Key Features of Varun</span>
 							<span class="byline" >- Key Features of Varun</span>
+							<div style="width:100%; text-align:center;margin-top:15px;">
+								<a class="button3" href="varun.pdf" style="margin:auto; display:inline-block;">Report of Varun</a>
+							</div>
 						</header>
 					</div>
 					<div class="8u">
@@ -162,9 +191,9 @@
 							<iframe width="750" height="350" src="https://sketchfab.com/models/5322f37085c54738a6cf734a8a73e6fd/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="">
 							</iframe>
 							<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-								<a href="https://sketchfab.com/models/5322f37085c54738a6cf734a8a73e6fd?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Exosuit_Arm_Propulsion_Cannon</a>
-								by <a href="https://sketchfab.com/fox3d?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Fox3D</a>
-								on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+								<a href="https://sketchfab.com/models/5322f37085c54738a6cf734a8a73e6fd?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style=" color: black;">Exosuit_Arm_Propulsion_Cannon</a>
+								by <a href="https://sketchfab.com/fox3d?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style=" color: black;">Fox3D</a>
+								on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="color: black;">Sketchfab</a>
 							</p>
 						</div>
 					</div>
@@ -172,17 +201,18 @@
 			</section>
 		</div>
 <!-- 2 -->
-		<div class="wrapper style2" id="v1" style="background:white; color:#0c80a7; padding-top:50px;padding-bottom:10px;">
+		<div id = "v1" style="background:white;">&emsp;</div>
+		<div class="wrapper style2" id="v1" style="background:white; color:#0fa5d7; padding-top:50px;padding-bottom:10px;">
 			<section class="container">
 				<div class="row double">
 					<div class="8u">
 						<div style="margin:auto; display:inline-block; text-align:center; width:100%;">
 							<img class="auvMech" style="width:100%; height:300px;" src="images/auv_mech.png">
 						</div>
-						<p class="picCom" style="color:#0c80a7;"><a href="#" class="fa fa-angle-up" style="color:#0c80a7; text-decoration:none;"> </a> Frame and Side Plate Design</p>
+						<p class="picCom" style="color:#0fa5d7;"><a href="#" class="fa fa-angle-up" style="color:#0fa5d7; text-decoration:none;"> </a> Frame and Side Plate Design</p>
 					</div>
 					<div class="4u" style="padding-left:;">
-						<header class="major" style="border:2px solid #0c80a7; border-radius:5px; height:300px;">
+						<header class="major" style="border:2px solid #0fa5d7; border-radius:5px; height:300px;">
 							<h2 style="font-size:1.8em; padding-left:5px;">Mechanical Subsystem</h2>
 							<span class="byline">- Features: Mechanical Subsystem</span>
 							<span class="byline">- Features: Mechanical Subsystem</span>
@@ -196,7 +226,8 @@
 			</section>
 		</div>
 <!-- 3 -->
-		<div class="wrapper style2" id="v2" style="background:#10b0e5; color:white;padding-top:50px;padding-bottom:10px;">
+		<div id = "v2" style="background:#1186BA;">&emsp;</div>
+		<div class="wrapper style2" style="background:#1186BA; color:white;padding-top:50px;padding-bottom:10px;">
 			<section class="container">
 				<div class="row double">
 					<div class="4u" style="padding-left:;">
@@ -219,17 +250,18 @@
 			</section>
 		</div>
 <!-- 4 -->
-		<div class="wrapper style2" id="v3" style="background:white; color:#0c80a7; padding-top:50px;padding-bottom:10px;">
+		<div id = "v3" style="background:white;">&emsp;</div>
+		<div class="wrapper style2" id="v3" style="background:white; color: #1186BA; padding-top:50px;padding-bottom:10px;">
 			<section class="container">
 				<div class="row double">
 					<div class="8u">
 						<div style="margin:auto; display:inline-block; text-align:center; width:100%;">
 							<img class="auvMech" style="width:100%; height:320px;" src="images/auv_soft1.png">
 						</div>
-						<p class="picCom" style="color:#0c80a7;" ><a href="#" class="fa fa-angle-up" style="color:#0c80a7; text-decoration:none;"> </a> Temporary Picture</p>
+						<p class="picCom" style="color: #1186BA;" ><a href="#" class="fa fa-angle-up" style="color: #1186BA; text-decoration:none;"> </a> Temporary Picture</p>
 					</div>
 					<div class="4u" >
-						<header class="major" style="border:2px solid #0c80a7; border-radius:5px; height:320px;" >
+						<header class="major" style="border:2px solid  #1186BA; border-radius:5px; height:320px;" >
 							<h2 style="font-size:1.8em; padding-left:5px;">Software Subsystem</h2>
 							<ul>
 								<li class="byline">- Features: Software Subsystem</li>
@@ -248,9 +280,6 @@
 	<!-- Footer -->
 		<div id="footer">
 			<section class="container">
-				<header class="major">
-					<h2>CONNECT WITH US</h2>
-				</header>
 				<ul class="icons">
 					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
 					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
@@ -266,6 +295,12 @@
 				</div>			
 		</div>
 		<script>
+			$(document).on('click', 'a', function(event){
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 800);
+			});
 			var x=document.getElementsByClassName("default");
 			var y=document.getElementsByClassName("button");
 			var z=document.getElementsByClassName("dash");

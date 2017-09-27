@@ -269,13 +269,15 @@
 		
 	ul.icons {
 		cursor: default;
-		padding-bottom: 0em;
+		padding: 0em;
+		margin-top:-10px;
+		margin-bottom:15px;
 	}
 
 		ul.icons li {
 			display: inline-block;
 			line-height: 1em;
-			padding: 0.5em 1em;
+			padding: 0em 1em;
 		}
 
 			ul.icons li:first-child {
@@ -290,7 +292,7 @@
 				text-decoration: none;
 				font-size: 2em;
 				color: inherit;
-				opacity: 0.4;
+				opacity: 0.7;
 				-moz-transition: all 0.35s ease-in-out;
 				-webkit-transition: all 0.35s ease-in-out;
 				-o-transition: all 0.35s ease-in-out;
@@ -731,7 +733,7 @@
 		text-align: center;
 		color: white;
 		position:relative;
-		top:1.5em;
+		top:2em;
 	}
 
 		#footer hr {
