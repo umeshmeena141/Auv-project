@@ -10,7 +10,7 @@
 /* Basic */
 
 	body {
-		background:#1a1a1a;
+		background:#164b83;
 	}
 
 		body.loading * {
@@ -106,8 +106,8 @@
 	}
 
 	header.major {
-		padding-top: 1em;
-		padding-bottom: 2em;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
 		text-align: center;
 	}
 
@@ -118,7 +118,8 @@
 
 		header.major .byline {
 			display: block;
-			padding-top: 1em;
+			padding-top: 0.4em;
+			padding-left: 10px;
 			letter-spacing: 1px;
 			font-size: 1.4em;
 		}
@@ -475,6 +476,7 @@
 			padding: 0em;
 			background: black url(../images/AUV.png) no-repeat;
 			background-size: cover;
+			
 		}
 
 		.wrapper.style2 {
@@ -487,7 +489,7 @@
 
 				.wrapper.style2 .major h2 {
 					display: block;
-					margin-bottom: 1em;
+					margin-bottom: 0.5em;
 					letter-spacing: 1px;
 					line-height: 1.4em;
 					
@@ -503,7 +505,7 @@
 
 			.wrapper.style2 h3 {
 				display: block;
-				margin-bottom: 1em;
+				margin-bottom: 0.5em;
 				letter-spacing: 1px;
 				line-height: 1.4em;
 				font-size: 1.6em;
@@ -511,8 +513,8 @@
 			}
 
 		.wrapper.style3 {
-			padding-bottom: 6em;
-			background: #82b440;
+			padding-bottom: 2em;
+			background: #10b0e5;
 			text-align: center;
 			color: white;
 		}
