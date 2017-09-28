@@ -25,7 +25,16 @@ function animate2(x,navhover){
 
 			 $(x).delay(300).animate({left:'17.65%',width: '69%'},200);
 			 $("img,#facultyadvisors,#softteam,#mechteam,#electteam,#bussteam,.thumbnail").delay(600).fadeIn();
-			 $(x).animate({top:'15.8%',height: 'auto'},200); 
+			 if($(window).width()>1350){
+				 $(x).animate({top:'16.4%',height: 'auto'},200); 
+			 }
+			 else if($(window).width()>850){
+				 $(x).animate({top:'6.4%',height: 'auto'},200); 
+			 }
+			 else{
+				 $(x).animate({top:'6.6%',height: 'auto'},200); 
+			 }
+			 
              $(page[0]).delay(200).queue(function (next) { $(this).css({ "backgroundColor":"rgba(30, 100, 174 ,0.8 )"});next();});
 			 page=[x,navhover]; 
 		}
