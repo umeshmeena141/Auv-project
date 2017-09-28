@@ -40,14 +40,15 @@
             body::-webkit-scrollbar-thumb {
                 background-color: maroon;
                 outline: 2px solid black;
-            }
+           }
+
             .btn {
                 transition:all .3s ease-in-out 0s;
-                
+                color:white;
             }
                 .btn:hover {
-                    background-color: #f7ca18;
-                    color: white;
+                    background-color: whitesmoke;
+                    color: cornflowerblue;
                     text-decoration: none;
                     transition-timing-function: ease-in-out;
                 }
@@ -117,9 +118,9 @@
         </div>
             <!-- Main -->
             <div id="main" class="wrapper style4">
-                <div class="item carousel-inner active"> <img src="images/team1.jpg" sizes="cover" class="img-responsive" /><a href="#alumni" class="carousel-caption" ><span class="glyphicon glyphicon-hand-down " style="font-size:200%;margin-bottom:30%;color:white;"></span></a></div>
+                <div class="item carousel-inner active" style="width:100%"> <img src="images/team1.jpg" style="width:100%;height:750px;"  class="bg"/><a href="#alumni" class="carousel-caption" ><span class="glyphicon glyphicon-hand-down " style="font-size:200%;margin-bottom:20%;color:white;"></span></a></div>
                 <!-- Content -->
-                <div id="content" class="container">
+                <div id="content" class="container" >
                     
                     <section >
                         <header class="page-header" style="font-family:Algerian;color:black;">
@@ -129,253 +130,255 @@
                                 <li><a href="#2015-16" onclick="toggleyear(2)">2015-2016</a></li>
                             </ul>
                         </header>
+
                         <div id="2014-15" style="display:none;">
-                        <div class="row " style=" background-color:#202020;"  >
-                            <div class="col-md-4 item" style="padding:0px">
-                                <img src="images/avatar3.png"  style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                <div style="max-width:100%;margin:-5%;background-color:rgba(0,0,0,0.8);color:white;padding:0px;height:0%;" class="carousel-caption caption" ><h3>My Name <br/> My Team</h3></div>
-                                <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
-                            </div>
-                            <div  style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                            <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;" >
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
+                                </div>
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:3% 0% 0% 0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                            <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-toggle="modal" data-target="#alumni1"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;;" data-toggle="modal" data-target="#alumni1"><h2>See My Story</h2></button>
 
-                            <div class="modal fade" id="alumni1" >
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close " data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">My Name</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Claritas est etiam processus dynamicus,
-                                                qui sequitur mutationem consuetudium lectorum. Mirum
-                                                est notare quam littera gothica, quam nunc putamus
-                                                parum claram, anteposuerit litterarum formas humanitatis
-                                                per seacula quarta decima et quinta decima.</p>
-                                            <img src="images/banner.jpg" width="100%"/>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                            
+                                <div class="modal fade" id="alumni1">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close " data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">My Name</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Claritas est etiam processus dynamicus,
+                                                    qui sequitur mutationem consuetudium lectorum. Mirum
+                                                    est notare quam littera gothica, quam nunc putamus
+                                                    parum claram, anteposuerit litterarum formas humanitatis
+                                                    per seacula quarta decima et quinta decima.
+                                                </p>
+                                                <img src="images/banner.jpg" width="100%" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row " style=" background-color:#202020;margin-top:2%">
-                            <div class="col-md-4 item" style="padding:0px">
-                                <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name</div>
-                                <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
-                            </div>
-                            <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                            <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
+                                </div>
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                            <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni2" data-toggle="modal"><h2>See My Story</h2></button>
-                            
-                            <div class="modal fade" id="alumni2">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">My Name</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Claritas est etiam processus dynamicus,
-                                                qui sequitur mutationem consuetudium lectorum. Mirum
-                                                est notare quam littera gothica, quam nunc putamus
-                                                parum claram, anteposuerit litterarum formas humanitatis
-                                                per seacula quarta decima et quinta decima.
-                                            </p>
-                                            <img src="images/banner.jpg" width="100%" />
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni2" data-toggle="modal"><h2>See My Story</h2></button>
+
+                                <div class="modal fade" id="alumni2">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">My Name</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Claritas est etiam processus dynamicus,
+                                                    qui sequitur mutationem consuetudium lectorum. Mirum
+                                                    est notare quam littera gothica, quam nunc putamus
+                                                    parum claram, anteposuerit litterarum formas humanitatis
+                                                    per seacula quarta decima et quinta decima.
+                                                </p>
+                                                <img src="images/banner.jpg" width="100%" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row " style=" background-color:#202020;margin-top:2%;">
-                            <div class="col-md-4 item" style="padding:0px">
-                                <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
-                            </div>
-                            <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                            <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
+                                </div>
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                            <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni3" data-toggle="modal"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni3" data-toggle="modal"><h2>See My Story</h2></button>
 
-                            <div class="modal fade" id="alumni3">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">My Name</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Claritas est etiam processus dynamicus,
-                                                qui sequitur mutationem consuetudium lectorum. Mirum
-                                                est notare quam littera gothica, quam nunc putamus
-                                                parum claram, anteposuerit litterarum formas humanitatis
-                                                per seacula quarta decima et quinta decima.
-                                            </p>
-                                            <img src="images/banner.jpg" width="100%" />
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                <div class="modal fade" id="alumni3">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">My Name</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Claritas est etiam processus dynamicus,
+                                                    qui sequitur mutationem consuetudium lectorum. Mirum
+                                                    est notare quam littera gothica, quam nunc putamus
+                                                    parum claram, anteposuerit litterarum formas humanitatis
+                                                    per seacula quarta decima et quinta decima.
+                                                </p>
+                                                <img src="images/banner.jpg" width="100%" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row " style=" background-color:#202020;margin-top:2%;">
-                            <div class="col-md-4 item" style="padding:0px">
-                                <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
-                            </div>
-                            <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                            <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
+                                </div>
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                            <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni4" data-toggle="modal"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni4" data-toggle="modal"><h2>See My Story</h2></button>
 
-                            <div class="modal fade" id="alumni4">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">My Name</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Claritas est etiam processus dynamicus,
-                                                qui sequitur mutationem consuetudium lectorum. Mirum
-                                                est notare quam littera gothica, quam nunc putamus
-                                                parum claram, anteposuerit litterarum formas humanitatis
-                                                per seacula quarta decima et quinta decima.
-                                            </p>
-                                            <img src="images/banner.jpg" width="100%" />
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                <div class="modal fade" id="alumni4">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">My Name</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Claritas est etiam processus dynamicus,
+                                                    qui sequitur mutationem consuetudium lectorum. Mirum
+                                                    est notare quam littera gothica, quam nunc putamus
+                                                    parum claram, anteposuerit litterarum formas humanitatis
+                                                    per seacula quarta decima et quinta decima.
+                                                </p>
+                                                <img src="images/banner.jpg" width="100%" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row " style=" background-color:#202020;margin-top:2%;">
-                            <div class="col-md-4 item" style="padding:0px">
-                                <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
-                            </div>
-                            <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                            <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
+                                </div>
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                            <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni5" data-toggle="modal"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni5" data-toggle="modal"><h2>See My Story</h2></button>
 
-                            <div class="modal fade" id="alumni5">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">My Name</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Claritas est etiam processus dynamicus,
-                                                qui sequitur mutationem consuetudium lectorum. Mirum
-                                                est notare quam littera gothica, quam nunc putamus
-                                                parum claram, anteposuerit litterarum formas humanitatis
-                                                per seacula quarta decima et quinta decima.
-                                            </p>
-                                            <img src="images/banner.jpg" width="100%" />
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                <div class="modal fade" id="alumni5">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">My Name</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Claritas est etiam processus dynamicus,
+                                                    qui sequitur mutationem consuetudium lectorum. Mirum
+                                                    est notare quam littera gothica, quam nunc putamus
+                                                    parum claram, anteposuerit litterarum formas humanitatis
+                                                    per seacula quarta decima et quinta decima.
+                                                </p>
+                                                <img src="images/banner.jpg" width="100%" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row " style=" background-color:#202020;margin-top:2%;">
-                            <div class="col-md-4 item" style="padding:0px">
-                                <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
-                            </div>
-                            <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                            <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
+                                </div>
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                            <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni6" data-toggle="modal"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni6" data-toggle="modal"><h2>See My Story</h2></button>
 
-                            <div class="modal fade" id="alumni6">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">My Name</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Claritas est etiam processus dynamicus,
-                                                qui sequitur mutationem consuetudium lectorum. Mirum
-                                                est notare quam littera gothica, quam nunc putamus
-                                                parum claram, anteposuerit litterarum formas humanitatis
-                                                per seacula quarta decima et quinta decima.
-                                            </p>
-                                            <img src="images/banner.jpg" width="100%" />
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                <div class="modal fade" id="alumni6">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">My Name</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Claritas est etiam processus dynamicus,
+                                                    qui sequitur mutationem consuetudium lectorum. Mirum
+                                                    est notare quam littera gothica, quam nunc putamus
+                                                    parum claram, anteposuerit litterarum formas humanitatis
+                                                    per seacula quarta decima et quinta decima.
+                                                </p>
+                                                <img src="images/banner.jpg" width="100%" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        </div>
-
+                            </div>
 
 
 
@@ -384,21 +387,21 @@ per seacula quarta decima et quinta decima.</h3>
 
 
                         <div id="2015-16" style="display:block;">
-                            <div class="row " style=" background-color:#202020;">
-                                <div class="col-md-4 item" style="padding:0px">
-                                    <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                    <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
                                 </div>
-                                <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                                <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:3% 0% 0% 0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                                <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-toggle="modal" data-target="#alumni7"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;;" data-toggle="modal" data-target="#alumni7"><h2>See My Story</h2></button>
 
                                 <div class="modal fade" id="alumni7">
                                     <div class="modal-dialog modal-lg">
@@ -426,21 +429,21 @@ per seacula quarta decima et quinta decima.</h3>
                                 </div>
                             </div>
 
-                            <div class="row " style=" background-color:#202020;margin-top:2%">
-                                <div class="col-md-4 item" style="padding:0px">
-                                    <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                    <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name</div>
-                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
                                 </div>
-                                <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                                <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                                <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni8" data-toggle="modal"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni8" data-toggle="modal"><h2>See My Story</h2></button>
 
                                 <div class="modal fade" id="alumni8">
                                     <div class="modal-dialog modal-lg">
@@ -467,23 +470,23 @@ per seacula quarta decima et quinta decima.</h3>
                                 </div>
                             </div>
 
-                            <div class="row " style=" background-color:#202020;margin-top:2%;">
-                                <div class="col-md-4 item" style="padding:0px">
-                                    <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                    <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
                                 </div>
-                                <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                                <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                                <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni9" data-toggle="modal"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni8" data-toggle="modal"><h2>See My Story</h2></button>
 
-                                <div class="modal fade" id="alumni9">
+                                <div class="modal fade" id="alumni8">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -508,23 +511,23 @@ per seacula quarta decima et quinta decima.</h3>
                                 </div>
                             </div>
 
-                            <div class="row " style=" background-color:#202020;margin-top:2%;">
-                                <div class="col-md-4 item" style="padding:0px">
-                                    <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                    <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
                                 </div>
-                                <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                                <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                                <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni10" data-toggle="modal"><h2>See My Story</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni8" data-toggle="modal"><h2>See My Story</h2></button>
 
-                                <div class="modal fade" id="alumni10">
+                                <div class="modal fade" id="alumni8">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -549,23 +552,23 @@ per seacula quarta decima et quinta decima.</h3>
                                 </div>
                             </div>
 
-                            <div class="row " style=" background-color:#202020;margin-top:2%;">
-                                <div class="col-md-4 item" style="padding:0px">
-                                    <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                    <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
                                 </div>
-                                <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                                <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                                <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni11" data-toggle="modal"><h2>See MyStory</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni8" data-toggle="modal"><h2>See My Story</h2></button>
 
-                                <div class="modal fade" id="alumni11">
+                                <div class="modal fade" id="alumni8">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -590,23 +593,23 @@ per seacula quarta decima et quinta decima.</h3>
                                 </div>
                             </div>
 
-                            <div class="row " style=" background-color:#202020;margin-top:2%;">
-                                <div class="col-md-4 item" style="padding:0px">
-                                    <img src="images/avatar3.png" style="max-width:100%; max-height:100%;padding:0px" class="img-responsive " />
-                                    <div class="carousel-caption" style="background:linear-gradient(to top, #202020 30%, #ffffff 90%);margin:-5% -20%;padding:0%; ">My Name<br />Software team</div>
-                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:#202020;margin-left:74%"></span>
+                            <div class="row " style=" background-color:cornflowerblue;width:100%;margin:2% 0% 0% 0%;">
+                                <div class="col-md-3 item" style="padding:0px">
+                                    <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive " />
+                                    <div class="carousel-caption name" style="background:rgba(255,255,255,0.8);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
+                                    <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:73%"></span>
                                 </div>
-                                <div style="color:#d3d3d3; margin:0% 0% 3% 2%"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
-                                <pre style="background-color:#202020;color:#d3d3d3;margin:5% 0% 1% 0% ; border:none;">
+                                <div style="color:#d3d3d3; margin:0% 0% 3% 0%;padding-top:0px;"><h1 style="font-family:'Calibri Light';font-size:500%;">&ldquo;</h1></div>
+                                <pre style="background-color:cornflowerblue;color:#202020;margin:0% ; border:none;">
 <h3>Claritas est etiam processus dynamicus, 
 qui sequitur mutationem consuetudium lectorum. Mirum
 est notare quam littera gothica, quam nunc putamus 
 parum claram, anteposuerit litterarum formas humanitatis
 per seacula quarta decima et quinta decima.</h3>
                             </pre>
-                                <button type="button" class="btn btn-link text-center" style="border:2px solid #f7ca18;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni12" data-toggle="modal"><h2>See MyStory</h2></button>
+                                <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin-left:20%;padding:5px 30px ;" data-target="#alumni8" data-toggle="modal"><h2>See My Story</h2></button>
 
-                                <div class="modal fade" id="alumni12">
+                                <div class="modal fade" id="alumni8">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -630,11 +633,10 @@ per seacula quarta decima et quinta decima.</h3>
                                     </div>
                                 </div>
                             </div>
+                            </div>
+                        </section>
                         </div>
-                    </section>
-                    </div>
                 </div>
-
             <!-- Team -->
             <!-- Footer -->
 
@@ -652,6 +654,26 @@ per seacula quarta decima et quinta decima.</h3>
 
             $('img').hover(function () {
                 $('.caption').slideDown(1000);
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(window).on('load resize', function () {
+                    if ($(window).width() > 1300) {
+                        $('pre').css({ "padding": "5% 0% 0% 5%" });
+                        $('.name').css({ "margin": "-5% 0% -7% -20%" });
+                        $('.bg').css({ "height": "750px" });
+                    }
+                    else {
+                        $('pre').css({ "padding": "0% 0% 0% 5%" });
+                        if ($(window).width() < 500) {
+                            $('.name').css({ "margin": "-5% 0% -7% -15%" })
+                            $('.bg').css({ "height": "350px" });
+                        }
+                    }
+                });
+
+
             });
         </script>
         </body>
