@@ -116,7 +116,7 @@
             }
 		</style>
 	</head>
-	<body class="team" style="overflow-x:hidden;background-color:#e6f5ff;">
+	<body class="team" style="overflow-x:hidden;background-color:#e6f5ff;height:100%;">
 
 		<!-- Header Wrapper -->
 			
@@ -168,7 +168,7 @@
 	
 					</div>
 					</div>
-					<div style="width:100%;height:900px;" class="container">
+					<div style="width:100%;height:1000px;" class="container">
 						<div style="position:absolute; top:8%;left:17.65%;background-color:rgba(30, 100, 174 ,0.8 );padding:0.5% 20% 0% 20%; width:69%;text-align:center;margin-top:28px;" id="teamnav" class="row">
 							<a href="#" onclick="animate2('#Faculty_Advisors','#a')"   title="Faculty Advisors" class="col-sm-2"><i style="color:black" class="fa fa-user" id="a"></i></a>
 							<a href="#" onclick="animate2('#Software_Team','#b')"  alt="Software Team" title="Software Team" class="col-sm-2" style="color:white"><i class="fa fa-laptop" id="b"></i></a>
@@ -404,9 +404,13 @@
 					
 					
 					
-					<div id="footer" style="background-color:black; height:60px; position:relative">
-								<span class="byline">AUTONOMOUS UNDERWATER VEHICLE IIT KANPUR</span>	
-					</div>
+        <div id="footer" style="position:relative;top:1.5em;color:white;padding:0em;background-color:#1e64ae">
+
+            <!-- Copyright -->
+            <div id="copyright" style="position:relative;text-align:center;padding:0em 0em 1em 0em;color:inherit;opacity:0.4;">
+                &copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
+            </div>
+        </div>
 
                 <script>
                         $(document).ready(function () {
@@ -418,6 +422,7 @@
                                     $('.redwid').css({ "width": "105%" });
                                     $('#teamnav').css({ "padding": "0.5% 20% 0% 20%", "top": "8%" });
                                     $('i').css({ "padding": "5px" });
+                                    $('.container').css({ "height": "900px" });
                                 }
                                 else if ($(window).width() > 850) {
                                     $('.thumbnail').css({ "height": "auto", "width": "150%", "margin-left": "0%" });
@@ -426,13 +431,15 @@
                                     $('#teamnav').css({ "padding": "0.5% 20% 0% 20%", "top": "8%" });
                                     $('i').css({ "padding": "5px" });
                                     $('.redwid').css({ "width": "105%" });
+                                    $('.container').css({ "height":"1500px" });
                                 }
                                 else {
                                     $('.thumbnail').css({ "height": "auto", "width": "90%", "margin-left": "5%" });
                                     $('.overlay').css({ "margin-left": "10%", "width": "80%" });
                                     $('.faculty').css({ 'font-size': '1.4em','left':'20%' });
                                     $('#teamnav').css({ "padding": "0.5% 0% 0% 0%", "top": "9%" });
-                                    $('.redwid').css({ "width": "100%","left":"-8%" });
+                                    $('.redwid').css({ "width": "100%", "left": "-8%" });
+                                    $('.container').css({ "height": "1500px" });
                                     if ($(window).width() < 500) {
                                         $('i').css({ "padding": "0px" });
                                     }
