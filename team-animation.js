@@ -5,38 +5,16 @@ function animate2(x,navhover){
 		}
 		else{
              $(navhover).css({ "color":"black"});
-             $(page[1]).css({ "color":"white"});
-			
-			 $('.desc1').fadeTo(100,'0');
-			 $(x).animate({top:'40%',height: '0.3%'},"200");
-			 $(page[0]).animate({top:'40%',height: '0.3%'},"200");
-             $(page[0]).delay().queue(function (next) { $(this).css({ "backgroundColor":"rgba(30, 100, 174 ,0.8 )"});next();});
-			
-			 $(x).animate({left:'40%',width: '20%'},200);
-			 $(page[0]).animate({left:'40%',width: '20%'},200);
-			 $("img,#facultyadvisors,#softteam,#mechteam,#electteam,#bussteam,.thumbnail").delay().fadeOut();
-	
-			 $(page[0]).delay().queue(function(next){$(this).css({"width":"0","zIndex":"20","backgroundColor":"maroon"});next();});
-			 $(page[0]).animate({width:"20%"},200);
-			 $(page[0]).delay().queue(function(next){$(this).css({"display":"none"});next();});
-
-			 $('.desc1').delay(1200).fadeTo(100,'1');
-			 $(x).queue(function(next){$(x).css({'display':'block','zIndex':'10'}); next();}); 
-
-			 $(x).delay(300).animate({left:'17.65%',width: '69%'},200);
-			 $("img,#facultyadvisors,#softteam,#mechteam,#electteam,#bussteam,.thumbnail").delay(600).fadeIn();
-			 if($(window).width()>1350){
-				 $(x).animate({top:'16.8%',height: 'auto'},100); 
-			 }
-			 else if($(window).width()>850){
-				 $(x).animate({top:'15.4%',height: 'auto'},100);
-			 }
-			 else{
-				 $(x).animate({top:'6.6%',height: 'auto'},100);
-			 }
-			 
-             $(page[0]).delay(200).queue(function (next) { $(this).css({ "backgroundColor":"rgba(30, 100, 174 ,0.8 )"});next();});
-			 page=[x,navhover]; 
+             $(page[1]).css({ "color": "white" });
+             $(page[0]).css({ "transform": "rotateY(180deg)", "transition": "all 0.6s linear" });
+             $(page[0]).fadeTo(600, '0.5');
+             $(page[0]).delay(200).queue(function (next) {
+                 $(this).css({ "transform": "rotateY(0deg)", "transition": "all 0.1s linear" ,"display":"none"});
+                 $(x).css({ "display": "block" });
+                 $(x).fadeTo(10, '1');
+                 next();
+             }); 
+             page = [x, navhover];
 		}
 		
 		 

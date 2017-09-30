@@ -42,7 +42,7 @@
 			}
 			 
 			body::-webkit-scrollbar-thumb {
-			  background-color: maroon;
+			  background-color: black;
 			  outline: 2px solid black;
 			}
 
@@ -52,24 +52,25 @@
 				z-index:9;
 				
 			}
+
 			a{
 				color:white;
 				font-size:20px;
 				text-decoration:none;
 				border:none;
-				padding:11px 20px 13px;
+				
 				
 				
 			}
-	
-			.container1 {
-			  margin-left:10%;
-			  width: 50%;
-			  top:25%;
-              float:left;
-			 
-			  
+			#nav a:hover{
+				color:white;
 			}
+            ul{
+                opacity:0.8;
+            }
+            ul a{
+                font-size:16px;
+            }
 
 			.overlay {
 			  position: absolute;
@@ -106,7 +107,8 @@
 				text-align:center;
 			  }
 			
-			<!--Overlay Effect-->
+
+			
 			.hovereffect {
 			  width: 100%;
 			  height: 100%;
@@ -115,49 +117,31 @@
 			  position: relative;
 			  text-align: center;
 			  cursor: default;
-			
 			}
 
 			.hovereffect .overlay {
+			  width: 100%;
+			  height: auto;
 			  position: absolute;
 			  overflow: hidden;
-			  width: 100%;
-			  height: 100%;
-			  left: 0%;
-			  top: 0%;
-			  border-bottom: 1px solid #fff;
-			  border-top: 1px solid #fff;
-			  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-			  transition: opacity 0.35s, transform 0.35s;
-			  -webkit-transform: scale(0,1);
-			  -ms-transform: scale(0,1);
-			  transform: scale(0,1);
-			}
-
-			.hovereffect:hover .overlay {
-			  opacity: 1;
-			  filter: alpha(opacity=100);
-			  -webkit-transform: scale(1);
-			  -ms-transform: scale(1);
-			  transform: scale(1);
+			  top: 0;
+			  left: 0;
 			}
 
 			.hovereffect img {
 			  display: block;
 			  position: relative;
-			  -webkit-transition: all 0.35s;
-			  transition: all 0.35s;
-			  
+			  -webkit-transition: all 0.4s ease-in;
+			  transition: all 0.4s ease-in;
 			}
 
 			.hovereffect:hover img {
-			  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-			  filter: brightness(0.6);
-			  -webkit-filter: brightness(0.6);
-			  -webkit-transform: scale(1.2);
-			  -ms-transform: scale(1.1);
-			  transform: scale(1.1);
-			  
+			  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+			  filter: brightness(0.66);
+			  -webkit-filter: brightness(0.66);
+			  -webkit-transform: scale(1.3);
+			  -ms-transform: scale(1.3);
+			  transform: scale(1.3);
 			}
 
 			.hovereffect h2 {
@@ -165,37 +149,45 @@
 			  text-align: center;
 			  position: relative;
 			  font-size: 17px;
+			  padding: 10px;
+			  background: rgba(0, 0, 0, 0.6);
+			}
+
+			.hovereffect a.info {
+			  display: inline-block;
+			  text-decoration: none;
+			  padding: 7px 14px;
+			  border: 2px solid #fff;
+			  margin: 50px 0 0 0;
 			  background-color: transparent;
-			  color: #FFF;
-			  padding: 1em 0;
-			  opacity: 0;
-			  filter: alpha(opacity=0);
-			  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-			  transition: opacity 0.35s, transform 0.35s;
-			  -webkit-transform: translate3d(0,-100%,0);
-			  transform: translate3d(0,-100%,0);
 			}
 
-			.hovereffect a{
-			  color: #FFF;
-			  padding: 1em 0;
-			  opacity: 0;
-			  filter: alpha(opacity=0);
-			  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-			  transition: opacity 0.35s, transform 0.35s;
-			  -webkit-transform: translate3d(0,100%,0);
-			  transform: translate3d(0,100%,0);
+			.hovereffect a.info:hover {
+			  box-shadow: 0 0 5px #fff;
 			}
 
-			.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+			.hovereffect a.info, .hovereffect h2 {
+			  -webkit-transform: scale(0.7);
+			  -ms-transform: scale(0.7);
+			  transform: scale(0.7);
+			  -webkit-transition: all 0.4s ease-in;
+			  transition: all 0.4s ease-in;
+			  opacity: 0;
+			  filter: alpha(opacity=0);
+			  color: #fff;
+			  text-transform: uppercase;
+			}
+
+			.hovereffect:hover a.info, .hovereffect:hover h2 {
 			  opacity: 1;
 			  filter: alpha(opacity=100);
-			  -webkit-transform: translate3d(0,0,0);
-			  transform: translate3d(0,0,0);
+			  -webkit-transform: scale(1);
+			  -ms-transform: scale(1);
+			  transform: scale(1);
 			}
 		</style>
 	</head>
-	<body class="team" style="overflow-x:hidden;background-color:#e6f5ff;">
+	<body class="team" style="overflow-x:hidden;background-color:#f3f3f3;">
 
 		<!-- Header Wrapper -->
 			
@@ -206,7 +198,7 @@
 						<!-- Logo 
 						<img src="images/logo.jpg" width="100px" style="position:fixed; left:1%; padding:1%;">-->
 						<!-- Nav -->
-							<nav id="nav" style="background-color:black">
+							<nav id="nav" style="background-color:black;color:cornflowerblue;font-style:bold;">
 								<ul >
 									
 									<li class="active" id="index1"><a href="index.html">Home</a></li>
@@ -248,7 +240,17 @@
 					</div>
 					</div>
         <div style="width:100%;height:auto;" class="container info">
-            <div style="position:absolute; top:8%;left:17.65%;background-color:rgba(30, 100, 174 ,0.8 );padding:0.5% 20% 0% 20%; width:69%;text-align:center;margin-top:28px;" id="teamnav" class="row">
+            <div class="row container1" style="width:100%;position:absolute;top:10.3%">
+            <div class="col-md-3" style="margin-left:2%;">
+                <h2>Our Current Team</h2>
+                <p> Claritas est etiam processus dynamicus,
+                    qui sequitur mutationem consuetudium lectorum. Mirum
+                    est notare quam littera gothica, quam nunc putamus
+                    parum claram, anteposuerit litterarum formas humanitatis
+                    per seacula quarta decima et quinta decima.</p>
+            </div>
+            <div class="col-md-8" style="margin-top:2%">
+            <div style="background-color:rgba(30, 100, 174 ,0.8 );padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important" id="teamnav" class="row containers">
                 <a href="#" onclick="animate2('#Faculty_Advisors','#a')" title="Faculty Advisors" class="col-sm-2"><i style="color:black" class="fa fa-user" id="a"></i></a>
                 <a href="#" onclick="animate2('#Software_Team','#b')" alt="Software Team" title="Software Team" class="col-sm-2" style="color:white"><i class="fa fa-laptop" id="b"></i></a>
                 <a href="#" onclick="animate2('#Mechanical_Team','#c')" title="Mechanical Team" class="col-sm-2" style="color:white"><i class="fa fa-wrench" id="c"></i></a>
@@ -256,7 +258,7 @@
                 <a href="#" onclick="animate2('#Bussiness_Team','#e')" title="Bussiness Team" class="col-sm-2"><i style="color:white; font-size:20px; " class="fa fa-briefcase" id="e"></i></a>
             </div>
             <h2 style="position:absolute; top:5%;left:40%;"></h2>
-            <div id="Faculty_Advisors" style="background-color:rgba(30, 100, 174 ,0.8 ); width:69%; height:auto; position:absolute; top:15.8%; left:17.65%;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);padding-left:0px;" class="row divinfo">
+            <div id="Faculty_Advisors" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);" class="row containers">
                 <div class="col-lg-12" style="padding-left:0px;">
                     <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="facultyadvisors" class="faculty col-sm-4">Faculty Advisors</h2>
                     <div class="row" style="margin:110px 0% 40px 0%">
@@ -297,7 +299,7 @@
                     </div>
                 </div>
             </div>
-            <div id="Software_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); display:none;width:69%; height:auto; position:absolute; top:15.8%; left:17.65%;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);padding-left:0px;" class="row divinfo">
+            <div id="Software_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);opacity:0;display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px">
                     <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="softteam" class="faculty col-sm-4">Software Team</h2>
                     <div class="row rightpad" style="margin:110px 0% 40px 0%;padding:0;">
@@ -337,7 +339,7 @@
                     </div>
                 </div>
             </div>
-            <div id="Mechanical_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); display:none; width:69%; height:auto; position:absolute; top:15.8%; left:17.65%;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);padding-left:0px;" class="row divinfo">
+            <div id="Mechanical_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);opacity:0;display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
                     <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="mechteam" class="faculty col-sm-4">Mechanical Team</h2>
                     <div class="row rightpad" style="margin:110px 0% 40px 0%;padding:0">
@@ -377,7 +379,7 @@
                     </div>
                 </div>
             </div>
-            <div id="Electrical_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); display:none; width:69%; height:auto; position:absolute; top:15.8%; left:17.65%;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);padding-left:0px;" class="row divinfo">
+            <div id="Electrical_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);opacity:0;display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
                     <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="electteam" class="faculty col-sm-4">Electrical Team</h2>
                     <div class="row rightpad" style="margin:110px 0% 40px 0%;padding:0">
@@ -417,7 +419,7 @@
                     </div>
                 </div>
             </div>
-            <div id="Bussiness_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); display:none; width:69%; height:auto; position:absolute; top:15.8%; left:17.65%;box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);padding-left:0px;" class="row divinfo">
+            <div id="Bussiness_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);opacity:0;display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
                     <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="bussteam" class="faculty col-sm-4">Bussiness Team</h2>
                     <div class="row rightpad" style="margin:110px 0% 40px 0%;padding:0">
@@ -457,7 +459,8 @@
                     </div>
                 </div>
             </div>
-
+            </div>
+            </div>
         </div>
 					
 					<script src="team-members.js"></script>
@@ -483,10 +486,10 @@
 					
 					
 					
-        <div id="footer" style="position:static;top:1.5vw;color:white;padding:0em;background-color:#1e64ae">
+        <div id="footer" style="position:static;top:1.5vw;color:white;padding:0em;background-color:black">
 
             <!-- Copyright -->
-            <div id="copyright" style="position:relative;text-align:center;padding:0em 0em 1em 0em;color:inherit;opacity:0.4;">
+            <div id="copyright" style="position:relative;text-align:center;padding:1em 0em 1em 0em;color:inherit;opacity:0.4;">
                 &copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
             </div>
         </div>
@@ -497,10 +500,10 @@
                                 if ($(window).width() > 1350) {
                                     $('.thumbnail').css({ "height": "370", "width": "100%", "margin": "0%" });
                                     $('.faculty').css({ 'font-size': '1.8vm', 'left': '35%' ,"top":" 4%"});
-                                    $('#facultyadvisors').css({ "top": "2%" });
+                                    $('.containers').css({ "margin": "0%" });
+                                    $('.container1').css({ "top": "10.3%" });
                                     $('.overlay').css({ "margin": "0%", "width": "100%" });
-                                    $('.divinfo').css({ "position": "absolute", "top": "16.8%" });
-                                    $('#teamnav').css({ "padding": "0.5% 20% 0% 20%", "top": "8.3%" });
+                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%", "top": "8.3%" });
                                     $('i').css({ "padding": "5px" });
                                     $(".info").css({ "height": "900px" });
 									$('.rightpad').css({"padding":"0"});
@@ -508,9 +511,9 @@
                                 else if ($(window).width() > 850) {
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "0%" });
                                     $('.faculty').css({ 'font-size': '1.4em', 'left': '35%',"top":" 4%" });
-                                    $('#facultyadvisors').css({ "top": "2%" });
-                                    $('#teamnav').css({ "padding": "0.5% 20% 0% 20%", "top": "8%" });
-                                    $('.divinfo').css({ "position": "absolute", "top": "15.4%" });
+                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%"});
+                                    $('.containers').css({ "margin": "0%" });
+                                    $('.container1').css({ "top": "10.3%" });
                                     $('i').css({ "padding": "5px" });
                                     $(".info").css({ "height": "1000px" });
 									$('.rightpad').css({"padding":"0"});
@@ -519,15 +522,18 @@
                                 else {
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin-top": "5%" });
                                     $('.faculty').css({ 'font-size': '1.4em', 'left': '20%',"top":" 4%"});
+                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%"});
+                                    $('.info').css({ "height": "1900px" });
+                                    $('.containers').css({ "margin-right": "2%" });
+                                    $('.container1').css({ "top": "4.3%" });
+                                    $('.rightpad').css({ "padding": "10px" });
                                     $('#facultyadvisors').css({ "top": "-4%" });
-                                    $('#teamnav').css({ "padding": "0.5% 0% 0% 0%", "top": "3%" });
-                                    $('.divinfo').css({ "position": "absolute", "top": "6.6%" });
-                                    $('.info').css({ "height": "1500px" });
-									$('.rightpad').css({"padding":"10px"});
 									$('.overlay').css({ "margin": "0%", "width": "100%" });
                                     if ($(window).width() < 500) {
                                         $('i').css({ "padding": "0px" });
-										$('#facultyadvisors').css({ "top": "-7%" });
+                                        $('#facultyadvisors').css({ "top": "-5%" });
+                                        $('#teamnav').css({ "padding": "0%" });
+                                        $('.containers').css({ "margin-right": "2%" });
                                     }
                                 }
                             });
