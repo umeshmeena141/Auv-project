@@ -43,72 +43,62 @@
             outline: 2px solid black;
             border-radius: 5%;
         }
-
-        .scrollbar::-webkit-scrollbar {
-            height: .4em;
-        }
-
-        .scrollbar::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        }
-
-        .scrollbar::-webkit-scrollbar-thumb {
-            background-color: black;
-            outline: 0.2px solid black;
-        }
-
         .btn {
             transition: all .3s ease-in-out 0s;
-            color: white;
+            color:aquamarine;
+            border:2px solid aquamarine !important;
         }
 
 		.btn:hover {
-			background-color: whitesmoke;
-			color: cornflowerblue;
+			background-color: aquamarine;
+			color: white;
 			text-decoration: none;
 			transition-timing-function: ease-in-out;
 		}
-
+        .btn-danger{
+            border:none !important;
+            color:white;
+        }
         a:hover {
             color: white;
         }
 
         .page-header a {
-            color: black;
+            color: aqua;
+            text-decoration:none;
         }
 
         .page-header a:hover {
-                color: cornflowerblue;
+                color: white;
             }
         #nav a:hover{
             color:white;
         }
-	   .affix {
-		  top: 9%;
-		  right:1%;
-	   }
         .scrollbar {
             background-color: rgba(30, 100, 174, 0);
-            color: #202020;
+            color: cornsilk;
             margin: -5% 0% 0% 5% !important;
             border: none;
             padding: 0% 0% 0% 43%;
             display: block;
-            font-family: Menlo,Monaco,Consolas,'Courier New',monospace;
+            font-family: 'Calibri Light';
             font-size: 13px;
             word-wrap: break-word;
-            line-height: 1.42857143;
             margin: 1em 0;
         }
-        .active img:hover {
-            transform: scale(1.2);
-            -webkit-transition: all 0.5s linear ;
-            transition: all 1s linear ;
+            .scrollbar > h3 {
+                line-height: 1.5 !important;
+                margin-top:0;
+            }
+        .affix ~ .container-fluid {
+            position: relative;
+            top: 50px;
         }
+
     </style>
 </head>
 
-<body class="team" style="overflow-x:hidden;background-color:lightskyblue">
+<body class="team" style="overflow-x:hidden;background-color:rgba(68, 187, 238,0.2)" >
 
     <!-- Header Wrapper -->
     <!-- Header -->
@@ -117,7 +107,7 @@
 
             <!-- Logo
             <!-- Nav -->
-            <nav id="nav" style="background-color:black;color:cornflowerblue">
+            <nav id="nav" style="background-color:black;color:#5680e9">
                 <ul>
 
                     <li class="active" id="index1"><a href="index.html">Home</a></li>
@@ -160,23 +150,27 @@
         </div>
     </div>
     <!-- Main -->
-    <div id="main" class="wrapper style4" style="background-color:lightskyblue">
-        <div class="item carousel-inner active" style="width:100%"> <img src="images/team1.jpg" style="width:100%;height:750px;" class="bg" /><a href="#alumni" class="carousel-caption"><span class="glyphicon glyphicon-hand-down " style="font-size:200%;margin-bottom:20%;color:white;"></span></a></div>
+    <div id="main" class="wrapper style4" style="background-color:rgba(68, 187, 238,0)">
         <!-- Content -->
-        <div id="content" class="container-fluid" style="margin:0">
+        <div id="content" class="container-fluid" style="margin:0;">
 
             <section>
-                <header class="page-header" style="font-family:Algerian;color:black;">
-                    <h1 id="alumni">Our Alumni's</h1>
-                    <ul class="breadcrumb text-right navbar navbar-inverse " style="border:none;color:#f6f6f6;font-family:'Calbri Light';z-index:100;" data-spy="affix" data-offset-top="750">
-                        <li><a href="#2014-15" onclick="toggleyear(1)" class="link2">2014-2015</a></li>
-                        <li><a href="#2015-16" onclick="toggleyear(2)" class="link1" style="color:cornflowerblue">2015-2016</a></li>
+                <header class="page-header" style="font-family:monospace;color:black;border-bottom:2px solid #f2f2f2">
+                    <h1 id="alumni" class="text-center" style="margin-bottom:20px">Our Alumni's</h1>
+                    <ul id="nav2" class="breadcrumb text-right" style="border:none;background-color:#123e6d;font-family:'Calbri Light';z-index:100;text-decoration:none;font-size:17px">
+                        <li><a href="#alumni" onclick="toggleyear(1)" class="link2">2014-2015</a></li>
+                        <li><a href="#alumni" onclick="toggleyear(2)" class="link1" style="color:white">2015-2016</a></li>
                     </ul>
                 </header>
 
                 <div id="2014-15" style="display:none;">
+                    <div class="row">
+                        <div class="col-sm-4 text-center" style="margin: 0% 34%;">
+                            <h2>Team 2014-15</h2>
+                        </div>
+                    </div>
                     <div class="row ">
-                        <div class="col-md-3 rounded" style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 rounded" style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 1% 0% 4%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -217,7 +211,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 2% 0% 1%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded " />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -259,7 +253,7 @@
                     </div>
 
                     <div class="row ">
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 1% 0% 4%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -299,7 +293,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 2% 0% 1%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -341,7 +335,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 1% 0% 4%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -381,7 +375,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 2% 0% 1%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -429,10 +423,15 @@
 
 
                 <div id="2015-16" style="display:block;">
+                    <div class="row">
+                        <div class="col-sm-4 text-center" style="margin: 0% 34%;">
+                            <h2>Team 2015-16</h2>
+                        </div>
+                    </div>
                     <div class="row ">
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%;">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 1% 0% 4%;padding:0 !important;border-radius:2%;">
                             <div class="col-md-5 item" style="padding:0px">
-                                <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
+                                <img src="images/avatar3.png" style="width:100%; height:110%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
                                 <span class="carousel-caption glyphicon glyphicon-triangle-left" style="font-size:200%;color:cornflowerblue;margin-left:72.5%;width:5%;"></span>
                             </div>
@@ -443,7 +442,7 @@
 								gothica, quam nunc putamus parum claram,
 								anteposuerit litterarum formas humanitatis
 								per seacula quarta decima et quinta decima.</h3></div>
-                            <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin:2% 0% 0% 15%;padding:5px 30px ;;" data-toggle="modal" data-target="#alumni7"><h2>See My Story</h2></button>
+                            <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin:2% 0% 0% 15%;padding:5px 30px ;" data-toggle="modal" data-target="#alumni7"><h2>See My Story</h2></button>
 
                             <div class="modal fade" id="alumni7">
                                 <div class="modal-dialog modal-lg">
@@ -471,7 +470,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%;">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 2% 0% 1%;padding:0 !important;border-radius:2%;">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded " />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -484,7 +483,7 @@
 								gothica, quam nunc putamus parum claram,
 								anteposuerit litterarum formas humanitatis
 								per seacula quarta decima et quinta decima.</h3></div>
-                            <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin:2% 0% 0% 15%;padding:5px 30px ;;" data-toggle="modal" data-target="#alumni8"><h2>See My Story</h2></button>
+                            <button type="button" class="btn btn-link text-center" style="border:2px solid white;font-family:'Calibri Light';margin:2% 0% 0% 15%;padding:5px 30px ;" data-toggle="modal" data-target="#alumni8"><h2>See My Story</h2></button>
 
                             <div class="modal fade" id="alumni8">
                                 <div class="modal-dialog modal-lg">
@@ -513,7 +512,7 @@
                     </div>
 
                     <div class="row ">
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 1% 0% 4%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -553,7 +552,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 2% 0% 1%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -595,7 +594,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%;">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 1% 0% 4%;padding:0 !important;border-radius:2%;">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded" />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -635,7 +634,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:47.8%;margin:2% 0% 0% 2%;padding:0;border-radius:2%">
+                        <div class="col-md-3 " style=" background-color:rgba(30, 100, 174, 0.8);width:45.8%;margin:2% 2% 0% 1%;padding:0 !important;border-radius:2%">
                             <div class="col-md-5 item" style="padding:0px">
                                 <img src="images/avatar3.png" style="width:100%; height:100%;padding:0px" class="img-responsive img-rounded " />
                                 <div class="carousel-caption name" style="background:rgba(255,255,255,0.3);margin:-5% 0% -7% -20%;padding:0%;width:100% ;color:black">My Name<br />Software team</div>
@@ -681,10 +680,10 @@
 		   </div>
                 <!-- Team -->
                 <!-- Footer -->
-                <div id="footer" style="position:relative;top:1.5em;color:white;padding:0em;background-color:black">
+                <div id="footer" style="position:relative;top:1.5em;color:white;padding:0em;background-color:#164b83">
 
                     <!-- Copyright -->
-                    <div id="copyright" style="position:relative;text-align:center;padding:1em 0em 1em 0em;color:inherit;">
+                    <div id="copyright" style="position:relative;text-align:center;padding:1em 0em 1em 0em;color:inherit;text-transform:initial;font-size:15px;">
                         &copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
                     </div>
                 </div>
@@ -694,47 +693,42 @@
                         if (x == 1) {
                             $('#2014-15').css({ "display": "block" });
                             $('#2015-16').css({ "display": "none" });
-                            $('.link2').css({ "color": "cornflowerblue" });
-                            $('.link1').css({ "color": "black" });
+                            $('.link2').css({ "color": "white" });
+                            $('.link1').css({ "color": "aqua" });
 
                         }
                         else {
                             $('#2014-15').css({ "display": "none" });
                             $('#2015-16').css({ "display": "block" });
-                            $('.link1').css({ "color": "cornflowerblue" });
-                            $('.link2').css({ "color": "black" });
+                            $('.link1').css({ "color": "white" });
+                            $('.link2').css({ "color": "aqua" });
                         }
                     }
 
-                    $('img').hover(function () {
-                        $('.caption').slideDown(1000);
-                    });
+
                 </script>
+
+
 
                 <script>
                     $(document).ready(function () {
                         $(window).on('load resize', function () {
-                            if ($(window).width() > 1300) {
+                            if ($(window).width() > 1350) {
                                 $('.name').css({ "margin": "-5% 0% -7% -20%" });
-                                $('.bg').css({ "height": "750px" });
-                                $('button').css({ "width": "30%", "margin": "2% 0% 0% 15%" });
-								$('.affix').css({"top":"9%"});
+                                $('button').css({ "width": "30%", "margin": "0% 0% 0% 15%" });
 								$('.scrollbar').css({"padding":"0% 0% 0% 43%"});
                             }
                             else {
                                 $('button').css({ "width": "100%", "margin": "2% 0% 0% 0%" });
                                 $('.name').css({ "margin": "-5% 0% -8% -20%" });
-								$('.affix').css({"top":"8%"});
-								$('.scrollbar').css({"padding":"0% 0% 0% 43%"});
-								if($(window).width()<1000){
-									$('.scrollbar').css({"padding":"0% 0% 0% 0%"});
+                                $('.scrollbar').css({ "padding": "0% 0% 0% 43%" });
+								if($(window).width()<1050){
+                                    $('.scrollbar').css({ "padding": "0% 0% 0% 0%" });
 									//$('.name').css({ "margin": "-5% 0% -5% -15%" });
 								}
                                 if ($(window).width() < 700) {
                                     $('.name').css({ "margin": "-5% 0% -5% -15%" });
-                                    $('.bg').css({ "height": "350px" });
-									$('.affix').css({"top":"6%"});
-									$('.scrollbar').css({"padding":"0% 0% 0% 0%"});
+                                    $('.scrollbar').css({ "padding": "0% 0% 0% 0%" });
                                 }
                             }
                         });
@@ -742,5 +736,37 @@
 
                     });
                 </script>
+
+                <script>
+                  $(document).ready(function () {
+                        $(document).scroll(function () {
+                            $(window).on('resize load scroll', function () {
+                                //alert($('#nav').height());
+                                if ($(this).scrollTop() > 100) {
+                                    if ($(window).width() > 840) {
+                                        $('#nav2').css({ "position": "fixed", "width": "98%", "right": "1%" });
+                                        $('#alumni').css({ "margin-bottom": "85px" });
+                                        document.getElementById('nav2').style.top = $('#nav').height() + 'px';
+                                    }
+                                    else {
+                                        if ($(this).scrollTop() > 158) {
+                                            $('#nav2').css({ "position": "static" });
+                                            $('#nav2').css({ "position": "fixed", "width": "98%", "right": "1%" });
+                                            $('#alumni').css({ "margin-bottom": "85px" });
+                                            document.getElementById('nav2').style.top =  '44px';                                        
+                                        }
+                                    }
+                                }
+                                else {
+                                    $('#nav2').css({ "position": "relative","right":"0","width":"100%" }); 
+                                    $('#alumni').css({ "margin-bottom": "20px" });
+                                    document.getElementById('nav2').style.top = '0px';
+                                }
+                            });
+                        });
+                    });
+                </script>
+
+
 </body>
 </html>

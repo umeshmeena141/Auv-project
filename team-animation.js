@@ -7,8 +7,8 @@ function animate2(x,navhover){
              $(navhover).css({ "color":"black"});
              $(page[1]).css({ "color": "white" });
              $(page[0]).css({ "transform": "rotateY(180deg)", "transition": "all 0.6s linear" });
-             $(page[0]).fadeTo(400, '0.5');
-             $(page[0]).delay(100).queue(function (next) {
+             $(page[0]).fadeTo(600, '0.5');
+             $(page[0]).delay(200).queue(function (next) {
                  $(this).css({ "transform": "rotateY(0deg)", "transition": "all 0.1s linear" ,"display":"none"});
                  $(x).css({ "display": "block" });
                  $(x).fadeTo(10, '1');

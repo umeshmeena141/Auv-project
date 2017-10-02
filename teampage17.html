@@ -94,7 +94,7 @@
 			  color: black;
 			  font-size: 20px;
 			  position: absolute;
-			  top: 30%;
+			  top: 40%;
 			  left: 0%;
 			  transform: translate(-50%, -50%);
 			  -ms-transform: translate(-50%, -50%);
@@ -105,6 +105,9 @@
 			  .desc1{
 				color:black;
 				text-align:center;
+                margin-bottom:3%;
+                padding-top:110%;
+                font-family:monospace;
 			  }
 			
 
@@ -198,7 +201,7 @@
 						<!-- Logo 
 						<img src="images/logo.jpg" width="100px" style="position:fixed; left:1%; padding:1%;">-->
 						<!-- Nav -->
-							<nav id="nav" style="background-color:black;color:cornflowerblue;font-style:bold;">
+							<nav id="nav" style="background-color:black;color:#5680e9;font-style:bold;">
 								<ul >
 									
 									<li class="active" id="index1"><a href="index.html">Home</a></li>
@@ -241,15 +244,15 @@
 					</div>
         <div style="width:100%;height:auto;" class="container info">
             <div class="row container1" style="width:100%;position:absolute;top:10.3%">
-            <div class="col-md-3" style="margin-left:2%;">
-                <h2>Our Current Team</h2>
+            <div class="col-md-3" style="margin:1% 0% 0% 2%; ">
+                <h2 style="font-size:1.6em !important;">Our Current Team</h2>
                 <p> Claritas est etiam processus dynamicus,
                     qui sequitur mutationem consuetudium lectorum. Mirum
                     est notare quam littera gothica, quam nunc putamus
                     parum claram, anteposuerit litterarum formas humanitatis
                     per seacula quarta decima et quinta decima.</p>
             </div>
-            <div class="col-md-8" style="margin-top:2%">
+            <div class="col-md-8" style="margin:2% 0% 0% 3%">
             <div style="background-color:rgba(30, 100, 174 ,0.8 );padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important" id="teamnav" class="row containers">
                 <a href="#" onclick="animate2('#Faculty_Advisors','#a')" title="Faculty Advisors" class="col-sm-2"><i style="color:black" class="fa fa-user" id="a"></i></a>
                 <a href="#" onclick="animate2('#Software_Team','#b')" alt="Software Team" title="Software Team" class="col-sm-2" style="color:white"><i class="fa fa-laptop" id="b"></i></a>
@@ -257,28 +260,31 @@
                 <a href="#" onclick="animate2('#Electrical_Team','#d')" title="Electrical Team" class="col-sm-2" style="color:white"><i class="fa fa-flash" id="d"></i></a>
                 <a href="#" onclick="animate2('#Bussiness_Team','#e')" title="Bussiness Team" class="col-sm-2"><i style="color:white; font-size:20px; " class="fa fa-briefcase" id="e"></i></a>
             </div>
-            <h2 style="position:absolute; top:5%;left:40%;"></h2>
             <div id="Faculty_Advisors" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);" class="row containers">
-                <div class="col-lg-12" style="padding-left:0px;">
-                    <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="facultyadvisors" class="faculty col-sm-4">Faculty Advisors</h2>
-                    <div class="row" style="margin:110px 0% 40px 0%">
+                <div class="col-lg-12" style="padding:0px;">
+                    <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="facultyadvisors" class="faculty col-sm-4">Faculty Advisors</div>
+                    <div class="row info_container" style="margin:110px 0% 40px 0%">
                         <div class="col-sm-3" style="margin-left:6%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello<br/><br/></h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
-                                <div class="caption">
+                                <div class="caption" style="background-color:white">
                                     <p class="desc1">Lw</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
                                 <div class="caption">
                                     <p class="desc1">s</p>
                                 </div>
@@ -286,14 +292,16 @@
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%; ">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
+                                 </div>
+                                    <div class="caption">
+                                        <p class="desc1">i</p>
+                                    </div>
                                 </div>
-                                <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
-                                <div class="caption">
-                                    <p class="desc1">i</p>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
@@ -301,14 +309,16 @@
             </div>
             <div id="Software_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);opacity:0;display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px">
-                    <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="softteam" class="faculty col-sm-4">Software Team</h2>
-                    <div class="row rightpad" style="margin:110px 0% 40px 0%;padding:0;">
+                    <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="softteam" class="faculty col-sm-4">Software Team</div>
+                    <div class="row rightpad info_container" style="margin:110px 0% 40px 0%;padding:0;">
                         <div class="col-sm-3" style="margin-left:6%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
                                 <div class="caption">
                                     <p class="desc1">Lw</p>
                                 </div>
@@ -316,145 +326,167 @@
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
-                                <div class="caption">
-                                    <p class="desc1">s</p>
+                                    <div class="caption">
+                                        <p class="desc1">s</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%; ">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
-                                <div class="caption">
-                                    <p class="desc1">i</p>
+                                    <div class="caption">
+                                        <p class="desc1">i</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="Mechanical_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);opacity:0;display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
-                    <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="mechteam" class="faculty col-sm-4">Mechanical Team</h2>
-                    <div class="row rightpad" style="margin:110px 0% 40px 0%;padding:0">
+                    <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="mechteam" class="faculty col-sm-4">Mechanical Team</div>
+                    <div class="row rightpad info_container" style="margin:110px 0% 40px 0%;padding:0">
                         <div class="col-sm-3" style="margin-left:6%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
-                                <div class="caption">
-                                    <p class="desc1">Lw</p>
+                                    <div class="caption">
+                                        <p class="desc1">Lw</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
-                                <div class="caption">
-                                    <p class="desc1">s</p>
+                                    <div class="caption">
+                                        <p class="desc1">s</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%; ">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
-                                <div class="caption">
-                                    <p class="desc1">i</p>
+                                    <div class="caption">
+                                        <p class="desc1">i</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="Electrical_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);opacity:0;display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
-                    <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="electteam" class="faculty col-sm-4">Electrical Team</h2>
-                    <div class="row rightpad" style="margin:110px 0% 40px 0%;padding:0">
+                    <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="electteam" class="faculty col-sm-4">Electrical Team</div>
+                    <div class="row rightpad info_container" style="margin:110px 0% 40px 0%;padding:0">
                         <div class="col-sm-3" style="margin-left:6%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
-                                <div class="caption">
-                                    <p class="desc1">Lw</p>
+                                    <div class="caption">
+                                        <p class="desc1">Lw</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
-                                <div class="caption">
-                                    <p class="desc1">s</p>
+                                    <div class="caption">
+                                        <p class="desc1">s</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%; ">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
-                                <div class="caption">
-                                    <p class="desc1">i</p>
+                                    <div class="caption">
+                                        <p class="desc1">i</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="Bussiness_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);opacity:0;display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
-                    <h2 style="position:absolute; padding:10px; text-align:center;left:35%;top:2%;font-size:1.8vw; color:black;" id="bussteam" class="faculty col-sm-4">Bussiness Team</h2>
-                    <div class="row rightpad" style="margin:110px 0% 40px 0%;padding:0">
+                    <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="bussteam" class="faculty col-sm-4">Bussiness Team</div>
+                    <div class="row rightpad info_container" style="margin:110px 0% 40px 0%;padding:0">
                         <div class="col-sm-3" style="margin-left:6%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
-                                <div class="caption">
-                                    <p class="desc1">Lw</p>
+                                    <div class="caption">
+                                        <p class="desc1">Lw</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%;">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
-                                <div class="caption">
-                                    <p class="desc1">s</p>
+                                    <div class="caption">
+                                        <p class="desc1">s</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-sm-3" style="margin-left:7%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%; ">
-                                <div class="overlay">
-                                    <h2 class="text">Hello</h2>
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
                                 </div>
-                                <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
-                                <div class="caption">
-                                    <p class="desc1">i</p>
+                                    <div class="caption">
+                                        <p class="desc1">i</p>
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -486,10 +518,10 @@
 					
 					
 					
-        <div id="footer" style="position:static;top:1.5vw;color:white;padding:0em;background-color:black">
+        <div id="footer" style="position:static;top:1.5vw;color:white;padding:0em;background-color:#164b83">
 
             <!-- Copyright -->
-            <div id="copyright" style="position:relative;text-align:center;padding:1em 0em 1em 0em;color:inherit;opacity:0.4;">
+            <div id="copyright" style="position:relative;text-align:center;padding:1.4em 0em 1em 0em;color:inherit;opacity:0.4;font-size:15px;text-transform:initial">
                 &copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
             </div>
         </div>
@@ -498,40 +530,47 @@
                         $(document).ready(function () {
                             $(window).on('resize load ',function () {
                                 if ($(window).width() > 1350) {
-                                    $('.thumbnail').css({ "height": "370", "width": "100%", "margin": "0%" });
-                                    $('.faculty').css({ 'font-size': '1.8vm', 'left': '35%' ,"top":" 4%"});
+                                    $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "0%" });
+                                    $('.faculty').css({ 'font-size': '26px',"top":" 4%"});
                                     $('.containers').css({ "margin": "0%" });
                                     $('.container1').css({ "top": "10.3%" });
                                     $('.overlay').css({ "margin": "0%", "width": "100%" });
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%", "top": "8.3%" });
                                     $('i').css({ "padding": "5px" });
+                                    $('.col-sm-3').css({ "padding-right": "0px" });
                                     $(".info").css({ "height": "900px" });
 									$('.rightpad').css({"padding":"0"});
                                 }
                                 else if ($(window).width() > 850) {
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "0%" });
-                                    $('.faculty').css({ 'font-size': '1.4em', 'left': '35%',"top":" 4%" });
+                                    $('.faculty').css({ 'font-size': '26px', "top":" 4%" });
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%"});
                                     $('.containers').css({ "margin": "0%" });
                                     $('.container1').css({ "top": "10.3%" });
                                     $('i').css({ "padding": "5px" });
+                                    $('.col-sm-3').css({ "padding-right": "0px" });
+                                    $('#facultyadvisors').css({ "padding-right": "0px" });
                                     $(".info").css({ "height": "1000px" });
-									$('.rightpad').css({"padding":"0"});
+                                    $('.rightpad').css({ "padding": "0" });
+                                    $('.info_container').css({ "margin-top": "110px" });
 									$('.overlay').css({ "margin": "0%", "width": "100%" });
                                 }
                                 else {
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin-top": "5%" });
-                                    $('.faculty').css({ 'font-size': '1.4em', 'left': '20%',"top":" 4%"});
-                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%"});
+                                    $('.faculty').css({ 'font-size': '1.4em', "top":" 4%"});
+                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%" });
+                                    $('.info_container').css({ "margin-top": "0px" });
                                     $('.info').css({ "height": "2000px" });
+                                    $('.col-sm-3').css({ "padding-right": "10px" });
                                     $('.containers').css({ "margin-right": "2%" });
                                     $('.container1').css({ "top": "4.3%" });
                                     $('.rightpad').css({ "padding": "10px" });
-                                    $('#facultyadvisors').css({ "top": "-4%" });
+                                    $('#facultyadvisors').css({ "padding-right": "10px" });
 									$('.overlay').css({ "margin": "0%", "width": "100%" });
                                     if ($(window).width() < 500) {
                                         $('i').css({ "padding": "0px" });
-                                        $('#facultyadvisors').css({ "top": "-5%" });
+                                        $('.col-sm-3').css({ "padding-right": "10px" });
+                                        $('#facultyadvisors').css({ "padding-right": "10px" });
                                         $('#teamnav').css({ "padding": "0%" });
                                         $('.containers').css({ "margin-right": "2%" });
                                     }
