@@ -16,6 +16,6 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ## Copyright and License
 
-Copyright AUV-IITK. 
+Copyright AUV-IITK.
 
-All rights reserved for the files under `_posts`, `_images`, `_vehicles`; the rest of the code is released under the [MIT](https://opensource.org/licenses/mit-license.php) license.
+All rights reserved for the files under `posts`, `images`, `documents`; the rest of the code is released under the [MIT](https://opensource.org/licenses/mit-license.php) license.
