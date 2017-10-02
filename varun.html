@@ -113,6 +113,9 @@
 		header.major .byline {
 			list-style-type:disc;
 		}
+		#LOGO:hover {
+			filter:brightness(100);
+		}
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -125,7 +128,7 @@
 					<!-- Nav -->
 					<nav id="nav" style="z-index:10">
 						<ul >
-							<li id="index1"><a href="index.html">Home</a></li>
+							<li><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a></li>
 							<li><a href="">Blog</a></li>
 							<li class="active" ID="varun1" style="color:white"><a href="varun.html">Vehicle</a>
 								<ul>
@@ -167,7 +170,6 @@
 			</section>
 		</div>
 		<div class="stick" id="stic">
-				<a id="part1" class="button1" style="color:white;">Varun</a>
 				<a id="part2" class="button1" >Mechanical Subsystem</a>
 				<a id="part3" class="button1">Electrical Subsystem</a>
 				<a id="part4" class="button1">Software Subsystem</a>
@@ -288,31 +290,12 @@
 				<hr />
 			</section>
 			
-<!-- Copyright -->
+			<!-- Copyright -->
 				<div id="copyright">
 					&copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
 				</div>			
 		</div>
 		<script>
-			if(window.innerWidth > 856)
-				document.getElementById("stic").style.top = "59px";
-			else
-				document.getElementById("stic").style.top = "43px";
-
-			window.onscroll = function() {myF()};
-			function myF() {
-				if(window.innerWidth > 856)
-					document.getElementById("stic").style.top = "59px";
-				else
-					document.getElementById("stic").style.top = "43px";
-			}
-			$(document).ready(function() {
-				$("#part1").click(function() {
-					$("body,html").animate(
-						{scrollTop :   $("#v0").offset().top }, 400
-					);  //how fast the scrolling animation will be in miliseconds
-				});
-			});
 			$(document).ready(function() {
 				$("#part2").click(function() {
 					$("body,html").animate(
