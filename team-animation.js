@@ -6,14 +6,11 @@ function animate2(x,navhover){
 		else{
              $(navhover).css({ "color":"black"});
              $(page[1]).css({ "color": "white" });
-             $(page[0]).css({ "transform": "rotateY(180deg)", "transition": "all 0.6s linear" });
-             $(page[0]).fadeTo(600, '0.5');
-             $(page[0]).delay(200).queue(function (next) {
-                 $(this).css({ "transform": "rotateY(0deg)", "transition": "all 0.1s linear" ,"display":"none"});
-                 $(x).css({ "display": "block" });
-                 $(x).fadeTo(10, '1');
+             $(page[0]).slideUp(1000);
+             $(x).delay(1000).queue(function (next) {
+                 $(this).fadeTo(1000, '1');
                  next();
-             }); 
+             });
              page = [x, navhover];
 		}
 		
