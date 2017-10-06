@@ -86,15 +86,19 @@
               margin-left:3%;
 			  
 			}
+
             i{
                 padding:5px;
             }
-
+            h2{
+                font-family:'Calibri Light';
+                line-height:2.5;
+            }
 			.text {
 			  color: black;
 			  font-size: 20px;
 			  position: absolute;
-			  top: 40%;
+			  top: 30%;
 			  left: 0%;
 			  transform: translate(-50%, -50%);
 			  -ms-transform: translate(-50%, -50%);
@@ -207,7 +211,7 @@
 									<li  id="index1"><a href="index.html">Home</a></li>
 									<li><a href="left-sidebar.html">Blog</a></li>
 									<li>
-										<a href="">Vehicle</a>
+										<a href="varun.html">Vehicle</a>
 										<ul>
 											<li>
 												<a href="">Competition Vehicles</a>
@@ -445,7 +449,8 @@
                     </div>
                 </div>
             </div>
-            <div id="Bussiness_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);display:none;" class="row containers">
+            <div id="Bussiness_Team" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
                     <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="bussteam" class="faculty col-sm-4">Bussiness Team</div>
                     <div class="row rightpad info_container" style="margin:110px 0% 40px 0%;padding:0">
@@ -512,7 +517,14 @@
 								$(".desc1").eq(i+6).html(Mechteam[i].Name+"<br/>"+Mechteam[i].Department+"<br/>"+Mechteam[i].Others);
 								$(".desc1").eq(i+9).html(Electteam[i].Name+"<br/>"+Electteam[i].Department+"<br/>"+Electteam[i].Others);
 								$(".desc1").eq(i+12).html(Bussteam[i].Name+"<br/>"+Bussteam[i].Department+"<br/>"+Bussteam[i].Others);
-							}
+                            }
+                            for (i = 0; i < 3; i++) {
+                                $('h2').eq(i).html(SA[i].Name + "<br/>" + SA[i].Department + "<br/>" + SA[i].Others);
+                                $("h2").eq(i + 3).html(Softteam[i].Name + "<br/>" + Softteam[i].Department + "<br/>" + Softteam[i].Others);
+                                $("h2").eq(i + 6).html(Mechteam[i].Name + "<br/>" + Mechteam[i].Department + "<br/>" + Mechteam[i].Others);
+                                $("h2").eq(i + 9).html(Electteam[i].Name + "<br/>" + Electteam[i].Department + "<br/>" + Electteam[i].Others);
+                                $("h2").eq(i + 12).html(Bussteam[i].Name + "<br/>" + Bussteam[i].Department + "<br/>" + Bussteam[i].Others);
+                            }
 					</script>
 					
 					
