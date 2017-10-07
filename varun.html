@@ -94,19 +94,6 @@
 			margin-right:3%;
 			text-align:justify;
 		}
-		#overlay {
-			position: fixed;
-			display: none;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba(0,0,0,0.7);
-			z-index: 20;
-			cursor: pointer;
-		}
 		.byline {
 			font-size:1.2em !important;
 		}
@@ -116,34 +103,35 @@
 		#LOGO:hover {
 			filter:brightness(100);
 		}
+		#header {
+			position:fixed;
+			z-index:10;
+			background:black;
+		}
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
-		<div class="wrapper style1">
-		
+		<div class="wrapper style1" id="ws1">
+
 			<!-- Header -->
-			<div id="header" style="position:fixed;z-index:10; height:60px;line-height:60px;background:black;">
+			<div id="header">
 				<div class="container" style="z-index:10">
-					<!-- Nav -->
+
 					<nav id="nav" style="z-index:10">
 						<ul >
-							<li><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a></li>
+							<li id="index1"><a href="index.html">Home</a></li>
+							<li id="LOGO1"><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a></li>
 							<li><a href="">Blog</a></li>
 							<li class="active" ID="varun1" style="color:white"><a href="varun.html">Vehicle</a>
 								<ul>
 									<li><a href="">Competition Vehicles</a>
-										<ul><li><a href="">Varun</a></li>
-										</ul>
-									</li>
-									<li><a href="">Prototypes</a>
-										<ul><li><a href="#">Anahita 2.0</a></li>
-											<li><a href="#">Anahita 1.0</a></li>
+										<ul><li><a href="varun.html">Varun</a></li>
 										</ul>
 									</li>
 								</ul>
 							</li>
-							<li><a href="">Sponsors</a></li>
+							<li id="sponsors1"><a href="sponsors.html">Sponsors</a></li>
 							<li><a href="">Team</a>
 								<ul>
 									<li><a href="#">2017-18</a></li>
@@ -152,7 +140,7 @@
 										<ul><li><a href="#">2016-17</a></li>
 											<li><a href="#">2014-16</a></li>
 										</ul>
-									</li>										
+									</li>
 								</ul>
 							</li>
 							<li><a href="">Contact Us</a></li>
@@ -274,7 +262,7 @@
 							<li class="byline">Features: Software Subsystem</li>
 						</header>
 					</div>
-					
+
 				</div>
 			</section>
 		</div>
@@ -289,13 +277,40 @@
 				</ul>
 				<hr />
 			</section>
-			
+
 			<!-- Copyright -->
 				<div id="copyright">
 					&copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
-				</div>			
+				</div>
 		</div>
 		<script>
+			var x1 = document.getElementById("stic");
+			var x2 = document.getElementById("index1");
+			var x3 = document.getElementById("LOGO1");
+			if(window.innerWidth > 856) {
+				x1.style.top = "59px";
+				x2.style.display = "none";
+				x3.style.display="inline";
+			}
+			else {
+				x1.style.top = "43px";
+				x2.style.display = "inline";
+				x3.style.display = "none";
+			}
+
+			window.onscroll = function() {myF()};
+			function myF() {
+				if(window.innerWidth > 856) {
+					x1.style.top = "59px";
+					x2.style.display = "none";
+					x3.style.display="inline";
+				}
+				else {
+					x1.style.top = "43px";
+					x2.style.display = "inline";
+					x3.style.display = "none";
+				}
+			}
 			$(document).ready(function() {
 				$("#part2").click(function() {
 					$("body,html").animate(
@@ -319,4 +334,4 @@
 			});
 		</script>
 	</body>
-</html>	
+</html>
