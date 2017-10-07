@@ -558,6 +558,7 @@
 		height: 4em;
 		background:rgba(0, 0, 0, 0.5);
 		width:100%;
+		font-weight:400;
 	}
 
 		#header .container {

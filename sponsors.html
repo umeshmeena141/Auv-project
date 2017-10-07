@@ -22,113 +22,7 @@
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
-		<style>
-		.dash {
-			width:100%;
-			height:3px;
-			background:#7c7cde;
-			margin-top:-3px;
-			border-radius:5px;
-		}
-		.auvMech {
-			display: inline-block;
-			margin: 0px 0px 15px 0px;
-			width:49%;
-		}
-		.button1 {
-			padding:10px 15px;
-			display:inline-block;
-			margin-top:3px;
-			margin-bottom:3px;
-			background:#123e6d;
-			color:aqua;
-			cursor:pointer;
-			font-size:1.1em;
-			text-decoration:none;
-			font-weight:500;
-			text-transform:uppercase;
-		}
-		.button1:hover {
-			background:#1a7999;
-		}
-		.button3 {
-			padding:10px 15px;
-			display:inline-block;
-			margin-left:2%;
-			margin-bottom:5px;
-			background:#1a7999;
-			color:white;
-			cursor:pointer;
-			font-size:1.1em;
-			text-decoration:none;
-			font-weight:500;
-		}
-		.button3:hover {
-			background:#0E9DAF;
-			color:white;
-		}
-		.button:hover {
-			background:#1a0c5a;
-		}
-		.picCom {
-			clear:left;
-			margin:0 0 30px 0;
-			padding:0;
-			text-align:center;
-			color:white;
-			font-size:1.0em;
-			font-weight:500;
-		}
-		.mDesc {
-			clear:left;
-			color:#0fa5d7;
-			margin-left:3%;
-			margin-right:3%;
-			text-align:justify;
-		}
-		#overlay {
-			position: fixed;
-			display: none;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba(0,0,0,0.7);
-			z-index: 20;
-			cursor: pointer;
-		}
-		.byline {
-			font-size:1.2em !important;
-		}
-		header.major .byline {
-			list-style-type:disc;
-		}
-		#LOGO:hover {
-			filter:brightness(100);
-		}
-		#header {
-			position:fixed;
-			z-index:10;
-			background:black;
-		}
-		th {
-			font-weight:700;
-			font-size:1.2em;
-		}
-		td {
-			font-weight:400;
-		}
-		.MEDIA1 {
-			color:#1e64ae;
-			font-size:1.8em;
-		}
-		.NEWS1 {
-			color:#1e64ae;
-			font-size:1.8em;
-		}
-		</style>
+		<link rel="stylesheet" href="css/sponsors.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
@@ -137,11 +31,12 @@
 			<!-- Header -->
 			<div id="header">
 				<div class="container" style="z-index:10">
-
+							
 					<nav id="nav" style="z-index:10">
 						<ul >
+							<span id="LOGO1"><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a></span>
+					
 							<li id="index1"><a href="index.html">Home</a></li>
-							<li id="LOGO1"><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a></li>
 							<li><a href="">Blog</a></li>
 							<li ID="varun1" ><a href="varun.html">Vehicle</a>
 								<ul>
@@ -169,10 +64,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapper style3" id="v0" style="padding-bottom:0px;padding-bottom:0px;zoom:95%;">
+		<div class="wrapper style3" id="v0" style="padding-bottom:0px;padding-bottom:0px;zoom:95%;background: #164b83 url(images/AUV.png) no-repeat; background-size:cover;">
 			<section class="container" >
 				<header class="major">
-					<h2 style="font-size:4.4em; margin-top:20px;margin-bottom:50px;">SPONSORS</h2>
+					<h2 style="font-size:4.4em; margin-top:0px;margin-bottom:40px;">SPONSORS</h2>
 				</header>
 			</section>
 		</div>
@@ -210,6 +105,11 @@
 							  <td>Adam</td>
 							  <td>Rohnson</td>
 							  <td>67</td>
+							</tr>
+							<tr>
+							  <td>Umesh</td>
+							  <td>Meena</td>
+							  <td>167</td>
 							</tr>
 						</table>
 					</div>
@@ -267,28 +167,6 @@
 					&copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
 				</div>
 		</div>
-		<script>
-			var x2 = document.getElementById("index1");
-			var x3 = document.getElementById("LOGO1");
-			if(window.innerWidth > 856) {
-				x2.style.display = "none";
-				x3.style.display="inline";
-			}
-			else {
-				x2.style.display = "inline";
-				x3.style.display = "none";
-			}
-			window.onscroll = function() {myF()};
-			function myF() {
-				if(window.innerWidth > 856) {
-					x2.style.display = "none";
-					x3.style.display="inline";
-				}
-				else {
-					x2.style.display = "inline";
-					x3.style.display = "none";
-				}
-			}
-		</script>
+		<script src="js/navBar.js"></script>
 	</body>
 </html>

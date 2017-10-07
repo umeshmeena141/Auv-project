@@ -21,84 +21,15 @@
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
+		<link rel="stylesheet" href="css/index.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<style>
-		body {
-			background:#164b83;
-		}
-		#NEWS {
-			background: white;
-			float:left;
-			width:50%;
-			min-height:500px;
-			display:inline-block;
-			position:relative; 
-		}
-		#NEWS1 {
-			color:#1e64ae;
-			font-size:1.8em;
-		}
-		.MEDIA1 {
-			color:#1e64ae;
-			font-size:1.8em;
-		}
-		#MEDIA2 {
-			height:42px;
-			margin-left:0px;
-			width:100%;
-			background:rgba(30, 100, 174, 0.8);
-		}
-		.MEDIA21 {
-			color:#f2f2f2;
-			background:rgba(30, 100, 174, 0);
-			width:50px;
-			padding:12px 0px;
-			text-align:center;
-			font-size:1.0em;
-			float:left;
-		}
-		.MEDIA21:hover:not(.active2) {
-			background:rgba(30, 100, 174, 0.8);
-			color:white;
-			cursor:pointer;
-		}
-		.active2 {
-			background:rgba(81, 151, 225,0.6);
-			color:#f2f2f2;
-		}
-		.SOC {
-			overflow:hidden;
-			border:1px solid rgba(102, 102, 102, 0.2);
-			margin-top:15px;
-		}
-		#NEWS2 {
-			border-radius:5px;
-			background:#f2f2f2;
-		}
-		.NEWS21 {
-			font-size:1.0em;
-			font-weight:400;
-			background:#e4e4e4;
-			display:block;
-			cursor:pointer;
-			color:#4d4d4d;
-			margin:0;
-			padding:15px 0px 15px 12px;
-		}
-		.NEWS21 span {
-			float:right;
-			font-size:0.8em;
-			margin-right:12px;
-		}
-	</style>
 	</head>
-	<body class="homepage"><!-- Header Wrapper -->
+	<body class="homepage">
 		<div class="wrapper style1">
-		
-			<!-- Header -->
+		<!-- Header -->
 			<div id="header" style="position:fixed;z-index:10; ">
 				<div class="container" style="z-index:10">
-					<!-- Nav -->
+			<!-- Nav -->
 					<nav id="nav" style="z-index:10">
 						<ul >
 							<li id="index1"><a href="index.html">Home</a></li>
@@ -130,7 +61,7 @@
 				</div>
 			</div>
 			
-			<!-- Banner -->
+		<!-- Banner -->
 			<div id="banner">
 				<section class="container" >
 					<img src="images/logo.jpg" alt="AUV IITK" style="width:304px;"><br>
@@ -139,11 +70,13 @@
 					<p></p>
 				</section>
 			</div>
+			
 		</div>
-		<!--color gradients-->		
+<!--main-->		
 		<div class="wrapper style2" style="padding-top:50px;margin-bottom:-10px;">
 			<section class="container">
 				<div class="row double">
+		<!--About Us -->
 					<div class="6u">
 						<h2 id="NEWS1" style="margin-bottom:15px;"><b>ABOUT US</b></h2>
 						<p style="text-align:justify; font-size:1.0em;font-weight:400;">
@@ -151,6 +84,7 @@
 						&emsp;&emsp;Over the past years, the team has witnessed a close collaboration between students from various departments coming and sharing ideas; creating a small yet strong network of people who are eagerly looking for a low- cost solution to large- scale problems. With its numbers only increasing every year, there are currently eighteen people, in total, who are looking over the mechanical, electrical and programming aspects of the project.
 						</p>
 					</div>
+		<!--NEWS -->
 					<div class="6u">
 						<h2 class="MEDIA1">LATEST NEWS</h2>
 						<div class="MEDIA1"><b><a href="https://www.facebook.com/auviitk/" style="color:inherit;text-decoration:none;">FOLLOW US ON SOCIAL MEDIA</a></b></div>
@@ -182,86 +116,17 @@
 			</section>
 		</div>
 		
-		<!-- Footer -->
+<!-- Footer -->
 		<div id="footer">
 			
-			<!-- Copyright -->
+		<!-- Copyright -->
 				<div id="copyright">
 					&copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
 				</div>			
 		</div>
 		
-		<script>
-			var x = document.getElementsByClassName("SOC");
-			var y = document.getElementsByClassName("MEDIA21");
-			var z = document.getElementsByClassName("MEDIA1");
-			for(var i=0; i<x.length; i++) {
-				x[i].style.display = "none";
-				z[i].style.display = "none";
-			}
-			y[0].className += " active2";
-			x[0].style.display = "block";
-			z[0].style.display = "block";
-			function lanews() {
-				for(var i=0; i<x.length; i++) {
-					x[i].style.display = "none";
-					z[i].style.display = "none";
-				}
-				x[0].style.display = "block";
-				y[0].className += " active2";
-				y[1].className = "MEDIA21 fa fa-facebook";
-				y[2].className = "MEDIA21 fa fa-youtube";
-				z[0].style.display = "block";
-			}
-			function fb1() {
-				for(var i=0; i<x.length; i++) {
-					x[i].style.display = "none";
-					z[i].style.display = "none";
-				}
-				x[1].style.display = "block";
-				y[1].className += " active2";
-				y[0].className = "MEDIA21 fa fa-edit";
-				y[2].className = "MEDIA21 fa fa-youtube";
-				z[1].style.display = "block";
-			}
-			function twit1() {
-				for(var i=0; i<x.length; i++) {
-					x[i].style.display = "none";
-					z[i].style.display = "none";
-				}
-				x[2].style.display = "block";
-				y[2].className += " active2";
-				y[0].className = "MEDIA21 fa fa-edit";
-				y[1].className = "MEDIA21 fa fa-facebook";
-				z[2].style.display = "block";
-			}
-			var x2 = document.getElementById("index1");
-			var x3 = document.getElementById("LOGO1");
-			if(window.innerWidth > 856) {
-				x2.style.display = "none";
-				x3.style.display="inline";
-			}
-			else {
-				x2.style.display = "inline";
-				x3.style.display = "none";
-			}
-			window.onscroll = function() {myF()};
-			function myF() {
-				if(window.innerWidth > 856) {
-					x2.style.display = "none";
-					x3.style.display="inline";
-				}
-				else {
-					x2.style.display = "inline";
-					x3.style.display = "none";
-				}
-				var y = document.getElementById("header");
-				if(window.pageYOffset >= 30)
-					y.style.background = "rgba(0, 0, 0, 1.0)";
-				else 
-					y.style.background = "rgba(0, 0, 0, 0.7)";
-			}
-		</script>
+		<script src="js/index.js"></script>
+		<script src="js/navBar.js"></script>
 	</body>
 	
 </html>
