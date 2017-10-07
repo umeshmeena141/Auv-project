@@ -98,12 +98,14 @@
 			  color: black;
 			  font-size: 20px;
 			  position: absolute;
-			  top: 30%;
+			  top: 0%;
 			  left: 0%;
 			  transform: translate(-50%, -50%);
 			  -ms-transform: translate(-50%, -50%);
 			  text-align:center;
 			  opacity:0;
+			  height:100%;
+			  align-content:center;
 			  }
 			  
 			  .desc1{
@@ -144,8 +146,8 @@
 
 			.hovereffect:hover img {
 			  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
-			  filter: brightness(0.66);
-			  -webkit-filter: brightness(0.66);
+			  filter: brightness(0.8);
+			  -webkit-filter: brightness(0.8);
 			  -webkit-transform: scale(1.12);
 			  -ms-transform: scale(1.12);
 			  transform: scale(1.12);
@@ -156,8 +158,8 @@
 			  text-align: center;
 			  position: relative;
 			  font-size: 17px;
-			  padding: 10px;
 			  background: rgba(0, 0, 0, 0.6);
+			  margin:0;
 			}
 
 			.hovereffect a.info {
@@ -267,7 +269,7 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
                                 </div>
                                 <div class="caption" style="background-color:white">
                                     <p class="desc1">Lw</p>
@@ -314,7 +316,7 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;min-height:100%" class="image">
                                 </div>
                                 <div class="caption">
                                     <p class="desc1">Lw</p>
@@ -406,7 +408,7 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;max-height:100% !important;" class="image">
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">Lw</p>
@@ -499,24 +501,24 @@ display:none;" class="row containers">
 					<script>
 							for(i=0;i<3;i++){
 								document.getElementById('Faculty_Advisors').getElementsByClassName("image")[i].src=SA[i].img1;
-								document.getElementById('Software_Team').getElementsByClassName("image")[i].src=Softteam[i].img;
-								document.getElementById('Mechanical_Team').getElementsByClassName("image")[i].src=Mechteam[i].img;
-								document.getElementById('Electrical_Team').getElementsByClassName("image")[i].src=Electteam[i].img;
-								document.getElementById('Bussiness_Team').getElementsByClassName("image")[i].src=Bussteam[i].img;
+								document.getElementById('Software_Team').getElementsByClassName("image")[i].src=Softteam[i].img1;
+								document.getElementById('Mechanical_Team').getElementsByClassName("image")[i].src=Mechteam[i].img1;
+								document.getElementById('Electrical_Team').getElementsByClassName("image")[i].src=Electteam[i].img1;
+								document.getElementById('Bussiness_Team').getElementsByClassName("image")[i].src=Bussteam[i].img1;
 							}
-                            for(i=0;i<4;i++){
-                                $('.desc1').eq(i).html(SA[i].Name + "<br/>" + SA[i].Department + "<br/>" + SA[i].Others);
-								$(".desc1").eq(i+3).html(Softteam[i].Name+"<br/>"+Softteam[i].Department+"<br/>"+Softteam[i].Others);
-								$(".desc1").eq(i+6).html(Mechteam[i].Name+"<br/>"+Mechteam[i].Department+"<br/>"+Mechteam[i].Others);
-								$(".desc1").eq(i+9).html(Electteam[i].Name+"<br/>"+Electteam[i].Department+"<br/>"+Electteam[i].Others);
-								$(".desc1").eq(i+12).html(Bussteam[i].Name+"<br/>"+Bussteam[i].Department+"<br/>"+Bussteam[i].Others);
+                            for(i=0;i<3;i++){
+                                $('.desc1').eq(i).html(SA[i].Name + "<br/>" + SA[i].Department + "<br/>" + SA[i].email);
+								$(".desc1").eq(i+3).html(Softteam[i].Name+"<br/>"+Softteam[i].Department+"<br/>"+Softteam[i].email);
+								$(".desc1").eq(i+6).html(Mechteam[i].Name+"<br/>"+Mechteam[i].Department+"<br/>"+Mechteam[i].email);
+								$(".desc1").eq(i+9).html(Electteam[i].Name+"<br/>"+Electteam[i].Department+"<br/>"+Electteam[i].email);
+								$(".desc1").eq(i+12).html(Bussteam[i].Name+"<br/>"+Bussteam[i].Department+"<br/>"+Bussteam[i].email);
                             }
                             for (i = 0; i < 3; i++) {
-                                $('.text').eq(i).html(SA[i].Name + "<br/>" + SA[i].Department + "<br/>" + SA[i].Others);
-                                $(".text").eq(i + 3).html(Softteam[i].Name + "<br/>" + Softteam[i].Department + "<br/>" + Softteam[i].Others);
-                                $(".text").eq(i + 6).html(Mechteam[i].Name + "<br/>" + Mechteam[i].Department + "<br/>" + Mechteam[i].Others);
-                                $(".text").eq(i + 9).html(Electteam[i].Name + "<br/>" + Electteam[i].Department + "<br/>" + Electteam[i].Others);
-                                $(".text").eq(i + 12).html(Bussteam[i].Name + "<br/>" + Bussteam[i].Department + "<br/>" + Bussteam[i].Others);
+                                $('.text').eq(i).html(SA[i].CurrProject );
+                                $(".text").eq(i + 3).html(Softteam[i].CurrProject);
+                                $(".text").eq(i + 6).html(Mechteam[i].CurrProject );
+                                $(".text").eq(i + 9).html(Electteam[i].CurrProject );
+                                $(".text").eq(i + 12).html(Bussteam[i].CurrProject);
                             }
 					</script>
 					
