@@ -214,20 +214,13 @@
 										<a href="varun.html">Vehicle</a>
 										<ul>
 											<li>
-												<a href="">Competition Vehicles</a>
+												<a href="#">Competition Vehicles</a>
 												<ul>
-													<li><a href="#">Varun</a></li>
+													<li><a href="varun.html">Varun</a></li>
 													
 												</ul>
 											</li>
-											<li>
-												<a href="">Prototypes</a>
-												<ul>
-													<li><a href="#">Anahita 2.0</a></li>
-													<li><a href="#">Anahita 1.0</a></li>
-													
-												</ul>
-											</li>
+
 										</ul>
 									</li>
 									<li><a href="right-sidebar.html">Sponsors</a></li>
@@ -240,7 +233,7 @@
 
 											</li>										</ul>
 									</li>
-									<li><a href="no-sidebar.html">Contact Us</a></li>
+									<li><a href="contactpage.html">Contact Us</a></li>
 								</ul>
 							</nav>
 	
@@ -519,11 +512,11 @@ display:none;" class="row containers">
 								$(".desc1").eq(i+12).html(Bussteam[i].Name+"<br/>"+Bussteam[i].Department+"<br/>"+Bussteam[i].Others);
                             }
                             for (i = 0; i < 3; i++) {
-                                $('h2').eq(i).html(SA[i].Name + "<br/>" + SA[i].Department + "<br/>" + SA[i].Others);
-                                $("h2").eq(i + 3).html(Softteam[i].Name + "<br/>" + Softteam[i].Department + "<br/>" + Softteam[i].Others);
-                                $("h2").eq(i + 6).html(Mechteam[i].Name + "<br/>" + Mechteam[i].Department + "<br/>" + Mechteam[i].Others);
-                                $("h2").eq(i + 9).html(Electteam[i].Name + "<br/>" + Electteam[i].Department + "<br/>" + Electteam[i].Others);
-                                $("h2").eq(i + 12).html(Bussteam[i].Name + "<br/>" + Bussteam[i].Department + "<br/>" + Bussteam[i].Others);
+                                $('.text').eq(i).html(SA[i].Name + "<br/>" + SA[i].Department + "<br/>" + SA[i].Others);
+                                $(".text").eq(i + 3).html(Softteam[i].Name + "<br/>" + Softteam[i].Department + "<br/>" + Softteam[i].Others);
+                                $(".text").eq(i + 6).html(Mechteam[i].Name + "<br/>" + Mechteam[i].Department + "<br/>" + Mechteam[i].Others);
+                                $(".text").eq(i + 9).html(Electteam[i].Name + "<br/>" + Electteam[i].Department + "<br/>" + Electteam[i].Others);
+                                $(".text").eq(i + 12).html(Bussteam[i].Name + "<br/>" + Bussteam[i].Department + "<br/>" + Bussteam[i].Others);
                             }
 					</script>
 					
@@ -568,14 +561,14 @@ display:none;" class="row containers">
 									$('.overlay').css({ "margin": "0%", "width": "100%" });
                                 }
                                 else {
-                                    $('.thumbnail').css({ "height": "auto", "width": "100%", "margin-top": "5%" });
+                                    $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "3% 0% 2% 0%" });
                                     $('.faculty').css({ 'font-size': '1.4em', "top":" 4%"});
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%" });
                                     $('.info_container').css({ "margin-top": "0px" });
                                     $('.info').css({ "height": "2000px" });
                                     $('.col-sm-3').css({ "padding-right": "10px" });
                                     $('.containers').css({ "margin-right": "2%" });
-                                    $('.container1').css({ "top": "4.3%" });
+                                    $('.container1').css({ "top": "4.3%","left":"3%" });
                                     $('.rightpad').css({ "padding": "10px" });
                                     $('#facultyadvisors').css({ "padding-right": "10px" });
 									$('.overlay').css({ "margin": "0%", "width": "100%" });

@@ -3,28 +3,29 @@ var SA=[];
 			Name:"My Name",
 			Department: "Some branch",
 			Others: "example@iitk.ac.in",
-			img1:"images/avatar3.png"
+			img1:"images/avatar3.png",
+			img2:"images/avatar3.png"
 		}
 		SA[1]={
 			Name:"My Name",
             Department: "Some branch",
 			Others: "example@iitk.ac.in",
-			img1:"images/avatar3.png"
-
+			img1:"images/avatar3.png",
+			img2:"images/avatar3.png"
 		}
 		SA[2]={
 			Name:"My Name",
             Department: "Some branch",
 			Others: "example@iitk.ac.in",
-			img1:"images/avatar3.png"
-
+			img1:"images/avatar3.png",
+			img2:"images/avatar3.png"
 		}
 		SA[3]={
 			Name:"My Name",
 			Department: "CE",
 			Others: "example@iitk.ac.in",
-			img1:"images/avatar3.png"
-
+			img1:"images/avatar3.png",
+			img2:"images/avatar3.png"
 		}
 var Softteam=[];
 		Softteam[0]={
