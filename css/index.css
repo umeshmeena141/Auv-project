@@ -62,7 +62,8 @@
 			padding:15px 0px 15px 12px;
 		}
 		.NEWS21 span {
-			float:right;
 			font-size:0.8em;
 			margin-right:12px;
+			padding:0px 0px 15px 12px;
+			float:right;
 		}
