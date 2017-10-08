@@ -1,34 +1,34 @@
 var SA=[];		
-		SA[0]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
-			CurrProject:"Some Project"
-		}
 		SA[1]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
+			Name:"Mayank Mittal",
+			Department: "EE",
+			email: "mayankm@iitk.ac.in",
+			img1:"images/team_members/Mayankm.jpg",
+			facebook:"https://www.facebook.com/mayankm.1596",
+			CurrProject:"Team Management"
+		}
+		SA[0]={
+			Name:"Akash ",
+			Department: "AE",
+			email: "jaiakash@iitk.ac.in",
+			img1:"images/team_members/Akash.jpg",
+			facebook:"https://www.facebook.com/akashjain5396",
 			CurrProject:"Some Project"
 		}
 		SA[2]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
+			Name:"Manish Kumar",
+			Department: "AE",
+			email: "maniskj@iitk.ac.in",
+			img1:"images/team_members/Manish.jpg",
+			facebook:"https://www.facebook.com/profile.php?id=100010275425218",
 			CurrProject:"Some Project"
 		}
 		SA[3]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
+			Name:"Rithvik Patibandla",
+			Department: "EE",
+			email: "rithvikp@iitk.ac.in",
+			img1:"images/team_members/Rithvik.jpg",
+			facebook:"https://www.facebook.com/rithvik.patibandla",
 			CurrProject:"Some Project"
 		}
 var Softteam=[];
@@ -48,7 +48,7 @@ var Softteam=[];
 			facebook:"https://www.facebook.com/arnav.garg.7",
 			CurrProject:"Controls/Motion planning"
 		}
-		Softteam[2]={
+		Softteam[3]={
 			Name:"Varun Pawar",
 			Department: "ME",
 			email: "varunpwr@iitk.ac.in",
@@ -57,13 +57,13 @@ var Softteam=[];
 			github: "https://github.com/VarunPwr/VP1",
 			CurrProject:"Acoustic Localization using Hydrophone Array"
 		}
-		Softteam[3]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
-			CurrProject:"Some Project"
+		Softteam[2]={
+			Name:"Suryansh Agarwal",
+			Department: "EE",
+			email: "asurya@iitk.ac.in",
+			img1:"images/team_members/SuryashAgarwal.jpg",
+			facebook:"https://www.facebook.com/suryansh.agarwal.90",
+			CurrProject:"Optimizing the hardware layer and improving the arduino, imu and camera nodes"
 		}
 var Mechteam=[];
 		Mechteam[0]={
@@ -78,7 +78,7 @@ var Mechteam=[];
 			Name:"Mahesh Saboo",
 			Department: "ME",
 			email: "mssaboo@iitk.ac.in",
-			img1:"images/team_members/MaheshSaboo1.jpg",
+			img1:"images/team_members/maheshSaboo1.jpg",
 			facebook:"https://www.facebook.com/mssaboo",
 			github:"https://github.com/mssaboo",
 			CurrProject:"Torpedo Designing And Operation of Pneumatic System of Varun"
@@ -102,12 +102,12 @@ var Electteam=[];
 			CurrProject:"Battery Management System"
 		}
 		Electteam[1]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
-			CurrProject:"Some Project"
+			Name:"Vivek Jain",
+			Department: "MSE",
+			email: "vjdviv@iitk.ac.in",
+			img1:"images/team_members/Vivek.jpg",
+			facebook:"https://www.facebook.com/Vjdjain",
+			CurrProject:"Battery Management System"
 		}
 		Electteam[2]={
 			Name:"Some Name",
@@ -127,27 +127,27 @@ var Electteam=[];
 		}
 var Bussteam=[];
 		Bussteam[0]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
-			CurrProject:"Some Project"
+			Name:"P Karthic",
+			Department: "BSBE",
+			email: "pkarthic@iitk.ac.in",
+			img1:"images/team_members/Karthic.jpg",
+			facebook:"https://www.facebook.com/karthic.karthic.90857",
+			CurrProject:"Web Master"
 		}
 		Bussteam[1]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
-			CurrProject:"Some Project"
+			Name:"Umesh Meena",
+			Department: "ME",
+			email: "umeshm@iitk.ac.in",
+			img1:"images/team_members/Umesh.jpg",
+			facebook:"https://www.facebook.com/umeshmeena141",
+			CurrProject:"Web Master"
 		}
 		Bussteam[2]={
 			Name:"Some Name",
 			Department: "Branch",
 			email: "example@iitk.ac.in",
 			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
+			facebook:"https://www.facebook.com/umeshmeena141",
 			CurrProject:"Some Project"
 		}
 		Bussteam[3]={
