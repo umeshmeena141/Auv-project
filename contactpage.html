@@ -20,6 +20,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+				           <script src="js/navBar.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -56,55 +57,59 @@
                 color: black;
                 font-size:16px;
             }
+
+			header.major .byline {
+				list-style-type:disc;
+			}
+			#LOGO:hover {
+				filter:brightness(100);
+			}
+			#header {
+				position:fixed;
+				z-index:10;
+				background:black;
+			}
+		
         </style>
 	</head>
 	<body style="background-color:#e6eeff !important">
 
 		<!-- Header Wrapper -->
-			<div class="wrapper style1" style="background:none;">
-			
-				<!-- Header -->
-					<div id="header">
-						<div class="container navbar" style="position:fixed;margin:0;padding:0 15%;width:100%;z-index:100;background-color:rgba(0,0,0,1) !important" >
-								
-							<!-- Logo -->
-								<h5 style="margin:4px 0px 0px 0px"><a href="#" id="logo">AUV</a></h5>
-							
-							<!-- Nav -->
-                            <nav id="nav" style="color:cornflowerblue">
-                                <ul>
+			<div class="wrapper style1" id="ws1">
 
-                                    <li class="active" id="index1"><a href="index.html">Home</a></li>
-                                    <li><a href="left-sidebar.html">About Us</a></li>
-                                    <li>
-                                        <a href="varun.html">Vehicle</a>
-                                        <ul>
-                                            <li>
-                                                <a href="">Competition Vehicles</a>
-                                                <ul>
-                                                    <li><a href="#">Varun</a></li>
+						<!-- Header -->
+						<div id="header">
+							<div class="container" style="z-index:10">
 
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="teampage17.html">Team</a>
-                                        <ul>
-                                            <li><a href="teampage17.html">2017-18</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contactpage.html">Contact Us</a></li>
-                                </ul>
-                            </nav>
+								<nav id="nav" style="z-index:10;background-color:rgba(0,0,0,1)">
+									<ul >
+										<li id="LOGO1"><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:10px;padding-right:7px;padding-bottom:10px;margin-bottom:0;"></a></li>
+										
+										
+										<li  id="varun1" ><a href="varun.html">Vehicle</a>
+											<ul>
+												<li><a href="">Competition Vehicles</a>
+													<ul><li><a href="varun.html">Varun</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><a href="teampage17.html">Team</a>
+											<ul>
+												<li><a href="teampage17.html">2017-18</a></li>
+											</ul>
+										</li>
+										<li class="active" style="color:white"><a href="contactpage.html">Contact Us</a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
-			</div>
 		
 		<!-- Main -->
 			<div id="main" class="wrapper style4" style="padding-bottom:1emc!important;background-color:#164b83;padding:0 !important">
-				<div class="container-fluid">
-					<div class="row" style="margin:0% !important">
+				<div class="container-fluid" >
+					<div class="row" style="margin:4% 0% !important">
                         <div class="row text-center skel-cell-important" style="width:110%;border-bottom:1px solid #123e6d" >
                             <div class="col-md-4" style="margin:0% 30%;font-size:3vw;color:White;font-family:Monospace" id="contactus">   
                             <h2>CONTACT US</h2>
@@ -145,13 +150,13 @@
                                     <ul style="font-family:Arial;font-size:15px;line-height:1.7;width:100%;padding-left:5%">
                                         <dl style="line-height:1.6">
                                             <dt style="color:aqua"> Mayank</dt>
-                                            <dd><span style="color:#99e6ff">Email</span> :<span style="color:white;">example@gmail.com.in</span></dd>
-                                            <dd><span style="color:#99e6ff">Phone</span> : <span style="color:white;">88888888888</span></dd>
+                                            <dd><span style="color:#99e6ff">Email</span> :<span style="color:white;">mayankm@iitk.ac.in</span></dd>
+                                            <dd> <span ><a href="https://www.facebook.com/mayankm.1596" style="color:white;"><i class="fa fa-facebook"></i></a></span></dd>
                                         </dl>
                                         <dl>
                                             <dt style="color:aqua"> Akash</dt>
-                                            <dd><span style="color:#99e6ff">Email</span> :<span style="color:white;">example@gmail.com.in</span></dd>
-                                            <dd><span style="color:#99e6ff">Phone</span> : <span style="color:white;">88888888888</span></dd>
+                                            <dd><span style="color:#99e6ff">Email</span> :<span style="color:white;">jaiakash@iitk.ac.in</span></dd>
+                                            <dd> <span ><a href="https://www.facebook.com/akashjain53966" style="color:white;"><i class="fa fa-facebook"></i></a></span></dd>
                                         </dl>
                                     </ul>
 
@@ -193,10 +198,11 @@
         <div id="footer" style="position:relative;top:1.5em;color:white;padding:0em;background-color:#164b83">
             <section class="container">
                 <ul class="icons" style="padding-bottom:0;margin-top:1%;">
-                    <li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-                    <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-                    <li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-                    <li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+                    <li class="active"><a href="https://www.facebook.com/auviitk/" class="fa fa-facebook"><span>Facebook</span></a></li>
+                    <li><a href="https://github.com/auv-iitk" class="fa fa-github"><span>Twitter</span></a></li>
+                    
+                    <li><a href="mailto:iitkauv@gmail.com" class="fa fa-envelope"><span>Google+</span></a></li>
+                    
                 </ul>
             </section>
 
@@ -216,7 +222,7 @@
 						$('.contactdetails').css({"padding-left":"0% !important"});
 						$('#sidebar').css({"padding-left":"0% !important"});
 						$('.col-md-5').css({"margin-left":"0% !important"});
-						
+						$('h1').css({"font-size":"30px"});
                     }
                 });
             });
@@ -229,6 +235,7 @@
 			Database Management
 		-->
 		</script>
+
 		
 	</body>
 </html>

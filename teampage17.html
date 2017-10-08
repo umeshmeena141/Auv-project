@@ -48,7 +48,6 @@
 
 			img{
 				
-				width:40%;
 				z-index:9;
 				
 			}
@@ -58,9 +57,13 @@
 				font-size:20px;
 				text-decoration:none;
 				border:none;
-				
-				
-				
+	
+			}
+			.carousel-caption{
+				bottom:0;
+				font-size:150%;
+				position:absolute;
+
 			}
 			#nav a:hover{
 				color:white;
@@ -98,14 +101,15 @@
 			  color: black;
 			  font-size: 20px;
 			  position: absolute;
-			  top: 0%;
+			  top: 50%;
 			  left: 0%;
-			  transform: translate(-50%, -50%);
-			  -ms-transform: translate(-50%, -50%);
+			  transform: translate(0%, 50%);
+			  -ms-transform: translate(0%, 50%);
 			  text-align:center;
 			  opacity:0;
 			  height:100%;
 			  align-content:center;
+			  line-height:1.5;
 			  }
 			  
 			  .desc1{
@@ -194,62 +198,56 @@
 			  -ms-transform: scale(1);
 			  transform: scale(1);
 			}
+			header.major .byline {
+				list-style-type:disc;
+			}
+			#LOGO:hover {
+				filter:brightness(100);
+			}
+			#header {
+				position:fixed;
+				z-index:10000;
+				background:black;
+			}
 		</style>
 	</head>
 	<body class="team" style="overflow-x:hidden;background-color:#f3f3f3;">
+			<div class="wrapper style1" id="ws1">
 
-		<!-- Header Wrapper -->
-			
-			<!-- Header -->
-				<div id="header" style="position:fixed;z-index:100;background-color:rgba(255,255,255,0) ">
-					<div class="container" style="z-index:10">
-							
-						<!-- Logo 
-						<img src="images/logo.jpg" width="100px" style="position:fixed; left:1%; padding:1%;">-->
-						<!-- Nav -->
-							<nav id="nav" style="background-color:black;color:#5680e9;">
-								<ul style="font-size:14px">
-									
-									<li  id="index1"><a href="index.html">Home</a></li>
-									<li><a href="left-sidebar.html">Blog</a></li>
-									<li>
-										<a href="varun.html">Vehicle</a>
-										<ul>
-											<li>
-												<a href="#">Competition Vehicles</a>
-												<ul>
-													<li><a href="varun.html">Varun</a></li>
-													
-												</ul>
-											</li>
+						<!-- Header -->
+						<div id="header">
+							<div class="container" style="z-index:100000;">
 
-										</ul>
-									</li>
-									<li><a href="right-sidebar.html">Sponsors</a></li>
-									<li class="active">
-										<a  style="color:white" href="teampage17.html" >Team</a>
-										<ul>
-											<li><a href="teampage17.html">2017-18</a></li>
-											<li>
-												<a href="alumnipage.html">Alumni</a>
-
-											</li>										</ul>
-									</li>
-									<li><a href="contactpage.html">Contact Us</a></li>
-								</ul>
-							</nav>
-	
+								<nav id="nav" style="z-index:10;background-color:black;">
+									<ul >
+										<li id="LOGO1"><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:10px;padding-right:7px;padding-bottom:10px;margin-bottom:0;"></a></li>
+										<li id="index1"><a href="index.html">Home</a></li>
+										
+										<li  id="varun1" ><a href="varun.html">Vehicle</a>
+											<ul>
+												<li><a href="">Competition Vehicles</a>
+													<ul><li><a href="varun.html">Varun</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="active" style="color:white"><a href="teampage17.html">Team</a>
+											<ul>
+												<li><a href="teampage17.html">2017-18</a></li>
+											</ul>
+										</li>
+										<li><a href="contactpage.html">Contact Us</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
 					</div>
-					</div>
+					
         <div style="width:100%;height:auto;" class="container info">
             <div class="row container1" style="width:100%;position:absolute;top:10.3%">
             <div class="col-md-3" style="margin:1% 0% 0% 2%; ">
                 <h2 style="font-size:1.6em !important;">Our Current Team</h2>
-                <p> Claritas est etiam processus dynamicus,
-                    qui sequitur mutationem consuetudium lectorum. Mirum
-                    est notare quam littera gothica, quam nunc putamus
-                    parum claram, anteposuerit litterarum formas humanitatis
-                    per seacula quarta decima et quinta decima.</p>
+                <p> With the number only increasing each year, our current team has 18 members working under the subsystems of Software, Mechanical, Electrical, and Business. We are working on our bot VARUN, which shall participate in SAUVC(SINGAPORE) AND ROBOSUB(SAN DIEGO) in the forthcoming period.</p>
             </div>
             <div class="col-md-8" style="margin:2% 0% 0% 3%">
             <div style="background-color:rgba(30, 100, 174 ,0.8 );padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important" id="teamnav" class="row containers">
@@ -261,47 +259,73 @@
             </div>
             <div id="Faculty_Advisors" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
-                    <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="facultyadvisors" class="faculty col-sm-4">Faculty Advisors</div>
+                    <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="facultyadvisors" class="faculty col-sm-4">Team Representatives</div>
                     <div class="row info_container" style="margin:110px 0% 40px 0%">
-                        <div class="col-sm-3" style="margin-left:6%;padding:0;">
+                        <div class="col-sm-3" style="margin-left:6%;padding:0;display:none;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%;">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
+									<div class="item">
                                     <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                 <div class="caption" style="background-color:white">
+									
                                     <p class="desc1">Lw</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-left:7%;padding:0;">
+                        <div class="col-sm-3" style="margin-left:38%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%;">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                 <div class="caption">
                                     <p class="desc1">s</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3" style="margin-left:7%;padding:0;">
+                        <div class="col-sm-3" style="margin-left:7%;padding:0;display:none;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%; ">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                  </div>
                                     <div class="caption">
                                         <p class="desc1">i</p>
                                     </div>
                                 </div>
                         </div>
+						<div class="col-sm-3" style="margin:2% 0% 0%38%;padding:0;display:none;">
+                            <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%; ">
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Hello</h2>
+                                    </div>
+									<div class="item">
+                                    <img src="images/team_members/Rithvik.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="https://www.facebook.com/rithvik.patibandla" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
+                                </div>
+                                    <div class="caption">
+                                        <p class="desc1">Rithvik Patibandla</br> EE </br/> rithvikp@iitk.ac.in</p>
+                                    </div>
+                                </div>
+                        </div>-->
 
                     </div>
                 </div>
@@ -316,7 +340,10 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;min-height:100%" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                 <div class="caption">
                                     <p class="desc1">Lw</p>
@@ -329,7 +356,10 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">s</p>
@@ -342,10 +372,29 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">i</p>
+                                    </div>
+                                </div>
+                        </div>
+						<div class="col-sm-3" style="margin:2% 0% 0%38%;padding:0;">
+                            <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%; ">
+                                <div class="hovereffect">
+                                    <div class="overlay">
+                                        <h2 class="text">Acoustic Localization using Hydrophone Array</h2>
+                                    </div>
+									<div class="item">
+                                    <img src="images/team_members/VarunPawar1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="https://www.facebook.com/varun.pawar.96387" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
+                                </div>
+                                    <div class="caption">
+                                        <p class="desc1">Varun Pawar</br> ME </br/> varunpwr@iitk.ac.in</p>
                                     </div>
                                 </div>
                         </div>
@@ -362,7 +411,10 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">Lw</p>
@@ -375,7 +427,10 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">s</p>
@@ -388,7 +443,10 @@
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">i</p>
@@ -402,39 +460,48 @@
                 <div class="col-lg-12" style="padding:0px;">
                     <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="electteam" class="faculty col-sm-4">Electrical Team</div>
                     <div class="row rightpad info_container" style="margin:110px 0% 40px 0%;padding:0">
-                        <div class="col-sm-3" style="margin-left:6%;padding:0;">
+                        <div class="col-sm-3" style="margin-left:18%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%;">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;max-height:100% !important;" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">Lw</p>
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-sm-3" style="margin-left:7%;padding:0;">
+                        <div class="col-sm-3" style="margin-left:15%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%;">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">s</p>
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-sm-3" style="margin-left:7%;padding:0;">
+                        <div class="col-sm-3" style="margin-left:7%;padding:0;display:none;">
                             <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:100%; ">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">i</p>
@@ -449,39 +516,49 @@ display:none;" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
                     <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="bussteam" class="faculty col-sm-4">Bussiness Team</div>
                     <div class="row rightpad info_container" style="margin:110px 0% 40px 0%;padding:0">
-                        <div class="col-sm-3" style="margin-left:6%;padding:0;">
+                        <div class="col-sm-3" style="margin-left:18%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%;">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">Lw</p>
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-sm-3" style="margin-left:7%;padding:0;">
+                      <div class="col-sm-3" style="margin-left:15%;padding:0;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%;">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Nature" style="width:100%;" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">s</p>
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-sm-3" style="margin-left:7%;padding:0;">
+                        <div class="col-sm-3" style="margin-left:7%;padding:0;display:none;">
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%; ">
                                 <div class="hovereffect">
                                     <div class="overlay">
                                         <h2 class="text">Hello</h2>
                                     </div>
-                                    <img src="images/avatar3.png" alt="Fjords" style="width:100%" class="image">
+									<div class="item">
+                                    <img src="images/preview1.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+									<a href="#" class="fblink" ><i class="fa fa-facebook carousel-caption" style="left:20%;z-index:100;opacity:0.5;"></i></a>
+									</div>
+									</div>
                                 </div>
                                     <div class="caption">
                                         <p class="desc1">i</p>
@@ -505,20 +582,26 @@ display:none;" class="row containers">
 								document.getElementById('Mechanical_Team').getElementsByClassName("image")[i].src=Mechteam[i].img1;
 								document.getElementById('Electrical_Team').getElementsByClassName("image")[i].src=Electteam[i].img1;
 								document.getElementById('Bussiness_Team').getElementsByClassName("image")[i].src=Bussteam[i].img1;
+								document.getElementById('Faculty_Advisors').getElementsByClassName("fblink")[i].href=SA[i].facebook;
+								document.getElementById('Software_Team').getElementsByClassName("fblink")[i].href=Softteam[i].facebook;
+								document.getElementById('Mechanical_Team').getElementsByClassName("fblink")[i].href=Mechteam[i].facebook;
+								document.getElementById('Electrical_Team').getElementsByClassName("fblink")[i].href=Electteam[i].facebook;
+								document.getElementById('Bussiness_Team').getElementsByClassName("fblink")[i].href=Bussteam[i].facebook;
 							}
                             for(i=0;i<3;i++){
                                 $('.desc1').eq(i).html(SA[i].Name + "<br/>" + SA[i].Department + "<br/>" + SA[i].email);
-								$(".desc1").eq(i+3).html(Softteam[i].Name+"<br/>"+Softteam[i].Department+"<br/>"+Softteam[i].email);
-								$(".desc1").eq(i+6).html(Mechteam[i].Name+"<br/>"+Mechteam[i].Department+"<br/>"+Mechteam[i].email);
-								$(".desc1").eq(i+9).html(Electteam[i].Name+"<br/>"+Electteam[i].Department+"<br/>"+Electteam[i].email);
-								$(".desc1").eq(i+12).html(Bussteam[i].Name+"<br/>"+Bussteam[i].Department+"<br/>"+Bussteam[i].email);
+								$(".desc1").eq(i+4).html(Softteam[i].Name+"<br/>"+Softteam[i].Department+"<br/>"+Softteam[i].email);
+								$(".desc1").eq(i+8).html(Mechteam[i].Name+"<br/>"+Mechteam[i].Department+"<br/>"+Mechteam[i].email);
+								$(".desc1").eq(i+11).html(Electteam[i].Name+"<br/>"+Electteam[i].Department+"<br/>"+Electteam[i].email);
+								$(".desc1").eq(i+14).html(Bussteam[i].Name+"<br/>"+Bussteam[i].Department+"<br/>"+Bussteam[i].email);
+
                             }
                             for (i = 0; i < 3; i++) {
                                 $('.text').eq(i).html(SA[i].CurrProject );
-                                $(".text").eq(i + 3).html(Softteam[i].CurrProject);
-                                $(".text").eq(i + 6).html(Mechteam[i].CurrProject );
-                                $(".text").eq(i + 9).html(Electteam[i].CurrProject );
-                                $(".text").eq(i + 12).html(Bussteam[i].CurrProject);
+                                $(".text").eq(i + 4).html(Softteam[i].CurrProject);
+                                $(".text").eq(i + 8).html(Mechteam[i].CurrProject );
+                                $(".text").eq(i + 11).html(Electteam[i].CurrProject );
+                                $(".text").eq(i + 14).html(Bussteam[i].CurrProject);
                             }
 					</script>
 					
@@ -540,12 +623,12 @@ display:none;" class="row containers">
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "0%" });
                                     $('.faculty').css({ 'font-size': '26px',"top":" 4%"});
                                     $('.containers').css({ "margin": "0%" });
-                                    $('.container1').css({ "top": "10.3%" });
+                                    $('.container1').css({ "top": "8.3%" });
                                     $('.overlay').css({ "margin": "0%", "width": "100%" });
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%", "top": "8.3%" });
                                     $('i').css({ "padding": "5px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
-                                    $(".info").css({ "height": "900px" });
+                                    $(".info").css({ "height": "1100px" });
 									$('.rightpad').css({"padding":"0"});
                                 }
                                 else if ($(window).width() > 850) {
@@ -553,7 +636,7 @@ display:none;" class="row containers">
                                     $('.faculty').css({ 'font-size': '26px', "top":" 4%" });
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%"});
                                     $('.containers').css({ "margin": "0%" });
-                                    $('.container1').css({ "top": "10.3%" });
+                                    $('.container1').css({ "top": "8.3%" });
                                     $('i').css({ "padding": "5px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
                                     $('#facultyadvisors').css({ "padding-right": "0px" });
@@ -567,7 +650,7 @@ display:none;" class="row containers">
                                     $('.faculty').css({ 'font-size': '1.4em', "top":" 4%"});
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%" });
                                     $('.info_container').css({ "margin-top": "0px" });
-                                    $('.info').css({ "height": "2000px" });
+                                    $('.info').css({ "height": "2300px" });
                                     $('.col-sm-3').css({ "padding-right": "10px" });
                                     $('.containers').css({ "margin-right": "2%" });
                                     $('.container1').css({ "top": "4.3%","left":"3%" });
@@ -598,7 +681,7 @@ display:none;" class="row containers">
                         });
 
                </script>
-            
+            <script src="js/navBar.js"></script>
 	</body>
 	
 </html>
