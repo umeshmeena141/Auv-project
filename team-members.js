@@ -38,7 +38,7 @@ var Softteam=[];
 			email: "aarora@iitk.ac.in",
 			img1:"images/team_members/abhinavarora1.jpg",
 			facebook:"https://www.facebook.com/abhinav.arora.507",
-			CurrProject:"IMU (controls)"
+			CurrProject:"IMU (controls), Gazebo"
 		}
 		Softteam[1]={
 			Name:"Arnav Garg",
@@ -78,7 +78,7 @@ var Mechteam=[];
 			Name:"Mahesh Saboo",
 			Department: "ME",
 			email: "mssaboo@iitk.ac.in",
-			img1:"images/team_members/maheshSaboo1.jpg",
+			img1:"images/team_members/MaheshSaboo1.jpg",
 			facebook:"https://www.facebook.com/mssaboo",
 			github:"https://github.com/mssaboo",
 			CurrProject:"Torpedo Designing And Operation of Pneumatic System of Varun"

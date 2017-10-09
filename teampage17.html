@@ -212,17 +212,17 @@
 		</style>
 	</head>
 	<body class="team" style="overflow-x:hidden;background-color:#f3f3f3;">
+			<!-- Header Wrapper -->
 			<div class="wrapper style1" id="ws1">
 
 						<!-- Header -->
 						<div id="header">
-							<div class="container" style="z-index:100000;">
+							<div class="container" style="z-index:10">
 
-								<nav id="nav" style="z-index:10;background-color:black;">
+								<nav id="nav" style="z-index:10;background-color:rgba(0,0,0,1)">
 									<ul >
-										<li id="LOGO1"><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:10px;padding-right:7px;padding-bottom:10px;margin-bottom:0;"></a></li>
+										<li id="LOGO1"><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:8px;padding-right:7px;padding-bottom:12px;margin-bottom:0;"></a></li>
 										<li id="index1"><a href="index.html">Home</a></li>
-										
 										<li  id="varun1" ><a href="varun.html">Vehicle</a>
 											<ul>
 												<li><a href="">Competition Vehicles</a>
@@ -242,20 +242,20 @@
 							</div>
 						</div>
 					</div>
-					
+		
         <div style="width:100%;height:auto;" class="container info">
             <div class="row container1" style="width:100%;position:absolute;top:10.3%">
             <div class="col-md-3" style="margin:1% 0% 0% 2%; ">
                 <h2 style="font-size:1.6em !important;">Our Current Team</h2>
-                <p> With the number only increasing each year, our current team has 18 members working under the subsystems of Software, Mechanical, Electrical, and Business. We are working on our bot VARUN, which shall participate in SAUVC(SINGAPORE) AND ROBOSUB(SAN DIEGO) in the forthcoming period.</p>
+                <p> With the number only increasing each year, our current team has 18 members working under the subsystems of Software, Mechanical, Electrical, and Business. We are working on our bot VARUN, which shall participate in SAUVC(SINGAPORE) in the forthcoming period.</p>
             </div>
             <div class="col-md-8" style="margin:2% 0% 0% 3%">
             <div style="background-color:rgba(30, 100, 174 ,0.8 );padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important" id="teamnav" class="row containers">
-                <a href="#" onclick="animate2('#Faculty_Advisors','#a')" title="Faculty Advisors" class="col-sm-2"><i style="color:black" class="fa fa-user" id="a"></i></a>
-                <a href="#" onclick="animate2('#Software_Team','#b')" alt="Software Team" title="Software Team" class="col-sm-2" style="color:white"><i class="fa fa-laptop" id="b"></i></a>
-                <a href="#" onclick="animate2('#Mechanical_Team','#c')" title="Mechanical Team" class="col-sm-2" style="color:white"><i class="fa fa-wrench" id="c"></i></a>
-                <a href="#" onclick="animate2('#Electrical_Team','#d')" title="Electrical Team" class="col-sm-2" style="color:white"><i class="fa fa-flash" id="d"></i></a>
-                <a href="#" onclick="animate2('#Bussiness_Team','#e')" title="Bussiness Team" class="col-sm-2"><i style="color:white; font-size:20px; " class="fa fa-briefcase" id="e"></i></a>
+                <a onclick="animate2('#Faculty_Advisors','#a')" title="Faculty Advisors" class="col-sm-2"><i style="color:black;cursor:pointer;" class="fa fa-user" id="a"></i></a>
+                <a onclick="animate2('#Software_Team','#b')" alt="Software Team" title="Software Team" class="col-sm-2" style="color:white;cursor:pointer;"><i class="fa fa-laptop" id="b"></i></a>
+                <a onclick="animate2('#Mechanical_Team','#c')" title="Mechanical Team" class="col-sm-2" style="color:white;cursor:pointer;"><i class="fa fa-wrench" id="c"></i></a>
+                <a onclick="animate2('#Electrical_Team','#d')" title="Electrical Team" class="col-sm-2" style="color:white;cursor:pointer;"><i class="fa fa-flash" id="d"></i></a>
+                <a onclick="animate2('#Bussiness_Team','#e')" title="Bussiness Team" class="col-sm-2"><i style="color:white; font-size:20px; cursor:pointer;" class="fa fa-briefcase" id="e"></i></a>
             </div>
             <div id="Faculty_Advisors" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);" class="row containers">
                 <div class="col-lg-12" style="padding:0px;">
@@ -605,17 +605,24 @@ display:none;" class="row containers">
                             }
 					</script>
 					
-					
-					
-					
-        <div id="footer" style="position:static;top:1.5vw;color:white;padding:0em;background-color:#164b83">
+		<!-- Footer -->
+        <div id="footer" style="position:relative;top:1.5em;color:white;padding:0em;background-color:#164b83;">
+            <section class="container">
+                <ul class="icons" style="padding-bottom:0;margin-top:1%;">
+                    <li class="active"><a href="https://www.facebook.com/auviitk/" class="fa fa-facebook" target="_blank"><span>Facebook</span></a></li>
+                    <li><a href="https://github.com/auv-iitk" class="fa fa-github" target="_blank"><span>Twitter</span></a></li>
+                    
+                    <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=iitkauv@gmail.com&su" class="fa fa-envelope" target="_blank"><span>Google+</span></a></li>
+                    
+                </ul>
+            </section>
+
 
             <!-- Copyright -->
-            <div id="copyright" style="position:relative;text-align:center;padding:1.4em 0em 1em 0em;color:inherit;opacity:0.4;font-size:15px;text-transform:initial">
+            <div id="copyright" style="position:relative;text-align:center;padding:1em 0em 1em 0em;color:inherit;text-transform:initial;font-size:15px; border-top:1px solid rgba(255,255,255,.3);width:90%;margin:auto;">
                 &copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
             </div>
         </div>
-
                 <script>
                         $(document).ready(function () {
                             $(window).on('resize load ',function () {
