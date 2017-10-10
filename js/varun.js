@@ -29,21 +29,21 @@
 			$(document).ready(function() {
 				$("#part2").click(function() {
 					$("body,html").animate(
-						{scrollTop :   $("#v1").offset().top - 50}, 400
+						{scrollTop :   $("#mechanical").offset().top - 110}, 400
 					);  //how fast the scrolling animation will be in miliseconds
 				});
 			});
 			$(document).ready(function() {
 				$("#part3").click(function() {
 					$("body,html").animate(
-						{scrollTop :   $("#v2").offset().top - 50}, 400
+						{scrollTop :   $("#electrical").offset().top - 110}, 400
 					);  //how fast the scrolling animation will be in miliseconds
 				});
 			});
 			$(document).ready(function() {
 				$("#part4").click(function() {
 					$("body,html").animate(
-						{scrollTop :   $("#v3").offset().top - 50}, 400
+						{scrollTop :   $("#software").offset().top - 110}, 400
 					);  //how fast the scrolling animation will be in miliseconds
 				});
 			});
