@@ -28,22 +28,37 @@
 			}
 			$(document).ready(function() {
 				$("#part2").click(function() {
-					$("body,html").animate(
-						{scrollTop :   $("#mechanical").offset().top - 110}, 400
-					);  //how fast the scrolling animation will be in miliseconds
+					if(window.innerWidth > 450)
+						$("body,html").animate(
+							{scrollTop :   $("#mechanical").offset().top - 90}, 400
+						);  //how fast the scrolling animation will be in miliseconds
+					else
+						$("body,html").animate(
+							{scrollTop :   $("#mechanical").offset().top - 140}, 400
+						);  //how fast the scrolling animation will be in miliseconds
 				});
 			});
 			$(document).ready(function() {
 				$("#part3").click(function() {
-					$("body,html").animate(
-						{scrollTop :   $("#electrical").offset().top - 110}, 400
-					);  //how fast the scrolling animation will be in miliseconds
+					if(window.innerWidth > 450)
+						$("body,html").animate(
+							{scrollTop :   $("#electrical").offset().top - 90}, 400
+						);  //how fast the scrolling animation will be in miliseconds
+					else
+						$("body,html").animate(
+							{scrollTop :   $("#electrical").offset().top - 140}, 400
+						);  //how fast the scrolling animation will be in miliseconds
 				});
 			});
 			$(document).ready(function() {
 				$("#part4").click(function() {
-					$("body,html").animate(
-						{scrollTop :   $("#software").offset().top - 110}, 400
-					);  //how fast the scrolling animation will be in miliseconds
+					if(window.innerWidth > 450)
+						$("body,html").animate(
+							{scrollTop :   $("#software").offset().top - 90}, 400
+						);  //how fast the scrolling animation will be in miliseconds
+					else
+						$("body,html").animate(
+							{scrollTop :   $("#software").offset().top - 140}, 400
+						);  //how fast the scrolling animation will be in miliseconds
 				});
 			});
