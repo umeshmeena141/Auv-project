@@ -14,11 +14,27 @@ function animate2(x,navhover){
             $(x).slideDown(1000);
             page = [x, navhover];
 			$(page[0]).addClass("active");
-			if($("#Software_Team").hasClass("active")){
-				$('.info').css({"height":"1100px"});
+			if($("#Software_Team,#Faculty_Advisors").hasClass("active")){
+				if ($(window).width() > 1350) {
+					$('.info').css({"height":"1100px"});
+				}
+				else if($(window).width() > 850){
+					$('.info').css({"height":"1000px"});
+				}
+				else{
+					$('.info').css({"height":"2300px"});
+				}
 			}
 			else{
-				$('.info').css({"height":"900px"});
+				if ($(window).width() > 1350) {
+					$('.info').css({"height":"7500px"});
+				}
+				else if($(window).width() > 850){
+					$('.info').css({"height":"750px"});
+				}
+				else{
+					$('.info').css({"height":"2300px"});
+				}
 			}
 		}
 		
