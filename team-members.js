@@ -1,3 +1,4 @@
+
 var SA=[];		
 		SA[1]={
 			Name:"Mayank Mittal",
@@ -38,7 +39,7 @@ var Softteam=[];
 			email: "aarora@iitk.ac.in",
 			img1:"images/team_members/abhinavarora1.jpg",
 			facebook:"https://www.facebook.com/abhinav.arora.507",
-			CurrProject:"IMU (controls)"
+			CurrProject:"IMU (controls), Gazebo"
 		}
 		Softteam[1]={
 			Name:"Arnav Garg",
@@ -78,10 +79,10 @@ var Mechteam=[];
 			Name:"Mahesh Saboo",
 			Department: "ME",
 			email: "mssaboo@iitk.ac.in",
-			img1:"images/team_members/maheshSaboo1.jpg",
+			img1:"images/team_members/MaheshSaboo1.jpg",
 			facebook:"https://www.facebook.com/mssaboo",
 			github:"https://github.com/mssaboo",
-			CurrProject:"Torpedo Designing And Operation of Pneumatic System of Varun"
+			CurrProject:"Torpedo Designing And Operation of Pneumatic System"
 		}
 		Mechteam[2]={
 			Name:"NAVEEN CHANDRA R",
@@ -90,7 +91,7 @@ var Mechteam=[];
 			img1:"images/team_members/NaveenChandra1.png",
 			facebook:" https://www.facebook.com/profile.php?id=100002998274447",
 			github:"https://github.com/NaveenchandraR",
-			CurrProject:"New Bot Design and Acoustic source localisation"
+			CurrProject:"Design Of New Vehicle and Acoustic source localisation"
 		}
 var Electteam=[];
 		Electteam[0]={
@@ -157,4 +158,5 @@ var Bussteam=[];
 			img1:"images/avatar3.png",
 			facebook:"https://www.facebook.com/",
 			CurrProject:"Some Project"
+
 		}		

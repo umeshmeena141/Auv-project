@@ -556,8 +556,9 @@
 	#header {
 		color: #5680e9;
 		height: 4em;
-		background:rgba(0, 0, 0, 0.5);
+		background:rgba(0, 0, 0, 0.7);
 		width:100%;
+		font-weight:400;
 	}
 
 		#header .container {
