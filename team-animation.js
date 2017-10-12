@@ -38,9 +38,12 @@ function animate2(x,navhover){
 				}
 				else{
 
-					$('.info').css({"height":"1500px"});
+					$('.info').css({"height":"2300px"});
 					if($('#Mechanical_Team').hasClass("active")){	
 						$('.info').css({"height":"3050px"});
+					}
+					if($(window).width() < 700){
+						$('.info').css({"height":"1500px"});
 					}
 				}
 			}
