@@ -27,7 +27,7 @@ function animate2(x,navhover){
 			}
 			else{
 				if ($(window).width() > 1350) {
-					$('.info').css({"height":"7500px"});
+					$('.info').css({"height":"750px"});
 				}
 				else if($(window).width() > 850){
 					$('.info').css({"height":"750px"});
