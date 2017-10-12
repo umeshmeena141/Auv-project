@@ -243,7 +243,7 @@
 						</div>
 					</div>
 					
-        <div style="width:100%;height:auto;" class="container info">
+        <div style="width:100%;height:900px;" class="container info">
             <div class="row container1" style="width:100%;position:absolute;top:10.3%">
             <div class="col-md-3" style="margin:1% 0% 0% 2%; ">
                 <h2 style="font-size:1.6em !important;">Our Current Team</h2>
@@ -251,7 +251,7 @@
             </div>
             <div class="col-md-8" style="margin:2% 0% 0% 3%">
             <div style="background-color:rgba(30, 100, 174 ,0.8 );padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important" id="teamnav" class="row containers">
-                <a href="#" onclick="animate2('#Faculty_Advisors','#a')" title="Faculty Advisors" class="col-sm-2"><i style="color:black" class="fa fa-user" id="a"></i></a>
+                <a href="#" onclick="animate2('#Faculty_Advisors','#a')" title="Faculty Advisors" class="col-sm-2 active"><i style="color:black" class="fa fa-user" id="a"></i></a>
                 <a href="#" onclick="animate2('#Software_Team','#b')" alt="Software Team" title="Software Team" class="col-sm-2" style="color:white"><i class="fa fa-laptop" id="b"></i></a>
                 <a href="#" onclick="animate2('#Mechanical_Team','#c')" title="Mechanical Team" class="col-sm-2" style="color:white"><i class="fa fa-wrench" id="c"></i></a>
                 <a href="#" onclick="animate2('#Electrical_Team','#d')" title="Electrical Team" class="col-sm-2" style="color:white"><i class="fa fa-flash" id="d"></i></a>
@@ -628,7 +628,7 @@ display:none;" class="row containers">
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%", "top": "8.3%" });
                                     $('i').css({ "padding": "5px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
-                                    $(".info").css({ "height": "1100px" });
+                                    //$(".info").css({ "height": "1100px" });
 									$('.rightpad').css({"padding":"0"});
                                 }
                                 else if ($(window).width() > 850) {
@@ -640,7 +640,7 @@ display:none;" class="row containers">
                                     $('i').css({ "padding": "5px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
                                     $('#facultyadvisors').css({ "padding-right": "0px" });
-                                    $(".info").css({ "height": "1000px" });
+                                   // $(".info").css({ "height": "1000px" });
                                     $('.rightpad').css({ "padding": "0" });
                                     $('.info_container').css({ "margin-top": "110px" });
 									$('.overlay').css({ "margin": "0%", "width": "100%" });
@@ -682,6 +682,7 @@ display:none;" class="row containers">
 
                </script>
             <script src="js/navBar.js"></script>
+
 	</body>
 	
 </html>
