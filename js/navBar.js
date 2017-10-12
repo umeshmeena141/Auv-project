@@ -23,8 +23,4 @@ function myF() {
 		y.style.background = "rgba(0, 0, 0, 1.0)";
 	else 
 		y.style.background = "rgba(0, 0, 0, 0.7)";
-<<<<<<< HEAD
-=======
-
->>>>>>> umeshmeena141-master
 }

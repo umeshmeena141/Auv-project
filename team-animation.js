@@ -22,7 +22,11 @@ function animate2(x,navhover){
 					$('.info').css({"height":"1000px"});
 				}
 				else{
-					$('.info').css({"height":"2300px"});
+					$('.info').css({"height":"4050px"});
+
+					if($(window).width() < 700){
+						$('.info').css({"height":"2300px"});
+					}
 				}
 			}
 			else{
@@ -33,7 +37,11 @@ function animate2(x,navhover){
 					$('.info').css({"height":"750px"});
 				}
 				else{
-					$('.info').css({"height":"2300px"});
+
+					$('.info').css({"height":"1500px"});
+					if($('#Mechanical_Team').hasClass("active")){	
+						$('.info').css({"height":"3050px"});
+					}
 				}
 			}
 		}
