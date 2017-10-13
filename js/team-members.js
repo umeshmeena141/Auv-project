@@ -24,7 +24,7 @@ var SA=[];
 			img1:"images/team_members/Manish.jpg",
 			facebook:"https://www.facebook.com/profile.php?id=100010275425218",
 			github:"#",
-			CurrProject:"Team Management"
+			CurrProject:"Head Mechanical Sub-system"
 		}
 		SA[3]={
 			Name:"Rithvik Patibandla",
@@ -120,13 +120,13 @@ var Electteam=[];
 			CurrProject:"Battery Management System"
 		}
 		Electteam[2]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
+			Name:"Vikas Kumar",
+			Department: "EE",
+			email: "vikaskk@iitk.ac.in",
+			img1:"images/team_members/Vikas_Kumar.jpg",
+			facebook:"https://www.facebook.com/profile.php?id=100013575849981",
 			github:"#",
-			CurrProject:"Some Project"
+			CurrProject:"Battery Management System"
 		}
 		Electteam[3]={
 			Name:"Some Name",
