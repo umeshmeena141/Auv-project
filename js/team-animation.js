@@ -19,13 +19,15 @@ function animate2(x,navhover){
 					$('.info').css({"height":"1100px"});
 				}
 				else if($(window).width() > 850){
-					$('.info').css({"height":"1000px"});
+					$('.info').css({"height":"3000px"});
 				}
 				else{
 					$('.info').css({"height":"4050px"});
-
+					if($("#Software_Team").hasClass("active")){
+						$('.info').css({"height":"4850px"});
+					}
 					if($(window).width() < 700){
-						$('.info').css({"height":"2300px"});
+						$('.info').css({"height":"1700px"});
 					}
 				}
 			}
