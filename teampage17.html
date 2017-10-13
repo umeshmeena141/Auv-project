@@ -236,8 +236,8 @@
 						</div>
 					</div>
 		
-        <div style="width:100%;height:auto;" class="container info">
-            <div class="row container1" style="width:100%;position:absolute;top:10.3%">
+        <div style="width:100% !important;" class="container info" >
+            <div class="row container1" style="width:100%;position:relative;margin:6% 0% 4% !important">
             <div class="col-md-3" style="margin:1% 0% 0% 2%; ">
                 <h2 style="font-size:2.2em !important;color:#164b83;font-weight:700;line-height:1.2;"><b>OUR CURRENT TEAM</b></h2>
                 <p style="font-weight:400;text-align:justify;"> With the number only increasing each year, our current team has 18 members working under the subsystems of Software, Mechanical, Electrical, and Business. We are working on our bot VARUN, which shall participate in SAUVC(SINGAPORE) in the forthcoming period.</p>
@@ -616,7 +616,7 @@ display:none;" class="row containers">
 					</script>
 					
 		<!-- Footer -->
-        <div id="footer" style="position:relative;top:1.5em;color:white;padding:0em;background-color:#164b83;">
+        <div id="footer" style="position:relative;top:2em;color:white;padding:0em;background-color:#164b83;">
             <section class="container">
                 <ul class="icons" style="padding-bottom:0;margin-top:1%;">
                     <li class="active"><a href="https://www.facebook.com/auviitk/" class="fa fa-facebook" target="_blank"><span>Facebook</span></a></li>
@@ -638,14 +638,14 @@ display:none;" class="row containers">
                             $(window).on('resize load ',function () {
                                 if ($(window).width() > 1350) {
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "0%" });
-                                    $('.faculty').css({ 'font-size': '26px',"top":" 4%"});
+                                    $('.faculty').css({ 'font-size': '26px',"top":" 4%",'margin':"3% 34%"});
                                     $('.containers').css({ "margin": "0%" });
-                                    $('.container1').css({ "top": "8.3%" });
+                                   // $('.container1').css({ "top": "8.3%" });
                                     $('.overlay').css({ "margin": "0%", "width": "100%" });
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%", "top": "8.3%" });
                                     $('i').css({ "padding": "5px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
-                                    $(".info").css({ "height": "1100px" });
+                                   // $(".info").css({ "height": "1100px" });
 									$('.rightpad').css({"padding":"0"});
                                 }
                                 else if ($(window).width() > 850) {
@@ -653,11 +653,11 @@ display:none;" class="row containers">
                                     $('.faculty').css({ 'font-size': '26px', "top":" 4%" });
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%"});
                                     $('.containers').css({ "margin": "0%" });
-                                    $('.container1').css({ "top": "8.3%" });
+                                    //$('.container1').css({ "top": "8.3%" });
                                     $('i').css({ "padding": "5px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
                                    
-                                    $(".info").css({ "height": "1200px" });
+                                   // $(".info").css({ "height": "1200px" });
                                     $('.rightpad').css({ "padding": "0" });
                                     $('.info_container').css({ "margin-top": "110px" });
 									$('.overlay').css({ "margin": "0%", "width": "100%" });
@@ -667,18 +667,19 @@ display:none;" class="row containers">
                                     $('.faculty').css({ 'font-size': '1.4em', "top":" 4%"});
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%" });
                                     $('.info_container').css({ "margin-top": "0px" });
-                                    $('.info').css({ "height": "4050px" });
+                                   // $('.info').css({ "height": "4050px" });
                                     $('.col-sm-3').css({ "padding-right": "10px" });
                                     $('.containers').css({ "margin-left": "0%" });
-                                    $('.container1').css({ "top": "4.3%","left":"3%" });
+                                    //$('.container1').css({ "top": "4.3%","left":"3%" });
                                     $('.rightpad').css({ "padding": "10px" });
                                     
 									$('.overlay').css({ "margin": "0%", "width": "100%" });
                                     if ($(window).width() < 500) {
                                         $('i').css({ "padding": "0px" });
+										
 										$('.faculty').css({'margin':"3%"});
                                         $('.col-sm-3').css({ "padding-right": "10px" });
-                                         $('.info').css({ "height": "2700px" });
+                                        // $('.info').css({ "height": "2700px" });
                                         $('#teamnav').css({ "padding": "0%" });
                                         $('.containers').css({ "margin-right": "2%" });
                                     }
