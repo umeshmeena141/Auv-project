@@ -41,3 +41,17 @@ function twit1() {
 	y[1].className = "MEDIA21 fa fa-facebook";
 	z[2].style.display = "block";
 }
+if(window.innerWidth >= 480) {
+	document.getElementById("ws2").style.padding = "50px 0px 30px 0px";
+}
+else {
+	document.getElementById("ws2").style.padding = "50px 5px 50px 5px";
+}
+$( window ).resize(function() {
+	if(window.innerWidth >= 480) {
+		document.getElementById("ws2").style.padding = "50px 0px 30px 0px";
+	}
+	else {
+		document.getElementById("ws2").style.padding = "50px 5px 50px 5px";
+	}
+});
