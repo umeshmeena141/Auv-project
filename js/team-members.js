@@ -1,19 +1,21 @@
 var SA=[];		
-		SA[1]={
+		SA[0]={
 			Name:"Mayank Mittal",
 			Department: "EE",
 			email: "mayankm@iitk.ac.in",
 			img1:"images/team_members/Mayankm.jpg",
 			facebook:"https://www.facebook.com/mayankm.1596",
+			github:"https://github.com/Mayankm96",
 			CurrProject:"Team Management"
 		}
-		SA[0]={
+		SA[1]={
 			Name:"Akash ",
 			Department: "AE",
 			email: "jaiakash@iitk.ac.in",
 			img1:"images/team_members/Akash.jpg",
 			facebook:"https://www.facebook.com/akashjain5396",
-			CurrProject:"Some Project"
+			github:"#",
+			CurrProject:"Team Management"
 		}
 		SA[2]={
 			Name:"Manish Kumar",
@@ -21,7 +23,8 @@ var SA=[];
 			email: "maniskj@iitk.ac.in",
 			img1:"images/team_members/Manish.jpg",
 			facebook:"https://www.facebook.com/profile.php?id=100010275425218",
-			CurrProject:"Some Project"
+			github:"#",
+			CurrProject:"Head Mechanical Sub-system"
 		}
 		SA[3]={
 			Name:"Rithvik Patibandla",
@@ -29,7 +32,8 @@ var SA=[];
 			email: "rithvikp@iitk.ac.in",
 			img1:"images/team_members/Rithvik.jpg",
 			facebook:"https://www.facebook.com/rithvik.patibandla",
-			CurrProject:"Some Project"
+			github:"#",
+			CurrProject:"Team Management"
 		}
 var Softteam=[];
 		Softteam[0]={
@@ -38,6 +42,7 @@ var Softteam=[];
 			email: "aarora@iitk.ac.in",
 			img1:"images/team_members/abhinavarora1.jpg",
 			facebook:"https://www.facebook.com/abhinav.arora.507",
+			github:"#",
 			CurrProject:"IMU (controls), Gazebo"
 		}
 		Softteam[1]={
@@ -46,6 +51,7 @@ var Softteam=[];
 			email: "arnavgar@iitk.ac.in",
 			img1:"images/team_members/ArnavGarg1.jpg",
 			facebook:"https://www.facebook.com/arnav.garg.7",
+			github:"#",
 			CurrProject:"Controls/Motion planning"
 		}
 		Softteam[3]={
@@ -63,6 +69,7 @@ var Softteam=[];
 			email: "asurya@iitk.ac.in",
 			img1:"images/team_members/SuryashAgarwal.jpg",
 			facebook:"https://www.facebook.com/suryansh.agarwal.90",
+			github:"#",
 			CurrProject:"Optimizing the hardware layer and improving the arduino, imu and camera nodes"
 		}
 var Mechteam=[];
@@ -72,6 +79,7 @@ var Mechteam=[];
 			email: "rbala@iitk.ac.in",
 			img1:"images/team_members/Balamurgan1.jpg",
 			facebook:"https://www.facebook.com/balaramachandaran",
+			github:"#",
 			CurrProject:"Design Of New Vehicle"
 		}
 		Mechteam[1]={
@@ -99,6 +107,7 @@ var Electteam=[];
 			email: "aryaabhi@iitk.ac.in",
 			img1:"images/team_members/aryaabhi1.jpeg",
 			facebook:"https://www.facebook.com/abhishekarya436",
+			github:"https://github.com/aryaabhi436",
 			CurrProject:"Battery Management System"
 		}
 		Electteam[1]={
@@ -107,15 +116,17 @@ var Electteam=[];
 			email: "vjdviv@iitk.ac.in",
 			img1:"images/team_members/Vivek.jpg",
 			facebook:"https://www.facebook.com/Vjdjain",
+			github:"https://github.com/vjdvivekjain",
 			CurrProject:"Battery Management System"
 		}
 		Electteam[2]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/",
-			CurrProject:"Some Project"
+			Name:"Vikas Kumar",
+			Department: "EE",
+			email: "vikaskk@iitk.ac.in",
+			img1:"images/team_members/Vikas_Kumar.jpg",
+			facebook:"https://www.facebook.com/profile.php?id=100013575849981",
+			github:"#",
+			CurrProject:"Battery Management System"
 		}
 		Electteam[3]={
 			Name:"Some Name",
@@ -123,6 +134,7 @@ var Electteam=[];
 			email: "example@iitk.ac.in",
 			img1:"images/avatar3.png",
 			facebook:"https://www.facebook.com/",
+			github:"#",
 			CurrProject:"Some Project"
 		}
 var Bussteam=[];
@@ -132,6 +144,7 @@ var Bussteam=[];
 			email: "pkarthic@iitk.ac.in",
 			img1:"images/team_members/Karthic.jpg",
 			facebook:"https://www.facebook.com/karthic.karthic.90857",
+			github:"https://github.com/karthic25",
 			CurrProject:"Web Master"
 		}
 		Bussteam[1]={
@@ -140,6 +153,7 @@ var Bussteam=[];
 			email: "umeshm@iitk.ac.in",
 			img1:"images/team_members/Umesh.jpg",
 			facebook:"https://www.facebook.com/umeshmeena141",
+			github:"https://github.com/umeshmeena141",
 			CurrProject:"Web Master"
 		}
 		Bussteam[2]={
@@ -148,6 +162,7 @@ var Bussteam=[];
 			email: "example@iitk.ac.in",
 			img1:"images/avatar3.png",
 			facebook:"https://www.facebook.com/umeshmeena141",
+			github:"#",
 			CurrProject:"Some Project"
 		}
 		Bussteam[3]={
@@ -156,5 +171,8 @@ var Bussteam=[];
 			email: "example@iitk.ac.in",
 			img1:"images/avatar3.png",
 			facebook:"https://www.facebook.com/",
+			github:"#",
 			CurrProject:"Some Project"
+
+
 		}		
