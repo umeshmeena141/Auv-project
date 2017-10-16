@@ -100,6 +100,15 @@ var Mechteam=[];
 			github:"https://github.com/NaveenchandraR",
 			CurrProject:"Design Of New Vehicle and Acoustic source localisation"
 		}
+		Mechteam[3]={
+			Name:"ANAND GANDHI",
+			Department: "Mechanical Engg.",
+			email: "anandlg@iitk.ac.in",
+			img1:"images/team_members/AnandGandhi.png",
+			facebook:"https://www.facebook.com/anandlg23",
+			github:"#",
+			CurrProject:"Design Of New Vehicle"
+		}
 var Electteam=[];
 		Electteam[0]={
 			Name:"ABHISHEK ARYA",
