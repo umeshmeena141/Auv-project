@@ -14,7 +14,7 @@ var SA=[];
 			email: "jaiakash@iitk.ac.in",
 			img1:"images/team_members/Akash.jpg",
 			facebook:"https://www.facebook.com/akashjain5396",
-			github:"#",
+			github:"https://github.com/akashjain5396",
 			CurrProject:"Team Management"
 		}
 		SA[2]={
@@ -32,7 +32,7 @@ var SA=[];
 			email: "rithvikp@iitk.ac.in",
 			img1:"images/team_members/Rithvik.jpg",
 			facebook:"https://www.facebook.com/rithvik.patibandla",
-			github:"#",
+			github:"https://github.com/rithvikp1998",
 			CurrProject:"Team Management"
 		}
 var Softteam=[];
@@ -42,7 +42,7 @@ var Softteam=[];
 			email: "aarora@iitk.ac.in",
 			img1:"images/team_members/abhinavarora1.jpg",
 			facebook:"https://www.facebook.com/abhinav.arora.507",
-			github:"#",
+			github:"https://github.com/Abhi10arora",
 			CurrProject:"IMU (controls), Gazebo"
 		}
 		Softteam[1]={
@@ -60,7 +60,7 @@ var Softteam=[];
 			email: "varunpwr@iitk.ac.in",
 			img1:"images/team_members/VarunPawar1.jpg",
 			facebook:"https://www.facebook.com/varun.pawar.96387",
-			github: "https://github.com/VarunPwr/VP1",
+			github: "https://github.com/VarunPwr",
 			CurrProject:"Acoustic Localization using Hydrophone Array"
 		}
 		Softteam[2]={
@@ -69,7 +69,7 @@ var Softteam=[];
 			email: "asurya@iitk.ac.in",
 			img1:"images/team_members/SuryashAgarwal.jpg",
 			facebook:"https://www.facebook.com/suryansh.agarwal.90",
-			github:"#",
+			github:"https://github.com/Suryansh470",
 			CurrProject:"Controls/Motion planning"
 		}
 var Mechteam=[];
