@@ -51,7 +51,7 @@ var Softteam=[];
 			email: "arnavgar@iitk.ac.in",
 			img1:"images/team_members/ArnavGarg1.jpg",
 			facebook:"https://www.facebook.com/arnav.garg.7",
-			github:"#",
+			github:"https://github.com/garnav98",
 			CurrProject:"Controls/Motion planning"
 		}
 		Softteam[3]={
@@ -79,7 +79,7 @@ var Mechteam=[];
 			email: "rbala@iitk.ac.in",
 			img1:"images/team_members/Balamurgan1.jpg",
 			facebook:"https://www.facebook.com/balaramachandaran",
-			github:"#",
+			github:"https://github.com/rbala-AUV-IITK",
 			CurrProject:"Design Of New Vehicle"
 		}
 		Mechteam[1]={
