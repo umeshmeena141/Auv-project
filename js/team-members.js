@@ -73,7 +73,7 @@ var Softteam=[];
 			CurrProject:"Controls/Motion planning"
 		}
 var Mechteam=[];
-		Mechteam[0]={
+		Mechteam[1]={
 			Name:"BALAMURUGAN R",
 			Department: "Aerospace Engg.",
 			email: "rbala@iitk.ac.in",
@@ -82,7 +82,7 @@ var Mechteam=[];
 			github:"https://github.com/rbala-AUV-IITK",
 			CurrProject:"Design Of New Vehicle"
 		}
-		Mechteam[1]={
+		Mechteam[2]={
 			Name:"MAHESH SABOO",
 			Department: "Mechanical Engg.",
 			email: "mssaboo@iitk.ac.in",
@@ -91,7 +91,7 @@ var Mechteam=[];
 			github:"https://github.com/mssaboo",
 			CurrProject:"Torpedo Designing And Operation of Pneumatic System"
 		}
-		Mechteam[2]={
+		Mechteam[3]={
 			Name:"NAVEEN CHANDRA R",
 			Department: "Aerospace Engg.",
 			email: "naveencr@iitk.ac.in",
@@ -100,11 +100,11 @@ var Mechteam=[];
 			github:"https://github.com/NaveenchandraR",
 			CurrProject:"Design Of New Vehicle and Acoustic source localisation"
 		}
-		Mechteam[3]={
+		Mechteam[0]={
 			Name:"ANAND GANDHI",
 			Department: "Mechanical Engg.",
 			email: "anandlg@iitk.ac.in",
-			img1:"images/team_members/AnandGandhi.png",
+			img1:"images/team_members/AnandGandhi.jpg",
 			facebook:"https://www.facebook.com/anandlg23",
 			github:"#",
 			CurrProject:"Design Of New Vehicle"
@@ -147,7 +147,7 @@ var Electteam=[];
 			CurrProject:"Some Project"
 		}
 var Bussteam=[];
-		Bussteam[0]={
+		Bussteam[1]={
 			Name:"P KARTHIC",
 			Department: "Biological Sc. & Bioengg.",
 			email: "pkarthic@iitk.ac.in",
@@ -156,7 +156,7 @@ var Bussteam=[];
 			github:"https://github.com/karthic25",
 			CurrProject:"Web Master"
 		}
-		Bussteam[1]={
+		Bussteam[2]={
 			Name:"UMESH MEENA",
 			Department: "Mechanical Engg.",
 			email: "umeshm@iitk.ac.in",
@@ -165,14 +165,14 @@ var Bussteam=[];
 			github:"https://github.com/umeshmeena141",
 			CurrProject:"Web Master"
 		}
-		Bussteam[2]={
-			Name:"Some Name",
-			Department: "Branch",
-			email: "example@iitk.ac.in",
-			img1:"images/avatar3.png",
-			facebook:"https://www.facebook.com/umeshmeena141",
-			github:"#",
-			CurrProject:"Some Project"
+		Bussteam[0]={
+			Name:"YAZUR GUPTA",
+			Department: "Aerospace Engg.",
+			email: "yazur@iitk.ac.in",
+			img1:"images/team_members/Yazur.jpg",
+			facebook:"https://www.facebook.com/yazurgupta",
+			github:"https://github.com/",
+			CurrProject:"Business Team Head"
 		}
 		Bussteam[3]={
 			Name:"Some Name",
