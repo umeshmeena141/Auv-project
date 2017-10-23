@@ -1,4 +1,4 @@
-var SA=[];		
+var SA=[];
 		SA[0]={
 			Name:"MAYANK MITTAL",
 			Department: "Electrical Engg.",
@@ -80,7 +80,7 @@ var Mechteam=[];
 			img1:"images/team_members/Balamurgan1.jpg",
 			facebook:"https://www.facebook.com/balaramachandaran",
 			github:"https://github.com/rbala-AUV-IITK",
-			CurrProject:"Design Of New Vehicle"
+			CurrProject:"Design of New Vehicle"
 		}
 		Mechteam[1]={
 			Name:"MAHESH SABOO",
@@ -89,7 +89,7 @@ var Mechteam=[];
 			img1:"images/team_members/MaheshSaboo1.jpg",
 			facebook:"https://www.facebook.com/mssaboo",
 			github:"https://github.com/mssaboo",
-			CurrProject:"Torpedo Designing And Operation of Pneumatic System"
+			CurrProject:"Torpedo Designing and Operation of Pneumatic System"
 		}
 		Mechteam[2]={
 			Name:"NAVEEN CHANDRA R",
@@ -98,7 +98,7 @@ var Mechteam=[];
 			img1:"images/team_members/NaveenChandra1.png",
 			facebook:" https://www.facebook.com/profile.php?id=100002998274447",
 			github:"https://github.com/NaveenchandraR",
-			CurrProject:"Design Of New Vehicle and Acoustic source localisation"
+			CurrProject:"Design of New Vehicle and Acoustic Source Localisation"
 		}
 		Mechteam[3]={
 			Name:"ANAND GANDHI",
@@ -107,7 +107,7 @@ var Mechteam=[];
 			img1:"images/team_members/AnandGandhi.png",
 			facebook:"https://www.facebook.com/anandlg23",
 			github:"#",
-			CurrProject:"Design Of New Vehicle"
+			CurrProject:"Design of New Vehicle"
 		}
 var Electteam=[];
 		Electteam[0]={
@@ -184,4 +184,4 @@ var Bussteam=[];
 			CurrProject:"Some Project"
 
 
-		}		
+		}

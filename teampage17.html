@@ -88,10 +88,10 @@
             }
 			.text {
 			  color: black;
-			  font-size: 20px;
+			  font-size: 15px !important;
 			  position: absolute;
 			  left: 0%;
-
+				font-family:arial;
 			  text-align:center;
 			  opacity:0;
 			  align-content:center;
@@ -99,7 +99,7 @@
 				height: auto;
 				padding: 5% 0%;
 				width: 100%;
-
+				text-transform: none !important;
 				bottom: 0%!important;
 
 			  }
@@ -242,7 +242,7 @@
         <div style="width:100% !important;" class="container info" >
             <div class="row container1" style="width:100%;position:relative;margin:6% 0% 4% !important">
             <div class="col-md-3" id="cTeam1" style="margin:1% 0% 0% 2%;">
-                <h2 id="cT" style="font-size:2.2em !important;color:#164b83;font-weight:700;font-family:Calibri;line-height:1.2;background:#f2f2f2;"><b>OUR CURRENT TEAM</b></h2>
+                <h2 id="cT" style="font-size:2.2em !important;color:#164b83;font-weight:700;font-family:arial;line-height:1.2;background:#f2f2f2;"><b>OUR CURRENT TEAM</b></h2>
                 <p style="font-weight:400;text-align:justify;"> With the number only increasing each year, our current team has 18 members working under the subsystems of Software, Mechanical, Electrical, and Business. We are working on our bot VARUN, which shall participate in SAUVC(SINGAPORE) in the forthcoming period.</p>
             </div>
             <div class="col-md-8" style="margin:2% 0% 0% 3% !important">
@@ -307,7 +307,7 @@
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%; ">
                                 <div class="hovereffect">
                                     <div class="overlay">
-                                        <h2 class="text">Acoustic localisation and Battery Management System</h2>
+                                        <h2 class="text">Acoustic Localisation, Battery Management System</h2>
                                     </div>
                                     <img src="images/team_members/Rithvik.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
                                 </div>
@@ -394,7 +394,7 @@
                             <div class="thumbnail hovereffect" style="height:350px;padding:0px;margin:0%; width:100%; ">
                                 <div class="hovereffect">
                                     <div class="overlay">
-                                        <h2 class="text">improving cv code</h2>
+                                        <h2 class="text">Improving CV Code</h2>
                                     </div>
 
                                     <img src="images/team_members/akashkumar.jpg" alt="Lights" style="width:100%;" class="image resize_fit_centers">
@@ -645,7 +645,7 @@ display:none;" class="row containers">
                                     $('.containers').css({ "margin": "0%" });
                                    // $('.container1').css({ "top": "8.3%" });
                                     $('.overlay').css({ "margin": "0%", "width": "100%" });
-                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%", "top": "58px" });
+                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%", "top": "59px" });
 									$('#cTeam1').css({ "position":"sticky","top":"59px" });
                                     $('i').css({ "padding": "5px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
@@ -653,14 +653,25 @@ display:none;" class="row containers">
 									$('.rightpad').css({"padding":"0"});
                                 }
 																else if ($(window).width() > 1080) {
-																	$('#teamnav').css({ "padding": "0.5% 23% 0% 30%","top":"58px" });
 																	$('#cTeam1').css({ "position":"sticky","top":"59px" });
+																	$('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "0%" });
+																	$('.faculty').css({ 'font-size': '26px', "top":" 4%" });
+																	$('#teamnav').css({ "padding": "0.5% 23% 0% 30%","top":"58px" });
+																	$('.containers').css({ "margin": "0%" });
+																	//$('.container1').css({ "top": "8.3%" });
+																	$('i').css({ "padding": "5px" });
+																	$('.col-sm-3').css({ "padding-right": "0px" });
+
+																 // $(".info").css({ "height": "1200px" });
+																	$('.rightpad').css({ "padding": "0" });
+																	$('.info_container').css({ "margin-top": "110px" });
+								$('.overlay').css({ "margin": "0%", "width": "100%" });
 																}
-                                else if ($(window).width() > 850) {
+                                else if ($(window).width() > 840) {
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "0%" });
                                     $('.faculty').css({ 'font-size': '26px', "top":" 4%" });
                                     $('#teamnav').css({ "padding": "0.5% 23% 0% 30%","top":"58px" });
-																		$('#cTeam1').css({ "position":"static" });
+									$('#cTeam1').css({ "position":"static"});
                                     $('.containers').css({ "margin": "0%" });
                                     //$('.container1').css({ "top": "8.3%" });
                                     $('i').css({ "padding": "5px" });
@@ -675,7 +686,7 @@ display:none;" class="row containers">
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "3% 0% 2% 0%" });
                                     $('.faculty').css({ 'font-size': '1.4em', "top":" 4%"});
                                     $('#cTeam1').css({ "position":"static" });
-                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%","top":"42px" });
+                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%","top":"43px" });
                                     $('.info_container').css({ "margin-top": "0px" });
                                    // $('.info').css({ "height": "4050px" });
                                     $('.col-sm-3').css({ "padding-right": "10px" });
