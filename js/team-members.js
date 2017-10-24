@@ -106,7 +106,7 @@ var Mechteam=[];
 			email: "anandlg@iitk.ac.in",
 			img1:"images/team_members/AnandGandhi.jpg",
 			facebook:"https://www.facebook.com/anandlg23",
-			github:"#",
+			github:"https://github.com/andy2307",
 			CurrProject:"Design Of New Vehicle"
 		}
 var Electteam=[];
