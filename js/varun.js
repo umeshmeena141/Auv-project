@@ -27,7 +27,7 @@
 					x3.style.display = "none";
 				}
 			});
-			
+
 			$(document).ready(function() {
 				$("#part2").click(function() {
 					$("body,html").animate(
@@ -51,36 +51,24 @@
 			});
 			var y1 = document.getElementsByClassName("button1");  //changing navigation of varun in phone
 			if(window.innerWidth >= 480) {
-					y1[0].className = "button1";
-					y1[1].className = "button1";
-					y1[2].className = "button1";
-					y1[0].innerHTML = "Mechanical Subsystem";
-					y1[1].innerHTML = "Software Subsystem";
-					y1[2].innerHTML = "Electrical Subsystem";
-				}
-				else {
-					for(var i=0; i<y1.length; i++) {
-						y1[i].innerHTML = "";
-					}
-					y1[0].className = "button1 fa fa-wrench";
-					y1[1].className = "button1 fa fa-laptop";
-					y1[2].className = "button1 fa fa-flash";
-				}
+				y1[0].innerHTML = "Mechanical Subsystem";
+				y1[1].innerHTML = "Software Subsystem";
+				y1[2].innerHTML = "Electrical Subsystem";
+			}
+			else {
+				y1[0].innerHTML = "Mechanical";
+				y1[1].innerHTML = "Software";
+				y1[2].innerHTML = "Electrical";
+			}
 			$( window ).resize(function() {
 				if(window.innerWidth >= 480) {
-					y1[0].className = "button1";
-					y1[1].className = "button1";
-					y1[2].className = "button1";
 					y1[0].innerHTML = "Mechanical Subsystem";
 					y1[1].innerHTML = "Software Subsystem";
 					y1[2].innerHTML = "Electrical Subsystem";
 				}
 				else {
-					for(var i=0; i<y1.length; i++) {
-						y1[i].innerHTML = "";
-					}
-					y1[0].className = "button1 fa fa-wrench";
-					y1[1].className = "button1 fa fa-laptop";
-					y1[2].className = "button1 fa fa-flash";
+					y1[0].innerHTML = "Mechanical";
+					y1[1].innerHTML = "Software";
+					y1[2].innerHTML = "Electrical";
 				}
 			});
