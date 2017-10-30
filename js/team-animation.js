@@ -1,3 +1,4 @@
+
 var page=["#Faculty_Advisors","#a",".navicon1"];
 function animate2(x,navhover,navicon){
 		if(x==page[0]){
@@ -20,3 +21,4 @@ function animate2(x,navhover,navicon){
 		
 		 
 }
+

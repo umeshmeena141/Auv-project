@@ -1,3 +1,4 @@
+
 var SA=[];		
 		SA[0]={
 			Name:"Prakhar Agarwal",
@@ -30,19 +31,5 @@ var SA=[];
 			Department: "CE",
 			Others: "example@iitk.ac.in",
 			img1:"images/placeholder.png"
-        }
+		}
 
-        var app = angular.module('myApp', []);
-
-        app.controller('myCtrl', function ($scope) {
-            $scope.alumni = [
-                { Name: "Prakhar Agarwal", Department: "Y15", Email: "pkhrag@iitk.ac.in", img1: "images/pe.jpg"},
-                { Name: "Prakhar Agarwal", Department: "Y15", Email: "pkhrag@iitk.ac.in", img1: "images/pe.jpg"},
-                { Name: "Prakhar Agarwal", Department: "Y15", Email: "pkhrag@iitk.ac.in", img1: "images/pe.jpg"},
-                { Name: "Prakhar Agarwal", Department: "Y15", Email: "pkhrag@iitk.ac.in", img1: "images/pe.jpg" },
-                { Name: "Prakhar Agarwal", Department: "Y15", Email: "pkhrag@iitk.ac.in", img1: "images/pe.jpg" },
-                { Name: "Prakhar Agarwal", Department: "Y15", Email: "pkhrag@iitk.ac.in", img1: "images/pe.jpg" },
-                { Name: "Prakhar Agarwal", Department: "Y15", Email: "pkhrag@iitk.ac.in", img1: "images/pe.jpg" },
-                { Name: "Prakhar Agarwal", Department: "Y15", Email: "pkhrag@iitk.ac.in", img1: "images/pe.jpg" }
-            ]; 
-        });
