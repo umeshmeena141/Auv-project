@@ -46,6 +46,10 @@
 				border:none;
 	
 			}
+			.containers a{
+				padding: 0% 10%;
+				
+			}
 			.carousel-caption{
 				bottom:0;
 				font-size:150%;
@@ -205,6 +209,11 @@
 			.faculty{
 				font-family:arial;
 			}
+			.active1{
+			background-color:white;
+			border-top:2px solid black;
+			padding-top:0px!important;
+			}
 		</style>
 	</head>
 	<body class="team" style="overflow-x:hidden;background-color:#f3f3f3;">
@@ -247,11 +256,11 @@
             </div>
             <div class="col-md-8" style="margin:2% 0% 0% 3% !important">
             <div style="background-color:rgba(30, 100, 174 ,1 );padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important; position:sticky; top:60px;z-index:99;" id="teamnav" class="row containers">
-                <a onclick="animate2('#Faculty_Advisors','#a')" title="Faculty Advisors" class="col-sm-2"><i style="color:black;cursor:pointer;" class="fa fa-user" id="a"></i></a>
-                <a onclick="animate2('#Software_Team','#b')" alt="Software Team" title="Software Team" class="col-sm-2" style="color:white;cursor:pointer;"><i class="fa fa-laptop" id="b"></i></a>
-                <a onclick="animate2('#Mechanical_Team','#c')" title="Mechanical Team" class="col-sm-2" style="color:white;cursor:pointer;"><i class="fa fa-wrench" id="c"></i></a>
-                <a onclick="animate2('#Electrical_Team','#d')" title="Electrical Team" class="col-sm-2" style="color:white;cursor:pointer;"><i class="fa fa-flash" id="d"></i></a>
-                <a onclick="animate2('#Bussiness_Team','#e')" title="Bussiness Team" class="col-sm-2"><i style="color:white; font-size:20px; cursor:pointer;" class="fa fa-briefcase" id="e"></i></a>
+                <a onclick="animate2('#Faculty_Advisors','#a','.navicon1')" title="Faculty Advisors" class="col-sm-2 navicon1 active1 "  ><i style="color:black;cursor:pointer;" class="fa fa-user" id="a"></i></a>
+                <a onclick="animate2('#Software_Team','#b','.navicon2')" alt="Software Team" title="Software Team" class="col-sm-2 navicon2" style="color:white;cursor:pointer;padding-top:0px!important;"><i class="fa fa-laptop" id="b"></i></a>
+                <a onclick="animate2('#Mechanical_Team','#c','.navicon3')" title="Mechanical Team" class="col-sm-2 navicon3" style="color:white;cursor:pointer;padding-top:0px!important;"><i class="fa fa-wrench" id="c"></i></a>
+                <a onclick="animate2('#Electrical_Team','#d','.navicon4')" title="Electrical Team" class="col-sm-2 navicon4" style="color:white;cursor:pointer;padding-top:0px!important;"><i class="fa fa-flash" id="d"></i></a>
+                <a onclick="animate2('#Bussiness_Team','#e','.navicon5')" title="Bussiness Team" class="col-sm-2 navicon5" style="padding-top:0px!important;"><i style="color:white; font-size:20px; cursor:pointer;" class="fa fa-briefcase" id="e"></i></a>
             </div>
             <div id="Faculty_Advisors" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);" class="row containers">
                 <div class="col-lg-12 " style="padding:0px; width:100%">
@@ -662,7 +671,7 @@ display:none;" class="row containers">
                                     $('.containers').css({ "margin": "0%" });
                                    // $('.container1').css({ "top": "8.3%" });
                                     $('.overlay').css({ "margin": "0%", "width": "100%" });
-                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%", "top": "59px" });
+                                    $('#teamnav').css({ "padding": "0% 0% 0% 0%", "top": "59px" });
 									$('#cTeam1').css({ "position":"sticky","top":"59px" });
                                     $('i').css({ "padding": "5px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
@@ -672,11 +681,11 @@ display:none;" class="row containers">
                                 else if ($(window).width() > 850) {
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "0%" });
                                     $('.faculty').css({ 'font-size': '26px', "top":" 4%" });
-                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%","top":"59px" });
+                                    $('#teamnav').css({ "padding": "0%","top":"59px" });
 									$('#cTeam1').css({ "position":"sticky","top":"59px" });
                                     $('.containers').css({ "margin": "0%" });
                                     //$('.container1').css({ "top": "8.3%" });
-                                    $('i').css({ "padding": "5px" });
+                                    $('i').css({ "padding": "0px" });
                                     $('.col-sm-3').css({ "padding-right": "0px" });
 									
                                    // $(".info").css({ "height": "1200px" });
@@ -691,7 +700,7 @@ display:none;" class="row containers">
                                     $('.thumbnail').css({ "height": "auto", "width": "100%", "margin": "3% 0% 2% 0%" });
                                     $('.faculty').css({ 'font-size': '1.4em', "top":" 4%"});
                                     $('#cTeam1').css({ "position":"static" });
-                                    $('#teamnav').css({ "padding": "0.5% 23% 0% 30%","top":"43px" });
+                                    $('#teamnav').css({ "padding": "0%","top":"43px" });
                                     $('.info_container').css({ "margin-top": "0px" });
                                    // $('.info').css({ "height": "4050px" });
                                     $('.col-sm-3').css({ "padding-right": "10px" });
@@ -700,11 +709,13 @@ display:none;" class="row containers">
                                     $('.rightpad').css({ "padding": "10px" });
                                     $('.desc1').css({"font-size":"1em"});
 									$('.overlay').css({ "margin": "0%", "width": "100%" });
+									$('.active1').css({"padding-top":"0% !important"});
                                     if ($(window).width() < 500) {
                                         $('i').css({ "padding": "0px" });
 										$('.icons').css({"padding-top":"4%"});
 										$('.faculty').css({'margin':"3%"});
                                         $('.col-sm-3').css({ "padding-right": "10px" });
+										
                                         // $('.info').css({ "height": "2700px" });
                                         $('#teamnav').css({ "padding": "0%" });
                                         $('.containers').css({ "margin-right": "2%" });
@@ -718,7 +729,7 @@ display:none;" class="row containers">
                <script>
                         $(document).ready(function () {
                             $('i').hover(function () {
-                                $(this).css({ "color": "black" });
+                                $(this).css({ "color": "black"});
                                 $('.hovericon').css({ "color": "black"});
                             },
                             function () {
