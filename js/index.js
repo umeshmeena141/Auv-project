@@ -55,3 +55,11 @@ $( window ).resize(function() {
 		document.getElementById("ws2").style.padding = "50px 5px 50px 5px";
 	}
 });
+window.onscroll = function() {myF()};
+function myF() {
+	var y = document.getElementById("header");
+	if(window.pageYOffset >= 30)
+		y.style.background = "rgba(0, 0, 0, 1.0)";
+	else
+		y.style.background = "rgba(0, 0, 0, 0.7)";
+}
