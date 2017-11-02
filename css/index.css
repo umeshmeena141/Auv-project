@@ -8,7 +8,7 @@
 			width:50%;
 			min-height:500px;
 			display:inline-block;
-			position:relative; 
+			position:relative;
 		}
 		#NEWS1 {
 			color:#1e64ae;
@@ -32,11 +32,15 @@
 			text-align:center;
 			font-size:1.0em;
 			float:left;
+			-webkit-transition: 0.35s ease;
+			transition: .35s ease;
 		}
 		.MEDIA21:hover:not(.active2) {
 			background:rgba(30, 100, 174, 0.8);
 			color:white;
 			cursor:pointer;
+			-webkit-transition: 0.35s ease;
+			transition: .35s ease;
 		}
 		.active2 {
 			background:rgba(81, 151, 225,0.6);
@@ -71,4 +75,7 @@
 		.HOVR:hover {
 			color:#486dbd;
 		}
-		
+		#header {
+			-webkit-transition: 0.35s ease;
+			transition: .35s ease;
+		}
