@@ -178,23 +178,20 @@
 				<p style="font-size:1.6em;margin-bottom:20px;">An Informative Forum by AUV Team</p>
 			</section>
 		</div>
-		<div class="wrapper style3" style="background:#f2f2f2;">
 
+		<div style="background:#f2f2f2;">
 		{% for post in site.posts %}
-			<section class="container" style="background:#e6e6e6;">
-			<a href="{{ post.url }}">
-				<header class="major">
-				<h2 style="color:darkgreen;background:#d2d2d2;text-align:center; margin:auto;padding:10px;">
+			<a style="text-decoration:none;" href="{{ post.url }}">
+				<h2 style="text-align:left !important;color:darkblue;margin:auto;padding:10px;">
 					{{ post.title }}
 				</h2>
 				{% if post.subtitle %}
-				<h3>
+				<h3 style="text-align:left !important;color:darkblue;text-decoration:none;">
 					{{ post.subtitle }}
 				</h3>
 				{% endif %}
-			</header>
 			</a>
-			<p style="color:darkgreen">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+			<p style="color:black;">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
 		</section>
 		<hr>
 		{% endfor %}
