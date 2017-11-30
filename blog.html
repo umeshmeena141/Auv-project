@@ -124,6 +124,21 @@
 			z-index:10;
 			background:black;
 		}
+		#headingForBlog {
+			font-size:2em;
+			color:#333333;
+			margin-bottom:10px;
+		}
+		#headingForBlog:hover {
+			color:darkblue;
+		}
+		#mainHeader {
+			background-image: url("/images/blog/header.jpg");
+			padding-bottom:0px;
+			margin-bottom:0px;
+			zoom:95%;
+			height:300px;
+		}
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -170,32 +185,39 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapper style3" id="v0" style="padding-bottom:0px;margin-bottom:0px;zoom:95%;">
-			<section class="container" >
-				<header class="major">
-					<h2 style="font-size:5em; padding-top:0px;padding-bottom:0px;margin-bottom:0px;">BLOGS</h2>
-				</header>
-				<p style="font-size:1.6em;margin-bottom:20px;">An Informative Forum by AUV Team</p>
-			</section>
+		<div class="wrapper style3" id="mainHeader">
+
 		</div>
 
-		<div style="background:#f2f2f2;">
-		{% for post in site.posts %}
-			<a style="text-decoration:none;" href="{{ post.url }}">
-				<h2 style="text-align:left !important;color:darkblue;margin:auto;padding:10px;">
-					{{ post.title }}
-				</h2>
-				{% if post.subtitle %}
-				<h3 style="text-align:left !important;color:darkblue;text-decoration:none;">
-					{{ post.subtitle }}
-				</h3>
-				{% endif %}
-			</a>
-			<p style="color:black;">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
-		</section>
-		<hr>
-		{% endfor %}
-	</div>
+		<div class="wrapper style4">
+			<section class="container">
+				<div class="row flush">
+					<div class="1u">
+						<p></p>
+					</div>
+					<div class = "7u">
+						<ul>
+							<li>
+								{% for post in site.posts %}
+								<a style="text-decoration:none;" href="{{ post.url }}">
+									<h3 id="headingForBlog">
+										{{ post.title }}
+									</h3>
+									{% if post.subtitle %}
+									<span style="color:#333333;font-size:1.2em;text-decoration:none;font-weight:400;">
+										{{ post.subtitle }}
+									</span>
+									{% endif %}
+								</a>
+								<p style="color:darkblue;">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+								{% endfor %}
+								<hr>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
 
 <!-- Footer -->
 		<div id="footer">
