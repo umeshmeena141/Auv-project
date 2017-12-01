@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Blogs, AUV IITK"
+subtitle: "How to use Jekyll to create blog page"
 date:   2017-10-30 20:04:33 +0530
 categories: jekyll update
 author: "Karthic"
