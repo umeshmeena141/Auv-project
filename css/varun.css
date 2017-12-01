@@ -76,6 +76,9 @@
 	font-size:1.2em !important;
 }
 header.major .byline {
+	list-style-type:circle;
+}
+#v header.major .byline {
 	list-style-type:disc;
 }
 #LOGO:hover {
