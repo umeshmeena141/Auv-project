@@ -1,0 +1,112 @@
+.dash {
+			width:100%;
+			height:3px;
+			background:#7c7cde;
+			margin-top:-3px;
+			border-radius:5px;
+		}
+		.auvMech {
+			display: inline-block;
+			margin: 0px 0px 15px 0px;
+			width:49%;
+		}
+		.button1 {
+			padding:10px 15px;
+			display:inline-block;
+			margin-top:3px;
+			margin-bottom:3px;
+			background:#123e6d;
+			color:aqua;
+			cursor:pointer;
+			font-size:1.1em;
+			text-decoration:none;
+			font-weight:500;
+			text-transform:uppercase;
+		}
+		.button1:hover {
+			background:#1a7999;
+		}
+		#stic {
+			position:sticky;
+			background:#123e6d;
+			width:100%;
+			padding-bottom:0;
+			margin-bottom:0;
+			text-align:center;
+			top:44px;
+		}
+		.button3 {
+			padding:10px 15px;
+			display:inline-block;
+			margin-left:2%;
+			margin-bottom:5px;
+			background:#1a7999;
+			color:white;
+			cursor:pointer;
+			font-size:1.1em;
+			text-decoration:none;
+			font-weight:500;
+		}
+		.button3:hover {
+			background:#0E9DAF;
+			color:white;
+		}
+		.button:hover {
+			background:#1a0c5a;
+		}
+		.picCom {
+			clear:left;
+			margin:0 0 30px 0;
+			padding:0;
+			text-align:center;
+			color:white;
+			font-size:1.0em;
+			font-weight:500;
+		}
+		.mDesc {
+			clear:left;
+			color:#0fa5d7;
+			margin-left:3%;
+			margin-right:3%;
+			text-align:justify;
+		}
+		#overlay {
+			position: fixed;
+			display: none;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.7);
+			z-index: 20;
+			cursor: pointer;
+		}
+		.byline {
+			font-size:1.2em !important;
+		}
+		header.major .byline {
+			list-style-type:disc;
+		}
+		#LOGO:hover {
+			filter:brightness(100);
+		}
+		#header {
+			position:fixed;
+			z-index:10;
+			background:black;
+		}
+		#headingForBlog {
+			font-size:2.4em;
+			color:#333333;
+			margin-bottom:20px;
+		}
+		#headingForBlog:hover {
+			color:darkblue;
+		}
+		#mainHeader {
+			background-color:#154b83;
+			padding-bottom:0px;
+			padding-bottom:30px;
+		}
