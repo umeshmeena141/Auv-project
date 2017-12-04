@@ -9,35 +9,9 @@
 	</head>
 
 	<body>
+<!-- Navigation Bar -->
 		<div class="wrapper style1">
-			<!-- Header -->
-			<div id="header" style="position:fixed;z-index:10; ">
-				<div class="container" style="z-index:10">
-					<!-- Nav -->
-					<nav id="nav" style="z-index:10">
-						<ul>
-							<li id="LOGO1"><a href="/index.html"><img id="LOGO" src="/images/logo_b.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a></li>
-							<li id="index1"><a href="/index.html">Home</a></li>
-							<li id="blog1" class="active"><a href="/blog.html" style="color:white;">Blog</a></li>
-							<li id="varun1"><a href="/varun.html">Vehicle</a>
-								<ul>
-									<li><a href="">Competition Vehicles</a>
-										<ul>
-											<li><a href="/varun.html">Varun</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="/teampage17.html">Team</a>
-								<ul>
-									<li><a href="/teampage17.html">2017-18</a></li>
-								</ul>
-							</li>
-							<li><a href="/contactpage.html">Contact Us</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+			{% include nav.html %}
 		</div>
 
 <!-- Heading -->
@@ -84,6 +58,6 @@
 
 <!-- Footer -->
 		 {% include footer.html %}
-		 <script src="/js/navBar.js"></script>
+		 <script src="/js/blog.js"></script>
 	</body>
 </html>
