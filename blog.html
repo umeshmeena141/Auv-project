@@ -1,18 +1,9 @@
 ---
+layout: default
+title: AUVIITK | BLOG
+css: /css/blog.css
+js: /js/blog.js
 ---
-<!DOCTYPE HTML>
-
-<html>
-	<head>
-		{% include header.html %}
-		<link rel="stylesheet" href="/css/blog.css" />
-	</head>
-
-	<body>
-<!-- Navigation Bar -->
-		<div class="wrapper style1">
-			{% include nav.html %}
-		</div>
 
 <!-- Heading -->
 		<div class="wrapper style3">
@@ -40,11 +31,9 @@
 									<h3 id="headingForBlog">
 										{{ post.title }}
 									</h3>
-									{% if post.section %}
-									<span style="color:#333333;font-size:1.2em;text-decoration:none;font-weight:400;">
-										{{ post.section }} ...
+									<span style="color:#333333;font-size:1.1em;text-decoration:none;font-weight:400;">
+										{{ post.excerpt | remove: '<p>' | remove: '</p>' }}...
 									</span>
-									{% endif %}
 								</a>
 								<hr><hr>
 								{% endfor %}
@@ -55,9 +44,3 @@
 				</div>
 			</section>
 		</div>
-
-<!-- Footer -->
-		 {% include footer.html %}
-		 <script src="/js/blog.js"></script>
-	</body>
-</html>
