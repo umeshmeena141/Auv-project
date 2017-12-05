@@ -1,11 +1,13 @@
 ---
+title: AUVIITK
+css: /css/index.css
+js: /js/index.js
 ---
 <!DOCTYPE HTML>
 <html>
 
 	<head>
 		{% include header.html %}
-		<link rel="stylesheet" href="/css/index.css" />
 	</head>
 
 	<body class="homepage">
@@ -73,13 +75,8 @@
 			</div>
 		</div>
 
-		<script src="/js/jquery.min.js"></script>
-		<script src="/js/jquery.dropotron.min.js"></script>
-		<script src="/js/skel.min.js"></script>
-		<script src="/js/skel-layers.min.js"></script>
-		<script src="/js/init.js"></script>
-		<script src="/js/index.js"></script>
-		<script src="/js/navBar.js"></script>
+		{% include scripts.html %}
+		
 	</body>
 
 </html>
