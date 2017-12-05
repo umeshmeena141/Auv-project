@@ -1,0 +1,33 @@
+  <div class="modal fade" id="alumni2014" role="dialog">
+    <div class="modal-dialog container">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Alumni 2014-2015</h4>
+        </div>
+        <div class="modal-body">
+          {% for alumni in site.data.alumni %}
+        <div class="col-md-3 text-center" style=" padding:0% !important" >
+          <div class="thumbnail hovereffect " style="height:auto;padding:0px;margin:0%; width:100%;">
+            <div class="hovereffect">
+              <div class="overlay">
+                <h2 class="text ">{{alumni.division}}</h2>
+              </div>
+              <img src="{{alumni.img}}" alt="Lights" style="width:100%;" class="image resize_fit_centers img-rounded">
+            </div>
+            <div class="caption" style="background-color:white">
+              <p class="desc1">{{alumni.name}}</p>
+              <a href="{{alumni.batch}}" class="fblink" ><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
+            </div>
+          </div></div>
+          {% endfor %}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
