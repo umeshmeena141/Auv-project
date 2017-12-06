@@ -3,6 +3,7 @@ layout: "default"
 title: "AUVIITK | Alumni"
 css : css/alumnipage.css
 js : js/alumnianimation.js
+
 ---
 
 <div id="main" class="wrapper style4" style="background-image:url('images/team1.jpg')">
@@ -17,7 +18,7 @@ js : js/alumnianimation.js
         </ul>
       </header>
 
-      <div class="container-fluid" style= "background-image: linear-gradient(to right, transparent -40%, black 150%);">
+      <div class="container-fluid lowscreenhide" style= "background :linear-gradient(to right, transparent -40%, black 150%);">
         <button type="button" onclick="prevstate()" class=".btn .btn-default"  style="float:left; top:40%;position:absolute;z-index:100" > &#10094;</button>
         {% for alumni in site.data.alumni %}
         <div>
@@ -30,12 +31,12 @@ js : js/alumnianimation.js
                 <div class="col-lg-2" style="margin:0% ;color:#F7786B">
                   <h2 id="headder">{{alumni.name}}</h2>
                   <p style="color:white;font-size:1.3vw;">
-                    {{alumni.batch}}<br/>{{alumni.division}}<br/>{{alumni.project}}
+                    &rarr; {{alumni.batch}}<br/>&rarr; {{alumni.division}}<br/>&rarr; {{alumni.project}}
                   </p>
                 </div>
-                <div class="col-lg-3 ">
-                  <h2 style="color:white">
-                    Hi This is .....
+                <div class="col-lg-4 ">
+                  <h3 style="color:white;font-family:monospace">
+                    {{alumni.Experience}}
                   </h2>
                 </div>
               </div>
@@ -46,9 +47,9 @@ js : js/alumnianimation.js
         <button type="button" onclick="nextstate()" class=".btn .btn-default" style="float:right;top:40%;position:absolute;z-index:100;"> &#10095;</button>
       </div>
 
-      <div class="row text-center" >
+      <div class="row text-center lowscreenhide" >
         <div class="col-lg-5" style="margin:3% 20% 10% 30%">
-          <button onclick="slideup()"><i class="fa fa-angle-double-down sliding" style="font-size:36px ;color:white;position:relative;top:0px;" ></i></button>
+          <button type="button" onclick="message()" style="border:none"><i class="fa fa-angle-double-down sliding" ></i></button>
         </div>
       </div>
 
@@ -57,3 +58,4 @@ js : js/alumnianimation.js
 </div>
 {% include  modal.html %}
 {% include facultymessage.html %}
+<script src="js/message.js" ></script>

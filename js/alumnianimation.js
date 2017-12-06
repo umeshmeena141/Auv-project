@@ -1,14 +1,34 @@
-$(document).ready(function(){
-  function slideup(){
-    $('.message').fadeIn();
-    $('.message').slideUp();
-  }
+// Faculty Message slide function
+function message(){
+  $('.message').slideToggle(1000);
+  $('.message').css({"position":"absolute","top":"0px"});
+  window.location.href = "#message1";
+}
 
+
+// Main SlideShow
+$(document).ready(function(){
   var previndex = $('.slide').length-1 ;
   var currindex = 0;
+  var interval= window.setInterval(slideshow,5000);
+
   $('.slide').eq(currindex).css({"display":"block"});
-  window.setInterval(movedown,5000);
-  window.setInterval(slideshow,5000);
+  // sldeshow hide for low width lowscreenhide
+  $(window).on('load resize',function(){
+    if(window.innerWidth> 1200){
+        window.clearInterval(interval);
+        interval= window.setInterval(slideshow,5000);
+          $('.lowscreenhide').css({"display":"block"});
+          $('.message').css({"display":"none","background" :"rgba(22,75,131,0.8)"});
+
+    }
+    else{
+      window.clearInterval(interval);
+        $('.lowscreenhide').css({"display":"none"});
+        $('.message').css({"display":"block","background" :"linear-gradient(to right, transparent -40%, black 1000%)","position":"relative"});
+    }
+  })
+
 
   function slideshow(){
     previndex=currindex;
@@ -50,12 +70,13 @@ $(document).ready(function(){
     });
   }
 
+  // Arrow Animation
+  window.setInterval(movedown,1000);
   function movedown(){
     $('.sliding').animate({top: '50px'},500);
     $('.sliding').delay(500).queue(function(next){
-      $(this).css({"top":"0px"});
+      $(this).css({"top":"0px"});next();
     });
   }
-
 
 })

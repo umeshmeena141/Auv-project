@@ -1,34 +1,49 @@
-- name: Arya
+- name: Soumye Singhal
   state: active
-  img : images/team_members/aryaabhi1.jpeg
-  batch: Y16
-  division: Electrical
-  project: BMS
-
-- name: Vivek Jain
-  state: inactive
-  img : images/team_members/Vivek.jpg
-  batch: Y16
-  division: Electrical
-  project: BMS
-
-- name: Karthic
-  state: inactive
-  img : images/team_members/Karthic1.jpg
-  batch: Y16
-  division: Web Master
-  project: Website
-
-- name: Arora
-  state: inactive
-  img : images/team_members/Akash.jpg
-  batch: Y16
+  img : images/alumni_member/SoumyeSinghal.jpg
+  batch: Y15
   division: Software
-  project: Gazebo
+  project: Motion Control
+  facebook: https://www.facebook.com/singhalsoumye
+  github : https://github.com/soumye
+  Experience:
 
-- name: shivank
+- name: Prakhar Agarwal
   state: inactive
-  img : images/team_members/abhinavarora1.jpg
-  batch: Y16
+  img : images/alumni_member/PrakharAgarwal.png
+  batch: Y15
   division: Software
-  project: Gazebo
+  project: Line Detection, Line following, Bouy Detection, Gate Detection, Torpedo Shooting
+  facebook: https://www.facebook.com/prakhar.agarwal.754365
+  github: https://github.com/pkhrag
+  Experience: It was really nice to work in AUV. I learnt a lot from it. It helped me developing interest  in systems and development. Working with the team and achieving our goal (NIOT competition) was really a great experience.
+
+- name: Shibhansh Dohare
+  state: inactive
+  img : images/alumni_member/ShibhanshDohare.jpg
+  batch: Y14
+  division: Team Head
+  project: Team Management
+  facebook: https://www.facebook.com/Shibhansh
+  github: http://github.com/shibhansh/
+  Experience: It is the hardest thing I have done at IITK :) Like a preview to what working in a startup might be like.
+
+- name: Jayant Agrawal
+  state: inactive
+  img : images/alumni_member/JayantAgarwal.jpg
+  batch: Y14
+  division: Software
+  project:
+  facebook: https://www.facebook.com/ag.jayant
+  github: http://github.com/agjayant
+  Experience: I have been with AUV IITK since the first semester. We got the opportunity to acquire some basic skills in various domains which turned out to be really helpful in the coming semesters. It was because I joined AUV that I could explore and find my interest. It has been a great learning experience for me and I sincerely recommend freshers to consider joining the team.
+
+- name: Siddhartha Saxena
+  state: inactive
+  img : images/alumni_member/SiddharthaSaxena.jpeg
+  batch: Y15
+  division: Software
+  project: Computer Vision
+  facebook: https://www.facebook.com/siddhartha.saxena.71
+  github: http://github.com/siddsax
+  Experience: AUV-IITK was the first technical project in which I was involved and it definitely had a big impact. I learned stuffs ranging from doing code in OpenCV to carrying heavy stuffs at 45 degrees heat of IIT Kanpur to the Swimming pool but above all made awesome friends with like minded interests which I feel is the best part of being involved in any club activity.
