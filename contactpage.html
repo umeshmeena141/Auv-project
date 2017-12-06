@@ -10,7 +10,7 @@ js : js/contactpage.js
     <div class="row" style="margin:4% 0% !important">
       <div class="row text-center skel-cell-important" style="width:110%;border-bottom:1px solid #123e6d" >
         <div class="col-md-4" style="margin:0% 30%;font-size:3vw;color:White;font-family:Monospace" id="contactus">
-          <h2 style="line-height:1.2">CONTACT US</h2>
+          <h2 style="line-height:1.2; margin-top: 10px;">CONTACT US</h2>
         </div>
       </div>
       <!-- Sidebar -->
@@ -18,7 +18,7 @@ js : js/contactpage.js
         <section style="padding:0% 10%;width:100%" class="contactdetails">
           {% for contact in site.data.contact_detail %}
           {% assign members = contact[1] %}
-          <div class="col-md-5" style="margin:3% 3% 3% 5%;background-color:rgba(37, 124, 218, 0.3);word-wrap: break-word;height:320px;text-decoration:none">
+          <div class="col-md-5" style="margin:3% 3% 3% 5%;background-color:rgba(37, 124, 218, 0.3);word-wrap: break-word;height:360px;text-decoration:none">
 								<header class="major" style="padding-bottom:.2em">
 									<h1 style="color:aquamarine;font-family:'Calibri Light';text-transform:initial;font-size:42px;" class="text-center">{{members.title}}</h1>
 								</header>
@@ -42,7 +42,7 @@ js : js/contactpage.js
                 {% else %}
 
                   {% for member in members.member %}
-                  <dl>
+                  <dl style="margin-bottom: 0% !important;">
                     <dt style="color:aqua"> {{member.Name}}
                     </dt>
                     <dd style="text-indent: 20px">
