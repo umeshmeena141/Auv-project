@@ -4,7 +4,7 @@ function message(){
   $('.message').css({"position":"absolute","top":"0px"});
   window.location.href = "#message1";
 }
-
+$('#nav a').eq(6).css({"color":"white"});
 
 // Main SlideShow
 $(document).ready(function(){
