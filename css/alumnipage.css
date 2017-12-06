@@ -3,9 +3,7 @@ button{
     color: white;
     border:1px solid skyblue;
   }
-  .active{
-    color: purple;
-  }
+
   #alumni{
     color:White;
 }
@@ -14,7 +12,7 @@ button{
 	text-align:center;
 	margin-bottom:3%;
 	padding-top:110%;
-	font-size:1.1vw;
+
 	font-weight: 500;
 }
 
@@ -65,10 +63,6 @@ button{
 	vertical-align:middle;
 }
 
-
-
-
-
 .hovereffect h2 {
 	-webkit-transform: scale(0.7);
 	-ms-transform: scale(0.7);
@@ -84,7 +78,6 @@ button{
 
 .hovereffect:hover h2 {
 	opacity: 1;
-
 	filter: alpha(opacity=100);
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
@@ -128,7 +121,6 @@ h2{
 	height: auto;
 	padding: 5% 0%;
 	width: 100%;
-
 	bottom: 0%!important;
 
 }

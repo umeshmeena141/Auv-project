@@ -1,7 +1,8 @@
 ---
-layout :  navbar
-title  :  Our Alumni's
-custom_css : alumnipage.css
+layout: "default"
+title: "AUVIITK | Alumni"
+css : css/alumnipage.css
+js : js/alumnianimation.js
 ---
 
 <div id="main" class="wrapper style4" style="background-image:url('images/team1.jpg')">
@@ -17,7 +18,7 @@ custom_css : alumnipage.css
       </header>
 
       <div class="container-fluid" style= "background-image: linear-gradient(to right, transparent -40%, black 150%);">
-        <button type="button" onclick="prevstate()" class=".btn .btn-default"  style="float:left; top:50%;position:absolute;z-index:100" > &#10094;</button>
+        <button type="button" onclick="prevstate()" class=".btn .btn-default"  style="float:left; top:40%;position:absolute;z-index:100" > &#10094;</button>
         {% for alumni in site.data.alumni %}
         <div>
           <div class="col-lg-12 slide"  style="display:none">
@@ -42,12 +43,12 @@ custom_css : alumnipage.css
           </div>
         </div>
         {% endfor %}
-        <button type="button" onclick="nextstate()" class=".btn .btn-default" style="float:right;top:50%;position:absolute;z-index:100;margin-right:15%;"> &#10095;</button>
+        <button type="button" onclick="nextstate()" class=".btn .btn-default" style="float:right;top:40%;position:absolute;z-index:100;"> &#10095;</button>
       </div>
 
       <div class="row text-center" >
         <div class="col-lg-5" style="margin:3% 20% 10% 30%">
-          <i class="fa fa-angle-double-down sliding" style="font-size:36px ;color:white;position:relative;top:0px;"></i>
+          <button onclick="slideup()"><i class="fa fa-angle-double-down sliding" style="font-size:36px ;color:white;position:relative;top:0px;" ></i></button>
         </div>
       </div>
 
@@ -55,4 +56,4 @@ custom_css : alumnipage.css
   </div>
 </div>
 {% include  modal.html %}
-<script src="js/alumnianimation.js"> </script>
+{% include facultymessage.html %}
