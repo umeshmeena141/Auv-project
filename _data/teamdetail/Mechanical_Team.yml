@@ -1,0 +1,36 @@
+basename1 : Mechanical_Team
+title: Mechanical Team
+id : mechteam
+display: none
+member :
+  - Name: Balamurugan R
+    Department: Aerospace Engg.
+    email: rbala@iitk.ac.in
+    img1: images/team_members/Balamurgan1.jpg
+    facebook: https://www.facebook.com/balaramachandaran
+    github: https://github.com/rbala-AUV-IITK
+    CurrProject: Design Of New Vehicle
+
+  - Name: Mahesh Saboo
+    Department: Mechanical Engg.
+    email: mssaboo@iitk.ac.in
+    img1: images/team_members/MaheshSaboo1.jpg
+    facebook: https://www.facebook.com/mssaboo
+    github: https://github.com/mssaboo
+    CurrProject: Torpedo Designing And Pneumatics
+
+  - Name: Naveen Chandra R
+    Department: Aerospace Engg.
+    email: naveencr@iitk.ac.in
+    img1: images/team_members/NaveenChandra1.png
+    facebook:  https://www.facebook.com/profile.php?id=100002998274447
+    github: https://github.com/NaveenchandraR
+    CurrProject: Design Of New Vehicle and Acoustics
+
+  - Name: Anand Gandhi
+    Department: Mechanical Engg.
+    email: anandlg@iitk.ac.in
+    img1: images/team_members/AnandGandhi.jpg
+    facebook: https://www.facebook.com/anandlg23
+    github: https://github.com/andy2307
+    CurrProject: Design Of New Vehicle
