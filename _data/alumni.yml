@@ -1,0 +1,34 @@
+- name: Arya
+  state: active
+  img : images/team_members/aryaabhi1.jpeg
+  batch: Y16
+  division: Electrical
+  project: BMS
+
+- name: Vivek Jain
+  state: inactive
+  img : images/team_members/Vivek.jpg
+  batch: Y16
+  division: Electrical
+  project: BMS
+
+- name: Karthic
+  state: inactive
+  img : images/team_members/Karthic1.jpg
+  batch: Y16
+  division: Web Master
+  project: Website
+
+- name: Arora
+  state: inactive
+  img : images/team_members/Akash.jpg
+  batch: Y16
+  division: Software
+  project: Gazebo
+
+- name: shivank
+  state: inactive
+  img : images/team_members/abhinavarora1.jpg
+  batch: Y16
+  division: Software
+  project: Gazebo

@@ -1,251 +1,90 @@
+---
+layout: "default"
+title: "AUVIITK | Contact"
+css : /css/contactpage.css
+js : js/contactpage.js
+---
 
-<!DOCTYPE HTML>
-<!--
-	Solarize by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		<title>AUVIITK | Contact Us</title>
-		<link rel="shortcut icon" type="image/x-icon" href="images/logo1.ico" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-        <style>
-            body{
-                overflow-x:hidden;
-            }
-            .form-control {
-                border-color: #ccc;
-            }
-            input {
-                border-color: #ccc !important;
-
-            }
-            input:focus {
-                    border-color: #66afe9 !important;
-            }
-            .form-group{
-                margin:0% 0% 3%
-            }
-            button:hover{
-                background-color:aquamarine !important;
-                color:#164b83 !important;
-                transition: all .2s linear;
-                font-variant:initial;
-            }
-			a{
-			text-decoration:none;
-			}
-            b{
-                color: #99e6ff;
-				font-size:18px;
-            }
-            dl {
-                color: black;
-                font-size:16px;
-				margin-bottom:1%;
-            }
-
-			header.major .byline {
-				list-style-type:disc;
-			}
-			#LOGO:hover {
-				filter:brightness(100);
-			}
-			#header {
-				position:fixed;
-				z-index:10;
-				background:black;
-			}
-
-        </style>
-	</head>
-	<body style="background-color:#e6eeff !important">
-
-		<!-- Header Wrapper -->
-			<div class="wrapper style1" id="ws1">
-
-						<!-- Header -->
-						<div id="header">
-							<div class="container" style="z-index:10">
-
-								<nav id="nav" style="z-index:10;background-color:rgba(0,0,0,1)">
-									<ul >
-										<li id="LOGO1"><a href="index.html"><img id="LOGO" src="images/logo_b.png" alt="Home" height="33px" style="padding-top:8px;padding-right:7px;padding-bottom:12px;margin-bottom:0;"></a></li>
-										<li id="index1"><a href="index.html">Home</a></li>
-										<li  id="varun1" ><a href="varun.html">Vehicle</a>
-											<ul>
-												<li><a href="">Competition Vehicles</a>
-													<ul><li><a href="varun.html">Varun</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li><a href="teampage17.html">Team</a>
-											<ul>
-												<li><a href="teampage17.html">2017-18</a></li>
-											</ul>
-										</li>
-										<li class="active" style="color:white"><a href="contactpage.html">Contact Us</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-
-		<!-- Main -->
-			<div id="main" class="wrapper style4" style="padding-bottom:1emc!important;background-color:#164b83;padding:0 !important">
-				<div class="container-fluid" >
-					<div class="row" style="margin:4% 0% !important">
-                        <div class="row text-center skel-cell-important" style="width:110%;border-bottom:1px solid #123e6d" >
-                            <div class="col-md-4" style="margin:0% 30%;font-size:3vw;color:White;font-family:Monospace" id="contactus">
-								<h2>CONTACT US</h2>
-                            </div>
-                        </div>
-						<!-- Sidebar -->
-						<div id="sidebar" class="row text-center" style="padding-left:0px;margin:0% !important;width:100%">
-							<section style="padding:0% 10%;width:100%" class="contactdetails">
-								<div class="col-md-5" style="margin:3% 3% 3% 5%;background-color:rgba(37, 124, 218, 0.3);word-wrap: break-word;">
+<div id="main" class="wrapper style4" style="padding-bottom:1emc!important;background-color:#164b83;padding:0 !important">
+  <div class="container-fluid" >
+    <div class="row" style="margin:4% 0% !important">
+      <div class="row text-center skel-cell-important" style="width:110%;border-bottom:1px solid #123e6d" >
+        <div class="col-md-4" style="margin:0% 30%;font-size:3vw;color:White;font-family:Monospace" id="contactus">
+          <h2 style="line-height:1.2">CONTACT US</h2>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div id="sidebar" class="row text-center" style="padding-left:0px;margin:0% !important;width:100%;">
+        <section style="padding:0% 10%;width:100%" class="contactdetails">
+          {% for contact in site.data.contact_detail %}
+          {% assign members = contact[1] %}
+          <div class="col-md-5" style="margin:3% 3% 3% 5%;background-color:rgba(37, 124, 218, 0.3);word-wrap: break-word;height:320px;text-decoration:none">
 								<header class="major" style="padding-bottom:.2em">
-									<h1 style="color:aquamarine;font-family:'Calibri Light';text-transform:initial;font-size:42px;" class="text-center">Contacts</h1>
+									<h1 style="color:aquamarine;font-family:'Calibri Light';text-transform:initial;font-size:42px;" class="text-center">{{members.title}}</h1>
 								</header>
-                                <div class="row" style="margin-top:3%">
-                                    <ul style="font-family:Arial;font-size:16px;line-height:2.7;width:100%;padding-left:5%">
-                                        <li>
-                                           <b><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=iitkauv@gmail.com&su" style="color:#99e6ff"><i class="fa fa-envelope"></i></a>:</b> <span style="color:white">auviitk@gmail.com</span>
-                                        </li>
+              <div class="row" style="margin-top:3%">
+                  <ul style="font-family:Arial;font-size:16px;line-height:2.7;width:100%;padding-left:15% !important  ;text-align:left;;margin-bottom:5%" class="auvcontact">
+                    {% if members.title == 'Contact' %}
+                      <li>
+                         <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=iitkauv@gmail.com&su" style="color:#99e6ff"><i class="fa fa-envelope faicon"></i> :</a><span style="color:white">iitkauv@gmail.com</span>
+                      </li>
 
-                                        <li>
-                                            <b><i class="fa fa-location-arrow"></i>:</b> <span style="color:white">AUV Room, Hall-2 ,IITK</span>
-                                        </li>
-										<li>
-                                            <b><i class="fa fa-facebook"></i>:</b> <span style="color:white"><a href="https://www.facebook.com/auviitk/" style="text-decoration:none;color:white">https://www.facebook.com/auviitk/</a></span>
-                                        </li>
+                      <li>
+                          <a href="#googleMap"><i class="fa fa-location-arrow faicon"></i>: <span style="color:white">AUV Room, Hall-2, IIT KANPUR, KANPUR(208016), U.P., INDIA</span></a>
+                      </li>
+	                        <li style="text-indent:16%;" class="socialicons">
+                          <a href="https://www.facebook.com/auviitk/"><i class="fa fa-facebook faicon" style="font-size:150%"></i></a>
+                          <a href="https://github.com/AUV-IITK"><i class="fa fa-github faicon" style="font-size:150%"></i></a>
+                      </li>
 
-                                        <li>
-                                            <b><i class="fa fa-github"></i>:</b><span style="color:white;">auv-iitk.github.io</span>
-                                        </li>
+                      <li>
+                      </li>
+                {% else %}
 
-                                    </ul>
+                  {% for member in members.member %}
+                  <dl>
+                    <dt style="color:aqua"> {{member.Name}}
+                    </dt>
+                    <dd style="text-indent: 20px">
+                      <span ><a href="{{member.facebook}}" style="color:white;"><i class="fa fa-facebook faicon"></i></a></span>
+                      <a href="{{member.email}}"><span style="color:#99e6ff"><i class="fa faicon fa-envelope"></i>:</span> <span style="color:white;">{{member.id}}@iitk.ac.in</span></a>
+                    </dd>
+                  </dl>
+                  {% endfor %}
 
-                                </div></div>
-							<div class="col-md-5" style="margin:3%;background-color:rgba(37, 124, 218, 0.3)">
-                                <header class="major" style="padding-bottom:.2em">
-                                    <h1 style="color:aquamarine;font-family:'Calibri Light';text-transform:initial;font-size:38px;" class="text-center">Team Representatives</h1>
-                                </header>
-                                <div class="row" style="margin-top:3%">
-                                    <ul style="font-family:Arial;font-size:15px;line-height:1;width:100%;padding-left:5%;margin-bottom:2%;">
-                                        <dl>
-                                            <dt style="color:aqua"> Akash Jain</dt>
-                                            <dd><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=jaiakash@iitk.ac.in&su"><span style="color:#99e6ff"><i class="fa fa-envelope"></i>:</span> <span style="color:white;">jaiakash@iitk.ac.in</span></dd></a>
-                                            <dd> <span ><a href="https://www.facebook.com/akashjain53966" style="color:white;"><i class="fa fa-facebook"></i></a></span></dd>
-                                        </dl>
-                                        <dl>
-                                            <dt style="color:aqua"> Manish Kumar</dt>
-                                            <dd><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=maniskj@iitk.ac.in&su"><span style="color:#99e6ff"><i class="fa fa-envelope"></i>:</span> <span style="color:white;">maniskj@iitk.ac.in</span></dd></a>
-                                            <dd> <span ><a href="https://www.facebook.com/profile.php?id=100010275425218" style="color:white;"><i class="fa fa-facebook"></i></a></span></dd>
-                                        </dl>
-										<dl>
-                                            <dt style="color:aqua"> Rithvik Patibandla</dt>
-                                            <dd><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=rithvikp@iitk.ac.in&su"><span style="color:#99e6ff"><i class="fa fa-envelope"></i>:</span> <span style="color:white;">rithvikp@iitk.ac.in</span></dd></a>
-                                            <dd> <span ><a href="https://www.facebook.com/rithvik.patibandlas" style="color:white;"><i class="fa fa-facebook"></i></a></span></dd>
-                                        </dl>
-                                    </ul>
+                {% endif %}
 
-                                </div>
-							</section></div>
-						</div>
+              </ul>
 
-
-
-						<!-- Content -->
-
-						</div>
-					</div>
-				</div>
-
-        <div class="container-fluid" style="margin:0% 5%;background-color:#e6eeff">
-            <h1 style="color:#164b83;text-indent:20px;">Location</h1>
-            <div id="googleMap" style="width:100%;height:400px;"></div>
-
-            <script>
-                function myMap() {
-                    var mapProp = {
-                        center: new google.maps.LatLng(26.510865, 80.22993),
-                        zoom: 15,
-                    };
-                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                    var marker = new google.maps.Marker({
-                        position: { lat: 26.510865, lng: 80.22993 },
-                        map: map
-                    });
-                }
-            </script>
-
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARyCGtNg30qNKXKcA3DP1z-xE6yzrHzBE&callback=myMap"></script>
-        </div>
-
-
-	<!-- Footer -->
-        <div id="footer" style="position:relative;top:1.5em;color:white;padding:0em;background-color:#164b83">
-            <section class="container">
-                <ul class="icons" style="padding-bottom:0;margin-top:2%;">
-                    <li class="active"><a href="https://www.facebook.com/auviitk/" class="fa fa-facebook" target="_blank"><span>Facebook</span></a></li>
-                    <li><a href="https://github.com/auv-iitk" class="fa fa-github" target="_blank"><span>Github</span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCBaRXMUGSoJeHLFBMa0q7Vg" class="fa fa-youtube" target="_blank"><span>Youtube</span></a></li>
-                    <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=iitkauv@gmail.com&su" class="fa fa-envelope" target="_blank"><span>Envelope</span></a></li>
-
-                </ul>
-            </section>
-
-
-            <!-- Copyright -->
-            <div id="copyright" style="position:relative;text-align:center;padding:1em 0em 1em 0em;color:inherit;border-top:1px solid rgba(255,255,255,.3);width:90%;margin:auto;text-transform:initial;font-size:15px;">
-                &copy; Autonomous Underwater Vehicle Team, IIT Kanpur, 2015-2017
             </div>
-        </div>
-        <script>
-            $(document).ready(function () {
-                $(window).on('resize load ', function () {
-                    if ($(window).width() < 750) {
-                        $('#contactus').css({ "fontSize": "35px" });
-						$('.contactdetails').css({"padding-left":"0% !important"});
-						$('#sidebar').css({"padding-left":"0% !important"});
-						$('.col-md-5').css({"margin-left":"0% !important"});
-						$('h1').css({"font-size":"30px"});
+          </div>
+          {% endfor %}
+        </section>
+      </div>
 
-                    }
-					if($(window).width()<500){
-						$('.icons').css({"padding-top":"4%"});
-					}
-                });
-            });
-        </script>
-		<script src="js/navBar.js"></script>
+    </div>
+  </div>
+</div>
 
-		<!--
-			Database Management
-		-->
+    <!-- Map -->
 
+<div class="container-fluid" style="margin:0%;background-color:#e6eeff">
+  <h1 style="color:#164b83;text-indent:20px;">Location</h1>
+  <div id="googleMap" style="width:100%;height:400px;margin-bottom:3%"></div>
 
+  <script>
+  function myMap() {
+    var mapProp = {
+      center: new google.maps.LatLng(26.510865, 80.22993),
+      zoom: 15,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    var marker = new google.maps.Marker({
+      position: { lat: 26.510865, lng: 80.22993 },
+      map: map
+    });
+  }
+  </script>
 
-	</body>
-
-</html>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARyCGtNg30qNKXKcA3DP1z-xE6yzrHzBE&callback=myMap"></script>
+</div>
