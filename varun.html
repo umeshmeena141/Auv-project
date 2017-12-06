@@ -20,18 +20,20 @@ js: /js/varun.js
 				<a id="part4" class="button1">Software Subsystem</a>
 				<a id="part3" class="button1">Electrical Subsystem</a>
 		</div>
-<!--main-->
-		<div class="wrapper style2" id="v" style="zoom:90%;background:#164b83; margin-top:0px; color:white;padding-bottom:10px;padding-top:30px;">
+<!-- Vehicle - Varun -->
+{% for item in site.vehicles %}
+	{% if item.subTitle == "Key Aspects" %}
+		<div class="wrapper style2" id="v" style="zoom:85%;{{item.bgcolor}}; margin-top:0px; {{item.color2}}; padding-bottom:10px;padding-top:30px;">
 			<section class="container">
 				<div class="row double">
 					<div class="5u">
 
-						<header class="major" style="text-align:left !important;font-weight:400;height:350px; background:rgba(37, 124, 218, 0.3); vertical-align: middle;padding-left:34px; padding-right:12px;display: table-cell">
+						<header class="major" style="text-align:left !important;font-weight:400;height:350px; vertical-align: middle;padding-left:34px; padding-right:12px;display: table-cell;vertical-align: middle;">
 							<h2 style="font-size:2.0em;font-weight:700; margin-bottom:10px; padding:5px 5px 0px 10px;text-transform:uppercase;margin-left:-34px;">Key Aspects</h2>
 							<ul class="list">
-								{% for item in site.vehicles %}{% if item.subTitle == "Key Aspects" %}{% for features in item.features %}
+								{% for features in item.features %}
 									<li class="byline">{{ features }}</li>
-								{% endfor %}{% endif %}{% endfor %}
+								{% endfor %}
 							
 							</ul>
 							<div style="width:100%; text-align:center;margin-top:15px;">
@@ -42,11 +44,11 @@ js: /js/varun.js
 					<div class="7u">
 						<div class="sketchfab-embed-wrapper" style="margin:auto; display:inline-block; text-align:center; overflow:hidden; width:100%;">
 							<div class="sketchfab-embed-wrapper">
-								<iframe width="100%" height="400" src="https://sketchfab.com/models/6e1274e10d9e4b6a922a5ed0baf9445f/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+								<iframe width="100%" height="400" src="{{item.iframe}}" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 								<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-									<a href="https://sketchfab.com/models/6e1274e10d9e4b6a922a5ed0baf9445f?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">VARUN</a>
-									by <a href="https://sketchfab.com/karthic?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">AUV IITK</a>
-									on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+									<a href="{{item.ifram1}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">VARUN</a>
+									by <a href="{{item.ifram2}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">AUV IITK</a>
+									on <a href="{{item.ifram3}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 								</p>
 							</div>
 						</div>
@@ -54,89 +56,62 @@ js: /js/varun.js
 				</div>
 			</section>
 		</div>
-<!-- 2 -->
-		<div id = "mechanical" class="subTeam" style="background:#f2f2f2;">&emsp;</div>
+	{% endif %}
+{% endfor %}
 
-		<div class="wrapper style2" id="v1" style="zoom:90%;background:#f2f2f2; color:#0086b3;padding:0px;">
-			<section class="container">
-				<div class="row double">
-					<div class="7u">
-						<div style="display:inline-block;">
-
-							<div style="margin:auto;text-align:center; width:80%;">
-								<img class="auvMech" style="width:100%;" src="images/varun/varun_labelled.png">
+<!-- Mechanical | Software | Electrical Subteams -->
+	{% for item in site.subteams %}
+		{% if item.title != "software" %}
+			<div id = "{{item.title}}" class="subTeam" style={{item.bgcolor}} >&emsp;</div>
+			<div class="wrapper style2" style="zoom:85%; {{item.bgcolor}}; {{item.color2}}; padding:0px; ">
+				<section class="container">	
+					<div class="row double">
+						<div class="7u">
+							<div style="display: inline-block;">
+								<div style="margin:auto; text-align:center; width:80%;">
+									<img class="auvMech" style="width:100%;display: table-cell;vertical-align: middle;" src="{{item.image}}">
+								</div>
 							</div>
+							<p class="picCom" style={{item.color1}}><a href="#" class="fa fa-angle-up" style="{{item.color1}}; text-decoration:none;"></a> {{item.imgDesc}}</p>
 						</div>
-						<p class="picCom" style="color:#14669C;"><a href="#" class="fa fa-angle-up" style="color:#14669C; text-decoration:none;"> </a> Exploded View of Varun</p>
+						<div class="5u" >
+							<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#f2f2f2; height:500px;display: table-cell;vertical-align: middle;">
+								<h2 style=" {{item.color1}}; padding-left:10px;font-weight:700;font-size:1.6em;text-transform:uppercase;margin-left:-34px;">{{item.subTitle}}</h2>
+								<ul class="list">
+									{% for features in item.features %}
+										<li class="byline">{{ features }}</li>
+									{% endfor %}
+								</ul>
+							</header>
+						</div>
 					</div>
-					<div class="5u">
-						<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#f2f2f2; height:500px;padding-top:30px;">
-							<h2 style="color:#006080; font-weight:700;font-size:1.6em; padding-left:10px;text-transform:uppercase;margin-left:-34px;">Mechanical Subsystem</h2>
-							<ul class="list">
-								{% for item in site.subteams %}{% if item.title == "Mechanical" %}{% for features in item.features %}
-									<li class="byline">{{ features }}</li>
-								{% endfor %}{% endif %}{% endfor %}
-							</ul>
-						</header>
-					</div>
-				</div>
-			</section>
-		</div>
-
-<!-- 3 -->
-		<div id = "software" class="subTeam" style="background:#b3d9ff;">&emsp;</div>
-
-		<div class="wrapper style2" id="v3" style="zoom:90%;background:#b3d9ff; color:#0086b3;padding:0px;">
-			<section class="container">
-				<div class="row double">
-					<div class="6u" >
-						<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#b3d9ff; height:400px; padding-top:30px;" >
-							<h2 style="color:#006080;font-weight:700;font-size:1.6em; padding-left:10px;text-transform:uppercase;margin-left:-34px;">Software Subsystem</h2>
-							<ul class="list">
-								{% for item in site.subteams %}{% if item.title == "Software" %}{% for features in item.features %}
-									<li class="byline">{{ features }}</li>
-								{% endfor %}{% endif %}{% endfor %}
-						 	</ul>
-						</header>
-					</div>
-					<div class="6u">
-						<div style="display:inline-block">
-
-							<div style="margin:auto;text-align:center; width:80%;">
-								<img class="auvMech" style="width:100%;" src="images/varun/software_logos.png">
+				</section>
+			</div>
+		{% else %}
+			<div id = "{{item.title}}" style={{item.bgcolor}} class="subTeam">&emsp;</div>
+			<div class="wrapper style2" id="{{i}}" style="zoom:85%;{{item.bgcolor}}; {{item.color2}};padding:0px; ">
+				<section class="container">
+					<div class="row double">
+							<div class="6u" >
+								<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#b3d9ff; height:500px;display: table-cell;vertical-align: middle;">
+									<h2 style=" {{item.color1}};padding-left:10px;font-weight:700;font-size:1.6em;text-transform:uppercase;margin-left:-34px;">{{item.subTitle}}</h2>
+									<ul class="list">
+										{% for features in item.features %}
+											<li class="byline">{{ features }}</li>
+										{% endfor %}
+									</ul>
+								</header>
 							</div>
-						</div>
-						<p class="picCom" style="color:#0059b3;" ><a href="#" class="fa fa-angle-up" style="color:#0059b3; text-decoration:none;"> </a> Frameworks in Varun's Code</p>
-					</div>
-				</div>
-			</section>
-		</div>
-
-<!-- 4 -->
-		<div id = "electrical" class="subTeam" style="background:#f2f2f2;">&emsp;</div>
-		<div class="wrapper style2" id="v2" style="zoom:90%;background:#f2f2f2; color:#0086b3;padding:0px; ">
-			<section class="container">
-				<div class="row double">
-					<div class="7u">
-						<div style="display: inline-block;">
-							<div style="margin:auto; text-align:center; width:80%;">
-								<img class="auvMech" style="width:100%;" src="images/varun/varun_power.png">
+							<div class="6u">
+								<div style="display: inline-block;">
+									<div style="margin:auto; text-align:center; width:80%;">
+										<img class="auvMech" style="width:100%;margin-top:55px;display: table-cell;vertical-align: middle;" src="{{item.image}}">
+									</div>
+								</div>
+								<p class="picCom" style="{{item.color1}};"><a href="#" class="fa fa-angle-up" style="{{item.color1}}; text-decoration:none;"></a> {{item.imgDesc}}</p>
 							</div>
-						</div>
-						<p class="picCom" style="color:#14669C;"><a href="#" class="fa fa-angle-up" style="color:#14669C; text-decoration:none;"></a> Schematic Diagram of Power Distribution Board</p>
 					</div>
-					<div class="5u" >
-						<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#f2f2f2; height:500px;padding-top:30px;">
-							<h2 style=" color:#006080;padding-left:10px;font-weight:700;font-size:1.6em;text-transform:uppercase;margin-left:-34px;">Electrical Subsystem</h2>
-							<ul class="list">
-								{% for item in site.subteams %}{% if item.title == "Electrical" %}{% for features in item.features %}
-									<li class="byline">{{ features }}</li>
-								{% endfor %}{% endif %}{% endfor %}
-							</ul>
-						</header>
-					</div>
-
-				</div>
-
-			</section>
-		</div>
+				</section>
+			</div>
+		{% endif %}
+	{% endfor %}
