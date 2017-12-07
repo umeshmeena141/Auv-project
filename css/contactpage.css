@@ -21,7 +21,7 @@ button:hover{
   font-variant:initial;
 }
 a{
-  text-decoration:none;
+  text-decoration:none !important;
 }
 b{
   color: #99e6ff;
