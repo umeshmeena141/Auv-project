@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('#nav a').eq(9).css({"color":"white"});
+  $('#nav a').eq(8).css({"color":"white"});
   $(window).on('resize load', function () {
     if ($(window).width() < 750) {
       $('#contactus').css({ "fontSize": "35px" });
