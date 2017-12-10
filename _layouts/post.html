@@ -2,21 +2,50 @@
 layout: default
 ---
 
+  <!-- Heading -->
+  <div class="wrapper style3" style="zoom:95%;">
+    <section class="container" >
+      <header class="major">
+        <h2 style="font-size:4em; ">{{page.title}}</h2>
+      </header>
+      <p style="font-size:1.4em;margin-bottom:0px;">&emsp;&emsp;- by {{page.author}} on {{page.date | date: "%B %-d, %Y"}}</p>
+    </section>
+  </div>
+
+
   <div style="background:white;padding-bottom:10px;color:#333333">
-    <div class="wrapper style4">
-			<section class="container">
-				<div class="row flush">
+
+    <div class="wrapper style4" >
+			<section class="container" >
+				<div class="row flush" >
 					<div class="2u">
 						<p></p>
 					</div>
-          <div class = "8u">
+          <div class = "8u" style="font-weight:400; font-size: 1.1em;" >
             {{ content }}
+            {% if page.comments %}
+              <div id="disqus_thread" style="background:white;"></div>
+            {% endif %}
           </div>
         </div>
       </section>
     </div>
   </div>
 
+  
+    <script>
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://auv-iitk.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s); })();
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
   <script>
     document.getElementById("blog1").style.color = "white";
   </script>
+  <script id="dsq-count-scr" src="//auv-iitk.disqus.com/count.js" async></script>
+

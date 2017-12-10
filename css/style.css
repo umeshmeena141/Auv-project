@@ -526,7 +526,11 @@
 			}
 
 			.wrapper.style3 p {
-				font-size: 1.6em;
+				font-size: 1.4em;
+			}
+
+			.wrapper.style3 h2 {
+				font-size: 2.6em;
 			}
 
 		.wrapper.style4 {
