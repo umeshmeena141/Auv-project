@@ -6,17 +6,17 @@ js: /js/blog.js
 ---
 
 <!-- Heading -->
-		<div class="wrapper style3" style="zoom:95%;">
+		<div class="wrapper style4" style="padding:120px 0px 40px 0px;">
 				<section class="container" >
-					<header class="major">
-						<h2 style="font-size:5em; ">BLOG</h2>
+					<header class="major" >
+						<h2 style="font-size:5em;margin-bottom: 25px;color:#2d2d2d;">BLOG</h2>
+						<span class="byline" style="font-weight:400;">A small description about the Jekyll-enhanced Blog page</span>
 					</header>
-					<p style="font-size:1.6em;margin-bottom:0px;">- by AUV, IITK</p>
-					</section>
+				</section>
 			</div>
 
 <!-- Blog Posts -->
-		<div class="wrapper style4">
+		<div class="wrapper style4" style="padding-top: 0px;">
 			<section class="container">
 				<div class="row flush">
 					<div class = "2u">
@@ -26,7 +26,7 @@ js: /js/blog.js
 						<ul>
 							<li>
 								{% for post in site.posts %}
-								<p style="color:darkblue; margin-bottom:5px;font-weight:500;">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+								<p style="color:darkblue; margin-bottom:5px;font-weight:500;color:#19579a">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
 								<a style="text-decoration:none;" href="{{ post.url }}">
 									<h3 id="headingForBlog">
 										{{ post.title }}

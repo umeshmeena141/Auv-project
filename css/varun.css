@@ -65,11 +65,3 @@ header.major .byline {
 #v header.major .byline {
 	list-style-type:disc;
 }
-#LOGO:hover {
-	filter:brightness(100);
-}
-#header {
-	position:fixed;
-	z-index:10;
-	background:black;
-}
