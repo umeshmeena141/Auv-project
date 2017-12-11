@@ -3,45 +3,53 @@ layout: default
 ---
 
   <!-- Heading -->
-  <div class="wrapper style3" style="zoom:95%;">
+  <div class="wrapper style4" style="padding:120px 0px 60px 0px;">
     <section class="container" >
       <header class="major">
-        <h2 style="font-size:4em; ">{{page.title}}</h2>
+        <h2 style="font-size:3.2em;line-height:0.9;margin-bottom: 5px;text-decoration: underline;"><a href="/blog.html">{{page.title}}</a></h2>
+        <span class="byline" style="color:#333333">&emsp;&emsp;- by {{page.author}} on {{page.date | date: "%B %-d, %Y"}}</span>
       </header>
-      <p style="font-size:1.4em;margin-bottom:0px;">&emsp;&emsp;- by {{page.author}} on {{page.date | date: "%B %-d, %Y"}}</p>
+      <p style="font-size:1.4em;margin-bottom:0px;"></p>
     </section>
   </div>
 
 
   <div style="background:white;padding-bottom:10px;color:#333333">
-    <div class="wrapper style4" >
+    <div class="wrapper style4" style="padding-top:0px;">
 			<section class="container" >
 				<div class="row flush" >
 					<div class="2u">
 						<p></p>
 					</div>
-          <div class = "8u" style="font-weight:400; font-size: 1.1em;" >
+          <div class = "8u" style="font-weight:400; font-size: 1.0em;text-align: justify;" >
             {{ content }}
             {% if page.comments %}
               <div id="disqus_thread" style="background:white;"></div>
-            {% endif %}
+            {% endif %}<hr>
+            <ul class="pager">
+              {% if page.previous.url %}
+                <li class="previous"><a href="{{ page.previous.url }}" style="text-decoration:none; color:#19579a;"><i class="fa fa-angle-double-left" > </i> Previous Post</a></li>
+              {% endif %}
+              {% if page.next.url %}
+                <li class="next"><a href="{{ page.next.url }}" style="text-decoration:none; color:#19579a;">Next Post <i class="fa fa-angle-double-right" > </i></a></li>
+              {% endif %}
+            </ul>
           </div>
         </div>
       </section>
     </div>
   </div>
 
-  
-    <script>
+  <script>
 
-        (function() { // DON'T EDIT BELOW THIS LINE
-          var d = document, s = d.createElement('script');
-          s.src = 'https://auv-iitk.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s); })();
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://auv-iitk.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s); })();
 
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   
   <script>
     document.getElementById("blog1").style.color = "white";

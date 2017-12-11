@@ -12,18 +12,12 @@ comments: true
 &emsp;&emsp;Initially Shikher thought that buying a low power armh processor was a very wise choice. Low power meant lower battery consumption so lighter batteries. Also single chip armh processors like Raspberry Pi and Odroid are way cheaper. The world was good. Until one day OpenCV came along. Initially he seemed like a nice guy. Resourceful. With his awesome HighGUI and shiny high power tools like HoughCircle, Contrast stretching he seemed like a guy Shikher <!--more-->could rely on. But soon Shikher became so dependant on him that he forgot the limited hardware that had to support OpenCV. The world started breaking apart. Shikher was caught up between using powerful tools of OpenCV or making the resource requirements low for odroid u3 and raspberry pi 2 boards. Eventually it became clear that there was no other way, Shikher started looking for stronger boards which could meet the requirements of OpenCV. He soon came across NUC; One of the most powerful boards used in robotics projects. Although the specs were great but it came with a big setback to our budget, and using it also meant increased battery consumption. Shikher tried to weigh to pros and cons of it and presented this to my team so that they will go forward with the purchase.
 
 ## Weighing the pros and cons
-<hr>
 **Pros:**
 1. Currently our image processing nodes take a lot of cpu usage. This is because a lot of OpenCV functions are lengthy matrix operations. One way is to reduce the frame rate so that once the last frame was processed we take the latest frame and process it; dropping all the frames in between. But this leads to very low fps and uneven rate of output. For better accuracy we need to run the image processing at the fps of camera rather than being limited by our processing speed. Other than this the filter on sensor data are also resource hungry and even though right now we don't have complicated motion control and planning but later that too will require more processing power.
-
 2. Shifting to a 64 bit architecture makes software development easier because both rpi and odroid were armh architecture which had limited support in terms of precompiled binaries. We even encountered a bug which is armh specific.
-
 3. We are developing this auv not just for a competition but also to serve as a platform for doing underwater robotics research. In the future when we research and test more and more sophisticated algorithms we would want the testing platform to be free of any limitations.
-
 4. We are running Raspberry pi 2 (and earlier Odroid u3) in headless mode (without GUI) because we don't have enough processing power to support GUI.
-
 5. With surplus resources we will have the freedom to experiment and add more features like running a webserver with the controls and output data exposed as a web page.
-
 6. In addition to this we also have the roscore, motion library and sensor nodes which have significant resource requirements. We expect the current requirements to increase because we will be running multiple task handlers, increasing the complexity in motion library and adding various debug nodes like a dashboard, system diagnostics and data logger.
 
 **Cons:**
@@ -32,7 +26,6 @@ comments: true
 2. But it can be managed by using batteries of higher capacity.
 
 ## Create Report
-<hr>
 &emsp;&emsp;Hmm, how to log cpu usage. How to do this?
 May be capture output of some monitor periodically against the pid of our process ?
 What to use ? ```top```/```htop```/```ps``` ?
@@ -56,7 +49,6 @@ Time (s) | i5 CPU% | rpi CPU%
 10	|	21.2	|	95.4
 
 ## NUC who?
-<hr>
 &emsp;&emsp;Intel *N*ext *U*nit of *C*omputing is a 64 bit motherboard + Processor kit. Along with it you will have to buy Ram and SSD. For anyone looking to upgrade their robot's cpu I suggest buying Intel NUC NUC5i7RYH.  
 Buying it : [NUC](http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=intel-NUC-kit)  
 Mandatory Accessories to Buy: [RAM](http://www.amazon.com/Kingston-RAM-LAPTOP-1600MHZ-PC3L/dp/B00CQ35HBQ/ref=pd_bxgy_147_3?ie=UTF8&refRID=0WM2SPDHFSSG4FR3BZ88) [SSD](http://www.amazon.in/CRUCIAL-250-GB-SATA-CT250MX200SSD6/dp/B00RZ6GO98/ref=pd_bxgy_147_2?ie=UTF8&refRID=0WM2SPDHFSSG4FR3BZ88)  
@@ -65,5 +57,4 @@ Powering it : [forum discussion](http://forums.trossenrobotics.com/showthread.ph
 Integrating RAM and MiniSSD: [video](https://www.youtube.com/watch?v=SU4cdMm-8Qc)
 
 ## Planning to use Raspberry and Odroid too.
-<hr>
 &emsp;&emsp;After all this, I also ordered a router. Now we are planning to run nuc, rpi and odroid all together so the whole ros software can be distributing across the whole linux cluster. This would also provide support for low power mode, when battery is low we can switch off nuc and use minimal control via rpi to bring auv back surface. Also fault tolerance is introduced. Even if one of the boards fail the rest can work in emergency.

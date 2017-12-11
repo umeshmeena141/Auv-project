@@ -71,10 +71,6 @@
 			padding:0px 0px 10px 12px;
 			float:right;
 		}
-		#header {
-			-webkit-transition: 0.35s ease;
-			transition: .35s ease;
-		}
 		a.nolink {
 			cursor:default;
 		}
