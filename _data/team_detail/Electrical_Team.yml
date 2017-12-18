@@ -6,7 +6,7 @@ member :
   - Name: Abhishek Arya
     Department: Chemical Engg.
     email: aryaabhi@iitk.ac.in
-    img1: /assets/images/team_members/aryaabhi1.jpeg
+    img1: /assets/images/team_members/AbhishekArya.jpeg
     facebook: https://www.facebook.com/abhishekarya436
     github: https://github.com/aryaabhi436
     CurrProject: Battery Management System
@@ -14,7 +14,7 @@ member :
   - Name: Vivek Jain
     Department: Material Sc. & Engg.
     email: vjdviv@iitk.ac.in
-    img1: /assets/images/team_members/Vivek.jpg
+    img1: /assets/images/team_members/VivekJain.jpg
     facebook: https://www.facebook.com/Vjdjain
     github: https://github.com/vjdvivekjain
     CurrProject: Battery Management System
@@ -22,7 +22,7 @@ member :
   - Name: Vikas Kumar
     Department: Electrical Engg.
     email: vikaskk@iitk.ac.in
-    img1: /assets/images/team_members/Vikas_Kumar.jpg
+    img1: /assets/images/team_members/VikasKumar.jpg
     facebook: https://www.facebook.com/profile.php?id=100013575849981
     github:
     CurrProject: Battery Management System
