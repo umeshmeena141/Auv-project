@@ -6,23 +6,23 @@ member :
   - Name: Yazur Gupta
     Department: Aerospace Engg.
     email: yazur@iitk.ac.in
-    img1: /assets/images/team_members/YazurGupta.jpg
-    facebook: https://www.facebook.com/yazurgupta
-    github: https://github.com/
+    profile_pic: YazurGupta.jpg
+    facebook: yazurgupta
+    github:
     CurrProject: Public Relations
 
   - Name: P Karthic
     Department: Biological Sc. & Bioengg.
     email: pkarthic@iitk.ac.in
-    img1: /assets/images/team_members/Karthic.jpg
-    facebook: https://www.facebook.com/karthic.karthic.90857
-    github: https://github.com/karthic25
+    profile_pic: Karthic.jpg
+    facebook: karthic.karthic.90857
+    github: karthic25
     CurrProject: Web Master
 
   - Name: Umesh Meena
     Department: Mechanical Engg.
     email: umeshm@iitk.ac.in
-    img1: /assets/images/team_members/UmeshMeena.jpg
-    facebook: https://www.facebook.com/umeshmeena141
-    github: https://github.com/umeshmeena141
+    profile_pic: UmeshMeena.jpg
+    facebook: umeshmeena141
+    github: umeshmeena141
     CurrProject: Web Master

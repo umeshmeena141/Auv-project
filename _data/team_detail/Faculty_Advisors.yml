@@ -6,26 +6,26 @@ member :
 - Name: Mayank Mittal
   Department: Electrical Engg.
   email: mayankm@iitk.ac.in
-  img1 : /assets/images/team_members/MayankMittal.jpg
-  facebook : https://www.facebook.com/mayankm.1596
-  github: https://github.com/Mayankm96
+  profile_pic : MayankMittal.jpg
+  facebook: mayankm.1596
+  github: Mayankm96
   CurrProject: Team Leader
 
 
 - Name: Akash Jain
   Department: Aerospace Engg.
   email: jaiakash@iitk.ac.in
-  img1: /assets/images/team_members/AkashJain.jpg
-  facebook: https://www.facebook.com/akashjain5396
-  github: https://github.com/akashjain5396
+  profile_pic: AkashJain.jpg
+  facebook: akashjain5396
+  github: akashjain5396
   CurrProject: Team Head (Overall)
 
 
 - Name: Manish Kumar
   Department: Aerospace Engg.
   email: maniskj@iitk.ac.in
-  img1: /assets/images/team_members/ManishKumar.jpg
-  facebook: https://www.facebook.com/profile.php?id=100010275425218
+  profile_pic: ManishKumar.jpg
+  facebook: profile.php?id=100010275425218
   github:
   CurrProject: Team Head (Mechanical)
 
@@ -33,7 +33,7 @@ member :
 - Name: Rithvik Patibandla
   Department: Electrical Engg.
   email: rithvikp@iitk.ac.in
-  img1: /assets/images/team_members/RithvikPatibandla.jpg
-  facebook: https://www.facebook.com/rithvik.patibandla
-  github: https://github.com/rithvikp1998
+  profile_pic: RithvikPatibandla.jpg
+  facebook: rithvik.patibandla
+  github: rithvikp1998
   CurrProject: Team Head (Electrical)

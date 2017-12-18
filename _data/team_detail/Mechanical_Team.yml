@@ -6,31 +6,31 @@ member :
   - Name: Balamurugan R
     Department: Aerospace Engg.
     email: rbala@iitk.ac.in
-    img1: /assets/images/team_members/Balamurgan.jpg
-    facebook: https://www.facebook.com/balaramachandaran
-    github: https://github.com/rbala-AUV-IITK
+    profile_pic: Balamurgan.jpg
+    facebook: balaramachandaran
+    github: rbala-AUV-IITK
     CurrProject: Designing Of New Vehicle
 
   - Name: Mahesh Saboo
     Department: Mechanical Engg.
     email: mssaboo@iitk.ac.in
-    img1: /assets/images/team_members/MaheshSaboo.jpg
-    facebook: https://www.facebook.com/mssaboo
-    github: https://github.com/mssaboo
+    profile_pic: MaheshSaboo.jpg
+    facebook: mssaboo
+    github: mssaboo
     CurrProject: Torpedo Designing And Pneumatics
 
   - Name: Naveen Chandra R
     Department: Aerospace Engg.
     email: naveencr@iitk.ac.in
-    img1: /assets/images/team_members/NaveenChandra.png
-    facebook:  https://www.facebook.com/profile.php?id=100002998274447
-    github: https://github.com/NaveenchandraR
+    profile_pic: NaveenChandra.png
+    facebook: profile.php?id=100002998274447
+    github: NaveenchandraR
     CurrProject: Designing Of New Vehicle
 
   - Name: Anand Gandhi
     Department: Mechanical Engg.
     email: anandlg@iitk.ac.in
-    img1: /assets/images/team_members/AnandGandhi.jpg
-    facebook: https://www.facebook.com/anandlg23
-    github: https://github.com/andy2307
+    profile_pic: AnandGandhi.jpg
+    facebook: anandlg23
+    github: andy2307
     CurrProject: Designing Of New Vehicle

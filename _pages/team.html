@@ -10,15 +10,16 @@ js : team-page.js
 <div style="width:100% !important; background-color:#f2f2f2" class="container info">
   <div class="row container1" style="width:100%;position:relative;margin:6% 0% 4% !important">
     <div class="col-md-3" id="cTeam1" style="margin:1% 0% 0% 2%;">
-      <h2 id="cT" style="font-size:2.2em !important;color:#164b83;font-weight:700;font-family:arial;line-height:1.2;background:#f2f2f2;"><b>OUR CURRENT TEAM</b></h2>
-      <p style="font-weight:400;text-align:justify;"> With the number only increasing each year, our current team has 18 members working under the subsystems of Software, Mechanical, Electrical, and Business. We are working on our bot VARUN, which shall participate in SAUVC (SINGAPORE) in the forthcoming
-        period.
+      <h2 id="cT" style="font-size:2.2em !important;color:#164b83;font-weight:700;font-family:arial;line-height:1.2;background:#f2f2f2;"><b>Team <i>Triton</i></b></h2>
+      <p style="font-weight:400;text-align:justify;">
+        With the number of members increasing each year, the current team comprises of 18 students from various majors and years. Our work is distributed into four subsystems: Software, Mechanical, Electrical, and Business. Currently, the team is preparing Singapore Underwater Vehicle Challenge (SAUVC).
       </p>
     </div>
     <div class="col-md-8" style="margin:2% 0% 0% 3% !important">
       <div style="background-color:rgba(30, 100, 174 ,1 );padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important; position:sticky; top:60px;z-index:99;height:30px" id="teamnav" class="row containers">
         {% for div in site.data.divison %}
-        <a onclick="animate2('#{{div.divison}}','#{{div.id}}','.{{div.class2}}')" title="{{div.title}}" class="col-sm-2 {{div.class2}} {{div.class3}} "><i style="color:{{div.color}};cursor:pointer;position:absolute;left:40%;" class="fa {{div.class1}}" id="{{div.id}}"></i></a>        {% endfor %}
+          <a onclick="animate2('#{{div.divison}}','#{{div.id}}','.{{div.class2}}')" title="{{div.title}}" class="col-sm-2 {{div.class2}} {{div.class3}} "><i style="color:{{div.color}};cursor:pointer;position:absolute;left:40%;" class="fa {{div.class1}}" id="{{div.id}}"></i></a>
+        {% endfor %}
       </div>
 
       {% for divison in site.data.team_detail %} {% assign division = divison[1] %}
@@ -36,13 +37,13 @@ js : team-page.js
                     <div class="overlay">
                       <h2 class="text ">{{div.CurrProject}}</h2>
                     </div>
-                    <img src="{{div.img1}}" alt="Lights" style="width:100%;" class="image resize_fit_centers">
+                    <img src="/assets/images/team_members/{{div.profile_pic}}" alt="Lights" style="width:100%;" class="image resize_fit_centers">
                   </div>
                   <div class="caption" style="background-color:white">
 
                     <p class="desc1">{{div.Name}}</p>
-                    <a href="{{div.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a> {% if div.Name !='Yazur Gupta' %}
-                    <a href="{{div.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a> {% endif %}
+                    <a href=" https://www.facebook.com/{{div.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
+                    <a href=" https://www.github.com/{{div.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a>
                   </div>
                 </div>
               </div>
