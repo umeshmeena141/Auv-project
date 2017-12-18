@@ -18,7 +18,7 @@ member :
   img1: /assets/images/team_members/AkashJain.jpg
   facebook: https://www.facebook.com/akashjain5396
   github: https://github.com/akashjain5396
-  CurrProject: Team Head
+  CurrProject: Team Head (Overall)
 
 
 - Name: Manish Kumar
@@ -27,7 +27,7 @@ member :
   img1: /assets/images/team_members/ManishKumar.jpg
   facebook: https://www.facebook.com/profile.php?id=100010275425218
   github:
-  CurrProject: Mechanical Head
+  CurrProject: Team Head (Mechanical)
 
 
 - Name: Rithvik Patibandla
@@ -36,4 +36,4 @@ member :
   img1: /assets/images/team_members/RithvikPatibandla.jpg
   facebook: https://www.facebook.com/rithvik.patibandla
   github: https://github.com/rithvikp1998
-  CurrProject: Electrical Head
+  CurrProject: Team Head (Electrical)

@@ -9,7 +9,7 @@ member :
     img1: /assets/images/team_members/AbhishekArya.jpeg
     facebook: https://www.facebook.com/abhishekarya436
     github: https://github.com/aryaabhi436
-    CurrProject: Battery Management System
+    CurrProject: Actuator Board
 
   - Name: Vivek Jain
     Department: Material Sc. & Engg.
@@ -17,7 +17,7 @@ member :
     img1: /assets/images/team_members/VivekJain.jpg
     facebook: https://www.facebook.com/Vjdjain
     github: https://github.com/vjdvivekjain
-    CurrProject: Battery Management System
+    CurrProject: Actuator Board
 
   - Name: Vikas Kumar
     Department: Electrical Engg.
