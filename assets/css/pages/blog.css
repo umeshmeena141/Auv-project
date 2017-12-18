@@ -1,0 +1,9 @@
+#headingForBlog {
+    font-size: 2.6em;
+    color: #333333;
+    margin-bottom: 10px;
+    transition: .1s ease;
+}
+#headingForBlog:hover {
+    color: #2070c5;
+}

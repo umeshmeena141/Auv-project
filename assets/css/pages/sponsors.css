@@ -1,0 +1,29 @@
+.byline {
+    font-size: 1.2em !important;
+}
+header.major .byline {
+    list-style-type: disc;
+}
+#LOGO:hover {
+    filter: brightness(100);
+}
+#header {
+    position: fixed;
+    z-index: 10;
+    background: black;
+}
+th {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+td {
+    font-weight: 400;
+}
+.MEDIA1 {
+    color: #1e64ae;
+    font-size: 1.8em;
+}
+.NEWS1 {
+    color: #1e64ae;
+    font-size: 1.8em;
+}
