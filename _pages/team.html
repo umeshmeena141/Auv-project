@@ -1,9 +1,10 @@
 ---
+title: Team Triton
 layout: default
-title: AUVIITK | Team
-css : /css/teampage.css
-js : /js/teampage.js
-
+permalink: /team.html
+social: true
+css : team-page.css
+js : team-page.js
 ---
 
 <div style="width:100% !important; background-color:#f2f2f2" class="container info" >
@@ -19,7 +20,7 @@ js : /js/teampage.js
         {% endfor %}
       </div>
 
-      {% for divison in site.data.teamdetail %}
+      {% for divison in site.data.team_detail %}
       {% assign division = divison[1] %}
       <div id="{{division.basename1}}" style="background-color:rgba(30, 100, 174 ,0.8 ); width:100%;margin:0% !important; height:auto;box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);display:{{division.display}}" class="row containers" >
         <div class="col-lg-12 " style="padding:0px; width:100%; ">
@@ -57,6 +58,6 @@ js : /js/teampage.js
       </div>
     </div>
   </div>
-  <script src="js/navBar.js"></script>
-  <script src="js/team-animation.js"></script>
-  <script src="js/details1.js"></script>
+
+  <script src="/assets/js/pages/team-animation.js"></script>
+  <script src="/assets/js/pages/team-details.js"></script>
