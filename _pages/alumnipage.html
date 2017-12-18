@@ -14,19 +14,19 @@ js : alumni-page.js
       <header class="page-header" style="font-family:monospace;color:black;border:none;margin:0%;">
         <h2 id="alumni" class="text-center" style="margin:4% 0% 20px 0%;border-bottom:2px solid #f2f2f2;font-size:36px">Our Alumni's</h2>
         <ul id="nav2" class="breadcrumb text-right" style="border:none;background-color:rgba(255,255,255,0);font-family:'Calibri Light';z-index:100;text-decoration:none;font-size:17px">
-          <li><button   class="link2 .btn .btn-default " data-toggle="modal" data-target="#alumni2014">2014-2015</button></li>
-          <li><button   class="link1 .btn .btn-default" style="color:white" data-toggle="modal" data-target="#alumni2014">2015-2016</button></li>
+          <li><button class="link2 .btn .btn-default " data-toggle="modal" data-target="#alumni2014">2014-2015</button></li>
+          <li><button class="link1 .btn .btn-default" style="color:white" data-toggle="modal" data-target="#alumni2014">2015-2016</button></li>
         </ul>
       </header>
 
-      <div class="container-fluid lowscreenhide" style= "background :linear-gradient(to right, transparent -40%, black 150%);">
+      <div class="container-fluid lowscreenhide" style="background :linear-gradient(to right, transparent -40%, black 150%);">
         <!-- <button type="button" onclick="prevstate()" class=".btn .btn-default"  style="float:left; top:40%;position:absolute;z-index:100" > &#10094;</button> -->
         {% for alumni in site.data.alumni_detail.alumni %}
         <div>
-          <div class="col-lg-12 slide"  style="display:none">
-            <div style="margin:0% 4% 3%;"   >
-              <div >
-                <div class="col-lg-3 " style="margin:0% 0% 0% 20%;"   >
+          <div class="col-lg-12 slide" style="display:none">
+            <div style="margin:0% 4% 3%;">
+              <div>
+                <div class="col-lg-3 " style="margin:0% 0% 0% 20%;">
                   <img src={{alumni.img}} style="width:100%; height:100%" class="img-responsive img-thumbnail">
                 </div>
                 <div class="col-lg-2" style="margin:0% ;color:#F7786B">
@@ -58,4 +58,5 @@ js : alumni-page.js
   </div>
 </div>
 {% include  alumni_modal.html %}
-<script src="js/message.js" ></script>
+
+<script src="/assets/js/alumni-message.js" ></script>

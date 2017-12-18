@@ -6,25 +6,25 @@
 
 /* Header */
 
-	#header {
-		background: #4c4c4c;
-	}
+#header {
+  background: #4c4c4c;
+}
 
 /* Wrapper */
 
-	.wrapper.style5 .image img {
-		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
-	}
+.wrapper.style5 .image img {
+  position: relative;
+  -ms-behavior: url("css/ie/PIE.htc");
+}
 
 /* Dropotron */
 
-	.dropotron {
-		background: #4c4c4c;
-	}
+.dropotron {
+  background: #4c4c4c;
+}
 
 /* Copyright */
 
-	#copyright .container {
-		border-color: #303030;
-	}
+#copyright .container {
+  border-color: #303030;
+}
