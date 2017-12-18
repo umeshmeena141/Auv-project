@@ -29,13 +29,13 @@ comments: true
 &emsp;&emsp;Hmm, how to log cpu usage. How to do this?
 May be capture output of some monitor periodically against the pid of our process ?
 What to use ? ```top```/```htop```/```ps``` ?
-```ps```'s output seems easily processable. 
+```ps```'s output seems easily processable.
 
 1. Start all the nodes and note their pid (process indentifier).
 
 2. So after starting all the ros nodes and roscore we need to log the output of ps periodically. Writing a script to log ps output. Luckily there was already such a thing writen. I found [```Syrupy```](https://github.com/jeetsukumaran/Syrupy) which does exactly this.
 
-Time (s) | i5 CPU% | rpi CPU%	
+Time (s) | i5 CPU% | rpi CPU%
 :-------:|:-------:|:--------:
 1	|	29	|	70.2
 2	|	26	|	75.9
