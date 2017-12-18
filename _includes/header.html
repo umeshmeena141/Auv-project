@@ -5,16 +5,20 @@
 	<div id="header" style="position:fixed;z-index:10; ">
 		<div class="container" style="z-index:10">
 			<!-- Logo -->
-			<h1><a id="logo">AUV IITK</a></h1>
+			<!-- <h1><a id="logo">{{site.name}}</a></h1> -->
+
 			<!-- Nav -->
 			<nav id="nav" style="z-index:10">
 				<ul>
-					<li id="LOGO"><a href="/index.html"><img src="/assets/images/{{site.nav_icon}}.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a></li>
-					<li id="index1"><a href="/index.html">Home</a></li>
-					<li id="blog1"><a href="/blog.html">Blog</a></li>
-					<li id="varun1"><a href="/varun.html">Vehicle</a>
+					<li id="home"><a href="/index.html">
+						<img src="/assets/images/logo/{{site.nav_icon}}.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a>
+					</li>
+					<!-- <li id="home"><a href="/index.html">Home</a></li> -->
+					<!-- Pages -->
+					<li id="blog"><a href="/blog/">Blog</a></li>
+					<li id="varun"><a class="page-link" href="/varun.html">Vehicle</a>
 						<ul>
-							<li><a href="/varun.html">Varun</a></li>
+							<li><a class="page-link" href="/varun.html">Varun</a></li>
 							<!-- <li><a href="">Competition Vehicles</a>
 								<ul>
 									<li><a href="/varun.html">Varun</a></li>
@@ -22,12 +26,14 @@
 							</li> -->
 						</ul>
 					</li>
-					<li><a href="/teampage.html">Team</a>
+					<li id="team"><a class="page-link" href="/team.html">Team</a>
 						<!-- <ul>
-							<li><a href="/teampage.html">2017-18</a></li>
+							<li><a href="/team.html">2017-18</a></li>
 						</ul> -->
 					</li>
-					<li><a href="/contactpage.html">Contact Us</a></li>
+					<li id="contact">
+						<a class="page-link" href="/contact.html">Contact Us</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
