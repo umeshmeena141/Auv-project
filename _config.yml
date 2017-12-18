@@ -19,7 +19,7 @@ nav_icon: auv_logo_blue # put name of company icon for navigation bar
 logo: auv_logo_white
 
 # google-analytics
-google_analytics:
+google_analytics: UA-111400364-1
 repo: http://github.com/AUV-IITK
 
 # -----------------------------------------------------------------------------
