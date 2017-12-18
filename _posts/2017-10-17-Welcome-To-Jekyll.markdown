@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "Welcome to AUVeScope"
-subtitle: "How to use Jekyll to create blog page"
-date:   2017-10-30 20:04:33 +0530
+layout:     post
+title:      "Welcome to AUVeScope"
+subtitle:   "How to use Jekyll to create blog page"
+date:       2017-10-30 20:04:33 +0530
+author:     "Karthic"
 categories: jekyll update
-author: "Karthic"
 excerpt_separator: <!--more-->
 comments: true
 ---
