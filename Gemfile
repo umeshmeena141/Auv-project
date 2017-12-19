@@ -8,5 +8,6 @@ group :jekyll_plugins do
   gem 'jekyll'
   gem "jekyll-gist"
   gem 'jemoji'
+  gem "html-proofer"
 
 end
