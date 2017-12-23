@@ -7,34 +7,35 @@ css : contact-page.css
 js : contact-page.js
 ---
 
-<div id="main" class="wrapper style4" style="padding-bottom:1emc!important;background-color:#164b83;padding:0 !important">
+<div id="main" class="wrapper style4" style="padding-bottom:1emc!important;padding:0 !important;background-color:#fafafa !important">
   <div class="container-fluid">
     <div class="row" style="margin:4% 0% !important">
-      <div class="row text-center skel-cell-important" style="width:110%;border-bottom:1px solid #123e6d">
-        <div class="col-md-4" style="margin:0% 30%;font-size:3vw;color:White;font-family:Monospace" id="contactus">
+      <div class="row text-center skel-cell-important" style="width:110%;background-color :white">
+        <div class="col-md-4 page-header" style="margin:0% 30%;font-size:3vw;color:cornflowerblue;font-family:Monospace;" id="contactus">
           <h2 style="line-height:1.2; margin-top: 10px;">CONTACT US</h2>
         </div>
       </div>
       <!-- Sidebar -->
-      <div id="sidebar" class="row text-center" style="padding-left:0px;margin:0% !important;width:100%;">
+      <div id="sidebar" class="col-lg-5 text-center" style="padding-left:0px;margin:4% 2% 0% !important;">
         <section style="padding:0% 10%;width:100%" class="contactdetails">
           {% for contact in site.data.contact_detail %} {% assign members = contact[1] %}
-          <div class="col-md-5" style="margin:3% 3% 3% 5%;background-color:rgba(37, 124, 218, 0.3);word-wrap: break-word;height:360px;">
+          <div class="row">
+          <div class="col-lg-10" style="margin:0% 3% 3% 10%;word-wrap: break-word;padding:0">
             <header class="major" style="padding-bottom:.2em">
-              <h1 style="color:aquamarine;font-family:'Calibri Light';text-transform:initial;font-size:42px;" class="text-center">{{members.title}}</h1>
+              <h1 style="color:#164b83;font-family:'Calibri Light';text-transform:initial;font-size:42px;line-height:1;">{{members.title}}</h1>
             </header>
             <div class="row" style="margin-top:7%">
-              <ul style="font-family:Arial;font-size:16px;line-height:2.7;width:100%;padding-left:15% !important  ;text-align:left;;margin-bottom:5%" class="auvcontact">
+              <ul style="font-family:Arial;font-size:16px;line-height:2.7;width:100%;padding-left:15% !important  ;text-align:left;margin-bottom:5%;font-weight:600" class="auvcontact">
                 {% if members.title == 'Contact' %}
                 <li>
-                  <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=iitkauv@gmail.com&su" style="color:#99e6ff"><i class="fa fa-envelope faicon"></i> :</a><span style="color:white">iitkauv@gmail.com</span>
+                  <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=iitkauv@gmail.com&su" style="color:cornflowerblue"><i class="fa fa-envelope faicon"></i> :</a><span style="">iitkauv@gmail.com</span>
                 </li>
 
                 <li>
-                  <a href="#googleMap"><i class="fa fa-location-arrow faicon"></i>: <span style="color:white">AUV Room, Hall-2, IIT KANPUR, KANPUR(208016), U.P., INDIA</span></a>
+                  <a href="#googleMap" style="color:cornflowerblue"><i class="fa fa-location-arrow faicon"></i>: <span style="color:black">AUV Room, Hall-2, IIT KANPUR, KANPUR(208016), U.P., INDIA</span></a>
                 </li>
-                <li style="text-indent:16%;" class="socialicons">
-                  <a href="https://www.facebook.com/auviitk/"><i class="fa fa-facebook faicon" style="font-size:150%"></i></a>
+                <li style="text-indent:10%;" class="socialicons">
+                  <a href="https://www.facebook.com/auviitk/"><i class="fa fa-facebook faicon" style="font-size:150%;margin-right:20%"></i></a>
                   <a href="https://github.com/AUV-IITK"><i class="fa fa-github faicon" style="font-size:150%"></i></a>
                 </li>
 
@@ -42,11 +43,11 @@ js : contact-page.js
                 </li>
                 {% else %} {% for member in members.member %}
                 <dl style="margin-bottom: 0% !important;">
-                  <dt style="color:aqua"> {{member.Name}}
+                  <dt style="color:cornflowerblue"> {{member.Name}}
                     </dt>
                   <dd style="text-indent: 20px">
-                    <span><a href="{{member.facebook}}" style="color:white;"><i class="fa fa-facebook faicon"></i></a></span>
-                    <a href="{{member.email}}"><span style="color:#99e6ff"><i class="fa faicon fa-envelope"></i>:</span> <span style="color:white;">{{member.id}}@iitk.ac.in</span></a>
+                    <span><a href="{{member.facebook}}" style="color:black;"><i class="fa fa-facebook faicon"></i></a></span>
+                    <a href="{{member.email}}"><span style="color:#99e6ff"><i class="fa faicon fa-envelope"></i>:</span> <span style="color:black;">{{member.id}}@iitk.ac.in</span></a>
                   </dd>
                 </dl>
                 {% endfor %} {% endif %}
@@ -55,36 +56,66 @@ js : contact-page.js
 
             </div>
           </div>
+        </div>
           {% endfor %}
         </section>
       </div>
+
+      <div class="col-lg-5 text-center" style="padding-left:0px;margin:4% 2% 0% !important;">
+        <div class="row" >
+        <div class="page-header" style="margin-top:0%">
+          <h2>Give Us FeedBack</h2>
+        </div>
+        <form style="width:100%" method="post" action="email.php">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="email" type="text" class="form-control input-default" name="name" placeholder="Name">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input id="email" type="text" class="form-control input-default" name="email" placeholder="Email">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">Message</span>
+            <textarea id="msg" type="text" class="form-control input-default" name="msg" placeholder="FeedBack" style="height:200px"></textarea>
+          </div>
+          <div class="input-group" style="float:right">
+            <button type="submit" class="btn btn-default ">Send</button>
+          </div>
+        </form>
+      </div>
+
+    <div class="row">
+      <div style="margin:0%;width:100%;padding-top:0">
+        <div class="page-header">
+            <h1 style="font-size:30px;margin:1% 0%;text-align:left;">Location</h1>
+        </div>
+        <div id="googleMap" style=" width:100%;height:250px;margin-bottom:1%"></div>
+
+        <script>
+          function myMap() {
+            var mapProp = {
+              center: new google.maps.LatLng(26.510865, 80.22993),
+              zoom: 15,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({
+              position: {
+                lat: 26.510865,
+                lng: 80.22993
+              },
+              map: map
+            });
+          }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARyCGtNg30qNKXKcA3DP1z-xE6yzrHzBE&callback=myMap"></script>
+      </div>
+    </div>
+    </div>
 
     </div>
   </div>
 </div>
 
 <!-- Map -->
-
-<div class="container-fluid" style="margin:0%;background-color:#e6eeff">
-  <h1 style="color:#164b83;text-indent:20px;font-size:30px;margin:1% 0%">Location</h1>
-  <div id="googleMap" style="width:100%;height:400px;margin-bottom:3%"></div>
-
-  <script>
-    function myMap() {
-      var mapProp = {
-        center: new google.maps.LatLng(26.510865, 80.22993),
-        zoom: 15,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-      var marker = new google.maps.Marker({
-        position: {
-          lat: 26.510865,
-          lng: 80.22993
-        },
-        map: map
-      });
-    }
-  </script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARyCGtNg30qNKXKcA3DP1z-xE6yzrHzBE&callback=myMap"></script>
-</div>
