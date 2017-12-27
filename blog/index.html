@@ -33,13 +33,18 @@ js: blog.js
 						{% for post in site.posts %}
 						<a style="text-decoration:none;" href="{{ post.url }}">
 							<h3 id="headingForBlog">
-										{{ post.title }}
-									</h3>
+								{{ post.title }}
+							</h3>
 						</a>
-						<p style="color:darkblue; margin-bottom:5px;font-weight:500;color:#19579a">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+						<p style="color:darkblue; margin-bottom:5px;font-weight:500;color:#19579a">
+							<i class = "fa fa-user"></i> Posted by {{ post.author }} &emsp;
+							<i class = "fa fa-calendar"></i> {{ post.date | date_to_string }} &emsp;
+							<i class = "fa fa-bookmark"></i> {{ post.categories }} &emsp;
+							<i class = "fa fa-comment"></i> {{ post.comments }} &emsp;
+						</p>
 						<span style="color:#333333;font-size:1.1em;text-decoration:none;font-weight:400;">
-									{{ post.subtitle }}
-								</span>
+							{{ post.subtitle }}
+						</span>
 						<hr>
 						<hr> {% endfor %}
 						<hr>
