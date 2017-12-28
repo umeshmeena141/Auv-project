@@ -1,5 +1,5 @@
 var page = ["#Faculty_Advisors", "#a", ".navicon1"];
-
+var collapsevar="";
 function animate2(x, navhover, navicon) {
   if (x == page[0]) {
     return;
@@ -26,6 +26,15 @@ function animate2(x, navhover, navicon) {
     page = [x, navhover, navicon];
 
   }
-
+}
+// collapse
+function collapse(id){
+  if (collapsevar != id){
+  $(collapsevar).slideUp();
+  $(id).delay(500).slideToggle();
+  collapsevar=id;}
+  else{
+    $(id).slideToggle();
+  }
 
 }

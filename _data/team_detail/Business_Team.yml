@@ -1,7 +1,9 @@
 basename1 : Bussiness_Team
 title: Business Team
 id : bussteam
+id2 : buss_team
 display: none
+img: bussiness.jpg
 member :
   - Name: Yazur Gupta
     Department: Aerospace Engg.

@@ -6,8 +6,8 @@ $(document).ready(function() {
     if ($(window).width() > 1350) {
       $('.thumbnail').css({
         "height": "auto",
-        "width": "100%",
-        "margin": "0%"
+
+        "margin": "0% 0% 5%"
       });
       $('.faculty').css({
         'font-size': '26px',
@@ -47,8 +47,8 @@ $(document).ready(function() {
       });
       $('.thumbnail').css({
         "height": "auto",
-        "width": "100%",
-        "margin": "0%"
+
+        "margin": "0% 0% 3%"
       });
       $('.faculty').css({
         'font-size': '26px',
@@ -83,8 +83,8 @@ $(document).ready(function() {
     } else if ($(window).width() > 840) {
       $('.thumbnail').css({
         "height": "auto",
-        "width": "100%",
-        "margin": "0%"
+
+        "margin": "0% 0% 3%"
       });
       $('.faculty').css({
         'font-size': '26px',
@@ -119,10 +119,11 @@ $(document).ready(function() {
         "margin": "0%",
         "width": "100%"
       });
+
     } else {
       $('.thumbnail').css({
         "height": "auto",
-        "width": "100%",
+
         "margin": "3% 0% 2% 0%"
       });
       $('.faculty').css({
@@ -153,6 +154,10 @@ $(document).ready(function() {
       $('.desc1').css({
         "font-size": "1em"
       });
+      $('.smallwidth').css({
+        "width": "95% !important"
+      });
+
       $('.overlay').css({
         "margin": "0%",
         "width": "100%"
@@ -205,3 +210,18 @@ $(document).ready(function() {
       });
     });
 });
+
+$(".card").on({mouseenter:function(){
+  $(this).find('img').css({"-webkit-transform":"rotateX(100deg)", "-webkit-transform-origin" :"50% 0%","transition-timing-function":"linear","transition-duration":"1s"});
+  $(this).children(".textw").fadeIn();
+  $(this).children(".card2").css({"-webkit-transform":"rotateX(90deg)", "-webkit-transform-origin" :"50% 0%","transition-timing-function":"linear","transition-duration":"1s"});
+
+},
+mouseleave:function(){
+    $(this).find('img').css({"-webkit-transform":"rotateX(0deg)", "-webkit-transform-origin" :"50% 0%","transition-timing-function":"linear","transition-duration":"0.5s"});
+    $(this).children(".card2").css({"-webkit-transform":"rotateX(0deg)", "-webkit-transform-origin" :"50% 0%","transition-timing-function":"linear","transition-duration":"1s"});
+
+  }});
+
+
+// collapse
