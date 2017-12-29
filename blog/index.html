@@ -7,10 +7,10 @@ js: blog.js
 ---
 
 <!-- Heading -->
-<div class="wrapper style4" style="padding:120px 0px 40px 0px;">
-	<section class="container">
+<div class="wrapper style4" style="padding: 120px 0px 40px 0px; background-image: url('/assets/images/blog/ros-tips/background.png'); filter:blur(2px);">
+	<section class="container" style="">
 		<header class="major">
-			<h2 style="font-size:5em;margin-bottom: 25px;color:#2d2d2d;">AUVeScope</h2>
+			<h2 style="font-size:5em;margin-bottom: 25px;color:white;">AUVeScope</h2>
 			<br>
 			<span class="byline" style="font-weight:400;">A blog for tutorials, musings, and news</span>
 		</header>
@@ -21,7 +21,7 @@ js: blog.js
 
 
 <!-- Blog Posts -->
-<div class="wrapper style4" style="padding-top: 0px;">
+<div class="wrapper style4" style="padding-top: 0px;padding:60px 0px 0px 0px;">
 	<section class="container">
 		<div class="row flush">
 			<div class="2u">
@@ -39,7 +39,11 @@ js: blog.js
 						<p style="color:darkblue; margin-bottom:5px;font-weight:500;color:#19579a">
 							<i class = "fa fa-user"></i> Posted by {{ post.author }} &emsp;
 							<i class = "fa fa-calendar"></i> {{ post.date | date_to_string }} &emsp;
-							<i class = "fa fa-bookmark"></i> {{ post.categories }} &emsp;
+							<i class = "fa fa-bookmark"></i> 
+							{% for categories in post.categories %}
+    						<a href="/_categories/{{ categories }}/" style="text-decoration: none;">{{ categories }}</a><br />
+							{% endfor %}
+							&emsp;
 							<i class = "fa fa-comment"></i> {{ post.comments }} &emsp;
 						</p>
 						<span style="color:#333333;font-size:1.1em;text-decoration:none;font-weight:400;">

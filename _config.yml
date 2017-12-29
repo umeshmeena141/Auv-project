@@ -40,7 +40,7 @@ blog_description: "A blog for tutorials, musings, and news"
 
 # Pagination
 paginate: 4
-permalink: /blog/:year/:title/
+permalink: /blog/:title/
 paginate_path: /blog/page:num/
 
 text:
@@ -89,3 +89,4 @@ plugins:
 jquery_version: "1.12.4"
 # katex_version: "0.7.1"
 anchorjs_version: "3.2.2"
+github: [metadata]
