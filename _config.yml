@@ -64,6 +64,7 @@ collections:
   - team
   - subteams
   - vehicles
+  - categories
 
 news_limit: 5
 
@@ -76,7 +77,7 @@ markdown: kramdown
 highlighter: pygments
 
 # Includes
-include: ['_pages']
+include: ['_pages', '_categories']
 
 # plugins
 plugins:

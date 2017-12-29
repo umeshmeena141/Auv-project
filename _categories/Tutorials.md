@@ -1,6 +1,5 @@
 ---
 layout: categories
 title: Tutorials
-categories: ROS
-permalink: /blog/:title/
+permalink: /blog/categories/Tutorials/
 ---

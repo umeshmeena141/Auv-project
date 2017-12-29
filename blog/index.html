@@ -8,7 +8,7 @@ js: blog.js
 
 <!-- Heading -->
 <div class="wrapper style4" style="padding: 120px 0px 40px 0px; background-image: url('/assets/images/blog/ros-tips/background.png'); filter:blur(2px);">
-	<section class="container" style="">
+	<section class="container">
 		<header class="major">
 			<h2 style="font-size:5em;margin-bottom: 25px;color:white;">AUVeScope</h2>
 			<br>
@@ -41,7 +41,7 @@ js: blog.js
 							<i class = "fa fa-calendar"></i> {{ post.date | date_to_string }} &emsp;
 							<i class = "fa fa-bookmark"></i> 
 							{% for categories in post.categories %}
-    						<a href="/_categories/{{ categories }}/" style="text-decoration: none;">{{ categories }}</a><br />
+    						<a href="/blog/categories/{{ categories }}/" style="text-decoration: none;">{{ categories }}</a><br />
 							{% endfor %}
 							&emsp;
 							<i class = "fa fa-comment"></i> {{ post.comments }} &emsp;
