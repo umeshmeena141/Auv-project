@@ -25,7 +25,7 @@ js : team-page.js
 
     <div class="row text-center" style="padding-left:10%">
       {% for divison in site.data.team_detail%}{% assign division=divison[1] %}
-          <div class="card img-fluid item" style="width:400px;margin:2% 0% 3% 5%;padding:0%;background-color:#f2f2f2;border-radius:50%;position:relative;float:left">
+          <div class="card img-fluid item" style="width:400px;margin:2% 0% 3% 5%;padding:0% !important;background-color:#f2f2f2;border-radius:50%;position:relative;float:left">
             <div class="card-img-overlay textw" style="border-radius:50%;text-align:center">
               <h4 >John Doe</h4>
               <p >Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
@@ -36,7 +36,7 @@ js : team-page.js
               <h2 style="line-height:1">{{division.title}}</h2>
             </div>
           </div>
-          <div class="col-lg-11 collapse smallwidth" style="background-color:#f2f2f2;margin-bottom:2%" id="{{division.id2}}">
+          <div class="col-lg-11 collapse smallwidth" style="background-color:#f2f2f2;margin-bottom:2%;width:95% !important" id="{{division.id2}}">
             <div id="{{division.basename1}}" style="margin:0% !important; height:auto;background-color:#f2f2f2" class="row containers">
               <div class="col-lg-12 " style="padding:0px; width:100%; ">
                 <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="{{division.id}}" class="faculty col-sm-4">{{division.title}}</div>

@@ -154,8 +154,9 @@ $(document).ready(function() {
       $('.desc1').css({
         "font-size": "1em"
       });
-      $('.smallwidth').css({
-        "width": "95% !important"
+
+      $('.card').css({
+        "margin":"2% 0% 10% 5%"
       });
 
       $('.overlay').css({
@@ -179,6 +180,10 @@ $(document).ready(function() {
         $('#teamnav').css({
           "padding": "0%"
         });
+        $('.card').css({
+          "margin":"2% 0% 10% 5%"
+        });
+
         $('.containers').css({
           "margin-right": "2%"
         });
@@ -222,6 +227,3 @@ mouseleave:function(){
     $(this).children(".card2").css({"-webkit-transform":"rotateX(0deg)", "-webkit-transform-origin" :"50% 0%","transition-timing-function":"linear","transition-duration":"1s"});
 
   }});
-
-
-// collapse
