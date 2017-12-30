@@ -1,0 +1,24 @@
+<header>
+	<h3 id="headingForBlog">
+		{{ post.title }}
+	</h3>
+</header>
+
+<p class = "meta-data">
+	<i class = "fa fa-user"></i><span class="italics"> Posted by <a class="categoriesLink" href="#">{{ post.author }}</a> &emsp;</span>
+	<i class = "fa fa-calendar"></i><span class="italics"> {{ post.date | date_to_string }} &emsp;</span>
+	<i class = "fa fa-bookmark"></i> 
+	{% for categories in post.categories %}
+		{% if categories == post.categories.last %}
+			<a class = "categoriesLink" href="/blog/categories/{{ categories }}/">{{ categories }}</a>&nbsp;
+		{% else %}
+			<a class = "categoriesLink" href="/blog/categories/{{ categories }}/">{{ categories }}</a>,&nbsp;
+		{% endif %}
+	{% endfor %}
+	&emsp;
+	<i class = "fa fa-comment"></i> <a class="categoriesLink" href="{{ post.url }}#disqus_thread"> </a> &emsp;
+</p>
+
+<span class = "description">
+	{{ post.subtitle }}
+</span><hr><hr>
