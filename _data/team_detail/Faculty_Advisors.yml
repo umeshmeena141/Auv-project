@@ -1,7 +1,9 @@
 basename1 : Faculty_Advisors
-title: Team Representatives
+title: Team Leaders
 id : facultyadvisors
+id2 : faculty_advisors
 display: block
+img : bussiness.jpg
 member :
 - Name: Akash Jain
   Department: Aerospace Engg.

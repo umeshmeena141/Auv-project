@@ -1,7 +1,9 @@
 basename1 : Mechanical_Team
-title: Mechanical Team
+title:
 id : mechteam
+id2 : mech_team
 display: none
+img: mechanical.png
 member :
   - Name: Balamurugan R
     Department: Aerospace Engg.
@@ -23,7 +25,7 @@ member :
     Department: Aerospace Engg.
     email: naveencr@iitk.ac.in
     profile_pic: NaveenChandra.png
-    facebook: 
+    facebook:
     github: NaveenchandraR
     CurrProject: Designing Of New Vehicle
 

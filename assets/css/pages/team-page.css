@@ -171,3 +171,25 @@ ul {
   padding-top: 0px !important;
   height: 30px;
 }
+
+/* New Team Page */
+ .card-img-overlay{
+   position: absolute;
+ }
+
+ .textw{
+   color: black;
+   font-size: 15px !important;
+   position: absolute;
+   left: 0%;
+   font-family: arial;
+   text-align: center;
+   align-content: center;
+   line-height: 1.5;
+   height: auto;
+   padding: 5% 0%;
+   width: 100%;
+   bottom: 25% !important;
+   display: none;
+
+ }

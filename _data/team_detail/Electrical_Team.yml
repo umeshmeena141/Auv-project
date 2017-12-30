@@ -1,7 +1,9 @@
 basename1 : Electrical_Team
 title: Electrical Team
 id : electteam
+id2 : elect_team
 display: none
+img: electrical.png
 member :
   - Name: Abhishek Arya
     Department: Chemical Engg.
@@ -23,6 +25,6 @@ member :
     Department: Electrical Engg.
     email: vikaskk@iitk.ac.in
     profile_pic: VikasKumar.jpg
-    facebook: 
+    facebook:
     github:
     CurrProject: Battery Management System

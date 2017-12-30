@@ -45,12 +45,12 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.faicon').hover(function() {
       $(this).css({
-        "color": "white"
+        "color": "blue"
       });
     },
     function() {
       $(this).css({
-        "color": "#99e6ff"
+        "color": "cornflowerblue"
       });
     });
 
