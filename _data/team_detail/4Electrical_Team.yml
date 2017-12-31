@@ -1,0 +1,30 @@
+basename1 : Electrical_Team
+title: Electrical Team
+id : electteam
+id2 : elect_team
+display: none
+img: electrical.png
+member :
+  - Name: Abhishek Arya
+    Department: Chemical Engg.
+    email: aryaabhi@iitk.ac.in
+    profile_pic: AbhishekArya.jpeg
+    facebook: abhishekarya436
+    github: aryaabhi436
+    CurrProject: Actuator Board
+
+  - Name: Vivek Jain
+    Department: Material Sc. & Engg.
+    email: vjdviv@iitk.ac.in
+    profile_pic: VivekJain.jpg
+    facebook: Vjdjain
+    github: vjdvivekjain
+    CurrProject: Actuator Board
+
+  - Name: Vikas Kumar
+    Department: Electrical Engg.
+    email: vikaskk@iitk.ac.in
+    profile_pic: VikasKumar.jpg
+    facebook:
+    github:
+    CurrProject: Battery Management System

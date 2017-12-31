@@ -1,13 +1,41 @@
+<!-- Navigation bar -->
+<header class="site-header">
 
+	<!-- Header -->
+	<div id="header" style="position:fixed;z-index:10; ">
+		<div class="container" style="z-index:10">
+			<!-- Logo -->
+			<!-- <h1><a id="logo">{{site.name}}</a></h1> -->
 
-		<title>{{ page.title }}</title>
-		<link rel="shortcut icon" type="image/x-icon" href="/images/logo1.ico" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/skel.css" />
-		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="stylesheet" href= {{ page.css }} />
+			<!-- Nav -->
+			<nav id="nav" style="z-index:10">
+				<ul>
+					<li id="home"><a href="/index.html">
+						<img src="/assets/images/logo/{{site.nav_icon}}.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a>
+					</li>
+					<!-- <li id="home"><a href="/index.html">Home</a></li> -->
+					<!-- Pages -->
+					<li id="blog"><a href="/blog/">Blog</a></li>
+					<li id="varun"><a class="page-link" href="/varun.html">Vehicle</a>
+						<ul>
+							<li><a class="page-link" href="/varun.html">Varun</a></li>
+							<!-- <li><a href="">Competition Vehicles</a>
+								<ul>
+									<li><a href="/varun.html">Varun</a></li>
+								</ul>
+							</li> -->
+						</ul>
+					</li>
+					<li id="team"><a class="page-link" href="/team.html">Team</a>
+						<!-- <ul>
+							<li><a href="/team.html">2017-18</a></li>
+						</ul> -->
+					</li>
+					<li id="contact">
+						<a class="page-link" href="/contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
