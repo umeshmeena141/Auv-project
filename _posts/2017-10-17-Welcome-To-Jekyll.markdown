@@ -3,7 +3,13 @@ layout:     post
 title:      "Welcome to AUVeScope"
 subtitle:   "How to use Jekyll to create blog page"
 date:       2017-10-30 20:04:33 +0530
-author:     "Karthic"
+author: 
+ - name: "Karthic"
+ - fb-link:
+ - github-link: "github.com/karthic25"
+ - website-link: "home.iitk.ac.in/~pkarthic"
+ - linkedin-link: "linkedin.com/in/karthicp/"
+
 categories: Jekyll
 excerpt_separator: <!--more-->
 comments: true

@@ -3,13 +3,13 @@ layout: default
 ---
 
 <!-- Heading -->
-<div class="wrapper style4" style="padding: 180px 0px 40px 0px; background-image: url('/assets/images/blog/categories/{{ page.title }}.png'); height: 400px;">
+<div class="wrapper style4" style="padding: 180px 0px 40px 0px; background-image: url('/assets/images/blog/{% if page.title != 'AUVeScope' %}categories/{{ page.title }}{% else %}background{% endif %}.png'); background-repeat: no-repeat; background-size: cover; height: 400px;">
 	<section class="container">
 		<header class="major">
 			<h2 style="font-size:5em;color:white;">{{ page.title }}</h2>
 			<br>
 			{% if page.subtitle %}
-				<span class="byline" style="font-weight:400;">{{ page.subtitle }}</span>
+				<span class="byline" style="font-weight:400;color:white;">{{ page.subtitle }}</span>
 			{% endif %}
 		</header>
 	</section>
@@ -26,11 +26,13 @@ layout: default
 			</div>
 			<div class="8u" style="text-align: justify;">
 				<header>
+					{% unless page.title == "AUVeScope" %}
 					<h2>Posts related to: {{ page.title }}</h2>
-					{% unless page.content == '' %}
-					  <p>{{ page.content }}</p>
-					{% endunless %}
+						{% unless page.content == '' %}
+						  <p>{{ page.content }}</p>
+						{% endunless %}
 					<hr>
+					{% endunless %}
 				</header>
 				<ul>
 					<li>
@@ -39,11 +41,16 @@ layout: default
 							{% if post.categories contains page.title %}
 								{% assign flag = 1 %}
 								{% include blog_post.html %}
-							{% endif %} 
+								{% include comments_count.html %}
+							{% elsif page.title == "AUVeScope" %}
+								{% assign flag = 1 %}
+								{% include blog_post.html %}
+								{% include comments_count.html %}
+							{% endif %}
 						{% endfor %}
 						<hr>
 					</li>
-				</ul>		
+				</ul>
 				{% if flag == 0 %}
 					<p>No posts to show</p>
 				{% endif %}
@@ -51,5 +58,3 @@ layout: default
 		</div>
 	</section>
 </div>
-
-{% include comments_count.html %}

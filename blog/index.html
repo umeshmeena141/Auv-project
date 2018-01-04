@@ -1,45 +1,10 @@
 ---
-title: Blog
-layout: default
+layout: categories
+title: AUVeScope
+subtitle: A blog for tutorials, musings, and news
 social: true
 css: blog.css
 js: blog.js
 ---
-
-<!-- Heading -->
-<div class="wrapper style4" style="padding: 180px 0px 40px 0px; background-image: url('/assets/images/blog/background.jpg'); background-repeat: no-repeat; background-size: cover; height: 400px;">
-	<section class="container">
-		<header class="major">
-			<h2 style="font-size:5em; color:white;">AUVeScope</h2>
-			<br>
-			<span class="byline" style="font-weight:400; color:white;">A blog for tutorials, musings, and news</span>
-		</header>
-	</section>
-	<br>
-	<br>
-</div>
-
-
-<!-- Blog Posts -->
-<div class="wrapper style4" style="padding:60px 0px 0px 0px;">
-	<section class="container">
-		<div class="row flush">
-			<div class="2u">
-				<p></p>
-			</div>
-			<div class="8u" style="text-align: justify;">
-				<ul>
-					<li>
-						{% for post in site.posts %}
-							{% include blog_post.html %}
-							{% include comments_count.html %}
-						{% endfor %}
-						<hr>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-</div>
 
 {% include pagination.html %}
