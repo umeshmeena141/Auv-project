@@ -59,4 +59,4 @@ $(window).resize(function() {
 });
 
 //color change in Nav bar element
-document.getElementById("varun1").style.color = "white";
+document.getElementById("varun").style.color = "white";

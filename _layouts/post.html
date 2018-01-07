@@ -1,23 +1,23 @@
 ---
 layout: default
 social: true
-<!-- css: ../main.scss -->
+<!-- css: ../post.scss -->
 ---
 
 <!-- Heading -->
-<div class="wrapper style4" style="padding:120px 0px 60px 0px;">
+<div class="wrapper style4" style="padding:180px 0px 60px 0px; background-image: url('/assets/images/blog/posts/{{ page.title }}/background.png'); background-repeat: no-repeat; background-size: cover; height: 400px;">
   <section class="container">
     <header class="major">
-      <h2 style="font-size:3.2em;line-height:0.9;margin-bottom: 5px;">{{page.title}}</h2>
+      <h2 style="font-size:3.2em;line-height:0.9;color:white;">{{page.title}}</h2>
       <br>
-      <span class="byline" style="color:#333333">{{page.author}} on {{page.date | date: "%B %-d, %Y"}}</span>
+      <span class="byline" style="color:white;font-weight: 400;">{% for author in page.author %}{{ author.name }}{% endfor %} on {{page.date | date: "%B %-d, %Y"}}</span>
     </header>
     <p style="font-size:1.4em;margin-bottom:0px;"></p>
   </section>
 </div>
 
 
-<div style="background:white;padding-bottom:10px;color:#333333">
+<div style="background:white;padding:60px 0px 20px 0px;">
   <div class="wrapper style4" style="padding-top:0px;">
     <section class="container">
       <div class="row flush">
