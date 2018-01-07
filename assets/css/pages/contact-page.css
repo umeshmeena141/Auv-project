@@ -41,9 +41,13 @@ dl {
 }
 
 .auvcontact a {
-  color: #99e6ff;
+  color: cornflowerblue;
 }
 
 header.major .byline {
   list-style-type: disc;
+}
+
+form .input-group{
+  margin-top: 3%;
 }
