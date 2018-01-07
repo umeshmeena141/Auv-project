@@ -27,9 +27,11 @@
 
 .description {
 	color:#333333;
-	font-size:1.1em;
+	font-size:1em;
 	text-decoration:none;
 	font-weight:400;
+	display:block;
+	line-height: 1.5;
 }
 
 .about-author {
@@ -52,4 +54,26 @@
 	color: white;
 	border-radius: 5px;
 	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+.button-2:hover {
+	background-color:#123e6e;
+	color: white;
+	text-decoration: none;
+}
+
+.pageTitle {
+	font-size:5em !important;
+	color:white;
+}
+
+@media only screen and (max-width: 640px) {
+    #headingForBlog {
+    	font-size: 2.0em;
+    }
+
+    .pageTitle {
+    	font-size: 3.5em !important;
+    }
 }
