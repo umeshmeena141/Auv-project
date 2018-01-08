@@ -43,6 +43,7 @@ ul a {
   transition: .5s ease;
   z-index: 30;
   margin-left: 3%;
+
 }
 
 .caption i {
@@ -100,6 +101,7 @@ h2 {
   overflow: hidden;
   top: 0;
   left: 0;
+
 }
 
 .hovereffect img {
@@ -206,4 +208,48 @@ ul {
 li a {
   text-decoration: none;
   color:white;
+}
+
+.sticky{
+  position: fixed;
+  top:60px;
+  text-align: center;
+  left:45%;
+  z-index: 999;
+  color: black !important;
+
+}
+#cT{
+  font-size:2.2em !important;
+  color:#164b83;
+  font-weight:700;
+  font-family:arial;
+  line-height:1.2;
+  background:#f2f2f2;
+}
+hr{
+  float :left;
+  border-bottom:2px solid white !important;
+   width:100% ;
+}
+.divs{
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap;
+}
+#divHead{
+  display:flex;
+  justify-content: center;
+}
+span p{
+  font-size:1.3em !important;
+}
+.headings{
+  position: fixed;
+  top:40px;
+  width:100%;
+  left:0px;
+  background-color: #f2f2f2;
+  z-index: 99;
+  display: none;
 }
