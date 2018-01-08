@@ -1,9 +1,7 @@
-basename1 : Faculty_Advisors
+basename1 : Team_Leaders
 title: Team Leaders
-id : facultyadvisors
-id2 : faculty_advisors
-display: block
-img : bussiness.jpg
+id : teamLeaders
+id2 : team_leaders
 member :
 - Name: Mayank Mittal
   Department: Electrical Engg.

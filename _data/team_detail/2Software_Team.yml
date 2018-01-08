@@ -2,8 +2,7 @@ basename1 : Software_Team
 title: Software Team
 id : softteam
 id2 : soft_team
-display: none
-img: software.jpg
+
 member :
   - Name: Akash Kumar Singh
     Department: Electrical Engg.

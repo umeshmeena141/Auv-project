@@ -2,12 +2,10 @@ $(document).ready(function() {
   $('#nav a').eq(6).css({
     "color": "white"
   });
-  $(window).on('resize load ', function() {
+  $(window).on('resize load', function() {
     if ($(window).width() > 1350) {
       $('.thumbnail').css({
-        "height": "auto",
-
-        "margin": "0% 0% 5%"
+        "height": "auto"
       });
       $('.faculty').css({
         'font-size': '26px',
@@ -17,15 +15,16 @@ $(document).ready(function() {
       $('.containers').css({
         "margin": "0%"
       });
+      $('.verticalnav').css({"display":"block"});
       // $('.container1').css({ "top": "8.3%" });
       $('.overlay').css({
         "margin": "0%",
         "width": "100%"
       });
-      $('#teamnav').css({
-        "padding": "0% 0% 0% 0%",
-        "top": "59px"
-      });
+      // $('#teamnav').css({
+      //   "padding": "0% 0% 0% 0%",
+      //   "top": "59px"
+      // });
       $('#cTeam1').css({
         "position": "sticky",
         "top": "59px"
@@ -47,20 +46,19 @@ $(document).ready(function() {
       });
       $('.thumbnail').css({
         "height": "auto",
-
-        "margin": "0% 0% 3%"
       });
       $('.faculty').css({
         'font-size': '26px',
         "top": " 4%"
       });
-      $('#teamnav').css({
-        "padding": "0% 0% 0% 0%",
-        "top": "59px"
-      });
+      // $('#teamnav').css({
+      //   "padding": "0% 0% 0% 0%",
+      //   "top": "59px"
+      // });
       $('.containers').css({
         "margin": "0%"
       });
+      $('.verticalnav').css({"display":"block"});
       //$('.container1').css({ "top": "8.3%" });
       $('i').css({
         "padding": "5px"
@@ -73,27 +71,23 @@ $(document).ready(function() {
       $('.rightpad').css({
         "padding": "0"
       });
-      $('.info_container').css({
-        "margin-top": "110px"
-      });
+
       $('.overlay').css({
         "margin": "0%",
         "width": "100%"
       });
     } else if ($(window).width() > 840) {
       $('.thumbnail').css({
-        "height": "auto",
-
-        "margin": "0% 0% 3%"
+        "height": "auto"
       });
       $('.faculty').css({
         'font-size': '26px',
         "top": " 4%"
       });
-      $('#teamnav').css({
-        "padding": "0% 0% 0% 0%",
-        "top": "59px"
-      });
+      // $('#teamnav').css({
+      //   "padding": "0% 0% 0% 0%",
+      //   "top": "59px"
+      // });
       $('#cTeam1').css({
         "position": "static"
       });
@@ -101,6 +95,7 @@ $(document).ready(function() {
         "margin": "0%"
       });
       //$('.container1').css({ "top": "8.3%" });
+      $('.verticalnav').css({"display":"none"});
       $('i').css({
         "padding": "5px"
       });
@@ -112,19 +107,19 @@ $(document).ready(function() {
       $('.rightpad').css({
         "padding": "0"
       });
-      $('.info_container').css({
-        "margin-top": "110px"
-      });
+      // $('.info_container').css({
+      //   "margin-top": "110px"
+      // });
+
       $('.overlay').css({
         "margin": "0%",
         "width": "100%"
       });
 
+
     } else {
       $('.thumbnail').css({
-        "height": "auto",
-
-        "margin": "3% 0% 2% 0%"
+        "height": "auto"
       });
       $('.faculty').css({
         'font-size': '1.4em',
@@ -133,10 +128,11 @@ $(document).ready(function() {
       $('#cTeam1').css({
         "position": "static"
       });
-      $('#teamnav').css({
-        "padding": "0% 0% 0% 0%",
-        "top": "59px"
-      });
+      $('.verticalnav').css({"display":"none"});
+      // $('#teamnav').css({
+      //   "padding": "0% 0% 0% 0%",
+      //   "top": "59px"
+      // });
       $('.info_container').css({
         "margin-top": "0px"
       });
@@ -176,10 +172,11 @@ $(document).ready(function() {
         $('.col-sm-3').css({
           "padding-right": "10px"
         });
+        $('.verticalnav').css({"display":"none"});
         // $('.info').css({ "height": "2700px" });
-        $('#teamnav').css({
-          "padding": "0%"
-        });
+        // $('#teamnav').css({
+        //   "padding": "0%"
+        // });
         $('.card').css({
           "margin":"2% 0% 10% 5%"
         });
@@ -210,11 +207,27 @@ $(document).ready(function() {
       $('.hovericon').css({
         "color": "black"
       });
-      $(page[1]).css({
-        "color": "black"
-      });
     });
 });
+
+$(document).ready(function(){
+  if($(window).width() < 720) {
+    var divisionId=["teamLeaders","softteam","mechteam","electteam","bussteam"];
+
+    $(document).scroll(function(){
+      var scroll=$(this).scrollTop();
+
+      for (i=0;i<5;i++){
+        var position=document.getElementById(divisionId[i]).offsetTop;
+        if(position<scroll){
+          window.alert(position);
+        }
+      }
+
+    });
+
+  }
+})
 
 
 $(document).ready(function(){
