@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#nav a').eq(6).css({
+  $('#nav a').eq(4).css({
     "color": "white"
   });
   $(window).on('resize load', function() {
@@ -209,26 +209,39 @@ $(document).ready(function() {
       });
     });
 });
+// Animations
 
 $(document).ready(function(){
-  if($(window).width() < 720) {
-    var divisionId=["teamLeaders","softteam","mechteam","electteam","bussteam"];
-
-    $(document).scroll(function(){
-      var scroll=$(this).scrollTop();
-
-      for (i=0;i<5;i++){
-        var position=document.getElementById(divisionId[i]).offsetTop;
-        if(position<scroll){
-          window.alert(position);
+  $(window).on('load resize',function(){
+    if($(window).width() < 720) {
+      var headingId=["teamLeaders","softteam","mechteam","electteam","bussteam"];
+      var divisionId=["1Team_Leaders","2Software_Team","3Mechanical_Team","4Electrical_Team","5Bussiness_Team"];
+      var navbar=[];
+      var sticky=[];
+      for(i=0;i<5;i++){
+        navbar.push(document.getElementById(divisionId[i]));
+        sticky.push(navbar[i].offsetTop)
+      }
+      $(document).scroll(function(){
+        myFunction($(this).scrollTop());
+      });
+      function myFunction(x) {
+        for(j=0;j<5;j++){
+          if (x >= sticky[j]) {
+            document.getElementById(headingId[j]).style.display="block";
+          }
+          else{
+            document.getElementById(headingId[j]).style.display="none";
+          }
         }
       }
 
-    });
+      }
+  });
+});
 
-  }
-})
 
+//smooth scroll
 
 $(document).ready(function(){
  /* smooth scroll */
@@ -251,7 +264,7 @@ $(document).ready(function(){
          // Only prevent default if animation is actually gonna happen
          event.preventDefault();
          $('html, body').animate({
-           scrollTop: target.offset().top
+           scrollTop: target.offset().top-60
          }, 1000, function() {
            // Callback after animation
            // Must change focus!
