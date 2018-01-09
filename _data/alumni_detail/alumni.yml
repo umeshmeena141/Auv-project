@@ -1,6 +1,6 @@
 - name: Soumye Singhal
   state: active
-  img : /assets/images/alumni_member/SoumyeSinghal.jpg
+  img : SoumyeSinghal.jpg
   batch: Y15
   division: Software
   project: Motion Control
@@ -10,7 +10,7 @@
 
 - name: Prakhar Agarwal
   state: inactive
-  img : /assets/images/alumni_member/PrakharAgarwal.png
+  img : PrakharAgarwal.png
   batch: Y15
   division: Software
   project: Line Detection, Line following, Bouy Detection, Gate Detection, Torpedo Shooting
@@ -20,7 +20,7 @@
 
 - name: Shibhansh Dohare
   state: inactive
-  img : /assets/images/alumni_member/ShibhanshDohare.jpg
+  img : ShibhanshDohare.jpg
   batch: Y14
   division: Team Head
   project: Team Management
@@ -30,7 +30,7 @@
 
 - name: Jayant Agrawal
   state: inactive
-  img : /assets/images/alumni_member/JayantAgarwal.jpg
+  img : JayantAgarwal.jpg
   batch: Y14
   division: Software
   project:
@@ -40,7 +40,7 @@
 
 - name: Siddhartha Saxena
   state: inactive
-  img : /assets/images/alumni_member/SiddharthaSaxena.jpeg
+  img : SiddharthaSaxena.jpeg
   batch: Y15
   division: Software
   project: Computer Vision

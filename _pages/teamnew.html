@@ -25,11 +25,11 @@ js : team-page.js
     <div class="text-center verticalnav" data-spy="affix" data-offset="300" id="hide">
       <nav class="navbar2">
         <ul class="nav nav-pills nav-stacked" role="tablist">
-          {% for div in site.data.divison %}
-            {% if {{div.title}} == "Team Leaders" %}
-            <li class="active"><a href="#{{div.division}}">{{div.title}}</a></li>
+          {% for divId in site.data.divison %}
+            {% if {{divId.title}} == "Team Leaders" %}
+            <li class="active"><a href="#{{divId.division}}">{{divId.title}}</a></li>
             {% else %}
-            <li ><a href="#{{div.division}}">{{div.title}}</a></li>
+            <li ><a href="#{{divId.division}}">{{divId.title}}</a></li>
             {% endif %}
           {% endfor %}
         </ul>
@@ -85,47 +85,6 @@ js : team-page.js
 
   </div>
 </div>
-    <!-- <div class="container-fluid" style="margin:2% 0% 0% 5% !important">
-      <div style="padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important; position:sticky; top:60px;z-index:99;height:30px;box-shadow: 4px 4px 8px 4px ;" id="teamnav" class="row containers">
-        {% for div in site.data.divison %}
-          <a onclick="animate2('#{{div.divison}}','#{{div.id}}' ,'.{{div.class2}}')" title="{{div.title}}" class="col-sm-2 {{div.class2}} {{div.class3}} "><i style="color:{{div.color}};cursor:pointer;position:absolute;left:40%;" class="fa {{div.class1}}" id="{{div.id}}"></i></a>
-        {% endfor %}
-      </div>
-
-      {% for divison in site.data.team_detail %} {% assign division = divison[1] %}
-      <div id="{{division.basename1}}" style="margin:0% !important; height:auto;background-color:rgba(30, 100, 174 ,0.8);" class="row containers">
-        <div class="col-lg-12 " style="padding:0px; width:100%; ">
-          <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="{{division.id}}" class="faculty col-sm-4">{{division.title}}</div>
-          <div class="row info_container" style="margin:auto;">
-            {% for div in division.member %} {% if forloop.length == 3 %}
-            <div class="col-md-3 text-center" style="margin:0% 0% 3% 7% ; padding:0% !important">
-              {% else %}
-              <div class="col-md-3 text-center" style="margin:0% 0% 3% 18% ; padding:0% !important">
-                {%endif%}
-                <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:70% !important;">
-                  <div class="hovereffect">
-                    <div class="overlay">
-                      <h2 class="text ">{{div.CurrProject}}</h2>
-                    </div>
-                    <img src="/assets/images/team_members/{{div.profile_pic}}" alt="Lights" style="width:100%;" class="image resize_fit_centers">
-                  </div>
-                  <div class="caption" style="background-color:white">
-
-                    <p class="desc1">{{div.Name}}</p>
-                    <a href=" https://www.facebook.com/{{div.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
-                    <a href=" https://www.github.com/{{div.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a>
-                  </div>
-                </div>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-
-        {% endfor %}
-      </div>
-    </div> -->
 
 
   <script src="/assets/js/pages/team-animation.js"></script>
-  <script src="/assets/js/pages/team-details.js"></script>
