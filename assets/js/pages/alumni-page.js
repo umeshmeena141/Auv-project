@@ -20,6 +20,9 @@ $(document).ready(function() {
   $('.slide').eq(currindex).css({
     "display": "block"
   });
+  $('#nav a').eq(4).css({
+    "color": "white"
+  });
   // sldeshow hide for low width lowscreenhide
   $(window).on('load resize', function() {
     if (window.innerWidth > 1200) {
@@ -28,10 +31,10 @@ $(document).ready(function() {
       $('.lowscreenhide').css({
         "display": "block"
       });
-      $('.message').css({
-        "display": "none",
-        "background": "rgba(22,75,131,0.8)"
-      });
+      // $('.message').css({
+      //   "display": "none",
+      //   "background": "rgba(22,75,131,0.8)"
+      // });
 
     } else {
       window.clearInterval(interval);
