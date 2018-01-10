@@ -17,25 +17,25 @@ js : team-page.js
     </div>
   </div>
 </div>
-  <div class="container-fluid text-center" style="padding:0% 0% 2% !important; background-color:#f2f2f2" >
-    <div style="background-color:cornflowerblue" class="container-fluid" >
+<div class="container-fluid text-center" style="padding:0% 0% 2% !important; background-color:#f2f2f2" >
+  <div style="background-color:cornflowerblue" class="container-fluid" >
     <div class="page-header case" style="color:White;">
-        <h2 >Introducing to Our Team</h2>
+      <h2 >Introducing to Our Team</h2>
     </div>
     <div class="text-center verticalnav" data-spy="affix" data-offset="300" id="hide">
       <nav class="navbar2">
         <ul class="nav nav-pills nav-stacked" role="tablist">
           {% for divId in site.data.divison %}
-            {% if {{divId.title}} == "Team Leaders" %}
-            <li class="active"><a href="#{{divId.division}}">{{divId.title}}</a></li>
-            {% else %}
-            <li ><a href="#{{divId.division}}">{{divId.title}}</a></li>
-            {% endif %}
+          {% if {{divId.title}} == "Team Leaders" %}
+          <li class="active"><a href="#{{divId.division}}">{{divId.title}}</a></li>
+          {% else %}
+          <li ><a href="#{{divId.division}}">{{divId.title}}</a></li>
+          {% endif %}
           {% endfor %}
         </ul>
       </nav>
 
-  </div>
+    </div>
     <div class="container text-center">
 
       {% assign divisions = site.data.team_detail | sort  %}
@@ -47,36 +47,34 @@ js : team-page.js
       </div>
 
       <div class="row divs" id="{{division.basename1}}">
-          <span id="divHead">
-            <hr><p style="color:white;font-weight:lighter;font-family:Mono;">{{division.title}}</p><hr>
-          </span>
-          <div class="col-lg-11" style="" id="{{division.id2}}" >
-            <div  style="height:auto;" class="row containers">
-              <div class="col-lg-12" style="width:100%; " >
-                <!-- <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="{{division.id}}" class="faculty col-sm-4">{{division.title}}</div> -->
-                <div class="row divs">
-                  {% for div in division.member %}
-                  <div class="col-md-3 ">
-                      <div class="thumbnail hovereffect" style="height:auto;padding:0px">
-                        <div class="hovereffect">
-                          <div class="overlay">
-                            <h2 class="text ">{{div.CurrProject}}</h2>
-                          </div>
-                          <img src="/assets/images/team_members/{{div.profile_pic}}" alt="Lights" style="width:100%;" class="image resize_fit_centers">
-                        </div>
-                        <div class="caption" style="background-color:white">
-
-                          <p class="desc1">{{div.Name}}</p>
-                          <a href=" https://www.facebook.com/{{div.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
-                          <a href=" https://www.github.com/{{div.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a>
-                        </div>
+        <span id="divHead">
+          <hr><p style="color:white;font-weight:lighter;font-family:Mono;">{{division.title}}</p><hr>
+        </span>
+        <div class="col-lg-11" style="" id="{{division.id2}}" >
+          <div  style="height:auto;" class="row containers">
+            <div class="col-lg-12" style="width:100%; " >
+              <div class="row divs">
+                {% for div in division.member %}
+                <div class="col-md-3 ">
+                  <div class="thumbnail hovereffect" style="height:auto;padding:0px">
+                    <div class="hovereffect">
+                      <div class="overlay">
+                        <h2 class="text ">{{div.CurrProject}}</h2>
                       </div>
+                      <img src="/assets/images/team_members/{{div.profile_pic}}" alt="Lights" style="width:100%;" class="image resize_fit_centers">
                     </div>
-                    {% endfor %}
+                    <div class="caption" style="background-color:white">
+                      <p class="desc1">{{div.Name}}</p>
+                      <a href=" https://www.facebook.com/{{div.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
+                      <a href=" https://www.github.com/{{div.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a>
+                    </div>
                   </div>
                 </div>
+                {% endfor %}
               </div>
             </div>
+          </div>
+        </div>
 
 
       </div>

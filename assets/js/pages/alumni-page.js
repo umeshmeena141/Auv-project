@@ -28,10 +28,10 @@ $(document).ready(function() {
       $('.lowscreenhide').css({
         "display": "block"
       });
-      $('.message').css({
-        "display": "none",
-        "background": "rgba(22,75,131,0.8)"
-      });
+      // $('.message').css({
+      //   "display": "none",
+      //   "background": "rgba(22,75,131,0.8)"
+      // });
 
     } else {
       window.clearInterval(interval);
