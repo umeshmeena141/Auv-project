@@ -20,6 +20,9 @@ $(document).ready(function() {
   $('.slide').eq(currindex).css({
     "display": "block"
   });
+  $('#nav a').eq(4).css({
+    "color": "white"
+  });
   // sldeshow hide for low width lowscreenhide
   $(window).on('load resize', function() {
     if (window.innerWidth > 1200) {
