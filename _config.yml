@@ -5,7 +5,7 @@ name: AUV IITK
 fullname: Autonomous Underwater Vehicle Team, IIT Kanpur
 email: iitkauv@gmail.com
 description: > # this means to ignore newlines until "url:"
-              Official Website for Auotnomous Underwater Vehicle (AUV) Team at IIT Kanpur, India
+              Official Website for Autonomous Underwater Vehicle (AUV) Team at IIT Kanpur, India
 keywords: auv, robotics, iitk, ros, opencv
 footer_text: >
 
@@ -40,7 +40,7 @@ blog_description: "A blog for tutorials, musings, and news"
 
 # Pagination
 paginate: 4
-permalink: /blog/:year/:title/
+permalink: /blog/:title/
 paginate_path: /blog/page:num/
 
 text:
@@ -64,6 +64,7 @@ collections:
   - team
   - subteams
   - vehicles
+  - categories
 
 news_limit: 5
 
@@ -76,7 +77,7 @@ markdown: kramdown
 highlighter: pygments
 
 # Includes
-include: ['_pages']
+include: ['_pages', '_categories']
 
 # plugins
 plugins:
@@ -89,3 +90,4 @@ plugins:
 jquery_version: "1.12.4"
 # katex_version: "0.7.1"
 anchorjs_version: "3.2.2"
+github: [metadata]
