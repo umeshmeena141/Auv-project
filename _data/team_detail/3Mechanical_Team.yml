@@ -1,9 +1,8 @@
-basename1 : Mechanical_Team
-title:
+basename1 : 3Mechanical_Team
+title: Mechanical Team
 id : mechteam
 id2 : mech_team
-display: none
-img: mechanical.png
+
 member :
   - Name: Balamurugan R
     Department: Aerospace Engg.

@@ -1,5 +1,5 @@
-- divison : Faculty_Advisors
-  title : Faculty Advisors
+- division : 1Team_Leaders
+  title : Team Leaders
   id : a
   class1 : fa-user
   class2 : navicon1
@@ -7,7 +7,7 @@
   color : black
 
 
-- divison : Software_Team
+- division : 2Software_Team
   title : Software Team
   id : b
   class1 : fa-laptop
@@ -15,7 +15,7 @@
   class3 : active2
   color : white
 
-- divison : Mechanical_Team
+- division : 3Mechanical_Team
   title : Mechanical Team
   id : c
   class1 : fa-wrench
@@ -23,7 +23,7 @@
   class3 : active2
   color : white
 
-- divison : Electrical_Team
+- division : 4Electrical_Team
   title : Electrical Team
   id : d
   class1 : fa-flash
@@ -31,7 +31,7 @@
   class3 : active2
   color : white
 
-- divison : Bussiness_Team
+- division : 5Bussiness_Team
   title : Bussiness Team
   id : e
   class1 : fa-briefcase

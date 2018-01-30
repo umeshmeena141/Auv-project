@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#nav a').eq(8).css({
+  $('#nav a').eq(6).css({
     "color": "white"
   });
   $(window).on('resize load', function() {

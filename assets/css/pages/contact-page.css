@@ -27,6 +27,7 @@ button:hover {
 
 a {
   text-decoration: none !important;
+  color:#bbb;
 }
 
 b {
@@ -41,7 +42,7 @@ dl {
 }
 
 .auvcontact a {
-  color: cornflowerblue;
+  color: black !important;
 }
 
 header.major .byline {

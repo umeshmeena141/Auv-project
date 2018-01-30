@@ -10,103 +10,76 @@ js : team-page.js
 <div style="width:100% !important; background-color:#f2f2f2" class="container info">
   <div class="row container1" style="width:100%;position:relative;margin:6% 0% 1% !important">
     <div class="row" style="margin:1% 0% 0% 2%;"><!--id="cTeam1" -->
-      <h2 id="cT" style="font-size:2.2em !important;color:#164b83;font-weight:700;font-family:arial;line-height:1.2;background:#f2f2f2;"><b>Team <i style="color:black">Triton</i></b></h2>
+      <h2 id="cT"><b>Team <i style="color:black">Triton</i></b></h2>
       <p style="font-weight:400;text-align:justify;">
         With the number of members increasing each year, the current team comprises of 18 students from various majors and years. Our work is distributed into four subsystems: Software, Mechanical, Electrical, and Business. Currently, the team is preparing Singapore Underwater Vehicle Challenge (SAUVC).
       </p>
     </div>
   </div>
 </div>
-  <div class="container-fluid" style="padding-bottom:2% !important; background-color:#f2f2f2">
-    <div style="background-color:cornflowerblue" class="container-fluid" >
-    <div class="page-header case" style="color:black;margin-left:7%">
-        <h2>Team Structure</h2>
+<div class="container-fluid text-center" style="padding:0% 0% 2% !important; background-color:#f2f2f2" >
+  <div style="background-color:cornflowerblue" class="container-fluid" >
+    <div class="page-header case" style="color:White;">
+      <h2 >Introducing to Our Team</h2>
     </div>
+    <div class="text-center verticalnav" data-spy="affix" data-offset="300" id="hide">
+      <nav class="navbar2">
+        <ul class="nav nav-pills nav-stacked" role="tablist">
+          {% for divId in site.data.divison %}
+          {% if {{divId.title}} == "Team Leaders" %}
+          <li class="active"><a href="#{{divId.division}}">{{divId.title}}</a></li>
+          {% else %}
+          <li ><a href="#{{divId.division}}">{{divId.title}}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
 
-    <div class="row text-center" style="padding-left:10%">
-      {% for divison in site.data.team_detail%}{% assign division=divison[1] %}
-          <div class="card img-fluid item" style="width:400px;margin:2% 0% 3% 5%;padding:0% !important;background-color:#f2f2f2;border-radius:50%;position:relative;float:left">
-            <div class="card-img-overlay textw" style="border-radius:50%;text-align:center">
-              <h4 >John Doe</h4>
-              <p >Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
-              <button onclick="collapse('#{{division.id2}}')" class="btn btn-primary">See Profile</button>
-            </div>
-            <img class="card-img-bottom img-circle" src="../assets/images/team_logo/{{division.img}}" alt="Card image" style="width:100%;height:400px;" />
-            <div class="carousel-caption card2">
-              <h2 style="line-height:1">{{division.title}}</h2>
-            </div>
-          </div>
-          <div class="col-lg-11 collapse smallwidth" style="background-color:#f2f2f2;margin-bottom:2%;width:95% !important" id="{{division.id2}}">
-            <div id="{{division.basename1}}" style="margin:0% !important; height:auto;background-color:#f2f2f2" class="row containers">
-              <div class="col-lg-12 " style="padding:0px; width:100%; ">
-                <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="{{division.id}}" class="faculty col-sm-4">{{division.title}}</div>
-                <div class="row info_container" style="margin:auto;">
-                  {% for div in division.member %}
-                  <div class="col-md-3 text-center" style="margin:auto;">
-                      <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; ">
-                        <div class="hovereffect">
-                          <div class="overlay">
-                            <h2 class="text ">{{div.CurrProject}}</h2>
-                          </div>
-                          <img src="/assets/images/team_members/{{div.profile_pic}}" alt="Lights" style="width:100%;" class="image resize_fit_centers">
-                        </div>
-                        <div class="caption" style="background-color:white">
+    </div>
+    <div class="container text-center">
 
-                          <p class="desc1">{{div.Name}}</p>
-                          <a href=" https://www.facebook.com/{{div.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
-                          <a href=" https://www.github.com/{{div.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    {% endfor %}
-                  </div>
-                </div>
-              </div>
-          </div>
-      {% endfor %}
-  </div>
-  </div>
-</div>
-    <!-- <div class="container-fluid" style="margin:2% 0% 0% 5% !important">
-      <div style="padding:0.5% 23% 0% 30%; width:100%;text-align:center;margin:0% !important; position:sticky; top:60px;z-index:99;height:30px;box-shadow: 4px 4px 8px 4px ;" id="teamnav" class="row containers">
-        {% for div in site.data.divison %}
-          <a onclick="animate2('#{{div.divison}}','#{{div.id}}' ,'.{{div.class2}}')" title="{{div.title}}" class="col-sm-2 {{div.class2}} {{div.class3}} "><i style="color:{{div.color}};cursor:pointer;position:absolute;left:40%;" class="fa {{div.class1}}" id="{{div.id}}"></i></a>
-        {% endfor %}
+      {% assign divisions = site.data.team_detail | sort  %}
+      {% for divison in divisions  %} {% assign division=divison[1]  %}
+
+      <!-- navbar in mobile view-->
+      <div class="text-center container-fluid headings" id="{{division.id}}" >
+        <h2>{{division.title}}</h2>
       </div>
 
-      {% for divison in site.data.team_detail %} {% assign division = divison[1] %}
-      <div id="{{division.basename1}}" style="margin:0% !important; height:auto;background-color:rgba(30, 100, 174 ,0.8);" class="row containers">
-        <div class="col-lg-12 " style="padding:0px; width:100%; ">
-          <div style=" padding:10px; text-align:center;font-size:26px;margin:3% 34%; color:black;" id="{{division.id}}" class="faculty col-sm-4">{{division.title}}</div>
-          <div class="row info_container" style="margin:auto;">
-            {% for div in division.member %} {% if forloop.length == 3 %}
-            <div class="col-md-3 text-center" style="margin:0% 0% 3% 7% ; padding:0% !important">
-              {% else %}
-              <div class="col-md-3 text-center" style="margin:0% 0% 3% 18% ; padding:0% !important">
-                {%endif%}
-                <div class="thumbnail hovereffect" style="height:auto;padding:0px;margin:0%; width:70% !important;">
-                  <div class="hovereffect">
-                    <div class="overlay">
-                      <h2 class="text ">{{div.CurrProject}}</h2>
+      <div class="row divs" id="{{division.basename1}}">
+        <span id="divHead">
+          <hr><p style="color:white;font-weight:lighter;font-family:Mono;">{{division.title}}</p><hr>
+        </span>
+        <div class="col-lg-11" style="" id="{{division.id2}}" >
+          <div  style="height:auto;" class="row containers">
+            <div class="col-lg-12" style="width:100%; " >
+              <div class="row divs">
+                {% for div in division.member %}
+                <div class="col-md-3 ">
+                  <div class="thumbnail hovereffect" style="height:auto;padding:0px">
+                    <div class="hovereffect">
+                      <div class="overlay">
+                        <h2 class="text ">{{div.CurrProject}}</h2>
+                      </div>
+                      <img src="/assets/images/team_members/{{div.profile_pic}}" alt="Lights" style="width:100%;" class="image resize_fit_centers">
                     </div>
-                    <img src="/assets/images/team_members/{{div.profile_pic}}" alt="Lights" style="width:100%;" class="image resize_fit_centers">
-                  </div>
-                  <div class="caption" style="background-color:white">
-
-                    <p class="desc1">{{div.Name}}</p>
-                    <a href=" https://www.facebook.com/{{div.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
-                    <a href=" https://www.github.com/{{div.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a>
+                    <div class="caption" style="background-color:white">
+                      <p class="desc1">{{div.Name}}</p>
+                      <a href=" https://www.facebook.com/{{div.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
+                      <a href=" https://www.github.com/{{div.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a>
+                    </div>
                   </div>
                 </div>
+                {% endfor %}
               </div>
-              {% endfor %}
             </div>
           </div>
         </div>
 
-        {% endfor %}
-      </div>
-    </div> -->
 
-  <script src="/assets/js/pages/team-animation.js"></script>
-  <script src="/assets/js/pages/team-details.js"></script>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
