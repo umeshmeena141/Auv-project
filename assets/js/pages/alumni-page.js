@@ -1,12 +1,4 @@
-// Faculty Message slide function
-function message() {
-  $('.message').slideToggle(1000);
-  $('.message').css({
-    "position": "absolute",
-    "top": "0px"
-  });
-  window.location.href = "#message1";
-}
+
 $('#nav a').eq(6).css({
   "color": "white"
 });
@@ -31,11 +23,6 @@ $(document).ready(function() {
       $('.lowscreenhide').css({
         "display": "block"
       });
-      // $('.message').css({
-      //   "display": "none",
-      //   "background": "rgba(22,75,131,0.8)"
-      // });
-
     } else {
       window.clearInterval(interval);
       $('.lowscreenhide').css({
@@ -97,16 +84,6 @@ $(document).ready(function() {
   // Arrow Animation
   window.setInterval(movedown, 1000);
 
-  function movedown() {
-    $('.sliding').animate({
-      top: '50px'
-    }, 500);
-    $('.sliding').delay(500).queue(function(next) {
-      $(this).css({
-        "top": "0px"
-      });
-      next();
-    });
-  }
+
 
 })
