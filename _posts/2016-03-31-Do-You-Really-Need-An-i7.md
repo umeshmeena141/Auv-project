@@ -3,13 +3,20 @@ layout:     post
 title:      "Do You Really Need An i7"
 subtitle:   "Convincing people that your robot need more cpu power."
 date:       2016-03-30 4:17:00
-author:     "Shikher Verma"
-categories: processor robotics
+author: 
+ - name: "Shikher Verma"
+ - fb-link: "facebook.com/shikherverma42"
+ - github-link: "github.com/ShikherVerma"
+ - website-link: "Shikherverma.com"
+ - linkedin-link:
+
+categories: ProcessorRobotics
 excerpt_separator: <!--more-->
 comments: true
+social: true
 ---
 
-## When Raspberry Pi 2 and Odroid U3 fail you. What next ? Back to x64.
+## When Raspberry Pi 2 and Odroid U3 fail you. What next? Back to x64.
 &emsp;&emsp;Initially Shikher thought that buying a low power armh processor was a very wise choice. Low power meant lower battery consumption so lighter batteries. Also single chip armh processors like Raspberry Pi and Odroid are way cheaper. The world was good. Until one day OpenCV came along. Initially he seemed like a nice guy. Resourceful. With his awesome HighGUI and shiny high power tools like HoughCircle, Contrast stretching he seemed like a guy Shikher <!--more-->could rely on. But soon Shikher became so dependant on him that he forgot the limited hardware that had to support OpenCV. The world started breaking apart. Shikher was caught up between using powerful tools of OpenCV or making the resource requirements low for odroid u3 and raspberry pi 2 boards. Eventually it became clear that there was no other way, Shikher started looking for stronger boards which could meet the requirements of OpenCV. He soon came across NUC; One of the most powerful boards used in robotics projects. Although the specs were great but it came with a big setback to our budget, and using it also meant increased battery consumption. Shikher tried to weigh to pros and cons of it and presented this to my team so that they will go forward with the purchase.
 
 ## Weighing the pros and cons
