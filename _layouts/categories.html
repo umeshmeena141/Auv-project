@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Heading -->
+<!-- Blog Heading -->
 <div class="wrapper style4" style="padding: 180px 0px 40px 0px; background-image: url('/assets/images/blog/{% if page.title != 'AUVeScope' %}categories/{{ page.title }}{% else %}background{% endif %}.png'); background-repeat: no-repeat; background-size: cover; height: 400px;">
 	<section class="container">
 		<header class="major">
@@ -21,9 +21,11 @@ layout: default
 <div class="wrapper style4" style="padding:60px 0px 0px 0px;">
 	<section class="container">
 		<div class="row flush">
+
 			<div class="2u">
 				<p></p>
 			</div>
+			
 			<div class="8u" style="text-align: justify;">
 				<header>
 					{% unless page.title == "AUVeScope" %}
@@ -55,6 +57,11 @@ layout: default
 					<p>No posts to show</p>
 				{% endif %}
 			</div>
+
+			<div class="2u">
+				<p></p>
+			</div>
+
 		</div>
 	</section>
 </div>

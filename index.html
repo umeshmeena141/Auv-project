@@ -20,12 +20,14 @@ js: index.js
 <div class="wrapper style2" id="ws2" style="margin-bottom:-10px;background:#f2f2f2">
 	<section class="container">
 		<div class="row double">
+
 			<!-- About Us -->
 			<div class="6u" style="padding-left:100px;padding-right:10px;">
 				<h2 id="NEWS1" style="margin-bottom:15px;"><b>ABOUT US</b></h2> {% for team in site.team reversed %}
 				<p style="text-align:justify; font-size:0.97em; line-height:1.7; margin:0px;font-weight:400; color:#2d2d2d;">&emsp;&emsp;{{ team.section }}</p>
 				{% endfor %}
 			</div>
+
 			<!-- Latest News | Facebook Page | Youtube Channel -->
 			<div class="6u" style="padding-right:15px;">
 				<h2 class="MEDIA1" style="margin-bottom:20px;">LATEST NEWS</h2>
@@ -48,7 +50,7 @@ js: index.js
 					<iframe width="100%" height="260" src="https://www.youtube.com/embed/videoseries?list=PLMCgouOF_rduD-_N8gBqEeiYReQYJ4P3T" frameborder="0" allowfullscreen></iframe>
 				</div>
 
-				<!-- Navigation bar 2 -->
+				<!-- NavBar_Local -->
 				<div id="MEDIA2" style="text-align:center;">
 					<div style="width:150px;display:inline-block;">
 						<div class="MEDIA21 fa fa-edit" onclick="lanews()"></div>
