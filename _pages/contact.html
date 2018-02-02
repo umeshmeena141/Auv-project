@@ -16,10 +16,11 @@ js : contact-page.js
         </div>
       </div>
       <!-- Sidebar -->
-      <div class="col-lg-5 text-center" style="padding-left:0px;margin:4% 2% 0% !important;">
+      <div class="container2">
+      <div class="col-lg-5 text-center" style="padding-left:0px;margin:4% 2% 0%">
           {% for contact in site.data.contact_detail %} {% assign members = contact[1] %}
           <div class="row">
-            <div class="page-header" style="margin-top:0%">
+            <div class="page-header">
               <h2>{{members.title}}</h2>
             </div>
           </div>
@@ -44,9 +45,9 @@ js : contact-page.js
           {% endfor %}
       </div>
 
-      <div class="col-lg-5 text-center" style="padding-left:0px;margin:4% 2% 0% !important;">
+      <div class="col-lg-6 text-center" style="padding-left:0px;margin:4% 2% 0% !important;">
         <div class="row" >
-        <div class="page-header" style="margin-top:0%">
+        <div class="page-header" >
           <h2>Give Us FeedBack</h2>
         </div>
         <form style="width:100%" method="post" accept-charset="UTF-8" action="https://formkeep.com/f/7ef8e9ed55a0">
@@ -60,7 +61,7 @@ js : contact-page.js
           </div>
           <div class="input-group">
             <span class="input-group-addon">Message</span>
-            <textarea id="msg" type="text" class="form-control input-default" name="msg" placeholder="FeedBack" style="height:200px"></textarea>
+            <textarea id="msg" type="text" class="form-control input-default" name="msg" placeholder="FeedBack" style="height:100px"></textarea>
           </div>
           <div class="input-group" style="float:right">
             <button type="submit" class="btn btn-default ">Send</button>
@@ -98,5 +99,6 @@ js : contact-page.js
     </div>
 
     </div>
+  </div>
   </div>
 </div>

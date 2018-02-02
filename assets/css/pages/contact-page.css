@@ -1,7 +1,13 @@
 body {
   overflow-x: hidden;
 }
-
+.container2{
+  width:100% !important;
+  padding: 0% 10% !important;
+}
+.page-header{
+  margin-top: 0%;
+}
 .form-control {
   border-color: #ccc;
 }
