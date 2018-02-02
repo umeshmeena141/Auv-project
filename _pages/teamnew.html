@@ -17,7 +17,7 @@ js : team-page.js
     </div>
   </div>
 </div>
-<div class="container-fluid text-center" style="padding:0% 0% 2% !important; background-color:#f2f2f2" >
+<div class="container-fluid text-center" style="padding:0% 0% 2% !important; background-color:#f2f2f2" id="maindiv" >
   <div style="background-color:cornflowerblue" class="container-fluid" >
     <div class="page-header case" style="color:White;">
       <h2 >Introducing to Our Team</h2>
@@ -36,7 +36,7 @@ js : team-page.js
       </nav>
 
     </div>
-    <div class="container text-center">
+    <div class="container text-center" >
 
       {% assign divisions = site.data.team_detail | sort  %}
       {% for divison in divisions  %} {% assign division=divison[1]  %}
