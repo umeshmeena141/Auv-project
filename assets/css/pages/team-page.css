@@ -1,3 +1,7 @@
+
+#maindiv{
+  padding:0% 5% !important;
+}
 img {
   z-index: 9;
 }
@@ -200,6 +204,7 @@ ul {
   width:10%;
   z-index: 999;
   position: absolute;
+  margin-left: 5%;
 }
 .affix{
   top:10%;
