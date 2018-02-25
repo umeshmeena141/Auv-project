@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /*
 	Solarize by TEMPLATED
 	templated.co @templatedco
@@ -27,15 +28,20 @@ body.loading * {
 
 body, input, select, textarea {
   color: #555555;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12pt;
   font-weight: 300;
   line-height: 1.65em;
 }
 
 a {
-  color: #82b440;
-  text-decoration: underline;
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 1px;
+}
+
+a:link {
+  color: #0d47a1;
 }
 
 strong, b {
@@ -92,12 +98,6 @@ hr {
   border-top: solid 1px #82b440;
   border: 0;
   margin-bottom: 1.5em;
-}
-
-blockquote {
-  border-left: solid 0.5em #82b440;
-  font-style: italic;
-  padding: 1em 0 1em 2em;
 }
 
 section.special, article.special {
@@ -180,6 +180,20 @@ input[type="text"], input[type="password"], input[type="email"] {
 
 .formerize-placeholder {
   color: rgba(85, 85, 85, 0.5) !important;
+}
+
+.highlight {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin-bottom: 10px;
+  overflow: auto;
+  width: auto;
+  padding: 5px;
+  background-color: #eee;
+  width: 650px!ie7;
+  padding-bottom: 20px!ie7;
+  max-height: 600px;
+  line-height: 175%;
+  font-size: 0.9em;
 }
 
 /* Image */
@@ -373,9 +387,80 @@ ul.special-icons p {
 /* Tables */
 
 table {
-  width: 100%;
+  margin: 20px 0 0 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #212121;
+  color: #fff;
+}
+table td, table th {
+  text-align: center;
+}
+table thead {
+  line-height: 12px;
+  background: rgba(32, 123, 197, 0.8);
+  text-transform: uppercase;
+}
+table thead th {
+  color: #fff;
+  padding: 10px;
+  letter-spacing: 1px;
+  vertical-align: bottom;
+}
+table thead th:nth-child(1) {
+    width: 20%;
+    text-align: left;
+    padding-left: 20px;
+}
+table thead th:nth-child(2) {
+    width: 30%;
 }
 
+table thead th:nth-child(3) {
+    width: 35%;
+}
+
+table thead th:nth-child(4) {
+    width: 15%;
+}
+
+table tbody {
+    font-size: 1em;
+    line-height: 20px;
+}
+
+table tbody tr {
+    border-top: 2px solid rgba(32, 123, 197, 0.2);
+    transition: background 0.6s, color 0.6s;
+}
+
+table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+table tbody tr:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+table tbody td {
+    padding: 12px;
+}
+
+table tfoot {
+    font-size: 0.8em;
+}
+
+table tfoot tr {
+    border-top: 2px solid #2e63e7;
+}
+
+table tfoot td {
+    color: rgba(255,255,215,0.6);
+    text-align: left;
+    line-height: 15px;
+    padding: 15px 20px;
+}
 table.default {
   width: 100%;
 }
@@ -385,18 +470,102 @@ table.default tbody tr {
 }
 
 table.default td {
-  padding: 0.5em 1em 0.5em 1em;
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
 table.default th {
   font-weight: 700;
-  padding: 0.5em 1em 0.5em 1em;
   text-align: left;
+  border: 1px solid #ddd;
+   padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+table.default tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 table.default thead {
   background: #555555;
   color: #fff;
+}
+
+/* Blockquote */
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: 'Francois One', sans-serif;
+  font-size: 1em;
+  line-height: 80%;
+  color: #666;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+
+  /*Borders - (Optional)*/
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-right-style: solid;
+  border-right-width: 2px; 
+
+  /* Border Color*/
+  border-left-color: #ed5565;
+  border-right-color: #da4453;   
+}
+
+blockquote::before{
+  /*Font*/
+  font-family: 'Francois One', sans-serif;
+  font-size: 1em;
+  line-height: 80%;
+  color: #666;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+  
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  color: #ed5565 !important;
+}
+
+blockquote a:hover{
+ background: #f9f6ec;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+
+/* Code Block*/
+
+code {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 90%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  background: #f9f6ec;
+  padding: 2px;
 }
 
 /* Button */
