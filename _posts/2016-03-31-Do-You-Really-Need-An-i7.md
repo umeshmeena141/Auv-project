@@ -14,6 +14,7 @@ categories: ProcessorRobotics
 excerpt_separator: <!--more-->
 comments: true
 social: true
+css: blog-post.css
 ---
 
 ## When Raspberry Pi 2 and Odroid U3 fail you. What next? Back to x64.
