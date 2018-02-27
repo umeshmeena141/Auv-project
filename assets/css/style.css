@@ -44,6 +44,22 @@ a:link {
   color: #0d47a1;
 }
 
+#nav a {
+  outline: none !important;
+  text-decoration: none !important;
+  border: none !important;
+  background: none !important;
+}
+#nav a:hover {
+  outline: none !important;
+  text-decoration: none !important;
+  border: none !important;
+  background: none !important;
+}
+#nav ul {
+  list-style: none !important;
+}
+
 strong, b {
   font-weight: 700;
 }
