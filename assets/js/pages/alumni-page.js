@@ -3,11 +3,18 @@ $('#nav a').eq(6).css({
   "color": "white"
 });
 
+$(document).ready(function(){
+  $(window).on('load resize',function(){
+    if(window.innerWidth<800){
+      $('.display').css({"display":"block"})
+    }
+  })
+})
 // Main SlideShow
 $(document).ready(function() {
   var previndex = $('.slide').length - 1;
   var currindex = 0;
-  var interval = window.setInterval(slideshow, 5000);
+  var interval = window.setInterval(slideshow, 50000);
 
   $('.slide').eq(currindex).css({
     "display": "block"
@@ -19,7 +26,7 @@ $(document).ready(function() {
   $(window).on('load resize', function() {
     if (window.innerWidth > 1200) {
       window.clearInterval(interval);
-      interval = window.setInterval(slideshow, 5000);
+      interval = window.setInterval(slideshow, 50000);
       $('.lowscreenhide').css({
         "display": "block"
       });
@@ -82,7 +89,7 @@ $(document).ready(function() {
   }
 
   // Arrow Animation
-  window.setInterval(movedown, 1000);
+  window.setInterval(movedown, 10000);
 
 
 
