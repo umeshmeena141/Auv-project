@@ -35,7 +35,7 @@ js : contact-page.js
                {%else %}
 
                  <li class="list-group-item"><span class="badge" style="float:left"><i class="fa fa-user"></i></span><span style="color:#164b83">{{member.Name}}</span><br/>
-                   <a href="{{member.facebook}}"><i class="fa fa-facebook" style="margin:0% 2%"> </i></a><span><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to={{member.email}}&su">{{member.id}}@iitk.ac.in</a></span> </li>
+                   <a href="{{member.facebook}}"><i class="fa fa-facebook" style="margin:0% 2%"> </i></a><span><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to={{member.email}}&su">{{member.id}}@iitk.ac.in</a></span> </li><!-- Email in Js File-->
                {% endif %}
                {% endfor %}
               </ul>
