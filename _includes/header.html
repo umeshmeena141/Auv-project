@@ -10,13 +10,13 @@
 			<!-- Nav -->
 			<nav id="nav" style="z-index:10">
 				<ul>
-					<li id="home"><a href="/index.html">
+					<li id="home"><a href="/index.html" class="{{page.home_active}}">
 						<img src="/assets/images/logo/{{site.nav_icon}}.png" alt="Home" height="33px" style="padding-top:20px;padding-right:7px;padding-bottom:0;margin-bottom:0;"></a>
 					</li>
 					<!-- <li id="home"><a href="/index.html">Home</a></li> -->
 					<!-- Pages -->
-					<li id="blog"><a href="/blog/">Blog</a></li>
-					<li id="varun"><a class="page-link" href="/varun.html">Vehicle</a>
+					<li id="blog"><a href="/blog/" class="{{page.blog_active}}">Blog</a></li>
+					<li id="varun"><a class="page-link {{page.varun_active}}" href="/varun.html">Vehicle</a>
 						<ul>
 							<li><a class="page-link" href="/varun.html">Varun</a></li>
 							<!-- <li><a href="">Competition Vehicles</a>
@@ -26,14 +26,14 @@
 							</li> -->
 						</ul>
 					</li>
-					<li id="team"><a class="page-link" href="/teamnew.html">Team</a>
+					<li id="team"><a class="page-link {{page.team_active}}" href="/team.html">Team</a>
 						<ul>
-							<li><a href="/teamnew.html">2017-18</a></li>
+							<li><a href="/team.html">2017-18</a></li>
 							<!-- <li><a href="/alumni.html">Our Alumnis</a></li> -->
 						</ul>
 					</li>
 					<li id="contact">
-						<a class="page-link" href="/contact.html">Contact Us</a>
+						<a class="page-link {{page.contact_active}}" href="/contact.html">Contact Us</a>
 					</li>
 				</ul>
 			</nav>

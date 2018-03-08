@@ -3,9 +3,9 @@ $(document).ready(function() {
     var contactform =  document.getElementById('formaction');
     contactform.setAttribute('action', '//formspree.io/' + 'iitauv' + '@' + 'gmail' + '.' + 'com');
 
-  $('#nav #contact').css({
-    "color": "white"
-  });
+  // $('#nav #contact').css({
+  //   "color": "white"
+  // });
 
   $(window).on('resize load', function() {
     if ($(window).width() < 750) {
