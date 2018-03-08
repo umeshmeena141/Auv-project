@@ -57,57 +57,61 @@ js: varun.js
 </div>
 {% endif %} {% endfor %}
 
-<!-- Mechanical | Software | Electrical Subteams -->
-{% for item in site.subteams %} {% if item.title != "software" %}
-<div id="{{item.title}}" class="subTeam" style={{item.bgcolor}}>&emsp;</div>
-<div class="wrapper style2" style="zoom:85%; {{item.bgcolor}}; {{item.color2}}; padding:0px; ">
-	<section class="container">
-		<div class="row double">
-			<div class="7u">
-				<div style="display: inline-block;">
-					<div style="margin:auto; text-align:center; width:80%;">
-						<img class="auvMech" style="width:100%;display: table-cell;vertical-align: middle;" src="{{item.image}}">
+<!-- Mechanical | Electrical | Software Subteams -->
+{% for detail in site.data.team_detail %} {% for item in detail %}
+{% if item.features %}
+	{% if item.subtitle != "Electrical" %}
+	<div id="{{item.subtitle}}" class="subTeam" style="background:#f2f2f2">&emsp;</div>
+	<div class="wrapper style2" style="zoom:85%; background:#f2f2f2; color:#0086b3; padding:0px; ">
+		<section class="container">
+			<div class="row double">
+				<div class="7u">
+					<div style="display: inline-block;">
+						<div style="margin:auto; text-align:center; width:80%;">
+							<img class="auvMech" style="width:100%;display: table-cell;vertical-align: middle;" src="{{item.imageSource}}">
+						</div>
 					</div>
+					<p class="picCom" style="color:#006080"><a href="#" class="fa fa-angle-up" style="color:#006080; text-decoration:none;"></a> {{item.imageDesc}}</p>
 				</div>
-				<p class="picCom" style={{item.color1}}><a href="#" class="fa fa-angle-up" style="{{item.color1}}; text-decoration:none;"></a> {{item.imgDesc}}</p>
+				<div class="5u">
+					<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#f2f2f2; height:450px;display: table-cell;vertical-align: middle;">
+						<h2 style=" color:#006080; padding-left:10px;font-weight:700;font-size:1.6em;text-transform:uppercase;margin-left:-34px;">{{item.subtitle}} SUBSYSTEM</h2>
+						<ul class="list">
+							{% for features in item.features %}
+							<li class="byline">{{ features }}</li>
+							{% endfor %}
+						</ul>
+					</header>
+				</div>
 			</div>
-			<div class="5u">
-				<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#f2f2f2; height:500px;display: table-cell;vertical-align: middle;">
-					<h2 style=" {{item.color1}}; padding-left:10px;font-weight:700;font-size:1.6em;text-transform:uppercase;margin-left:-34px;">{{item.subTitle}}</h2>
-					<ul class="list">
-						{% for features in item.features %}
-						<li class="byline">{{ features }}</li>
-						{% endfor %}
-					</ul>
-				</header>
-			</div>
-		</div>
-	</section>
-</div>
-{% else %}
-<div id="{{item.title}}" style={{item.bgcolor}} class="subTeam">&emsp;</div>
-<div class="wrapper style2" id="{{i}}" style="zoom:85%;{{item.bgcolor}}; {{item.color2}};padding:0px; ">
-	<section class="container">
-		<div class="row double">
-			<div class="6u">
-				<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#b3d9ff; height:500px;display: table-cell;vertical-align: middle;">
-					<h2 style=" {{item.color1}};padding-left:10px;font-weight:700;font-size:1.6em;text-transform:uppercase;margin-left:-34px;">{{item.subTitle}}</h2>
-					<ul class="list">
-						{% for features in item.features %}
-						<li class="byline">{{ features }}</li>
-						{% endfor %}
-					</ul>
-				</header>
-			</div>
-			<div class="6u">
-				<div style="display: inline-block;">
-					<div style="margin:auto; text-align:center; width:80%;">
-						<img class="auvMech" style="width:100%;margin-top:55px;display: table-cell;vertical-align: middle;" src="{{item.image}}">
+		</section>
+	</div>
+	{% else %}
+	<div id="{{item.subtitle}}" style="background:#b3d9ff" class="subTeam">&emsp;</div>
+	<div class="wrapper style2" id="{{i}}" style="zoom:85%;background:#b3d9ff; color:#0086b3;padding:0px; ">
+		<section class="container">
+			<div class="row double">
+				<div class="6u">
+					<header class="major" style="text-align:left !important; padding-left:20px;font-weight:400;background:#b3d9ff; height:350px;display: table-cell;vertical-align: middle;">
+						<h2 style=" color:#006080;padding-left:10px;font-weight:700;font-size:1.6em;text-transform:uppercase;margin-left:-34px;">{{item.subtitle}} SUBSYSTEM</h2>
+						<ul class="list">
+							{% for features in item.features %}
+							<li class="byline">{{ features }}</li>
+							{% endfor %}
+						</ul>
+					</header>
+				</div>
+				<div class="6u">
+					<div style="display: inline-block;">
+						<div style="margin:auto; text-align:center; width:80%;">
+							<img class="auvMech" style="width:100%;margin-top:25px;display: table-cell;vertical-align: middle;" src="{{item.imageSource}}">
+						</div>
 					</div>
+					<p class="picCom" style="color:#006080;"><a href="#" class="fa fa-angle-up" style="color:#006080; text-decoration:none;"></a> {{item.imageDesc}}</p>
 				</div>
-				<p class="picCom" style="{{item.color1}};"><a href="#" class="fa fa-angle-up" style="{{item.color1}}; text-decoration:none;"></a> {{item.imgDesc}}</p>
 			</div>
-		</div>
-	</section>
-</div>
-{% endif %} {% endfor %}
+		</section>
+	</div>
+	{% endif %}
+{% endif %}
+{% endfor %}{% endfor %}
