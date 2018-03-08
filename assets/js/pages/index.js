@@ -80,4 +80,3 @@ function Transparency() {
 }
 
 //color change in Nav bar element
-document.getElementById("index").style.color = "white";

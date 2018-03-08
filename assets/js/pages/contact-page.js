@@ -1,10 +1,8 @@
 $(document).ready(function() {
   // Formspree form information and email address
     var contactform =  document.getElementById('formaction');
-    contactform.setAttribute('action', '//formspree.io/' + 'iitkauv' + '@' + 'gmail' + '.' + 'com');
-  $('#nav #contact').css({
-    "color": "white"
-  });
+    contactform.setAttribute('action', '//formspree.io/' + 'iitauv' + '@' + 'gmail' + '.' + 'com');
+
 
   $(window).on('resize load', function() {
     if ($(window).width() < 750) {
