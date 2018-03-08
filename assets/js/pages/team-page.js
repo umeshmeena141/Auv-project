@@ -1,7 +1,7 @@
-$(document).ready(function() {
-  $('#nav a').eq(4).css({
-    "color": "white"
-  });
+// $(document).ready(function() {
+//   $('#nav #team').css({
+//     "color": "white"
+//   });
 
   // Different Css for different size of window
   $(window).on('resize load', function() {

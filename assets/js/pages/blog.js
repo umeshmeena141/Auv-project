@@ -1,2 +1,2 @@
 //color change in Nav bar element
-document.getElementById("blog").style.color = "white";
+// document.getElementById("blog").style.color = "white";
