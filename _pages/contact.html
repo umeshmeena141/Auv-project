@@ -11,46 +11,47 @@ js : contact-page.js
   <div class="container-fluid">
     <div class="row" style="margin:4% 0% !important">
       <div class="row text-center skel-cell-important" style="width:110%;background-image:url('http://d3zs5oljjs68i.cloudfront.net/sites/default/files/styles/18x7ratio/public/field/main-image/MPA%20Post%202.jpg?itok=34etb2g1');background-size:cover">
-        <div class="col-md-4 page-header" style="margin:0% 30%;font-size:3vw;color:#404040;font-family:Monospace;height:300px" id="contactus">
+        <div class="col-md-4 page-header" style="margin:0% 30%;font-size:3vw;color:#404040;font-family:Monospace;height:300px" id="page_heading">
           <h2 style="line-height:1.2; margin-top: 100px;">CONTACT US</h2>
         </div>
       </div>
-      <!-- Sidebar -->
-      <div class="container2">
-      <div class="col-lg-5 text-center" style="padding-left:0px;margin:4% 2% 0%">
+      <div class="main_container">
+      <!-- Information from contact_detail folder in data folder-->
+        <div class="col-lg-5 text-center" style="padding-left:0px;margin:4% 2% 0%">
           {% for contact in site.data.contact_detail %} {% assign members = contact[1] %}
           <div class="row">
             <div class="page-header">
               <h2>{{members.title}}</h2>
             </div>
           </div>
+          <!-- Team Representative Names and their contact details in data folder-->
           <div class="row">
             <div  style="padding-top:3%;width:100%;" >
               <ul class="list-group auvcontact">
                 {% for member in members.member%}
-                {% if members.title == 'Contact' %}
+                {% if members.title == 'Contact' %} <!-- Format for auv contact details -->
                <li class="list-group-item"><span class="badge" style="float:left"><i class="fa fa-envelope"></i></span><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to={{member.email}}&su">{{member.email}}</a></li>
                <li class="list-group-item"><span class="badge" style="float:left"><i class="fa fa-location-arrow"></i></span><a href="#googleMap">{{member.Name}}</a></li>
                <li class="list-group-item"><a href="{{member.facebook}}"><i class="fa fa-facebook" style="margin:0% 2%"> </i></a><a href="{{member.github}}"><i class="fa fa-github" style="margin:0% 2%"> </i></a></li>
+               <!-- Format  change for Team Representatives -->
                {%else %}
-
                  <li class="list-group-item"><span class="badge" style="float:left"><i class="fa fa-user"></i></span><span style="color:#164b83">{{member.Name}}</span><br/>
-                   <a href="{{member.facebook}}"><i class="fa fa-facebook" style="margin:0% 2%"> </i></a><span><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to={{member.email}}&su">{{member.id}}@iitk.ac.in</a></span> </li>
+                   <a href="{{member.facebook}}"><i class="fa fa-facebook" style="margin:0% 2%"> </i></a><span><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to={{member.email}}&su">{{member.id}}@iitk.ac.in</a></span> </li><!-- Email in Js File-->
                {% endif %}
                {% endfor %}
               </ul>
             </div>
 
-        </div>
+          </div>
           {% endfor %}
-      </div>
-
+        </div>
+      <!-- Contact Form Linked with Formspree -->
       <div class="col-lg-6 text-center" style="padding-left:0px;margin:4% 2% 0% !important;">
         <div class="row" >
         <div class="page-header" >
           <h2>Give Us FeedBack</h2>
         </div>
-        <form style="width:100%" method="post" accept-charset="UTF-8" id="formaction">
+        <form style="width:100%" method="post" accept-charset="UTF-8" id="formaction"> <!-- Email Linked to id formaction in js file -->
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input id="email" type="text" class="form-control input-default" name="name" placeholder="Name">
@@ -69,13 +70,14 @@ js : contact-page.js
         </form>
       </div>
 
+    <!-- Google Maps -->
     <div class="row">
       <div style="margin:0%;width:100%;padding-top:0">
         <div class="page-header">
             <h1 style="font-size:30px;margin:1% 0%;text-align:left;">Location</h1>
         </div>
         <div id="googleMap" style=" width:100%;height:250px;margin-bottom:1%"></div>
-
+        <!-- Position of Map View and zoom and position of marker-->
         <script>
           function myMap() {
             var mapProp = {
@@ -92,7 +94,7 @@ js : contact-page.js
             });
           }
         </script>
-
+        <!-- Key given to Google App AIzaSyARyCGtNg30qNKXKcA3DP1z-xE6yzrHzBE -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARyCGtNg30qNKXKcA3DP1z-xE6yzrHzBE&callback=myMap"></script>
       </div>
     </div>

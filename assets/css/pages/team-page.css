@@ -1,9 +1,16 @@
 
-#maindiv{
+#teamInfo{
   padding:0% 5% !important;
 }
 img {
   z-index: 9;
+}
+.team_data_container a {
+  padding: 0% 15%;
+}
+
+#nav a:hover {
+  color: white;
 }
 
 a {
@@ -12,19 +19,9 @@ a {
   text-decoration: none;
   border: none;
 }
-
-.containers a {
-  padding: 0% 10%;
-}
-
-.carousel-caption {
-  bottom: 0;
-  font-size: 150%;
-  position: absolute;
-}
-
-#nav a:hover {
-  color: white;
+li a {
+  text-decoration: none;
+  color:white;
 }
 
 ul {
@@ -35,6 +32,86 @@ ul a {
   font-size: 16px;
 }
 
+span p{
+  font-size:1.3em !important;
+}
+
+hr{
+  float :left;
+  border-bottom:2px solid white !important;
+   width:100% ;
+}
+
+.faculty {
+  font-family: arial;
+}
+
+.active1 {
+  background-color: white;
+  border-top: 2px solid black;
+  padding-top: 0px !important;
+  height: 30px;
+}
+
+/* New Team Page */
+ .card-img-overlay{
+   position: absolute;
+ }
+
+
+
+.verticalnav{
+  width:10%;
+  z-index: 999;
+  position: absolute;
+  margin-left: 5%;
+}
+
+.affix{
+  top:10%;
+  position: fixed;
+}
+
+.sticky{
+  position: fixed;
+  top:60px;
+  text-align: center;
+  left:45%;
+  z-index: 999;
+  color: black !important;
+
+}
+.team_name{
+  font-size:2.2em !important;
+  color:#164b83;
+  font-weight:700;
+  font-family:arial;
+  line-height:1.2;
+  background:#f2f2f2;
+}
+
+.divs{
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap;
+}
+#divHead{
+  display:flex;
+  justify-content: center;
+}
+
+.headings{
+  position: fixed;
+  top:40px;
+  width:100%;
+  left:0px;
+  background-color: #f2f2f2;
+  z-index: 99;
+  display: none;
+}
+
+
+/* Thumbnail and Hovereffect in image*/
 .overlay {
   position: absolute;
   bottom: 0;
@@ -63,7 +140,7 @@ h2 {
   line-height: 2.5;
 }
 
-.text {
+.thumbnail_text {
   color: black;
   font-size: 15px !important;
   position: absolute;
@@ -79,7 +156,7 @@ h2 {
   bottom: 0% !important;
 }
 
-.desc1 {
+.person_name {
   color: black;
   text-align: center;
   margin-bottom: 3%;
@@ -165,96 +242,4 @@ ul {
 
 .hovericon:hover {
   color: #3b5998 !important;
-}
-
-.faculty {
-  font-family: arial;
-}
-
-.active1 {
-  background-color: white;
-  border-top: 2px solid black;
-  padding-top: 0px !important;
-  height: 30px;
-}
-
-/* New Team Page */
- .card-img-overlay{
-   position: absolute;
- }
-
- .textw{
-   color: black;
-   font-size: 15px !important;
-   position: absolute;
-   left: 0%;
-   font-family: arial;
-   text-align: center;
-   align-content: center;
-   line-height: 1.5;
-   height: auto;
-   padding: 5% 0%;
-   width: 100%;
-   bottom: 25% !important;
-   display: none;
-
- }
-
-.verticalnav{
-  width:10%;
-  z-index: 999;
-  position: absolute;
-  margin-left: 5%;
-}
-.affix{
-  top:10%;
-  position: fixed;
-}
-li a {
-  text-decoration: none;
-  color:white;
-}
-
-.sticky{
-  position: fixed;
-  top:60px;
-  text-align: center;
-  left:45%;
-  z-index: 999;
-  color: black !important;
-
-}
-#cT{
-  font-size:2.2em !important;
-  color:#164b83;
-  font-weight:700;
-  font-family:arial;
-  line-height:1.2;
-  background:#f2f2f2;
-}
-hr{
-  float :left;
-  border-bottom:2px solid white !important;
-   width:100% ;
-}
-.divs{
-  display: flex !important;
-  justify-content: center !important;
-  flex-wrap: wrap;
-}
-#divHead{
-  display:flex;
-  justify-content: center;
-}
-span p{
-  font-size:1.3em !important;
-}
-.headings{
-  position: fixed;
-  top:40px;
-  width:100%;
-  left:0px;
-  background-color: #f2f2f2;
-  z-index: 99;
-  display: none;
 }
