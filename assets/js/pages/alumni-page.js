@@ -1,5 +1,5 @@
 
-$('#nav a').eq(6).css({
+$('#nav #team').css({
   "color": "white"
 });
 
