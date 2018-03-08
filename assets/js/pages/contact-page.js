@@ -2,13 +2,13 @@ $(document).ready(function() {
   // Formspree form information and email address
     var contactform =  document.getElementById('formaction');
     contactform.setAttribute('action', '//formspree.io/' + 'iitkauv' + '@' + 'gmail' + '.' + 'com');
-
-  $('#nav a').eq(6).css({
+  $('#nav #contact').css({
     "color": "white"
   });
+
   $(window).on('resize load', function() {
     if ($(window).width() < 750) {
-      $('#contactus').css({
+      $('#page_heading').css({
         "fontSize": "35px"
       });
       $('.contactdetails').css({
@@ -44,18 +44,4 @@ $(document).ready(function() {
       })
     }
   });
-});
-
-$(document).ready(function() {
-  $('.faicon').hover(function() {
-      $(this).css({
-        "color": "blue"
-      });
-    },
-    function() {
-      $(this).css({
-        "color": "cornflowerblue"
-      });
-    });
-
 });
