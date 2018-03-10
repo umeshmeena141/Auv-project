@@ -16,21 +16,21 @@ $(window).resize(function() {
 $(document).ready(function() {
   $("#part2").click(function() {
     $("body,html").animate({
-      scrollTop: $("#mechanical").offset().top - 80
+      scrollTop: $("#Mechanical").offset().top - 80
     }, 400); //how fast the scrolling animation will be in miliseconds
   });
 });
 $(document).ready(function() {
   $("#part3").click(function() {
     $("body,html").animate({
-      scrollTop: $("#electrical").offset().top - 80
+      scrollTop: $("#Software").offset().top - 80
     }, 400); //how fast the scrolling animation will be in miliseconds
   });
 });
 $(document).ready(function() {
   $("#part4").click(function() {
     $("body,html").animate({
-      scrollTop: $("#software").offset().top - 80
+      scrollTop: $("#Electrical").offset().top - 80
     }, 400); //how fast the scrolling animation will be in miliseconds
   });
 });
@@ -39,22 +39,22 @@ $(document).ready(function() {
 var y1 = document.getElementsByClassName("button1");
 if (window.innerWidth >= 480) {
   y1[0].innerHTML = "Mechanical Subsystem";
-  y1[1].innerHTML = "Software Subsystem";
-  y1[2].innerHTML = "Electrical Subsystem";
+  y1[1].innerHTML = "Electrical Subsystem";
+  y1[2].innerHTML = "Software Subsystem";
 } else {
   y1[0].innerHTML = "Mechanical";
-  y1[1].innerHTML = "Software";
-  y1[2].innerHTML = "Electrical";
+  y1[1].innerHTML = "Electrical";
+  y1[2].innerHTML = "Software";
 }
 $(window).resize(function() {
   if (window.innerWidth >= 480) {
     y1[0].innerHTML = "Mechanical Subsystem";
-    y1[1].innerHTML = "Software Subsystem";
-    y1[2].innerHTML = "Electrical Subsystem";
+    y1[1].innerHTML = "Electrical Subsystem";
+    y1[2].innerHTML = "Software Subsystem";
   } else {
     y1[0].innerHTML = "Mechanical";
-    y1[1].innerHTML = "Software";
-    y1[2].innerHTML = "Electrical";
+    y1[1].innerHTML = "Electrical";
+    y1[2].innerHTML = "Software";
   }
 });
 
