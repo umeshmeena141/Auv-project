@@ -18,16 +18,16 @@ js : alumni-page.js
       </div>
 
       <div class="container-fluid  text-center display" style="display:flex;justify-content:space-around;">
+        {% assign block=site.data.alumni_detail.blocks %}
         <div class="col-lg-2" style="background-color:#bed8f4;padding:2%;box-shadow:5px 5px rgba(0, 0, 0, 0.2)">
-          <h2>Alumni</h2>
-          <small> For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</small>
+          <h2>{{block[0].heading}}</h2>
+          <small>{{block[0].text}} </small>
           <button class="btn btn-default link" style="margin:2% 0%" data-toggle="modal" data-target="#alumni2014"> List </button>
         </div>
 
-        <div class="col-lg-2" style="background-color:#bed8f4;padding:2%;box-shadow:5px 5px rgba(0, 0, 0, 0.2)"  >
-          <h2>Faculty Advisors</h2>
-          <small> For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</small>
-          <button class="btn btn-default link" style="margin:2% 0%" data-toggle="modal" data-target="#alumni2014">See More</button>
+        <div class="col-lg-8" style="background-color:#bed8f4;padding:2%;box-shadow:5px 5px rgba(0, 0, 0, 0.2)"  >
+          <h2>{{block[1].heading}}</h2>
+          <small>{{block[1].text}}</small>
         </div>
       </div>
 
