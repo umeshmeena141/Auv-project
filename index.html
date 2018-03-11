@@ -24,10 +24,11 @@ home_active : active
 
 			<!-- About Us -->
 			<div class="6u" style="padding-left:100px;padding-right:10px;">
-				<h2 id="NEWS1" style="margin-bottom:15px;"><b>ABOUT US</b></h2>
-				{% for item in site.data.page_intro %}{% if item.page == "Home" %}{% for about in item.about %}
-					<p style="text-align:justify; font-size:1em; line-height:1.7; margin:0px; color:#2d2d2d;">&emsp;&emsp;{{about}}</p>
-				{% endfor %}{% endif %}{% endfor %}
+				{% for item in site.data.team_motive %}
+				<h2 id="NEWS1" style="margin-bottom:15px;"><b>{{ item.heading | upcase }}</b></h2>
+				{% for motive in item.motive %}
+					<p style="text-align:justify; font-size:1em; line-height:1.7; margin:0px; color:#2d2d2d;">&emsp;&emsp;{{motive}}</p>
+				{% endfor %}{% endfor %}
 			</div>
 			
 			<!-- Latest News | Facebook Page | Youtube Channel -->
