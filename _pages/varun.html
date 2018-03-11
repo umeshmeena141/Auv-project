@@ -24,17 +24,17 @@ varun_active : active
 	<a id="part3" class="button1">Software Subsystem</a>
 </div>
 <!-- Vehicle - Varun -->
-{% for item in site.vehicles %} {% if item.subTitle == "Key Aspects" %}
-<div class="wrapper style2" id="v" style="zoom:85%;{{item.bgcolor}}; margin-top:0px; {{item.color2}}; padding-bottom:10px;padding-top:30px;">
+{% for item in site.data.vehicle_detail.vehicles %} {% if item.title == "Varun" %}
+<div class="wrapper style2" id="v" style="zoom:85%;background:#164b83; margin-top:0px; color:white; padding-bottom:10px;padding-top:30px;">
 	<section class="container">
 		<div class="row double">
 			<div class="5u">
 
 				<header class="major" style="text-align:left !important;font-weight:400;height:350px; vertical-align: middle;padding-left:34px; padding-right:12px;display: table-cell;vertical-align: middle;">
-					<h2 style="font-size:2.0em;font-weight:700; margin-bottom:10px; padding:5px 5px 0px 10px;text-transform:uppercase;margin-left:-34px;">Key Aspects</h2>
+					<h2 style="font-size:2.0em;font-weight:700; margin-bottom:10px; padding:5px 5px 0px 10px;text-transform:uppercase;margin-left:-34px;">{{item.subtitle}}</h2>
 					<ul class="list">
-						{% for features in item.features %}
-						<li class="byline">{{ features }}</li>
+						{% for feature in item.features %}
+						<li class="byline">{{ feature }}</li>
 						{% endfor %}
 
 					</ul>
@@ -46,9 +46,9 @@ varun_active : active
 			<div class="7u">
 				<div class="sketchfab-embed-wrapper" style="margin:auto; display:inline-block; text-align:center; overflow:hidden; width:100%;">
 					<div class="sketchfab-embed-wrapper">
-						<iframe width="100%" height="400" src="{{item.iframe}}" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+						<iframe width="100%" height="400" src="{{item.VehicleModalEmbedLink}}" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 						<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-							<a href="{{item.ifram1}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">VARUN</a> by <a href="{{item.ifram2}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">AUV IITK</a> on <a href="{{item.ifram3}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+							<a href="{{item.VehicleModalLink}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">VARUN</a> by <a href="{{item.AUVIITKModalsLink}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">AUV IITK</a> on <a href="{{item.SketchfabLink}}" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 						</p>
 					</div>
 				</div>
