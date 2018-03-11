@@ -31,7 +31,7 @@ team_active : active
         <ul class="nav nav-pills nav-stacked" role="tablist">
           {% for divId in site.data.divison %}
           {% if divId.title == "Team Leaders" %}
-          <li class="active"><a href="#{{divId.division}}">{{divId.title}}</a></li>
+          <li><a href="#{{divId.division}}">{{divId.title}}</a></li>
           {% else %}
           <li ><a href="#{{divId.division}}">{{divId.title}}</a></li>
           {% endif %}
