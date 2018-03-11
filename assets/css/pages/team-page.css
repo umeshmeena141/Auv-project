@@ -12,7 +12,9 @@ img {
 #nav a:hover {
   color: white;
 }
-
+.navbar2 a{
+  color:white !important;
+}
 a {
   color: white;
   font-size: 20px;
