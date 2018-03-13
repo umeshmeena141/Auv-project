@@ -4,6 +4,30 @@
 
 We have developed a jekyll website based on the [Solarized theme](https://templated.co/solarize). The website is served at [auv-iitk.github.io](auv-iitk.github.io) or [https://auviitk.com](https://auviitk.com)
 
+## Build Instructions
+
+1. Install `ruby-dev` for Ubuntu:
+```
+sudo apt-get install ruby-dev
+```
+2. Install `bundle`:
+```
+gem install bundle
+```
+3. Install the gems:
+```
+cd ~/auv-iitk.github.io
+bundle install
+```
+4. Update the gems:
+```
+bundle update
+```
+5. Run it locally on the machine:
+```
+bundle exec jekyll serve
+```
+
 ## Usage
 
 Fork the repo

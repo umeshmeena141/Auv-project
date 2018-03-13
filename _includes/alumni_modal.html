@@ -1,4 +1,4 @@
-<div class="modal fade" id="alumni2014" role="dialog">
+<div class="modal fade" id="modal" role="dialog">
   <div class="modal-dialog container">
 
     <!-- Modal content-->
@@ -14,14 +14,16 @@
             <div class="thumbnail hovereffect " style="height:auto;">
               <div class="hovereffect">
                 <div class="overlay">
-                  <h2 class="text ">{{alumni.project}}</h2>
+                  <h2 class="alumni_exp">{{alumni.division}}</h2>
                 </div>
                 <img src="/assets/images/alumni_member/{{alumni.img}}" alt="Lights" style="width:100%;" class="image resize_fit_centers img-rounded">
               </div>
               <div class="caption" style="background-color:white;">
-                <h3 class="desc1">{{alumni.name}}</h3>
-                <a href="{{alumni.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"  style="color:black" style=""></i></a>
-                <a href="{{alumni.github}}" class="gitlink"><i class="fa fa-github hovericon"  style="color:black" style=""></i></a>
+                <h3 class="name">{{alumni.name}}</h3>
+                <a href="{{alumni.facebook}}" class="fblink"><i class="fa fa-facebook hovericon"></i></a>
+                {% if alumni.github %}
+                <a href="{{alumni.github}}" class="gitlink"><i class="fa fa-github hovericon"></i></a>
+                {% endif%}
               </div>
             </div>
           </div>

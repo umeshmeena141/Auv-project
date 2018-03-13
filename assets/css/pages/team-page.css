@@ -12,7 +12,9 @@ img {
 #nav a:hover {
   color: white;
 }
-
+.navbar2 a{
+  color:white !important;
+}
 a {
   color: white;
   font-size: 20px;
@@ -123,7 +125,7 @@ hr{
   height: 100%;
   transition: .5s ease;
   z-index: 30;
-  margin-left: 3%;
+  margin-left: 0%;
 
 }
 
@@ -182,7 +184,7 @@ h2 {
   overflow: hidden;
   top: 0;
   left: 0;
-
+  margin-left: 0px !important;
 }
 
 .hovereffect img {

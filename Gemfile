@@ -8,6 +8,6 @@ group :jekyll_plugins do
   gem "jekyll-gist"
 	gem "github-pages"
 	gem 'jemoji'
-  gem "html-proofer"
-  gem "jekyll-github-metadata"
+  # gem "html-proofer"
+  # gem "jekyll-github-metadata"
 end

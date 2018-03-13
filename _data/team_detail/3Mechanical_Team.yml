@@ -3,15 +3,6 @@ title: Mechanical Team
 subtitle: Mechanical
 id : mechteam
 id2 : mech_team
-features:
-  - Five degrees of freedom
-  - Weigth of 44.5 kg with +1% buoyancy
-  - Max coefficient of drag at 1.5 m/s 0.42
-  - Motion through 6 brushed-DC Seabotix thrusters
-  - Pneumatics actuation for torpedo shooting
-  - Fabricated using in-house manufacturing facilities
-imageSource: /assets/images/varun/varun_labelled.png
-imageDesc: Exploded View of Varun
 member :
   - Name: Balamurugan R
     Department: Aerospace Engg.
@@ -35,12 +26,4 @@ member :
     profile_pic: NaveenChandra.png
     facebook:
     github: NaveenchandraR
-    CurrProject: Designing Of New Vehicle
-
-  - Name: Anand Gandhi
-    Department: Mechanical Engg.
-    email: anandlg@iitk.ac.in
-    profile_pic: AnandGandhi.jpg
-    facebook: anandlg23
-    github: andy2307
     CurrProject: Designing Of New Vehicle
