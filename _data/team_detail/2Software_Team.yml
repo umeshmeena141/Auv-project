@@ -3,15 +3,6 @@ title: Software Team
 subtitle: Software
 id : softteam
 id2 : soft_team
-features:
-  - System integration through ROS on Ubuntu 14.04
-  - Simulation through Gazebo to optimize testing time
-  - Image processing to perform vision-based tasks
-  - Navigation through dead-reckoning sensors
-  - GUI enabled control for debugging
-  - Code available on GitHib with documentation under BSD-3 License Clause
-imageSource: /assets/images/varun/software_logos.png
-imageDesc: Frameworks in Varun's Code
 member :
   - Name: Akash Kumar Singh
     Department: Electrical Engg.
@@ -44,14 +35,6 @@ member :
     facebook: abhishekkirodiwa
     github: abhisaini
     CurrProject: GUI Developement
-
-  - Name: Arnav Garg
-    Department: Civil Engg.
-    email: arnavgar@iitk.ac.in
-    profile_pic: ArnavGarg.jpg
-    facebook: arnav.garg.7
-    github: garnav98
-    CurrProject: Controls
 
   - Name: Suryash Agarwal
     Department: Electrical Engg.

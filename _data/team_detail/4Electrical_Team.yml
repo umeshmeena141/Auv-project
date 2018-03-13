@@ -3,14 +3,6 @@ title: Electrical Team
 subtitle: Electrical
 id : electteam
 id2 : elect_team
-features:
-  - Powered by four 3S Lithium-Polymer Batteries
-  - Custom made power-distribution board with protection and monitoring circuits
-  - Two Logitech C290 cameras for 1080p video feed
-  - Bluerobotics Depth Sensor for precision depth
-  - Intel NUC for high-processing power
-imageSource: /assets/images/varun/varun_power.png
-imageDesc: Schematic Diagram of Power Distribution Board
 member :
   - Name: Abhishek Arya
     Department: Chemical Engg.
@@ -27,11 +19,3 @@ member :
     facebook: Vjdjain
     github: vjdvivekjain
     CurrProject: Actuator Board
-
-  - Name: Vikas Kumar
-    Department: Electrical Engg.
-    email: vikaskk@iitk.ac.in
-    profile_pic: VikasKumar.jpg
-    facebook:
-    github:
-    CurrProject: Battery Management System

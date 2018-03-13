@@ -16,7 +16,7 @@ gem install bundle
 ```
 3. Install the gems:
 ```
-cd auv-iitk.github.io
+cd ~/auv-iitk.github.io
 bundle install
 ```
 4. Update the gems:
