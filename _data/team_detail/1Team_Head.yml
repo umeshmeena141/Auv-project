@@ -1,0 +1,29 @@
+basename1 : 1Team_Heads
+title: Team Heads
+id : teamLeaders
+id2 : team_leaders
+member :
+- Name: Akash Jain
+  Department: Aerospace Engg.
+  email: jaiakash@iitk.ac.in
+  profile_pic: AkashJain.jpg
+  facebook: akashjain5396
+  github: akashjain5396
+  CurrProject: Overall Head
+
+- Name: Manish Kumar
+  Department: Aerospace Engg.
+  email: maniskj@iitk.ac.in
+  profile_pic: ManishKumar.jpg
+  facebook: maniskjais
+  github:
+  CurrProject: Mechanical Head
+
+
+- Name: Rithvik Patibandla
+  Department: Electrical Engg.
+  email: rithvikp@iitk.ac.in
+  profile_pic: RithvikPatibandla.jpg
+  facebook: rithvik.patibandla
+  github: rithvikp1998
+  CurrProject: Electrical Head
