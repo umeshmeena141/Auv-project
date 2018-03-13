@@ -4,29 +4,13 @@ subtitle: Software
 id : softteam
 id2 : soft_team
 member :
-  - Name: Akash Kumar Singh
+  - Name: Akash Kumar
     Department: Electrical Engg.
-    email: abhisni@iitk.ac.in
+    email: kakash@iitk.ac.in
     profile_pic: AkashKumar.jpg
     facebook: ksakash04
     github: ksakash
     CurrProject: Computer Vision
-
-  - Name: Varun Pawar
-    Department: Mechanical Engg.
-    email: varunpwr@iitk.ac.in",
-    profile_pic: VarunPawar.jpg
-    facebook: varun.pawar.96387
-    github: VarunPwr
-    CurrProject: Acoustic Localization
-
-  - Name: Abhinav Arora
-    Department: Material Sc. & Engg.
-    email: aarora@iitk.ac.in
-    profile_pic: AbhinavArora.jpg
-    facebook: abhinav.arora.507
-    github: Abhi10arora
-    CurrProject: Gazebo Simulation
 
   - Name: Abhishek Saini
     Department: Computer Science Engg.
@@ -42,4 +26,4 @@ member :
     profile_pic: SuryashAgarwal.jpg
     facebook: suryansh.agarwal.90
     github: Suryansh470
-    CurrProject: Controls
+    CurrProject: Mission Control
