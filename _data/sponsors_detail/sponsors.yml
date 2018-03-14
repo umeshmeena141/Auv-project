@@ -14,12 +14,12 @@
     - <b>Access to members</b>(current and alumni) of AUV for surveys, studies, interaction sessions, seminars, recruitment etc.
   
 - title: Current Sponsors
-  imageSource: /assets/images/sponsors/current/
+  imageSource: /assets/images/sponsors/
   list: 
     - Solidworks
+    - DORD-IITK
 
 - title: Previous Sponsors
-  imageSource: /assets/images/sponsors/previous/
+  imageSource: /assets/images/sponsors/
   list:
-    - DORD-IITK
     - Overdrive
