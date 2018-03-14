@@ -5,54 +5,60 @@ permalink: /sponsors.html
 social: true
 css : sponsors.css
 js : sponsors.js
+sponsors_active : active
 ---
 <!-- main -->
-<div class="wrapper style3" id="v0" style="padding-bottom:0px;padding-bottom:0px;zoom:95%;background:#1e64ae url(/assets/images/AUV.png) no-repeat; background-size:cover; height: 400px;line-height: 400px; ">
+<div class="wrapper style3" style="padding: 150px 0 75px 0; background: white;">
 	<section class="container">
-		<header class="major" style="line-height: 1.5;vertical-align: middle;">
-			<h2 style="font-size:4.4em;color: white !important; margin: auto;" ><a href="#d2">SPONSORS</a></h2>
-			<span>A short para on what sponsoring means to us leading to the process of becoming a sponsor and the benifits of being one.</span>
-			<a class="button" href="#" style="display: inline; text-align: center; clear: left;">Brochure</a>
+		{% for item in site.data.sponsors_detail.sponsors %}
+		{% if item.title == "Sponsors" %}
+		<header class="major">
+			<h2 style="font-size:4.4em;color: #2d2d2d; margin: auto;" >{{item.title | upcase}}</h2><br>
+			<span style = "font-size:1.2em; color:#2d2d2d;">{{item.description}}</span>
 		</header>
+		{% endif %}
+		{% endfor %}
 	</section>
 </div>
 
-<!-- 1 -->
-<div class="wrapper style2" style="background: white;">
+<!-- Sponsorship Details -->
+<div class="wrapper style2" style="background:#1e64ae ; margin:0;padding:20px 0 60px 0;">
 	<section class="container">
 		<div class="row double">
+			{% for item in site.data.sponsors_detail.sponsors %}
+			{% if item.title == "Why Sponsor Us?" or item.title == "Sponsorship Benifits" %}
 			<div class="6u">
-				<h2 class="NEWS1" style="margin-bottom:15px;"><b>Why Sponsor Us</b></h2>
-				<p style="text-align:justify; font-size:1.0em;font-weight:400;">
-					&emsp;&emsp;Accumsan lacim lkl oie semper, ligula enimcim lkl olmdm;msdc lskdnclksd nia. Vivamus nisl nibh, iaculis vitae, turpis. Aliquam erat volutpat. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget
-					ante.<br> &emsp;&emsp; Aliquam libero. Urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat.
-					Vestibulum dui sem, pulvinar sed.
+				<h2 class="heading1 page-header"><b>{{item.title | upcase}}</b></h2>
+				<p style="text-align:justify; font-size:1.0em; margin:0;color:white !important;">
+					&emsp;&emsp;{{item.description}}
 				</p>
+				{% if item.benefitsList %}
+				<ul class="benefits">
+					{% for benefit in item.benefitsList %}
+					<li>{{benefit}}</li>
+					{% endfor %}
+				{% endif %}
 			</div>
-			<div class="6u">
-				<h2 class="NEWS1" style="margin-bottom:15px;"><b>Benefits of Becoming a Sponsor</b></h2>
-				<p style="text-align:justify; font-size:1.0em;font-weight:400;">
-					&emsp;&emsp;Accumsan lacim lkl oie semper, ligula enimcim lkl olmdm;msdc lskdnclksd nia. Vivamus nisl nibh, iaculis vitae, turpis. Aliquam erat volutpat. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget
-					ante.<br> &emsp;&emsp; Aliquam libero. Urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat.
-					Vestibulum dui sem, pulvinar sed.
-				</p>
-			</div>
+			{% endif %}
+			{% endfor %}
 		</div>
 	</section>
 </div>
 
-<!-- 2 -->
-<div class="wrapper style3" id="d2" style="padding-top:50px;padding-bottom:60px;background: white;color: #4d4d4d;">
+<!-- Sponsor - Current and Previous List -->
+<div class="wrapper style3" style="padding-top:50px;padding-bottom:40px;background: white;color: #4d4d4d;">
+	{% for item in site.data.sponsors_detail.sponsors %}
+	{% if item.title == "Current Sponsors" or item.title == "Previous Sponsors" %}
 	<section class="container">
 		<header class="major">
-			<h1 style="font-size: 2em;">Current Sponsors</h1>
+			<h1 class="heading2 page-header">{{item.title | upcase}}</h1>
 		</header>
-		<p> A few pics here</p>
-	</section>
-	<section class="container">
-		<header class="major">
-			<h1 style="font-size: 2em;">Previous Sponsors</h1>
-		</header>
-		<p> A few more here</p>
-	</section>
+		<div class="flex-container">
+		 	{% for sponsor in item.list %}
+			<img src="{{item.imageSource}}{{sponsor | downcase}}.png" alt="{{sponsor}} logo">
+			{% endfor %}
+		</div>
+	</section><br>
+	{% endif %}
+	{% endfor %}
 </div>
