@@ -13,7 +13,7 @@ sponsors_active : active
 		{% for item in site.data.sponsors_detail.sponsors %}
 		{% if item.title == "Sponsors" %}
 		<header class="major">
-			<h2 style="font-size:4.4em;color: #2d2d2d; margin: auto;" >{{item.title | upcase}}</h2><br>
+			<h2 id="page-title" style="font-size:4.4em;color: #2d2d2d; margin: auto;" >{{item.title | upcase}}</h2><br>
 			<span style = "font-size:1.2em; color:#2d2d2d;">{{item.description}}</span>
 		</header>
 		{% endif %}

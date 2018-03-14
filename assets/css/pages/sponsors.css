@@ -52,4 +52,11 @@ header.major .byline {
 }
 .container ul.benefits {
   color: white;
+  text-align: left !important;
+}
+
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 3.2em;
+  }
 }
