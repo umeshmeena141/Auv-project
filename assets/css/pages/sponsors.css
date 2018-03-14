@@ -16,21 +16,40 @@ header.major .byline {
   background: black;
 }
 
-th {
-  font-weight: 700;
-  font-size: 1.2em;
+.heading1 {
+  font-size:1.8em;
+  color: white;
+  margin-bottom:15px;
+  border:none;
+  padding:0;
 }
-
-td {
-  font-weight: 400;
-}
-
-.MEDIA1 {
-  color: #1e64ae;
+.heading2{
+  color:#4d4d4d;
+  width:80%;
+  margin:auto;
   font-size: 1.8em;
 }
+.flex-container {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+ }
+.flex-container > img {
+  width: 200px;
+  height: 80px ;
+  margin: 20px 15px 20px 5px;
+}
+.container ul {
+  list-style-type: disc;
+  margin: 0 0 0 30px;
+}
 
-.NEWS1 {
-  color: #1e64ae;
-  font-size: 1.8em;
+.container ol {
+  list-style-type: decimal;
+  margin-left: 0 0 0 30px;
+}
+.container ul.benefits {
+  color: white;
 }
