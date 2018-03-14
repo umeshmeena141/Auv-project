@@ -1,64 +1,15 @@
 ---
 title: Team Triton
-layout: none
+layout: default
 permalink: /team.html
 social: true
 css : team-page.css
 js : team-page.js
 team_active : active
 ---
-
-<!DOCTYPE html>
-<html>
-<!-- Head -->
-
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<title>{{ site.title }}{% if page.title and page.url != "/" %} | {{ page.title }}{% endif %}</title>
-	<meta name="description" content="{{ site.description }}" />
-	<meta name="keywords" content="{{ site.keywords }}" />
-
-	<link rel="shortcut icon" type="image/x-icon" href="/assets/images/{{site.favicon}}.ico" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
-	<!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
-
-	<link rel="stylesheet" type="text/css" href="/assets/css/skel.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/navBar.css" />
-	{% if page.css %}
-		<link rel="stylesheet" type="text/css" href="/assets/css/pages/{{ page.css }}" />
-	{% endif %}
-
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115015394-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-115015394-1');
-	</script>
-
-</head>
-
-<body>
-
-	<div class="wrapper style1">
-		{% include header.html %}
-	</div>
-
   <section class="fdb-block team-2">
 		<div class="container">
-      <div class="row text-center justify-content-center">
+      <div class="row text-center justify-content-center page-header">
         <div class="col-8">
           <h1>Meet Our Team</h1>
         </div>
@@ -70,41 +21,46 @@ team_active : active
 			<!-- team advisor and leader -->
       <div class="row text-center justify-content-center">
 			  <div class="col-sm-3 m-sm-auto">
-          <img alt="image" class="img-fluid" src="/assets/images/team_members/MangalKothari.jpg">
+          <img alt="image" class="img-responsive" src="/assets/images/team_members/MangalKothari.jpg">
 
           <h3><a href="https://www.iitk.ac.in/aero/mangal/"><strong>Prof. Mangal Kothari</strong></a></h3>
           <p>Faculty Advisor</p>
         </div>
 
 				<div class="col-sm-3 m-sm-auto">
-          <img alt="image" class="img-fluid" src="/assets/images/team_members/MayankMittal.jpg">
+          <img alt="image" class="img-responsive" src="/assets/images/team_members/MayankMittal.jpg">
 
           <h3><a href="https://mayankm96.github.io"><strong>Mayank Mittal</strong></a></h3>
           <p>Team Captain</p>
+					<ul id="userSocial">
+						<a href="https://www.facebook.com/messages/t/1615881879"> <i class="fa fa-facebook"></i></a>
+						<a href="https://github.com/mayankm96"> <i class="fa fa-github"></i></a>
+					</ul>
         </div>
       </div>
 
 			<!-- other members -->
 			{% assign divisions = site.data.team_detail | sort  %}
 			{% for divison in divisions  %} {% assign division=divison[1]  %}
-			<div class="row text-center justify-content-center">
-				<div class="col-8">
+			<div class="row text-center justify-content-center ">
+				<div class="col-8 ">
 					<h2>{{division.title}}</h2>
 				</div>
 			</div>
       <div class="row text-center justify-content-center">
 				{% for div in division.member %}
         <div class="col-sm-3 m-sm-auto">
-          <img alt="image" class="img-fluid" src="/assets/images/team_members/{{div.profile_pic}}">
+          <img alt="image" class="img-responsive" src="/assets/images/team_members/{{div.profile_pic}}">
 
           <h3><strong>{{div.Name}}</strong></h3>
           <p>{{div.CurrProject}}</p>
+						<ul id="userSocial">
+							<a href="https://www.facebook.com/{{div.facebook}}"> <i class="fa fa-facebook"></i></a>
+							<a href="https://github.com/{{div.github}}"> <i class="fa fa-github"></i></a>
+						</ul>
         </div>
 				{% endfor %}
       </div>
 			{% endfor %}
     </div>
   </section>
-{% include footer.html %} {% include hemline.html %}
-</body>
-</html>

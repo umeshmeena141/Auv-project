@@ -14,11 +14,28 @@ header.major .byline {
 .page-header{
     margin-top: 0%;
 }
-
+#page_heading{
+  margin:0% 30%;
+  font-size:3vw;
+  color:black;
+  font-family:Monospace;
+  height:300px"
+}
 .form-control {
     border-color: #ccc;
 }
 
+h1{
+  font-size:30px;
+  margin:1% 0%;
+  text-align:left;
+}
+
+p{
+  font-size:15px;
+  margin:1% 0%;
+  text-align:left;
+}
 input {
     border-color: #ccc !important;
 }
