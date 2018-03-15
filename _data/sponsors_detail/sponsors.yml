@@ -1,21 +1,21 @@
 - title: Sponsors
-  description: To achieve success in our goal team rely of generous support of our sponsors. Your kind donation will help us in purchasing costly sensor, hardware and fabrication of AUV. We would like to thank our sponsors for supporting the technological development in underwater Robotics . We will ensure to provide special benefits to our sponsor and would like to continue long term association.
-  
+  description: In our endeavours to achieve greater heights in marine robotics, team AUV-IITK is thankful to the generous support of its sponsors in terms of monetory and technical support. Your kind donations have helped us in purchasing the required sesnors and hardware for our robots and allowed us fabricate our vehicles successfully. We would like to thank our sponsorers again for their support and trust, and would love to hear from associates interested in our work. On behalf of the team, we would ensure to provide special benefits to our sponsorers and would like to build a successful long term associations with them.
+
 - title: Why Sponsor Us?
-  description: Promoting robotics research among undergraduate students. Varun, the Autonomous Underwater Vehicle, won the second position in its debut at the fifth National Competition on Student Autonomous underwater Vehicles (SAVe) organized by the National Institute of Ocean Technology (NIOT), Chennai, India. AUV shall be a big boost to your Corporate Social Responsibility, for supporting and nurturing a national level team which represents our country internationally.
-  
+  description: Promoting robotics research among undergraduate students. <i>Varun</i>, our last AUV, won the second position in its debut at the fifth National Competition on Student Autonomous underwater Vehicles (SAVe) organized by the National Institute of Ocean Technology (NIOT), Chennai, India in December 2016. AUV shall be a big boost to your Corporate Social Responsibility (CSR), for supporting and nurturing a national level team which represents our country internationally.
+
 - title: Sponsorship Benifits
-  description: In recognition of your support, it is our privilege to offer you with the following benefits
-  benefitsList: 
-    - <b>Media Coverage</b>
+  description: In recognition to your support, it is our privilege to offer you with the following benefits:
+  benefitsList:
+    - <b>Media Coverage:</b>
     - <b>Promotion and Visibility:</b> During International and National Competitions, Conferences and Exhibitions at target audience.
     - <b>Association:</b> With premier Institute IIT Kanpur for a corporate and/or social responsibility.
     - <b>Knowledge Sharing:</b> Working alongside your foundation, on a specific research problem.
     - <b>Access to members</b>(current and alumni) of AUV for surveys, studies, interaction sessions, seminars, recruitment etc.
-  
+
 - title: Current Sponsors
   imageSource: /assets/images/sponsors/
-  list: 
+  list:
     - Solidworks
     - DORD-IITK
 
