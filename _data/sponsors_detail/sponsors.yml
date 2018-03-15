@@ -1,5 +1,5 @@
 - title: Sponsors
-  description: To achieve success in our goal team rely of generous support of our sponsors. Your kind donation will help us in purchasing costly sensor, hardware and fabrication of AUV. We would like to thank our sponsors for supporting the technological development in underwater Robotics . We will ensure to provide special benefits to our sponsor and would like to continue long term association.
+  description: Your kind donation will help us in purchasing costly sensor, hardware and fabrication of AUV. We would like to thank our sponsors for supporting the technological development in underwater Robotics . We will ensure to provide special benefits to our sponsor and would like to continue long term association.
   
 - title: Why Sponsor Us?
   description: Promoting robotics research among undergraduate students. Varun, the Autonomous Underwater Vehicle, won the second position in its debut at the fifth National Competition on Student Autonomous underwater Vehicles (SAVe) organized by the National Institute of Ocean Technology (NIOT), Chennai, India. AUV shall be a big boost to your Corporate Social Responsibility, for supporting and nurturing a national level team which represents our country internationally.
@@ -16,10 +16,5 @@
 - title: Current Sponsors
   imageSource: /assets/images/sponsors/
   list: 
-    - Solidworks
     - DORD-IITK
-
-- title: Previous Sponsors
-  imageSource: /assets/images/sponsors/
-  list:
-    - Overdrive
+    - Solidworks
