@@ -38,8 +38,8 @@ header.major .byline {
  }
 .flex-container > img {
   width: 400px;
-  height: 150px ;
-  margin: 20px 15px 20px 5px;
+  height: 135px ;
+  margin: 20px 40px 20px 40px;
 }
 .container ul {
   list-style-type: disc;
