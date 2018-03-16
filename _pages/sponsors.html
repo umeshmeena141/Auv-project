@@ -7,13 +7,13 @@ css : sponsors.css
 js : sponsors.js
 sponsors_active : active
 ---
-<!-- main -->
+<!-- About Sponsorship -->
 <div class="wrapper style3" style="padding: 150px 0 75px 0; background: white;">
 	<section class="container">
 		{% for item in site.data.sponsors_detail.sponsors %}
 		{% if item.title == "Sponsors" %}
 		<header class="major">
-			<h2 style="font-size:4.4em;color: #2d2d2d; margin: auto;" >{{item.title | upcase}}</h2><br>
+			<h2 class="page-title" style="font-size:3.6em;color: #2d2d2d; margin: auto;" >{{item.title | upcase}}</h2><br>
 			<span style = "font-size:1.2em; color:#2d2d2d;">{{item.description}}</span>
 		</header>
 		{% endif %}
@@ -21,8 +21,8 @@ sponsors_active : active
 	</section>
 </div>
 
-<!-- Sponsorship Details -->
-<div class="wrapper style2" style="background:#1e64ae ; margin:0;padding:20px 0 60px 0;">
+<!-- Sponsoring AUV Team -->
+<div class="wrapper style2" style="background:#1e64ae; margin:0;padding:20px 0 60px 0;">
 	<section class="container">
 		<div class="row double">
 			{% for item in site.data.sponsors_detail.sponsors %}
@@ -45,7 +45,7 @@ sponsors_active : active
 	</section>
 </div>
 
-<!-- Sponsor - Current and Previous List -->
+<!-- Current and Previous Sponsors List -->
 <div class="wrapper style3" style="padding-top:50px;padding-bottom:40px;background: white;color: #4d4d4d;">
 	{% for item in site.data.sponsors_detail.sponsors %}
 	{% if item.title == "Current Sponsors" or item.title == "Previous Sponsors" %}
