@@ -53,10 +53,10 @@ sponsors_active : active
 								&emsp;&emsp;{{item.description}}
 							</p>
 						{% endif %}
-						{% if item.benefitsList %}
-							<ul class="benefits">
-								{% for benefit in item.benefitsList %}
-									<li>{{benefit}}</li>
+						{% if item.descriptionList %}
+							<ul class="list">
+								{% for point in item.descriptionList %}
+									<li>{{point}}</li>
 								{% endfor %}
 							</ul>
 						{% endif %}
