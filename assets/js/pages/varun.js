@@ -1,5 +1,5 @@
 //position of Nav bar 2 w.r.t screen size
-var s1 = document.getElementById("stic");
+var s1 = document.getElementById("stickyBar");
 if (window.innerWidth > 856) { //for displaying icon on desktop and "HOME" on tabs
   s1.style.top = "58px";
 } else {
@@ -13,24 +13,10 @@ $(window).resize(function() {
   }
 });
 //smooth scroll for Nav bar 2
-$(document).ready(function() {
-  $("#mechanical").click(function() {
-    $("body,html").animate({
-      scrollTop: $("#Mechanical").offset().top - 80
-    }, 400); //how fast the scrolling animation will be in miliseconds
-  });
-});
-$(document).ready(function() {
-  $("#electrical").click(function() {
-    $("body,html").animate({
-      scrollTop: $("#Electrical").offset().top - 80
-    }, 400); //how fast the scrolling animation will be in miliseconds
-  });
-});
-$(document).ready(function() {
-  $("#software").click(function() {
-    $("body,html").animate({
-      scrollTop: $("#Software").offset().top - 80
-    }, 400); //how fast the scrolling animation will be in miliseconds
-  });
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 80
+    }, 500);
 });

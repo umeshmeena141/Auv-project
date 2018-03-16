@@ -23,10 +23,10 @@ varun_active : active
 </div>
 
 <!-- Navigation bar 2-->
-<div class="stick" id="stic" style="z-index:9">
+<div id="stickyBar" style="z-index:9">
 	{% for item in site.data.vehicle_detail.varun %}
 	{% if item.subtitle == 'Subsystem' %}
-	<a id="{{item.title | downcase}}" class="button1">{{item.title}}</a>
+	<a href="#{{item.title | downcase}}" class="button1">{{item.title}}</a>
 	{% endif %}
 	{% endfor %}
 </div>
@@ -67,7 +67,7 @@ varun_active : active
 {% else %}
 	<!-- Mechanical | Electrical | Software Subteams -->
 	{% if item.title != "Electrical" %}
-		<div id="{{item.title}}" class="subTeam" style="background:#f2f2f2">&emsp;</div>
+		<div id="{{item.title | downcase}}" class="subTeam" style="background:#f2f2f2">&emsp;</div>
 		<div class="wrapper style2" style="zoom:85%; background:#f2f2f2; color:#0086b3; padding:0px; ">
 			<section class="container">
 				<div class="row double">
@@ -93,8 +93,8 @@ varun_active : active
 			</section>
 		</div>
 	{% else %}
-		<div id="{{item.title}}" style="background:#b3d9ff" class="subTeam">&emsp;</div>
-		<div class="wrapper style2" id="{{i}}" style="zoom:85%;background:#b3d9ff; color:#0086b3;padding:0px; ">
+		<div id="{{item.title | downcase}}" style="background:#b3d9ff" class="subTeam">&emsp;</div>
+		<div class="wrapper style2" style="zoom:85%;background:#b3d9ff; color:#0086b3;padding:0px; ">
 			<section class="container">
 				<div class="row double">
 					<div class="6u">

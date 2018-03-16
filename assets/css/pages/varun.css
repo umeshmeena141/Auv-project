@@ -10,7 +10,7 @@
   margin-top: 3px;
   margin-bottom: 3px;
   background: #123e6d;
-  color: aqua;
+  color: aqua !important;
   cursor: pointer;
   font-size: 1.0em;
   text-decoration: none !important;
@@ -20,10 +20,10 @@
 }
 
 .button1:hover {
-  color: white;
+  color: white !important;
 }
 
-#stic {
+#stickyBar {
   position: sticky;
   background: #123e6d;
   width: 100%;
@@ -68,8 +68,4 @@
 
 header.major .byline {
   list-style-type: circle;
-}
-
-#v header.major .byline {
-  list-style-type: disc;
 }
