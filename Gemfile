@@ -6,6 +6,7 @@ group :jekyll_plugins do
   gem "rake"
   gem 'jekyll'
   gem "jekyll-gist"
+  gem 'pygments.rb'
 	# gem "github-pages"
 	# gem 'jemoji'
   # # gem "html-proofer"
