@@ -1,0 +1,112 @@
+---
+title: Advisors
+layout: default
+permalink: /newAlumni.html
+social: true
+css : newAlumni.css
+
+<!-- js: newAlumni.js -->
+---
+
+<div class="container-fluid body">
+  <div class="row">
+    <div class="col-sm-12 text-center" id="title">
+        <h2>Alumni Team</h2>
+    </div>
+  </div>
+
+<div id="team_container">
+  <div class="row">
+    <div class="col-sm-4" id="tagline">
+      <h2>"Pleasure goes hand and hand with Hard Work"</h2>
+    </div>
+    <div class="col-sm-6" id="polygon_block">
+      <div class="wrap">
+        <div class="clip-block" style="float:right">
+          <div class="clip-each clip-solid">
+          <div class="social-share-block">
+        <strong>  </span> <span><i class="fa fa-facebook"></i></span> </strong>
+          <strong>  </span> <span><i class="fa fa-github"></i></span> </strong>
+          </div>
+          </div>
+        </div> <!-- /clip-block -->
+
+        <div class="clip-block" style="float:right">
+          <a href="#" class="clip-each clip-gradient">
+            <div class="clip-caption">Team Head</div>
+          </a>
+          <a href="#" class="clip-each clip-border">
+            <div class="clip-caption">life</div>
+          </a>
+        </div> <!-- /clip-block -->
+
+
+        <svg class="clip-svg">
+          <defs>
+            <clipPath id="hexagon-clip" clipPathUnits="objectBoundingBox">
+              <polygon points="0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5" />
+            </clipPath>
+          </defs>
+        </svg>
+
+        <svg class="clip-svg">
+          <defs>
+            <clipPath id="triangle-clip" clipPathUnits="objectBoundingBox">
+              <polygon points="1 0.03, 0.17 1, 1 1" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div> <!-- /wrap -->
+    </div>
+
+    {% for div in site.data.alumni_detail.blocks %}
+    <div class="row a">
+      <div class="col-sm-12">
+        <div class="wrap">
+          <div class="clip-block" style="float:{{div.float}}">
+            <div class="clip-each clip-solid">
+            <div class="social-share-block">
+              </span> <span>{{div.division}}</span>
+            </div>
+            </div>
+          </div> <!-- /clip-block -->
+
+            {% for member in div.members %}
+            <div class="clip-block" style="float:{{div.float}}">
+              <a href="#" class="clip-each clip-gradient">
+                <div class="clip-caption">Team Head</div>
+              </a>
+              <a href="#" class="clip-each clip-border">
+                <div class="clip-caption">life</div>
+              </a>
+            </div> <!-- /clip-block -->
+            {% endfor %}
+
+
+
+          <svg class="clip-svg">
+            <defs>
+              <clipPath id="hexagon-clip" clipPathUnits="objectBoundingBox">
+                <polygon points="0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <svg class="clip-svg">
+            <defs>
+              <clipPath id="triangle-clip" clipPathUnits="objectBoundingBox">
+                <polygon points="1 0.03, 0.17 1, 1 1" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div> <!-- /wrap -->
+      </div>
+
+    </div>
+    {% endfor%}
+</div>
+
+
+</div>
+
+  </div>

@@ -1,9 +1,121 @@
-- heading : Alumni
-  text : For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+- division : Software
+  float : left
+  members :
+    - name : Arpit Agarwal
+      img : arpit.jpg
+      division : Software Team
+      work :
+      facebook : https://www.facebook.com/Arpit159
+      github : https://github.com/arpit15/
+      Experience :
 
-- heading : NIOT Experience
-  text : ESSO-National Institute of Technology (NIOT) , under the Ministry of Earth Sciences, is organize a competition for students pursuing engineering degree to visualize and design an autonomous underwater vehicle.The conceptual basis for Student Autonomous underwater Vehicle (SAVe), is a highly mobile Autonomous Underwater Vehicle (AUV) to be built based on engineering principles. The main focus of this competition is to involve students on the new frontier areas of ocean technology and    kindle their innovative thinking in this unexplored area of ocean environment and observation. NIOT will support the winning team with their technical expertise and also sponsor for the International competition being held annually in AUVSI foundation San Diego, USA.The competition is open to Indian national students only.
-        To provide opportunities for students to experience the underwater technologies of system engineering.
-        To develop skills in AUV engineering technologies
-        To provide a learning basement for students with an interest in international AUV competitions
-  
+    - name: Jayant Agrawal
+      img : JayantAgarwal.jpg
+      division: Software
+      work:
+      facebook: https://www.facebook.com/ag.jayant
+      github: http://github.com/agjayant
+      Experience: I have been with AUV IITK since the first semester. We got the opportunity to acquire some basic skills in various domains which turned out to be really helpful in the coming semesters. It was because I joined AUV that I could explore and find my interest. It has been a great learning experience for me and I sincerely recommend freshers to consider joining the team.
+
+    - name: Soumye Singhal
+      img : SoumyeSinghal.jpg
+      division: Software
+      work: Motion Control
+      facebook: https://www.facebook.com/singhalsoumye
+      github : https://github.com/soumye
+      Experience:
+
+    - name : Shikher Verma
+      img : shikher.jpg
+      division : Software Team
+      work :
+      facebook : https://www.facebook.com/shikherverma42?ref=br_rs
+      github : https://github.com/ShikherVerma
+      Experience :
+
+    # - name: Siddhartha Saxena
+    #   img : SiddharthaSaxena.jpeg
+    #   division: Software
+    #   work: Computer Vision
+    #   facebook: https://www.facebook.com/siddhartha.saxena.71
+    #   github: http://github.com/siddsax
+    #   Experience: AUV-IITK was the first technical project in which I was involved and it definitely had a big impact. I learned stuffs ranging from doing code in OpenCV to carrying heavy stuffs at 45 degrees heat of IIT Kanpur to the Swimming pool but above all made awesome friends with like minded interests which I feel is the best part of being involved in any club activity.
+    #
+    # - name: Prakhar Agarwal
+    #   img : PrakharAgarwal.png
+    #   division: Software
+    #   work: Line Detection, Line following, Bouy Detection, Gate Detection, Torpedo Shooting
+    #   facebook: https://www.facebook.com/prakhar.agarwal.754365
+    #   github: https://github.com/pkhrag
+    #   Experience: It was really nice to work in AUV. I learnt a lot from it. It helped me developing interest  in systems and development. Working with the team and achieving our goal (NIOT competition) was really a great experience.
+
+
+- division : Mechanical
+  float : right
+  members :
+    - name : Abhishek Shastry
+      img : shastri.jpg
+      division : Mechanical Team
+      work :
+      facebook :
+      github :
+      Experience :
+
+    - name : Aditya Chopra
+      img : chopra.jpg
+      division : Mechanical Team
+      work :
+      facebook : https://www.facebook.com/killeraditya30
+      github :
+      Experience :
+
+    - name : Divyanshu Patel
+      img : divyanshu.jpg
+      division : Mechanical Team
+      work :
+      facebook : https://www.facebook.com/divyanshu.patel
+      github :
+      Experience :
+
+    # - name : Mohit Pandey
+    #   img : mohit.jpg
+    #   division : Mechanical Team
+    #   work :
+    #   facebook : https://www.facebook.com/mohit.pandey.1800
+    #   github :
+    #   Experience :
+    #
+    # - name : Pankaj Kumar
+    #   img : pankaj.jpg
+    #   division : Mechanical Team
+    #   work :
+    #   facebook : https://www.facebook.com/profile.php?id=100009456651000
+    #   github :
+    #   Experience :
+    #
+    # - name : Pawan Agarwal
+    #   img : pawan.jpg
+    #   division : Mechanical Team
+    #   work :
+    #   facebook : https://www.facebook.com/Pawan.agrawal.4
+    #   github :
+    #   Experience :
+
+- division : Electrical
+  float : left
+  members :
+    - name : Harsh Vardhan
+      img : harsh.jpg
+      division : Electrical Team
+      work :
+      facebook : https://www.facebook.com/harsh.vardhan.834
+      github :
+      Experience :
+
+    - name : Atharva Mulmuley
+      img : muli.jpg
+      division : Electrical Team
+      work :
+      facebook : https://www.facebook.com/atharva.mulmuley
+      github :
+      Experience :
