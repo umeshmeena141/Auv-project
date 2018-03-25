@@ -5,6 +5,10 @@
 body{
   overflow-x: hidden;
 }
+h3{
+  font-size: 0.7em !important;
+  font-family: monospace;
+}
 #tagline{
   font-size: 40px;
   color:  #444422;
@@ -12,7 +16,7 @@ body{
   padding: 20px;
 }
 #title{
-  margin:3% 0% 3%;
+  margin:3% 0% 3% !important;
   width: 100%;
   font-size: 20px;
 }
@@ -22,14 +26,35 @@ body{
 }
 
 #team_container{
-  margin: 0% 5%;
+  margin: 3% 5%;
 }
 #polygon_block{
   height: 400px;
 }
+ul a{
+  font-size: 15px;
+  color:black;
+  border-radius:50%;
+  border : 1px solid black;
+}
+ul i{
+    color:black;
+    padding: 5px
+}
+.page-header{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid  #e6e6e6;
+  margin:3% ;
+}
+.page-header h2{
+  font-size: 30px;
+  font-family: cursive;
+}
 .a{
   width: 100%;
-  height:400px;
+  height:55.55%;
   display: flex;
   justify-content: space-around;
 }
@@ -42,7 +67,9 @@ body {
 p {
   margin: 0 0 10px 0;
 }
-
+.img-responsive{
+  transform: scale(1.5) !important;
+}
 .wrap {
   color: #222;
   font-size: 24px;
@@ -69,8 +96,8 @@ p {
   position: relative;
   -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  -webkit-clip-path: url("#hexagon-clip");
-  clip-path: url("#hexagon-clip");
+  /*-webkit-clip-path: url("#hexagon-clip");
+  clip-path: url("#hexagon-clip");*/
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   margin: 0px 10px ;
@@ -85,9 +112,9 @@ a.clip-each:hover {
 .clip-solid {
   width: 300px;
   height: 300px;
-  background-image: url("/assets/images/alumni_member/arpit.jpg");
+  background-image: url("/assets/images/alumni_member/ShibhanshDohare.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   /*background-color: #ad6996;*/
   background-blend-mode: hard-light;
   -webkit-transition: all 2.5s linear;
@@ -128,7 +155,7 @@ a.clip-each:hover {
   position: absolute;
   bottom: 20px;
   right: 75px;
-  color: #fff;
+  color: #800000;
   font-size: 70%;
   z-index: 2;
 }

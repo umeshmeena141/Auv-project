@@ -1,7 +1,9 @@
 - division : Software
   float : left
+  background-img : https://cdn3.iconfinder.com/data/icons/illustricon-tech/512/development.desktop-512.png
   members :
     - name : Arpit Agarwal
+      id :  Arpit
       img : arpit.jpg
       division : Software Team
       work :
@@ -10,6 +12,7 @@
       Experience :
 
     - name: Jayant Agrawal
+      id :  Jayant
       img : JayantAgarwal.jpg
       division: Software
       work:
@@ -18,6 +21,7 @@
       Experience: I have been with AUV IITK since the first semester. We got the opportunity to acquire some basic skills in various domains which turned out to be really helpful in the coming semesters. It was because I joined AUV that I could explore and find my interest. It has been a great learning experience for me and I sincerely recommend freshers to consider joining the team.
 
     - name: Soumye Singhal
+      id :  Soumye
       img : SoumyeSinghal.jpg
       division: Software
       work: Motion Control
@@ -26,6 +30,7 @@
       Experience:
 
     - name : Shikher Verma
+      id :  Shikher
       img : shikher.jpg
       division : Software Team
       work :
@@ -33,27 +38,31 @@
       github : https://github.com/ShikherVerma
       Experience :
 
-    # - name: Siddhartha Saxena
-    #   img : SiddharthaSaxena.jpeg
-    #   division: Software
-    #   work: Computer Vision
-    #   facebook: https://www.facebook.com/siddhartha.saxena.71
-    #   github: http://github.com/siddsax
-    #   Experience: AUV-IITK was the first technical project in which I was involved and it definitely had a big impact. I learned stuffs ranging from doing code in OpenCV to carrying heavy stuffs at 45 degrees heat of IIT Kanpur to the Swimming pool but above all made awesome friends with like minded interests which I feel is the best part of being involved in any club activity.
-    #
-    # - name: Prakhar Agarwal
-    #   img : PrakharAgarwal.png
-    #   division: Software
-    #   work: Line Detection, Line following, Bouy Detection, Gate Detection, Torpedo Shooting
-    #   facebook: https://www.facebook.com/prakhar.agarwal.754365
-    #   github: https://github.com/pkhrag
-    #   Experience: It was really nice to work in AUV. I learnt a lot from it. It helped me developing interest  in systems and development. Working with the team and achieving our goal (NIOT competition) was really a great experience.
+    - name: Siddhartha Saxena
+      id :  Siddhartha
+      img : SiddharthaSaxena.jpeg
+      division: Software
+      work: Computer Vision
+      facebook: https://www.facebook.com/siddhartha.saxena.71
+      github: http://github.com/siddsax
+      Experience: AUV-IITK was the first technical project in which I was involved and it definitely had a big impact. I learned stuffs ranging from doing code in OpenCV to carrying heavy stuffs at 45 degrees heat of IIT Kanpur to the Swimming pool but above all made awesome friends with like minded interests which I feel is the best part of being involved in any club activity.
+
+    - name: Prakhar Agarwal
+      id :  Prakhar
+      img : PrakharAgarwal.png
+      division: Software
+      work: Line Detection, Line following, Bouy Detection, Gate Detection, Torpedo Shooting
+      facebook: https://www.facebook.com/prakhar.agarwal.754365
+      github: https://github.com/pkhrag
+      Experience: It was really nice to work in AUV. I learnt a lot from it. It helped me developing interest  in systems and development. Working with the team and achieving our goal (NIOT competition) was really a great experience.
 
 
 - division : Mechanical
   float : right
+  background-img : https://image.freepik.com/icones-gratis/engrenagens-variante-com-chave-ferramenta_318-47662.jpg
   members :
     - name : Abhishek Shastry
+      id :  Abhishek
       img : shastri.jpg
       division : Mechanical Team
       work :
@@ -62,6 +71,7 @@
       Experience :
 
     - name : Aditya Chopra
+      id :  Aditya
       img : chopra.jpg
       division : Mechanical Team
       work :
@@ -70,6 +80,7 @@
       Experience :
 
     - name : Divyanshu Patel
+      id :  Divyanshu
       img : divyanshu.jpg
       division : Mechanical Team
       work :
@@ -77,34 +88,39 @@
       github :
       Experience :
 
-    # - name : Mohit Pandey
-    #   img : mohit.jpg
-    #   division : Mechanical Team
-    #   work :
-    #   facebook : https://www.facebook.com/mohit.pandey.1800
-    #   github :
-    #   Experience :
-    #
-    # - name : Pankaj Kumar
-    #   img : pankaj.jpg
-    #   division : Mechanical Team
-    #   work :
-    #   facebook : https://www.facebook.com/profile.php?id=100009456651000
-    #   github :
-    #   Experience :
-    #
-    # - name : Pawan Agarwal
-    #   img : pawan.jpg
-    #   division : Mechanical Team
-    #   work :
-    #   facebook : https://www.facebook.com/Pawan.agrawal.4
-    #   github :
-    #   Experience :
+    - name : Mohit Pandey
+      id :  Mohit
+      img : mohit.jpg
+      division : Mechanical Team
+      work :
+      facebook : https://www.facebook.com/mohit.pandey.1800
+      github :
+      Experience :
+
+    - name : Pankaj Kumar
+      id :  Pankaj
+      img : pankaj.jpg
+      division : Mechanical Team
+      work :
+      facebook : https://www.facebook.com/profile.php?id=100009456651000
+      github :
+      Experience :
+
+    - name : Pawan Agarwal
+      id :  Pawan
+      img : pawan.jpg
+      division : Mechanical Team
+      work :
+      facebook : https://www.facebook.com/Pawan.agrawal.4
+      github :
+      Experience :
 
 - division : Electrical
   float : left
+  background-img : http://www.electronicsb2b.com/wp-content/uploads/2017/02/ELCINA.jpg
   members :
     - name : Harsh Vardhan
+      id :  Harsh
       img : harsh.jpg
       division : Electrical Team
       work :
@@ -113,6 +129,7 @@
       Experience :
 
     - name : Atharva Mulmuley
+      id :  Atharva
       img : muli.jpg
       division : Electrical Team
       work :
